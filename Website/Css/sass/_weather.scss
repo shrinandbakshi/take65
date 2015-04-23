@@ -1,0 +1,300 @@
+﻿// Controla a visibilidade do template na Home do site.
+.box-column {
+	.weather-box {
+		height: 280px;
+        zoom:84%;
+
+		&:first-child {
+			display: block;
+			width: 100%;
+		}
+
+		.header {
+			display: none;
+		}
+	}
+}
+// Fim
+
+
+// Template Modal
+.weather-widget {
+	@include clearfix;
+}
+
+.weather-box {
+	border-left: 3px solid #fff;
+	float: left;
+	height: 330px;
+	width: 50%;
+
+	&:nth-child(odd) {
+		border-left: 0;
+	}
+
+	.header {
+		background-color: $blue;
+		height: 40px;
+		line-height: 40px;
+		text-transform: uppercase;
+
+		.btn-red {
+			margin: 0;
+		}
+	}
+
+	.content {
+		padding: 3px 15px;
+
+		.local-weather {
+			height: 50px;
+
+			input {
+				border: 1px solid #CCCCCC;
+				color: #333333;
+				height: 44px;
+				line-height: 31px;
+				width: 70px;
+			}
+
+			button {
+				margin: 0 5px 28px 0 !important;
+			}
+
+			label {
+				margin: 15px 0 0 0;
+			}
+		}
+
+		.list-weather {
+			li {
+				border-top: 1px solid $gray;
+				font-size: 15px;
+				font-weight: normal;
+				line-height: 20px;
+				padding: 2px 0;
+				@include clearfix;
+
+				&:first-child {
+					border-top: 0;
+					font-size: 21px;
+					margin-bottom: 10px;
+
+					.local {
+						float: left;
+						width: 150px;
+
+						.small {
+							display: block;
+							font-size: 11px;
+						}
+					}
+
+					.current {
+						background-color: $blue;
+						color: #fff;
+						display: block;
+						float: right;
+						height: 40px;
+						line-height: 40px;
+						margin-left: 6px;
+						text-align: center;
+						width: 65px;
+					}
+				}
+
+				&:nth-child(2) {
+					border-top: 0;
+				}
+
+				.high, .low, .icon {
+					margin-left: 15px;
+				}
+
+				.high, .low {
+					float: right;
+					width: 25px;
+				}
+
+				.high {
+					font-weight: bold;
+				}
+
+				.low {
+
+				}
+
+				.icon-sprite {
+					display: block;
+					float: right;
+				}
+
+				.rain{
+					@include icon-sprite(weather-rain);
+				}
+
+				.partly-cloudy-night{
+					@include icon-sprite(weather-partly-cloudy-night);
+				}
+
+				.partly-cloudy-day{
+					@include icon-sprite(weather-partly-cloudy-day);
+				}
+
+				.cloudy{
+					@include icon-sprite(weather-cloudy);
+				}
+
+				.fog{
+					@include icon-sprite(weather-fog);
+				}
+
+				.wind{
+					@include icon-sprite(weather-wind);
+				}
+
+				.sleet{
+					@include icon-sprite(weather-sleet);
+				}
+
+				.snow{
+					@include icon-sprite(weather-snow);
+				}
+
+				.clear-day{
+					@include icon-sprite(weather-clear-day);
+				}
+
+			}
+		}
+
+        a{
+			color: #3B5998;
+			font-weight: bold;
+            text-align:right ;
+		}
+	}
+}
+
+
+.weatherdetails-box {
+	border-left: 3px solid #fff;
+	float: left;
+	height: 330px;
+	width: 60%;	
+
+    .label-location
+    {
+        color: #3B5998;
+		font-weight: bold;
+    }
+    /*.content {
+        bo
+    }*/
+}
+
+
+
+// .preview {
+// 	@include clearfix;
+//     width: 100%;
+//     padding: 0 5%;
+
+//     .day-forecast {
+//         text-align: center;
+//         width: 33%;
+//         height: 140px;
+//         float: left;
+//         background: url('/Content/Weather/background.png');
+// 		position: relative;
+// 		padding-top: 5px;
+
+//         label
+//         {
+//             font-size: 1.3em;
+//             color: #ffffff;
+//         }
+
+// 		h2.rain{
+// 			@include icon-sprite(weather-rain);
+// 			margin: 0 0 0 15px;
+// 			padding: 0;
+// 		}
+
+// 		h2.partly-cloudy-night{
+// 			@include icon-sprite(weather-partly-cloudy-night);
+// 			margin: 5px 0 0 15px;
+// 			padding: 0;
+// 		}
+
+
+// 		h2.partly-cloudy-day{
+// 			@include icon-sprite(weather-partly-cloudy-day);
+// 			margin: 5px 0 0 15px;
+// 			padding: 0;
+// 		}
+
+
+// 		h2.cloudy{
+// 			@include icon-sprite(weather-cloudy);
+// 			margin: 5px 0 0 15px;
+// 			padding: 0;
+// 		}
+
+
+// 		h2.fog{
+// 			@include icon-sprite(weather-fog);
+// 			margin: 0px 0 0 15px;
+// 			padding: 0;
+// 		}
+
+// 		h2.wind{
+// 			@include icon-sprite(weather-wind);
+// 			margin: 5px 0 0 15px;
+// 			padding: 0;
+// 		}
+
+
+// 		h2.sleet{
+// 			@include icon-sprite(weather-sleet);
+// 			margin: 0px 0 0 15px;
+// 			padding: 0;
+// 		}
+
+
+// 		h2.snow{
+// 			@include icon-sprite(weather-snow);
+// 			margin: 10px 0 0 10px;
+// 			padding: 0;
+// 		}
+
+
+// 		h2.clear-day{
+// 			@include icon-sprite(weather-clear-day);
+// 			margin: 5px 0 0 23px;
+// 			padding: 0;
+// 		}
+
+
+// 		ul {
+// 			position: absolute;
+// 			bottom: 5px;
+// 			width: 100%;
+
+// 			li {
+// 				width: 100%;
+// 				font-size: 1.3em;
+// 			}
+
+// 			li.high { color: #ffe881; }
+// 			li.low  { color: #FFFFFF; }
+// 		}
+//     }
+
+// 	footer{
+// 		@include clearfix;
+// 		width: 100%;
+// 		text-align: center;
+// 		padding-top: 5px;
+// 	}
+// }

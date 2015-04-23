@@ -1,0 +1,25 @@
+﻿<section class="box-view-more bookmarks" id="bookmarks" data-ng-controller="MoreWebsiteCtrl" data-loadbehavior="" data-resizecolorbox="false" data-ng-target="">
+	<div class="hold-top">
+		<header> 
+			<h1>{{widget.title}}</h1>
+		</header>
+	</div>
+	<div class="hold-bookmarks" id="bookmarkContent">
+        <ul class="list-img-links list-img-links-max-width">
+            <li data-ng-repeat="trusted in trustedSource">
+                <a data-ng-href="{{trusted.link}}" data-ng-class="{ openIframe: !trusted.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>
+                    <img data-ng-src="{{trusted.image}}" alt="{{trusted.title}}" />
+                </a>
+            </li> 
+
+            <li data-ng-repeat="site in source" data-ng-show="source.length > 0">
+                <a class="text" data-ng-href="{{site.link}}" data-ng-class="{ openIframe: !site.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>{{site.title}}</a>
+            </li>
+        </ul>        
+        <!--<ul class="bookmarks-links" id="listBookmark">
+            <li data-ng-repeat="site in source">
+                <a data-ng-href="{{site.link}}" data-ng-class="{ openIframe: !site.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>{{site.title}}</a>
+            </li>
+        </ul>-->
+	</div>
+</section> 

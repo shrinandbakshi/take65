@@ -1,0 +1,150 @@
+// ----- MIXINS -----
+
+// ----- Clearfix -----
+@mixin group(){
+	*zoom: 1;
+	&:before,
+	&:after {
+	  display: table;
+	  content: "";
+	}
+	&:after {
+	  clear: both;
+	}
+}
+
+// ----- Hide Text -----
+@mixin set_hide_text(){
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+// ----- Backgrounds -----
+@mixin set_general_bg($theme_bg : $theme_bg, $top_nav: false){
+	background: image-url($theme_bg,false,false); 	
+	@if $top_nav == true {
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#33000000);
+	}	
+}
+
+@mixin set_bg($bg : $theme_bg, $top : 15px, $left : center){
+	background: image-url($bg,false,false) no-repeat $left $top;	
+}
+
+@mixin set_bg_2($opacity : 0.35, $color: 0){	 
+	 background: #2c2c2d;
+	 background: rgba($color, $color, $color, $opacity) !important; 
+}
+
+@mixin set_ie_bg($opacity : 50, $color: '2C2C2D'){
+	background-color:transparent;
+ 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=##{$opacity}#{$color},endColorstr=##{$opacity}#{$color}); 
+ 	zoom: 1;
+}
+
+@mixin set_bg_color($opacity : 0.35){	 
+	 background-color: #2c2c2d;
+	 background-color: rgba(0, 0, 0, $opacity) !important; 
+}
+
+// ----- Separators -----
+@mixin set_separator_img($sep: nav, $pos: right){
+	@if $sep == nav {
+		background: image-url($nav_sep,false,false) no-repeat $pos bottom;
+	} @else if $sep == subnav {
+		background: image-url($subnav_sep,false,false) no-repeat $pos bottom;
+	} @else if $sep == widget {
+		background: image-url($widget_sep,false,false) no-repeat $pos bottom;
+	} @else if $sep == general {
+		background: image-url($general_sep,false,false) repeat-x $pos bottom;
+	}  	
+}
+
+@mixin set_separator($border_sep_top : $border_sep_top,$border_sep_bottom : $border_sep_bottom){
+	border-top:1px solid $border_sep_top;
+	border-bottom:1px solid $border_sep_bottom; 	
+}
+// ----- Font Family -----
+@mixin set_font_family(){
+	font-family: 'Open Sans', Arial, Verdana, Helvetica, sans-serif;	
+}
+
+@mixin set_css_arrow(
+		$direction : h,
+		$direction_h : right, 
+		$direction_h_value : -6px,
+		$direction_v : bottom, 
+		$direction_v_value : 20%,		
+		$color : #fff, 
+		$arrow_size : 6px
+){
+
+	@if $direction_h == right{
+		left: $direction_h_value; 
+	} @else if $direction_h == left{
+		right: $direction_h_value;
+	}
+
+	@if $direction_v == top{
+		bottom: $direction_v_value; 
+	} @else if $direction_v == bottom{
+		top: $direction_v_value;
+	}
+
+
+	@if $direction == h{ // Left or Right Arrow		
+		border-bottom: $arrow_size solid transparent;
+	  border-#{$direction_h}: $arrow_size solid $color;
+	  border-top: $arrow_size solid transparent;
+
+	} @else if $direction == v{ // Top or Bottom Arrow
+		border-left: $arrow_size solid transparent;
+	  border-#{$direction_v}: $arrow_size solid $color;
+	  border-right: $arrow_size solid transparent;
+	}
+	
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+
+// ----- Table Sprite -----
+@mixin set_table_sprite($sprite: $sprite_table){
+	background: image-url($sprite,false,false) no-repeat right -200px;	
+}
+
+// ----- Sidebar Sprite -----
+@mixin set_sidebar_sprite($sprite: $sprite_sidebar){
+	background: image-url($sprite,false,false) no-repeat 15px 8px;	
+}
+
+// ----- Top Menu Sprite -----
+@mixin set_sidebar_top_menu_sprite($sprite: $sprite_top_menu){
+	background: image-url($sprite,false,false) no-repeat 15px 8px;	
+}
+
+// ----- Login Sprite -----
+@mixin set_login_sprite($sprite: $sprite_login_menu){
+	background: image-url($sprite,false,false) no-repeat 0px 0px;	
+}
+
+// ----- Login Sprite -----
+@mixin set_login_input_sprite($sprite: $sprite_login_input){
+	background: image-url($sprite,false,false) no-repeat 0px 0px;	
+}
+
+// ----- Table Sprite -----
+@mixin set_element_bg(){
+	background: #f8f8f8;
+	background: -moz-linear-gradient(top,  #f8f8f8 1%, #f3f3f3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#f8f8f8), color-stop(100%,#f3f3f3));
+	background: -webkit-linear-gradient(top,  #f8f8f8 1%,#f3f3f3 100%);
+	background: -o-linear-gradient(top,  #f8f8f8 1%,#f3f3f3 100%);
+	background: -ms-linear-gradient(top,  #f8f8f8 1%,#f3f3f3 100%);
+	background: linear-gradient(to bottom,  #f8f8f8 1%,#f3f3f3 100%);
+}
+
+@mixin set_element_border(){
+	border: 1px solid $border_color_2;
+}

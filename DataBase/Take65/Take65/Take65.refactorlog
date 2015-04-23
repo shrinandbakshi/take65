@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="34ffc146-7b2a-41be-91d7-5930e18a763c" ChangeDateTime="11/10/2013 13:26:31">
+    <Property Name="ElementName" Value="[dbo].[SuggestionBox].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SuggestionBox]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SuggestionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bc3765ca-487f-4379-836c-4986d807ad00" ChangeDateTime="11/10/2013 14:43:01">
+    <Property Name="ElementName" Value="[dbo].[SuggestionBoxTag].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SuggestionBoxTag]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SuggestionBoxTagId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b4b2e25d-5342-45f6-8a69-f8bf0b19d3f8" ChangeDateTime="11/21/2013 10:30:57">
+    <Property Name="ElementName" Value="[dbo].[SafeWebsite].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SafeWebsite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SafeWebsiteId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1e6ac04e-3069-4bdc-8cd4-11043b03e1a0" ChangeDateTime="12/10/2013 20:02:33">
+    <Property Name="ElementName" Value="[dbo].[User].[UserFacebookToken]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserFacebookTokenShort" />
+  </Operation>
+</Operations>

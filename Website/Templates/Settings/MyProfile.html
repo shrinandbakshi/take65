@@ -1,0 +1,81 @@
+﻿<section class="box-lightbox register" data-fn="placeholder styleForms" data-param='{ "classStep": ".register-step" }' data-resizecolorbox="" data-ng-controller="MyProfileCtrl" >
+	<header>
+		<h1>My Profile</h1>
+	</header>
+	
+    <form name="register" data-ng-submit="submit();">
+	    <div class="register-step step-2" data-fn="formValidation" data-ng-show="step === 1" data-param='{ "error": ".msg-feedback2", "submit": ".next-step" }'>
+		    <p>Edit your Take 65 account information
+            </p>
+		
+		    <section class="informations-user">
+			    <article class="login-information" data-ng-hide="facebook.register">
+
+                    <div class="hold-line">
+				        <label for="" class="lbl-left">Email:</label>
+                        <input id="fldRegisterEmail" type="email" class="i-right" placeholder="Type your email address" name="email" data-ng-model="user.email" data-ng-focus="" data-ensure-unique-email="" data-unique="user.unique.email" data-req-email="true" data-ng-required="reqEmail" data-valid="empty">
+                        <div class="msg-feedback msg-input" data-ng-class="{ error: !user.unique.email.status, success: user.unique.email.status }" data-ng-show="user.unique.email.response && (!register.email.$error.required && !register.email.$error.$email)">{{user.unique.email.response}}</div>
+                    </div>
+                    <div data-ng-hide="changePassword">
+                        <a href="javascript:void(0)" data-ng-click="userChangePassword()" class="change-password"><b><u>Click here</u></b></a> to change your password<br />
+                    </div>
+                    <div class="hold-line" data-ng-show="changePassword" data-ng-class="{ error: register.password.$dirty && register.password.$invalid }">
+				        <label for="" class="lbl-left">Password</label>
+				        <input id="fldRegisterPassword" type="password" class="i-right" data-ng-model="user.password" placeholder="Choose a new Take 65 password">
+                    </div>
+                    <div class="hold-line" data-ng-show="changePassword" data-ng-class="{ error: register.passwordConfirm.$dirty && register.passwordConfirm.$invalid }">
+				        <label for="" class="lbl-left">Password</label>
+				        <input type="password" name="passwordConfirm" class="i-right" data-ng-model="user.passwordConfirm" data-password-match="user.password" placeholder="Re-enter your new Take 65 password">
+                    </div>
+			    </article>
+			
+			    <article class="personal-information">
+                    <div class="hold-line">
+				        <label for="" class="lbl-left">Name:</label>
+				        <input id="fldRegisterName" type="text" class="i-right" name="name" placeholder="Type your full name" data-ng-model="user.name">
+                    </div>
+                    <div class="hold-line">
+				        <label for="" class="lbl-left">Year of Birth</label>
+				        <input id="fldRegisterBirthdate" type="text" class="i-right" name="birthdate" placeholder="Type your year of birth" data-ng-model="user.yearofbirth">
+                    </div>
+                    <div class="hold-line">
+				        <label for="" class="lbl-left">Gender</label>
+				        <div class="i-right">
+					        <div class="f-left" data-ng-click="user.gender = 'm'">
+                                <div class="sRadio gende" id="gender0" data-ng-class="{ checked: user.gender === 'm' }"><span class="check"></span></div>
+						        <input id="fldRegisterGenderMale" type="radio" value="male" name="gender" class="hidden" data-ng-model="user.gender" data-ng-checked="user.gender === 'male'">
+						        <label for="fldRegisterGenderMale">Male</label>
+					        </div>
+					        <div class="f-left" data-ng-click="user.gender = 'f'">
+                                <div class="sRadio gende" id="gender1" data-ng-class="{ checked: user.gender === 'f' }"><span class="check"></span></div>
+						        <input id="fldRegisterGenderFemale" type="radio" value="female" name="gender" class="hidden" data-ng-model="user.gender" data-ng-checked="user.gender === 'female'">
+						        <label for="fldRegisterGenderFemale">Female</label>
+					        </div>
+				        </div>
+                    </div>
+			    </article>
+		    </section>
+	        <div class="msg-feedback" data-ng-class="{ error: register.$invalid, success: !register.$invalid }" data-ng-show="register.showMessage">
+                <p data-ng-show="register.email.$invalid">Please fill out the field of email.</p>
+                <p data-ng-show="register.password.$invalid">Please fill out the field of password.</p>
+                <p data-ng-show="register.passwordConfirm.$invalid">Please confirm your password.</p>
+	        </div>
+            <!--<div class="msg-feedback msg-feedback2"></div>-->
+	        <a href="javascript:void(0);" class="change-step next-step btn-red" data-valid="submit" data-ng-click="setStep(2);">Next</a>
+            <br /><br />&nbsp;<br />
+	    </div>
+
+	    <article class="register-step step-3" data-ng-show="step === 2">
+            <div data-loading="" data-ng-class="{ hidden: wasLoaded }"></div>
+		    <p>Tell us a little bit more about yourself. <br />Select your interests so we can offer you customized content.</p>
+		    <ul class="interests">
+			    <li data-ng-repeat="uPrefence in userPrefences" data-ng-click="uPrefence.chk = !uPrefence.chk">
+                    <div class="sCheckbox preferenceCheckbox" data-ng-class="{ checked: uPrefence.chk }"><span class="check"></span></div>
+       		        <input type="checkbox" class="hidden" value="{{uPrefence.title}}" name="{{uPrefence.title}}" id="uPreference{{uPrefence.id}}" data-ng-model="uPrefence.chk" />
+                    <label for="{{uPrefence.id}}">{{uPrefence.title}}</label>
+			    </li>
+		    </ul>
+            <a href="#modalSliderAjax" class="finish-step btn-red" data-ng-click="submit();">Update</a>
+	    </article>
+    </form>
+</section>

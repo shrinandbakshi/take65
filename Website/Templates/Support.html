@@ -1,0 +1,34 @@
+﻿<section class="box-lightbox support" data-fn="placeholder" data-resizecolorbox="" data-ng-controller="SupportCtrl">
+    <header>
+        <h1>{{title}}</h1>            
+    </header>
+    <form class="hold-form" data-ng-submit="submit()" name="supportForm" data-nglogged="" data-fn="formValidation" data-param='{ "error": "#supportMessage", "submit": "#btnSend", "colorbox": true }'>
+        <p class="intro"> Thank you for contacting Take65. Your issue will be addressed within 24 Hours. </p>
+        <div class="hold-line">
+            <label for="fldName" class="lbl-left">*Name:</label>
+            <input id="fldName" type="text" class="i-right" name="name" placeholder="Type your name" data-ng-model="name" ng-disabled="userExists">
+        </div>
+
+        <div class="hold-line">            
+            <label for="fldEmail" class="lbl-left">*Email:</label>                       
+            <input id="fldEmail" type="text" class="i-right" placeholder="Type your email address" name="email" data-ng-model="email" ng-disabled="userExists" data-ng-pattern='/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/' required>                   
+        </div>
+
+        <div class="hold-line">
+            <label for="fldSubject" class="lbl-left">*Subject:<span class="lbl-left-info"> (max. 50 chars) </span></label>
+            <input id="fldSubject" type="text" class="i-right" name="name" placeholder="Type subject line" maxlength="50" data-ng-model="subject" required />
+        </div>       
+        <br />
+        <div class="hold-line">
+            <label for="fldIssue" class="lbl-left">*Issue: <span class="lbl-left-info"> (max. 5000 chars) </span></label>
+            <textarea id="fldIssue" class="t-right" placeholder="Type your issue" maxlength="5000" name="issue" data-ng-model="issue" required/>
+        </div>
+
+        <div id="supportMessage" class="msg-feedback error" data-ng-hide="isSending"></div>
+        <div class="msg-feedback" data-ng-class="feedbackStatus" data-ng-show="isFeedback">{{feedbackMessage}}</div>
+        <div class="msg-feedback" data-ng-class="feedbackStatus" data-ng-show="isSending">{{supportMessage}}</div>
+
+        <br />        
+        <input type="submit" value="Send" class="btn btn-send btn-red" id="btnSend" data-valid="submit" />
+    </form>
+</section>

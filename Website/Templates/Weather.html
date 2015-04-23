@@ -1,0 +1,23 @@
+﻿
+<div class="content weather-widget" data-ng-controller="WeatherCtrl">
+    
+        <div class="header">
+       
+            <label>Local Weather</label>
+            <div>
+		        <input type="text" placeholder="Zip code" id="txtWeatherZipCode" data-ng-model="zipCode" />
+		        <a href="#modalSliderAjax" data-ng-click="loadWeather();"><span>Load</span></a>
+		    </div>
+        
+        </div>    
+		
+        <!--<link rel="stylesheet" type="text/css" media="screen" href="http://img.weather.weatherbug.com/Style/stickers/v2/Stickers_180x150.css" /> -->
+        <div class="wXbody">
+	        <center>
+                <div class="wXguts" data-ng-bind-html="contentWeather">
+                    {{contentWeather}}
+                </div>
+            </center>
+        </div>
+	
+</div>

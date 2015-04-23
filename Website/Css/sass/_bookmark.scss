@@ -1,0 +1,29 @@
+﻿#modalSlider .box-view-more.bookmarks {
+	margin: 20px 0 0;
+}
+ul.bookmarks-links {
+	display: block;
+	margin: 15px;
+	overflow: hidden;
+	li {
+		float: left;
+		font-size: 1.3em;
+		line-height: 18px;
+		margin: 5px 0;
+		width: 50%;
+		a {
+			color: $dark-gray;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	span.name {
+		float: left;
+	}
+	a.icon-close-red {
+		float: left;
+		margin: 3px 0 0 15px;
+		text-indent: -9999999em;
+	}
+}

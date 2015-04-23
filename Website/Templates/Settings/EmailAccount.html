@@ -1,0 +1,37 @@
+﻿<section class="box-lightbox email-feed-manage" data-ng-controller="EmailAccountCtrl" data-ng-target="">
+    <header>
+        <h1>Email Settings</h1>
+    </header>
+    <article class="steps">
+        <p>
+            You can view your latest emails direct from your <b>TAKE 65</b> home page.<br />
+            <!--Please select one of the emails providers below and type your credentials.-->
+        </p>
+        <ul class="list-of-servers">
+            <li>
+                <!--<div class="sCheckbox check-red" data-ng-class="{ checked: true }"><span class="check"></span></div>
+                <input type="checkbox" class="hidden check-red" value="mail" name="mail" data-ng-model="gmail.chk" />-->
+                <img data-ng-src="/content/invite/{{ provider_image }}" alt="{{ provider }}" title="{{ provider }} Account">
+            </li>
+        </ul>
+        <br />
+        <div class="providers">
+            <article class="steps gmail">
+                <p>Please, type your {{ provider }} account.</p>
+                <form class="hold-form login" data-ng-submit="login()">
+                    <div class="hold-line">
+                        <label for="" class="lbl-left">{{ provider }} login:</label>
+                        <input type="email" name="username" class="i-txt i-right" id="fldLoginName" data-valid="empty" data-name="username" placeholder="Type your {{ provider }} username" data-ng-model="account.username" required>
+                    </div>
+                    <div class="hold-line">
+                        <label for="" class="lbl-left">{{ provider }} password:</label>
+                        <input type="password" name="password" class="i-txt i-right" id="fldLoginPassword" data-valid="empty" data-name="password" placeholder="Type your {{ provider }} password" data-ng-model="account.password" required>
+                    </div>
+                    <div class="msg-feedback" data-ng-class="feedbackStatus" data-ng-show="loginMessage.length > 0">{{ loginMessage }}</div>
+                    <input type="button" value="Delete" class="btn btn-login btn-red next-step" data-ng-show="canDeleted" data-ng-click="delete()" />
+                    <input type="submit" value="Save" class="btn btn-login btn-red next-step" id="btnLogin" data-valid="submit" />
+                </form>
+            </article>
+        </div>
+    </article>
+</section>

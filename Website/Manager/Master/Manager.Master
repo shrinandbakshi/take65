@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Manager.master.cs" Inherits="Website.Manager.Master.Manager" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Take 65 - Feed Manager</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="/Manager/js/libs/jquery-1.7.2.min.js"></script>
+    <!-- ===================== CSS ===================== -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/Manager/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/Manager/css/bootstrap/bootstrap-responsive.min.css">
+
+    <!-- Site specific - CSS -->
+    <link rel="stylesheet" href="/Manager/css/theme_light/prettify.css">
+    <link rel="stylesheet" href="/Manager/css/theme_light/jquery-ui-1.8.20.custom.css">
+
+    <!-- Common - CSS -->
+    <link rel="stylesheet" href="/Manager/css/theme_light/common.css">
+    <link rel="stylesheet" href="/Manager/css/theme_light.css" class="style_set">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmManager" runat="server">
+        <div id="main">
+            <div class="sub_nav">
+                <ul class="nav nav-pills">
+                    <li class="first">
+                        <div class="sub_top">
+                            <a href="#">&nbsp;&nbsp;Trusted Content&nbsp;&nbsp;</a>
+                        </div>
+                        <div class="sub_bottom">
+                            <div class="spark">&nbsp;</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sub_top">
+                            <a href="#">&nbsp;&nbsp;Trusted Links&nbsp;&nbsp;</a>
+                        </div>
+                        <div class="sub_bottom">
+                            <div class="spark">&nbsp;</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sub_top">
+                            <a href="#">&nbsp;&nbsp;Feed Crawler&nbsp;&nbsp;</a>
+                        </div>
+                        <div class="sub_bottom">
+                            <div class="spark">&nbsp;</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="cntMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- ===================== JS ===================== -->
+    <script src="/Manager/js/libs/bootstrap.min.js"></script>
+    <script src="/Manager/js/libs/ios-orientationchange-fix.js"></script>
+    <script src="/Manager/js/libs/jquery-ui-1.8.20.custom.min.js"></script>
+    <script src="/Manager/js/common.js"></script>
+
+    <!-- Site specific - JS -->
+    <script src="/Manager/js/libs/prettify.js"></script>
+    <script src="/Manager/js/script.js"></script>
+</body>
+</html>

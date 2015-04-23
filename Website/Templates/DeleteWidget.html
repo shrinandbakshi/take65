@@ -1,0 +1,13 @@
+﻿<article class="box-lightbox delete-widget" data-ng-controller="DeleteWidgetCtrl" data-resizecolorbox="" data-close-colorbox="">
+    <header>
+		<h1>Delete Frame</h1>
+	</header>
+    <div class="content-with-space">
+        <p>Are you sure you want to delete this frame?</p>
+        <div class="center-buttons" data-ng-hide="feedbackDelete.msg.length > 0 && feedbackDelete.status">
+            <a class="btn-red-small" data-ng-click="deleteConfirm();">Yes</a>
+            <a class="btn-red-small" data-colorbox-close="">No</a>
+        </div>
+        <div class="msg-feedback" data-ng-class="{ success: feedbackDelete.status, error: !feedbackDelete.status }" data-ng-show="feedbackDelete.msg.length > 0">{{feedbackDelete.msg}}</div>
+    </div>
+</article>

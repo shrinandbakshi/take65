@@ -1,0 +1,231 @@
+.invite-friends {
+	.steps {
+		@include clearfix;
+		margin: 10px 0 0 13px;
+	}
+	p {
+		font-size: 1.25em;
+		font-weight: $font-normal;
+		&.bold {
+			font-weight: $font-bold;
+		}
+	}
+	h2 {
+		color: $text-color;
+		font-size: 1.6em;
+		font-weight: $font-bold;
+		text-decoration: underline;
+	}
+	.login {
+		display: block;
+		margin: 10px auto 0;
+		width: 490px;
+		label {
+			width: 165px;
+		}
+		input.i-txt {
+			width: 300px;
+		}
+		.btn {
+			margin-right: 13px;
+		}
+	}
+	.list-of-servers {
+		@include clearfix;
+		li {
+			cursor: pointer;
+			display: inline-block;
+			float: left;
+			position: relative;
+			margin-right: 20px;
+
+			img {
+				border: 1px solid #ccc;
+			}
+		}
+		.check-red {
+			right: -11px;
+			top: -11px;
+		}
+	}
+	.invite-individual {
+		margin: 57px 0 30px;
+		overflow: hidden;
+
+		form {
+			padding-right: 10px;
+		}
+
+		p {
+			margin: 20px 0 5px;
+		}
+		.icon {
+			float: left;
+			margin: 11px 7px 0 0;
+		}
+
+		.wrap-invite {
+			padding-right: 120px;
+			position: relative;
+
+			.i-email {
+				//@include border-box;
+				border: 1px solid $gray;
+				float: left;
+				height: 42px;
+				line-height: 42px;
+				margin-right: 3px;
+				padding: 0 5px;
+				width: 100%;
+			}
+			.next-step {
+				margin: 0;
+				width: 120px;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+
+		.msg-feedback {
+			@include clearfix;
+			display: inline-block;
+			margin: 15px 0 0;
+		}  
+	}
+
+	.list-friends {
+		@include clearfix;
+		height: 274px;
+
+		overflow: auto;
+		margin: 0 0 10px;
+		li {
+			border: 1px solid $gray;
+			cursor: pointer;
+			float: left;
+			margin: 0 0 10px 5%;
+			position: relative;
+			width: 40%;
+			max-height: 60px;
+			overflow: hidden;
+			&.active {
+				border-color: $red;
+				figure {
+					border-color: $red;
+				}
+			}
+		}
+		figure {
+			background: url('/Content/Invite/no-image.png');
+			border: 5px solid $gray;
+			display: inline-block;
+			float: left;
+			height: 50px;
+			width: 50px;
+			img {
+				float: left;
+				width: 50px;
+			}
+		}
+		.info-friend {
+			word-break: break-all;
+			float: left;
+			margin: 6px 8px 6px;
+			max-width: 275px;
+			p {
+				margin: 0;
+			}
+		}
+	}
+	.msg-send-invite {
+		display: block;
+		font-size: 1.3em;
+		margin: 25px 0;
+		text-align: center;
+	}
+
+	.list-friends-facebook {
+		@include clearfix;
+		height: 300px;
+
+		overflow: auto;
+		margin: 0 0 10px;
+		li {
+			border: 1px solid $gray;
+			cursor: pointer;
+			float: left;
+			margin: 0 0 10px 5%;
+			position: relative;
+			width: 40%;
+			max-height: 60px;
+			overflow: hidden;
+			&.active {
+				border-color: $red;
+				figure {
+					border-color: $red;
+				}
+			}
+		}
+		li.no-border {
+			border: none !important;
+		}
+		figure {
+			background: url('/Content/Invite/no-image.png');
+			border: 5px solid $gray;
+			display: inline-block;
+			float: left;
+			height: 60px;
+			width: 60px;
+			img {
+				float: left;
+				width: 50px;
+			}
+		}
+		.info-friend {
+			word-break: break-all;
+			float: left;
+			margin: 6px 8px 6px;
+			max-width: 275px;
+			p {
+				margin: 0;
+			}
+		}
+	}
+	.msg-send-invite {
+		display: block;
+		font-size: 1.3em;
+		margin: 25px 0;
+		text-align: center;
+	}
+
+}
+
+.list-friends-selected {
+	padding-top: 30px;
+	margin-left: 5%;
+	@include clearfix;
+
+	li {
+		border: 2px solid $red;
+		cursor: pointer;
+		display: inline-block;
+		float: left;
+		margin: 0 12px 12px 0;
+
+		position: relative;
+
+		img {
+			display: block;
+		}
+		span {
+			display: block;
+			height: 17px;
+			width: 17px;
+
+			position: absolute;
+			top: -8px;
+			right: -8px;
+		}
+	}
+}

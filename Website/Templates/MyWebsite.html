@@ -1,0 +1,14 @@
+﻿<div class="content" data-ng-controller="MyWebsiteCtrl" data-ng-target="">
+    <ul class="list-img-links">
+        <li data-ng-repeat="site in source">
+            <a href="{{site.link}}"
+                title="{{site.title}}"                
+                data-fn="openPop"
+                data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'
+                data-ng-class="{ openIframe: !site.openIFrame }">
+                <img data-ng-src="{{site.image}}" data-ng-show="site.image" />
+                <span data-ng-hide="site.image">{{site.title}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Take65Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Take65DataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__RefactorLog" EntityType="Take65Model.C__RefactorLog" />
+    <EntitySet Name="FeedContent" EntityType="Take65Model.FeedContent" />
+    <EntitySet Name="FeedContentImage" EntityType="Take65Model.FeedContentImage" />
+    <EntitySet Name="FeedContentTag" EntityType="Take65Model.FeedContentTag" />
+    <EntitySet Name="File" EntityType="Take65Model.File" />
+    <EntitySet Name="PageAdmin" EntityType="Take65Model.PageAdmin" />
+    <EntitySet Name="SafeWebsite" EntityType="Take65Model.SafeWebsite" />
+    <EntitySet Name="SuggestionBox" EntityType="Take65Model.SuggestionBox" />
+    <EntitySet Name="SuggestionBoxTag" EntityType="Take65Model.SuggestionBoxTag" />
+    <EntitySet Name="sysdiagrams" EntityType="Take65Model.sysdiagrams" />
+    <EntitySet Name="SystemTag" EntityType="Take65Model.SystemTag" />
+    <EntitySet Name="SystemUser" EntityType="Take65Model.SystemUser" />
+    <EntitySet Name="TagType" EntityType="Take65Model.TagType" />
+    <EntitySet Name="TrustedSource" EntityType="Take65Model.TrustedSource" />
+    <EntitySet Name="TrustedSourceFeed" EntityType="Take65Model.TrustedSourceFeed" />
+    <EntitySet Name="TrustedSourceFeedTag" EntityType="Take65Model.TrustedSourceFeedTag" />
+    <EntitySet Name="TrustedSourceTag" EntityType="Take65Model.TrustedSourceTag" />
+    <EntitySet Name="TrustedSourceType" EntityType="Take65Model.TrustedSourceType" />
+    <EntitySet Name="User" EntityType="Take65Model.User" />
+    <EntitySet Name="UserFacebookFriend" EntityType="Take65Model.UserFacebookFriend" />
+    <EntitySet Name="UserPreference" EntityType="Take65Model.UserPreference" />
+    <EntitySet Name="UserWidget" EntityType="Take65Model.UserWidget" />
+    <EntitySet Name="UserWidgetTag" EntityType="Take65Model.UserWidgetTag" />
+    <EntitySet Name="UserWidgetTrustedSource" EntityType="Take65Model.UserWidgetTrustedSource" />
+    <EntitySet Name="UserWidgetTrustedSourceFeed" EntityType="Take65Model.UserWidgetTrustedSourceFeed" />
+    <AssociationSet Name="FK_FeedContentTag_FeedContentTag" Association="Take65Model.FK_FeedContentTag_FeedContentTag">
+      <End Role="FeedContentTag" EntitySet="FeedContentTag" />
+      <End Role="FeedContentTag1" EntitySet="FeedContentTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageAdmin_PageAdminId" Association="Take65Model.FK_PageAdmin_PageAdminId">
+      <End Role="PageAdmin" EntitySet="PageAdmin" />
+      <End Role="PageAdmin1" EntitySet="PageAdmin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemTag_SystemTag" Association="Take65Model.FK_SystemTag_SystemTag">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="SystemTag1" EntitySet="SystemTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemTag_TagType" Association="Take65Model.FK_SystemTag_TagType">
+      <End Role="TagType" EntitySet="TagType" />
+      <End Role="SystemTag" EntitySet="SystemTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPreference_UserPreference" Association="Take65Model.FK_UserPreference_UserPreference">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="UserPreference" EntitySet="UserPreference" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrustedSource_TrustedSourceType" Association="Take65Model.FK_TrustedSource_TrustedSourceType">
+      <End Role="TrustedSourceType" EntitySet="TrustedSourceType" />
+      <End Role="TrustedSource" EntitySet="TrustedSource" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrustedSourceFeed_TrustedSource" Association="Take65Model.FK_TrustedSourceFeed_TrustedSource">
+      <End Role="TrustedSource" EntitySet="TrustedSource" />
+      <End Role="TrustedSourceFeed" EntitySet="TrustedSourceFeed" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPreference_User" Association="Take65Model.FK_UserPreference_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserPreference" EntitySet="UserPreference" />
+    </AssociationSet>
+    <FunctionImport Name="AuthenticateSystemUser">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CreateFeedContentTag">
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteSuggestionBoxTag">
+      <Parameter Name="SuggestionId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteUserPreference">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteUserWidget">
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteUserWidgetTrustedSource">
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="FeedContentImageSave">
+      <Parameter Name="FeedContentId" Mode="In" Type="Decimal" />
+      <Parameter Name="FeedContentImageUrl" Mode="In" Type="String" />
+      <Parameter Name="FeedContentImageTitle" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="FeedContentSave">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="TrustedSourceFeedId" Mode="In" Type="Decimal" />
+      <Parameter Name="FeedTitle" Mode="In" Type="String" />
+      <Parameter Name="FeedLink" Mode="In" Type="String" />
+      <Parameter Name="FeedDescription" Mode="In" Type="String" />
+      <Parameter Name="FeedPubDate" Mode="In" Type="DateTime" />
+      <Parameter Name="FeedLastModified" Mode="In" Type="DateTime" />
+      <Parameter Name="FeedThumb" Mode="In" Type="String" />
+      <Parameter Name="FeedGuid" Mode="In" Type="String" />
+      <Parameter Name="FeedContentId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GetCategory">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetContentToSyncImg">
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetFeedContentList">
+      <Parameter Name="TrustedSourceId" Mode="In" Type="Decimal" />
+      <Parameter Name="CurrentPage" Mode="In" Type="Int32" />
+      <Parameter Name="ItemsPerPage" Mode="In" Type="Int32" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetFeedContentListWidget">
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="PageStart" Mode="In" Type="Int32" />
+      <Parameter Name="ItemsPerPage" Mode="In" Type="Int32" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetFile">
+      <Parameter Name="FileId" Mode="In" Type="Int32" />
+      <Parameter Name="FileName" Mode="In" Type="String" />
+      <Parameter Name="FileDescription" Mode="In" Type="String" />
+      <Parameter Name="FileType" Mode="In" Type="String" />
+      <Parameter Name="FileLink" Mode="In" Type="String" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetPageAdmin">
+      <Parameter Name="PageAdminLink" Mode="In" Type="String" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetSafeWebsite">
+      <Parameter Name="SafeWebsiteId" Mode="In" Type="Decimal" />
+      <Parameter Name="SafeWebsiteUrl" Mode="In" Type="String" />
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetSafeWebsiteUnmapped">
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetSuggestionBox">
+      <Parameter Name="SuggestionId" Mode="In" Type="Decimal" />
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetSuggestionBoxTag">
+      <Parameter Name="SuggestionId" Mode="In" Type="Decimal" />
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetSystemTag">
+      <Parameter Name="SystemTagId" Mode="In" Type="Decimal" />
+      <Parameter Name="SystemTagNormalized" Mode="In" Type="String" />
+      <Parameter Name="SystemTagParentId" Mode="In" Type="Decimal" />
+      <Parameter Name="TagTypeId" Mode="In" Type="Decimal" />
+      <Parameter Name="TagTypeParentId" Mode="In" Type="Decimal" />
+      <Parameter Name="HasNullParent" Mode="In" Type="Boolean" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetSystemUser">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="UserFirstName" Mode="In" Type="String" />
+      <Parameter Name="UserLastName" Mode="In" Type="String" />
+      <Parameter Name="UserEmail" Mode="In" Type="String" />
+      <Parameter Name="UserPassword" Mode="In" Type="String" />
+      <Parameter Name="UserLastLogin" Mode="In" Type="DateTime" />
+      <Parameter Name="GUID" Mode="In" Type="Guid" />
+      <Parameter Name="UserLoginCount" Mode="In" Type="Int32" />
+      <Parameter Name="ForgotPassword" Mode="In" Type="Guid" />
+      <Parameter Name="lastupdate" Mode="In" Type="DateTime" />
+      <Parameter Name="inactive" Mode="In" Type="DateTime" />
+      <Parameter Name="deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="register" Mode="In" Type="DateTime" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetTrustedSource">
+      <Parameter Name="TrustedSourceId" Mode="In" Type="Decimal" />
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Int32" />
+      <Parameter Name="TrustedSourceTypeId" Mode="In" Type="Decimal" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetTrustedSourceFeed">
+      <Parameter Name="TrustedSourceId" Mode="In" Type="Decimal" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUser">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="FacebookId" Mode="In" Type="String" />
+      <Parameter Name="Login" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserAll">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserFacebookFriends">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="ReturnXml" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserWidget">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Decimal" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserWidgetBookmark">
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="IsTrusted" Mode="In" Type="Boolean" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserWidgetCategory">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserWidgetContent">
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="TrustedSourceId" Mode="In" Type="Decimal" />
+      <Parameter Name="CurrentPage" Mode="In" Type="Int32" />
+      <Parameter Name="ItemsPerPage" Mode="In" Type="Int32" />
+      <Parameter Name="HasThumb" Mode="In" Type="Int32" />
+      <Parameter Name="Search" Mode="In" Type="String" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserWidgetTrustedSource">
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SaveFacebookFriend">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="FacebookFriendId" Mode="In" Type="Decimal" />
+      <Parameter Name="FacebookFriendName" Mode="In" Type="String" />
+      <Parameter Name="FacebookPhotoCount" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SaveFeedContentTag">
+      <Parameter Name="FeedContentId" Mode="In" Type="Decimal" />
+      <Parameter Name="Normalized" Mode="In" Type="String" />
+      <Parameter Name="Display" Mode="In" Type="String" />
+      <Parameter Name="TagTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SaveFile">
+      <Parameter Name="FileId" Mode="In" Type="Int32" />
+      <Parameter Name="FileName" Mode="In" Type="String" />
+      <Parameter Name="FileDescription" Mode="In" Type="String" />
+      <Parameter Name="FileType" Mode="In" Type="String" />
+      <Parameter Name="FileLink" Mode="In" Type="String" />
+      <Parameter Name="Deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveSafeWebsite">
+      <Parameter Name="SafeWebsiteId" Mode="In" Type="Decimal" />
+      <Parameter Name="SafeWebsiteUrl" Mode="In" Type="String" />
+      <Parameter Name="SafeWebsiteOpenIFrame" Mode="In" Type="Boolean" />
+      <Parameter Name="deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveSuggestionBox">
+      <Parameter Name="SuggestionId" Mode="In" Type="Decimal" />
+      <Parameter Name="SuggestionName" Mode="In" Type="String" />
+      <Parameter Name="SuggestionUrl" Mode="In" Type="String" />
+      <Parameter Name="SuggestionDescription" Mode="In" Type="String" />
+      <Parameter Name="SuggestionImage" Mode="In" Type="String" />
+      <Parameter Name="deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveSuggestionBoxTag">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="SuggestionId" Mode="In" Type="Decimal" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Decimal" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveSystemTag">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="ParentId" Mode="In" Type="Decimal" />
+      <Parameter Name="ParentIdList" Mode="In" Type="Decimal" />
+      <Parameter Name="Normalized" Mode="In" Type="String" />
+      <Parameter Name="Display" Mode="In" Type="String" />
+      <Parameter Name="Icon" Mode="In" Type="String" />
+      <Parameter Name="Order" Mode="In" Type="Decimal" />
+      <Parameter Name="TagTypeId" Mode="In" Type="Decimal" />
+      <Parameter Name="register" Mode="In" Type="DateTime" />
+      <Parameter Name="lastupdate" Mode="In" Type="DateTime" />
+      <Parameter Name="inactive" Mode="In" Type="DateTime" />
+      <Parameter Name="deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveTrustedSourceBookmark">
+      <Parameter Name="TrustedSourceId" Mode="In" Type="Decimal" />
+      <Parameter Name="TrustedSourceName" Mode="In" Type="String" />
+      <Parameter Name="TrustedSourceUrl" Mode="In" Type="String" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Decimal" />
+      <Parameter Name="TrustedSourceIcon" Mode="In" Type="String" />
+      <Parameter Name="TrustedSourceOpenIFrame" Mode="In" Type="Boolean" />
+      <Parameter Name="deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveUser">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="FacebookId" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="Login" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="Birthdate" Mode="In" Type="DateTime" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="AddressState" Mode="In" Type="String" />
+      <Parameter Name="AddressCity" Mode="In" Type="String" />
+      <Parameter Name="AddressPostalCode" Mode="In" Type="String" />
+      <Parameter Name="Preferences" Mode="In" Type="String" />
+      <Parameter Name="deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveUserFacebookToken">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="FacebookTokenShort" Mode="In" Type="String" />
+      <Parameter Name="FacebookTokenLong" Mode="In" Type="String" />
+      <Parameter Name="FacebookTokenLongExpires" Mode="In" Type="Int64" />
+      <Parameter Name="FacebookTokenLongExpiresDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SaveUserPreference">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveUserWidget">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Size" Mode="In" Type="Int32" />
+      <Parameter Name="Order" Mode="In" Type="Int32" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Decimal" />
+      <Parameter Name="DefaultWidget" Mode="In" Type="Boolean" />
+      <Parameter Name="deleted" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnId" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SaveUserWidgetTag">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SaveUserWidgetTrustedSource">
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="TrustedSourceId" Mode="In" Type="Decimal" />
+      <Parameter Name="SystemTagId" Mode="In" Type="Decimal" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Url" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SearchFeedContent">
+      <Parameter Name="SearchArray" Mode="In" Type="String" />
+      <Parameter Name="DELIMITER" Mode="In" Type="String" />
+      <Parameter Name="UserWidgetId" Mode="In" Type="Decimal" />
+      <Parameter Name="RequiredCategory" Mode="In" Type="String" />
+      <Parameter Name="CategoryNotIn" Mode="In" Type="String" />
+      <Parameter Name="SystemTagFilter" Mode="In" Type="String" />
+      <Parameter Name="TagTypeFilter" Mode="In" Type="String" />
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+      <Parameter Name="XmlReturn" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(Take65Model.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(Take65Model.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="Tegalize">
+      <Parameter Name="Id" Mode="In" Type="Decimal" />
+      <Parameter Name="TEXT" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UserFacebookFriendClean">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="FacebookFriendList" Mode="In" Type="String" />
+    </FunctionImport>
+    <AssociationSet Name="SystemTagTrustedSourceFeedTag" Association="Take65Model.SystemTagTrustedSourceFeedTag">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="TrustedSourceFeedTag" EntitySet="TrustedSourceFeedTag" />
+    </AssociationSet>
+    <AssociationSet Name="TrustedSourceFeedTrustedSourceFeedTag" Association="Take65Model.TrustedSourceFeedTrustedSourceFeedTag">
+      <End Role="TrustedSourceFeed" EntitySet="TrustedSourceFeed" />
+      <End Role="TrustedSourceFeedTag" EntitySet="TrustedSourceFeedTag" />
+    </AssociationSet>
+    <AssociationSet Name="FeedContentFeedContentTag" Association="Take65Model.FeedContentFeedContentTag">
+      <End Role="FeedContent" EntitySet="FeedContent" />
+      <End Role="FeedContentTag" EntitySet="FeedContentTag" />
+    </AssociationSet>
+    <AssociationSet Name="FeedContentTagSystemTag" Association="Take65Model.FeedContentTagSystemTag">
+      <End Role="FeedContentTag" EntitySet="FeedContentTag" />
+      <End Role="SystemTag" EntitySet="SystemTag" />
+    </AssociationSet>
+    <AssociationSet Name="UserUserWidget" Association="Take65Model.UserUserWidget">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserWidget" EntitySet="UserWidget" />
+    </AssociationSet>
+    <AssociationSet Name="UserWidgetSystemTag" Association="Take65Model.UserWidgetSystemTag">
+      <End Role="UserWidget" EntitySet="UserWidget" />
+      <End Role="SystemTag" EntitySet="SystemTag" />
+    </AssociationSet>
+    <AssociationSet Name="TrustedSourceTagSystemTag" Association="Take65Model.TrustedSourceTagSystemTag">
+      <End Role="TrustedSourceTag" EntitySet="TrustedSourceTag" />
+      <End Role="SystemTag" EntitySet="SystemTag" />
+    </AssociationSet>
+    <AssociationSet Name="TrustedSourceTagTrustedSource" Association="Take65Model.TrustedSourceTagTrustedSource">
+      <End Role="TrustedSourceTag" EntitySet="TrustedSourceTag" />
+      <End Role="TrustedSource" EntitySet="TrustedSource" />
+    </AssociationSet>
+    <AssociationSet Name="UserUserFacebookFriend" Association="Take65Model.UserUserFacebookFriend">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserFacebookFriend" EntitySet="UserFacebookFriend" />
+    </AssociationSet>
+    <AssociationSet Name="TagTypeTagType" Association="Take65Model.TagTypeTagType">
+      <End Role="TagType" EntitySet="TagType" />
+      <End Role="TagType1" EntitySet="TagType" />
+    </AssociationSet>
+    <AssociationSet Name="UserWidgetUserWidgetTrustedSourceFeed" Association="Take65Model.UserWidgetUserWidgetTrustedSourceFeed">
+      <End Role="UserWidget" EntitySet="UserWidget" />
+      <End Role="UserWidgetTrustedSourceFeed" EntitySet="UserWidgetTrustedSourceFeed" />
+    </AssociationSet>
+    <AssociationSet Name="TrustedSourceFeedUserWidgetTrustedSourceFeed" Association="Take65Model.TrustedSourceFeedUserWidgetTrustedSourceFeed">
+      <End Role="TrustedSourceFeed" EntitySet="TrustedSourceFeed" />
+      <End Role="UserWidgetTrustedSourceFeed" EntitySet="UserWidgetTrustedSourceFeed" />
+    </AssociationSet>
+    <AssociationSet Name="SuggestionBoxSuggestionBoxTag" Association="Take65Model.SuggestionBoxSuggestionBoxTag">
+      <End Role="SuggestionBox" EntitySet="SuggestionBox" />
+      <End Role="SuggestionBoxTag" EntitySet="SuggestionBoxTag" />
+    </AssociationSet>
+    <AssociationSet Name="SystemTagSuggestionBoxTag" Association="Take65Model.SystemTagSuggestionBoxTag">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="SuggestionBoxTag" EntitySet="SuggestionBoxTag" />
+    </AssociationSet>
+    <AssociationSet Name="SystemTagUserWidgetTrustedSource" Association="Take65Model.SystemTagUserWidgetTrustedSource">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="UserWidgetTrustedSource" EntitySet="UserWidgetTrustedSource" />
+    </AssociationSet>
+    <AssociationSet Name="TrustedSourceUserWidgetTrustedSource" Association="Take65Model.TrustedSourceUserWidgetTrustedSource">
+      <End Role="TrustedSource" EntitySet="TrustedSource" />
+      <End Role="UserWidgetTrustedSource" EntitySet="UserWidgetTrustedSource" />
+    </AssociationSet>
+    <AssociationSet Name="UserUserWidgetTag" Association="Take65Model.UserUserWidgetTag">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserWidgetTag" EntitySet="UserWidgetTag" />
+    </AssociationSet>
+    <AssociationSet Name="SystemTagUserWidgetTag" Association="Take65Model.SystemTagUserWidgetTag">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="UserWidgetTag" EntitySet="UserWidgetTag" />
+    </AssociationSet>
+    <AssociationSet Name="UserWidgetUserWidgetTag" Association="Take65Model.UserWidgetUserWidgetTag">
+      <End Role="UserWidget" EntitySet="UserWidget" />
+      <End Role="UserWidgetTag" EntitySet="UserWidgetTag" />
+    </AssociationSet>
+    <AssociationSet Name="TrustedSourceFeedContent" Association="Take65Model.TrustedSourceFeedContent">
+      <End Role="TrustedSource" EntitySet="TrustedSource" />
+      <End Role="FeedContent" EntitySet="FeedContent" />
+    </AssociationSet>
+    <AssociationSet Name="FeedContentFeedContentImage" Association="Take65Model.FeedContentFeedContentImage">
+      <End Role="FeedContent" EntitySet="FeedContent" />
+      <End Role="FeedContentImage" EntitySet="FeedContentImage" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__RefactorLog">
+    <Key>
+      <PropertyRef Name="OperationKey" />
+    </Key>
+    <Property Name="OperationKey" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FeedContent">
+    <Key>
+      <PropertyRef Name="FeedContentId" />
+    </Key>
+    <Property Name="FeedContentId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrustedSourceFeedId" Type="Decimal" Nullable="false" Scale="0" Precision="18" />
+    <Property Name="TrustedSourceFeedCategory" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TrustedSourceId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TrustedSourceName" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="TrustedSourceOpenIFrame" Type="Boolean" />
+    <Property Name="FeedTitle" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="FeedLink" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="FeedDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="FeedPubDate" Type="DateTime" Precision="3" />
+    <Property Name="FeedLastModified" Type="DateTime" Precision="3" />
+    <Property Name="FeedThumb" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="FeedGuid" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="FeedViewCount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="lastmodified" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <Property Name="tmpImageSync" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="FeedContentTag" Relationship="Take65Model.FeedContentFeedContentTag" FromRole="FeedContent" ToRole="FeedContentTag" />
+    <NavigationProperty Name="TrustedSource" Relationship="Take65Model.TrustedSourceFeedContent" FromRole="FeedContent" ToRole="TrustedSource" />
+    <NavigationProperty Name="FeedContentImage" Relationship="Take65Model.FeedContentFeedContentImage" FromRole="FeedContent" ToRole="FeedContentImage" />
+  </EntityType>
+  <EntityType Name="FeedContentImage">
+    <Key>
+      <PropertyRef Name="FeedContentImageId" />
+    </Key>
+    <Property Name="FeedContentImageId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeedContentId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FeedContentImageUrl" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="FeedContentImageTitle" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="FeedContent" Relationship="Take65Model.FeedContentFeedContentImage" FromRole="FeedContentImage" ToRole="FeedContent" />
+  </EntityType>
+  <EntityType Name="FeedContentTag">
+    <Key>
+      <PropertyRef Name="FeedContentTagId" />
+    </Key>
+    <Property Name="FeedContentTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeedContentTagParentId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FeedContentId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FeedContentTagNormalized" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FeedContentTagDisplay" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TagTypeId" Type="Int32" />
+    <Property Name="SystemTagId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="register" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="FeedContentTag1" Relationship="Take65Model.FK_FeedContentTag_FeedContentTag" FromRole="FeedContentTag" ToRole="FeedContentTag1" />
+    <NavigationProperty Name="FeedContentTag2" Relationship="Take65Model.FK_FeedContentTag_FeedContentTag" FromRole="FeedContentTag1" ToRole="FeedContentTag" />
+    <NavigationProperty Name="FeedContent" Relationship="Take65Model.FeedContentFeedContentTag" FromRole="FeedContentTag" ToRole="FeedContent" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.FeedContentTagSystemTag" FromRole="FeedContentTag" ToRole="SystemTag" />
+  </EntityType>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="FileDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="FileType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FileLink" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Deleted" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PageAdmin">
+    <Key>
+      <PropertyRef Name="PageAdminId" />
+    </Key>
+    <Property Name="PageAdminId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PageAdminName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="PageAdminLink" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PageAdminOrder" Type="Int32" Nullable="false" />
+    <Property Name="PageParentId" Type="Int32" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="PageAdmin1" Relationship="Take65Model.FK_PageAdmin_PageAdminId" FromRole="PageAdmin" ToRole="PageAdmin1" />
+    <NavigationProperty Name="PageAdmin2" Relationship="Take65Model.FK_PageAdmin_PageAdminId" FromRole="PageAdmin1" ToRole="PageAdmin" />
+  </EntityType>
+  <EntityType Name="SafeWebsite">
+    <Key>
+      <PropertyRef Name="SafeWebsiteId" />
+    </Key>
+    <Property Name="SafeWebsiteId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SafeWebsiteUrl" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SafeWebsiteOpenIFrame" Type="Boolean" />
+    <Property Name="SafeWebsiteGUID" Type="Guid" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SuggestionBox">
+    <Key>
+      <PropertyRef Name="SuggestionId" />
+    </Key>
+    <Property Name="SuggestionId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SuggestionName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SuggestionUrl" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SuggestionDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SuggestionImage" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="SuggestionBoxTag" Relationship="Take65Model.SuggestionBoxSuggestionBoxTag" FromRole="SuggestionBox" ToRole="SuggestionBoxTag" />
+  </EntityType>
+  <EntityType Name="SuggestionBoxTag">
+    <Key>
+      <PropertyRef Name="SuggestionBoxTagId" />
+    </Key>
+    <Property Name="SuggestionBoxTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SuggestionId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SystemTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="SuggestionBox" Relationship="Take65Model.SuggestionBoxSuggestionBoxTag" FromRole="SuggestionBoxTag" ToRole="SuggestionBox" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.SystemTagSuggestionBoxTag" FromRole="SuggestionBoxTag" ToRole="SystemTag" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SystemTag">
+    <Key>
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="SystemTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SystemTagParentId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SystemTagParentIdList" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SystemTagNormalized" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SystemTagDisplay" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SystemTagIcon" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="SystemTagOrder" Type="Int32" />
+    <Property Name="TagTypeId" Type="Int32" />
+    <Property Name="register" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="SystemTag1" Relationship="Take65Model.FK_SystemTag_SystemTag" FromRole="SystemTag" ToRole="SystemTag1" />
+    <NavigationProperty Name="SystemTag2" Relationship="Take65Model.FK_SystemTag_SystemTag" FromRole="SystemTag1" ToRole="SystemTag" />
+    <NavigationProperty Name="TagType" Relationship="Take65Model.FK_SystemTag_TagType" FromRole="SystemTag" ToRole="TagType" />
+    <NavigationProperty Name="UserPreference" Relationship="Take65Model.FK_UserPreference_UserPreference" FromRole="SystemTag" ToRole="UserPreference" />
+    <NavigationProperty Name="TrustedSourceFeedTag" Relationship="Take65Model.SystemTagTrustedSourceFeedTag" FromRole="SystemTag" ToRole="TrustedSourceFeedTag" />
+    <NavigationProperty Name="FeedContentTag" Relationship="Take65Model.FeedContentTagSystemTag" FromRole="SystemTag" ToRole="FeedContentTag" />
+    <NavigationProperty Name="UserWidget" Relationship="Take65Model.UserWidgetSystemTag" FromRole="SystemTag" ToRole="UserWidget" />
+    <NavigationProperty Name="TrustedSourceTag" Relationship="Take65Model.TrustedSourceTagSystemTag" FromRole="SystemTag" ToRole="TrustedSourceTag" />
+    <NavigationProperty Name="SuggestionBoxTag" Relationship="Take65Model.SystemTagSuggestionBoxTag" FromRole="SystemTag" ToRole="SuggestionBoxTag" />
+    <NavigationProperty Name="UserWidgetTrustedSource" Relationship="Take65Model.SystemTagUserWidgetTrustedSource" FromRole="SystemTag" ToRole="UserWidgetTrustedSource" />
+    <NavigationProperty Name="UserWidgetTag" Relationship="Take65Model.SystemTagUserWidgetTag" FromRole="SystemTag" ToRole="UserWidgetTag" />
+  </EntityType>
+  <EntityType Name="SystemUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserFirstName" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="UserLastName" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserEmail" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserLastLogin" Type="DateTime" Precision="0" />
+    <Property Name="UserGUID" Type="Guid" Nullable="false" />
+    <Property Name="ForgotPassword" Type="Guid" />
+    <Property Name="register" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TagType">
+    <Key>
+      <PropertyRef Name="TagTypeId" />
+    </Key>
+    <Property Name="TagTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagTypeParentId" Type="Int32" />
+    <Property Name="TagTypeName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TagTypeDisplay" Type="String" MaxLength="120" Unicode="true" FixedLength="false" />
+    <Property Name="register" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.FK_SystemTag_TagType" FromRole="TagType" ToRole="SystemTag" />
+    <NavigationProperty Name="TagType1" Relationship="Take65Model.TagTypeTagType" FromRole="TagType" ToRole="TagType1" />
+    <NavigationProperty Name="TagType2" Relationship="Take65Model.TagTypeTagType" FromRole="TagType1" ToRole="TagType" />
+  </EntityType>
+  <EntityType Name="TrustedSource">
+    <Key>
+      <PropertyRef Name="TrustedSourceId" />
+    </Key>
+    <Property Name="TrustedSourceId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrustedSourceName" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="TrustedSourceIcon" Type="String" MaxLength="120" Unicode="true" FixedLength="false" />
+    <Property Name="TrustedSourceTypeId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="TrustedSourceUrl" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="TrustedSourceOpenIFrame" Type="Boolean" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TrustedSourceType" Relationship="Take65Model.FK_TrustedSource_TrustedSourceType" FromRole="TrustedSource" ToRole="TrustedSourceType" />
+    <NavigationProperty Name="TrustedSourceFeed" Relationship="Take65Model.FK_TrustedSourceFeed_TrustedSource" FromRole="TrustedSource" ToRole="TrustedSourceFeed" />
+    <NavigationProperty Name="TrustedSourceTag" Relationship="Take65Model.TrustedSourceTagTrustedSource" FromRole="TrustedSource" ToRole="TrustedSourceTag" />
+    <NavigationProperty Name="UserWidgetTrustedSource" Relationship="Take65Model.TrustedSourceUserWidgetTrustedSource" FromRole="TrustedSource" ToRole="UserWidgetTrustedSource" />
+    <NavigationProperty Name="FeedContent" Relationship="Take65Model.TrustedSourceFeedContent" FromRole="TrustedSource" ToRole="FeedContent" />
+  </EntityType>
+  <EntityType Name="TrustedSourceFeed">
+    <Key>
+      <PropertyRef Name="TrustedSourceFeedId" />
+    </Key>
+    <Property Name="TrustedSourceFeedId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrustedSourceId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="TrustedSourceFeedName" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="TrustedSourceFeedUrl" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="lastsync" Type="DateTime" Precision="3" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TrustedSource" Relationship="Take65Model.FK_TrustedSourceFeed_TrustedSource" FromRole="TrustedSourceFeed" ToRole="TrustedSource" />
+    <NavigationProperty Name="TrustedSourceFeedTag" Relationship="Take65Model.TrustedSourceFeedTrustedSourceFeedTag" FromRole="TrustedSourceFeed" ToRole="TrustedSourceFeedTag" />
+    <NavigationProperty Name="UserWidgetTrustedSourceFeed" Relationship="Take65Model.TrustedSourceFeedUserWidgetTrustedSourceFeed" FromRole="TrustedSourceFeed" ToRole="UserWidgetTrustedSourceFeed" />
+  </EntityType>
+  <EntityType Name="TrustedSourceFeedTag">
+    <Key>
+      <PropertyRef Name="TrustedSourceFeedId" />
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="TrustedSourceFeedId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SystemTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.SystemTagTrustedSourceFeedTag" FromRole="TrustedSourceFeedTag" ToRole="SystemTag" />
+    <NavigationProperty Name="TrustedSourceFeed" Relationship="Take65Model.TrustedSourceFeedTrustedSourceFeedTag" FromRole="TrustedSourceFeedTag" ToRole="TrustedSourceFeed" />
+  </EntityType>
+  <EntityType Name="TrustedSourceTag">
+    <Key>
+      <PropertyRef Name="TrustedSourceId" />
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="TrustedSourceId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SystemTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.TrustedSourceTagSystemTag" FromRole="TrustedSourceTag" ToRole="SystemTag" />
+    <NavigationProperty Name="TrustedSource" Relationship="Take65Model.TrustedSourceTagTrustedSource" FromRole="TrustedSourceTag" ToRole="TrustedSource" />
+  </EntityType>
+  <EntityType Name="TrustedSourceType">
+    <Key>
+      <PropertyRef Name="TrustedSourceTypeId" />
+    </Key>
+    <Property Name="TrustedSourceTypeId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="TrustedSourceTypeName" Type="String" Nullable="false" MaxLength="120" Unicode="true" FixedLength="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TrustedSource" Relationship="Take65Model.FK_TrustedSource_TrustedSourceType" FromRole="TrustedSourceType" ToRole="TrustedSource" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserGUID" Type="Guid" />
+    <Property Name="UserFacebookId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserFacebookTokenLong" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="UserFacebookTokenShort" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="UserFacebookTokenLongExpires" Type="Int64" />
+    <Property Name="UserFacebookTokenLongExpiresDate" Type="DateTime" Precision="3" />
+    <Property Name="UserName" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserEmail" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserLogin" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserBirthdate" Type="DateTime" Precision="3" />
+    <Property Name="UserGender" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="UserAddressState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserAddressCity" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserAddressPostalCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="inactive" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="UserPreference" Relationship="Take65Model.FK_UserPreference_User" FromRole="User" ToRole="UserPreference" />
+    <NavigationProperty Name="UserWidget" Relationship="Take65Model.UserUserWidget" FromRole="User" ToRole="UserWidget" />
+    <NavigationProperty Name="UserFacebookFriend" Relationship="Take65Model.UserUserFacebookFriend" FromRole="User" ToRole="UserFacebookFriend" />
+    <NavigationProperty Name="UserWidgetTag" Relationship="Take65Model.UserUserWidgetTag" FromRole="User" ToRole="UserWidgetTag" />
+  </EntityType>
+  <EntityType Name="UserFacebookFriend">
+    <Key>
+      <PropertyRef Name="UserFacebookFriendId" />
+    </Key>
+    <Property Name="UserFacebookFriendId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="FacebookFriendId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="FacebookFriendName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="FacebookPhotoCount" Type="Int32" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="User" Relationship="Take65Model.UserUserFacebookFriend" FromRole="UserFacebookFriend" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserPreference">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SystemTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="register" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.FK_UserPreference_UserPreference" FromRole="UserPreference" ToRole="SystemTag" />
+    <NavigationProperty Name="User" Relationship="Take65Model.FK_UserPreference_User" FromRole="UserPreference" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserWidget">
+    <Key>
+      <PropertyRef Name="UserWidgetId" />
+    </Key>
+    <Property Name="UserWidgetId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SystemTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="UserWidgetName" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserWidgetSize" Type="Int32" />
+    <Property Name="UserWidgetOrder" Type="Int32" />
+    <Property Name="UserWidgetDefault" Type="Boolean" />
+    <Property Name="register" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lastupdate" Type="DateTime" Precision="3" />
+    <Property Name="deleted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="User" Relationship="Take65Model.UserUserWidget" FromRole="UserWidget" ToRole="User" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.UserWidgetSystemTag" FromRole="UserWidget" ToRole="SystemTag" />
+    <NavigationProperty Name="UserWidgetTrustedSourceFeed" Relationship="Take65Model.UserWidgetUserWidgetTrustedSourceFeed" FromRole="UserWidget" ToRole="UserWidgetTrustedSourceFeed" />
+    <NavigationProperty Name="UserWidgetTag" Relationship="Take65Model.UserWidgetUserWidgetTag" FromRole="UserWidget" ToRole="UserWidgetTag" />
+  </EntityType>
+  <EntityType Name="UserWidgetTag">
+    <Key>
+      <PropertyRef Name="UserWidgetTagId" />
+    </Key>
+    <Property Name="UserWidgetTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="UserWidgetId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SystemTagId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="User" Relationship="Take65Model.UserUserWidgetTag" FromRole="UserWidgetTag" ToRole="User" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.SystemTagUserWidgetTag" FromRole="UserWidgetTag" ToRole="SystemTag" />
+    <NavigationProperty Name="UserWidget" Relationship="Take65Model.UserWidgetUserWidgetTag" FromRole="UserWidgetTag" ToRole="UserWidget" />
+  </EntityType>
+  <EntityType Name="UserWidgetTrustedSource">
+    <Key>
+      <PropertyRef Name="UserWidgetId" />
+      <PropertyRef Name="register" />
+    </Key>
+    <Property Name="UserWidgetId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="SystemTagId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TrustedSourceId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="UserWidgetTrustedSourceName" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="UserWidgetTrustedSourceUrl" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="register" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="SystemTag" Relationship="Take65Model.SystemTagUserWidgetTrustedSource" FromRole="UserWidgetTrustedSource" ToRole="SystemTag" />
+    <NavigationProperty Name="TrustedSource" Relationship="Take65Model.TrustedSourceUserWidgetTrustedSource" FromRole="UserWidgetTrustedSource" ToRole="TrustedSource" />
+  </EntityType>
+  <EntityType Name="UserWidgetTrustedSourceFeed">
+    <Key>
+      <PropertyRef Name="UserWidgetTrustedSourceFeedId" />
+    </Key>
+    <Property Name="UserWidgetTrustedSourceFeedId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserWidgetId" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TrustedSourceFeedId" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="UserWidget" Relationship="Take65Model.UserWidgetUserWidgetTrustedSourceFeed" FromRole="UserWidgetTrustedSourceFeed" ToRole="UserWidget" />
+    <NavigationProperty Name="TrustedSourceFeed" Relationship="Take65Model.TrustedSourceFeedUserWidgetTrustedSourceFeed" FromRole="UserWidgetTrustedSourceFeed" ToRole="TrustedSourceFeed" />
+  </EntityType>
+  <Association Name="FK_FeedContentTag_FeedContentTag">
+    <End Role="FeedContentTag" Type="Take65Model.FeedContentTag" Multiplicity="0..1" />
+    <End Role="FeedContentTag1" Type="Take65Model.FeedContentTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FeedContentTag">
+        <PropertyRef Name="FeedContentTagId" />
+      </Principal>
+      <Dependent Role="FeedContentTag1">
+        <PropertyRef Name="FeedContentTagParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageAdmin_PageAdminId">
+    <End Role="PageAdmin" Type="Take65Model.PageAdmin" Multiplicity="0..1" />
+    <End Role="PageAdmin1" Type="Take65Model.PageAdmin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PageAdmin">
+        <PropertyRef Name="PageAdminId" />
+      </Principal>
+      <Dependent Role="PageAdmin1">
+        <PropertyRef Name="PageParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SystemTag_SystemTag">
+    <End Role="SystemTag" Type="Take65Model.SystemTag" Multiplicity="0..1" />
+    <End Role="SystemTag1" Type="Take65Model.SystemTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemTag">
+        <PropertyRef Name="SystemTagId" />
+      </Principal>
+      <Dependent Role="SystemTag1">
+        <PropertyRef Name="SystemTagParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SystemTag_TagType">
+    <End Role="TagType" Type="Take65Model.TagType" Multiplicity="0..1" />
+    <End Role="SystemTag" Type="Take65Model.SystemTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TagType">
+        <PropertyRef Name="TagTypeId" />
+      </Principal>
+      <Dependent Role="SystemTag">
+        <PropertyRef Name="TagTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPreference_UserPreference">
+    <End Role="SystemTag" Type="Take65Model.SystemTag" Multiplicity="1" />
+    <End Role="UserPreference" Type="Take65Model.UserPreference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemTag">
+        <PropertyRef Name="SystemTagId" />
+      </Principal>
+      <Dependent Role="UserPreference">
+        <PropertyRef Name="SystemTagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrustedSource_TrustedSourceType">
+    <End Role="TrustedSourceType" Type="Take65Model.TrustedSourceType" Multiplicity="1" />
+    <End Role="TrustedSource" Type="Take65Model.TrustedSource" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrustedSourceType">
+        <PropertyRef Name="TrustedSourceTypeId" />
+      </Principal>
+      <Dependent Role="TrustedSource">
+        <PropertyRef Name="TrustedSourceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrustedSourceFeed_TrustedSource">
+    <End Role="TrustedSource" Type="Take65Model.TrustedSource" Multiplicity="1" />
+    <End Role="TrustedSourceFeed" Type="Take65Model.TrustedSourceFeed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrustedSource">
+        <PropertyRef Name="TrustedSourceId" />
+      </Principal>
+      <Dependent Role="TrustedSourceFeed">
+        <PropertyRef Name="TrustedSourceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPreference_User">
+    <End Role="User" Type="Take65Model.User" Multiplicity="1" />
+    <End Role="UserPreference" Type="Take65Model.UserPreference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPreference">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <Association Name="SystemTagTrustedSourceFeedTag">
+    <End Type="Take65Model.SystemTag" Role="SystemTag" Multiplicity="1" />
+    <End Type="Take65Model.TrustedSourceFeedTag" Role="TrustedSourceFeedTag" Multiplicity="*" />
+  </Association>
+  <Association Name="TrustedSourceFeedTrustedSourceFeedTag">
+    <End Type="Take65Model.TrustedSourceFeed" Role="TrustedSourceFeed" Multiplicity="1" />
+    <End Type="Take65Model.TrustedSourceFeedTag" Role="TrustedSourceFeedTag" Multiplicity="*" />
+  </Association>
+  <Association Name="FeedContentFeedContentTag">
+    <End Type="Take65Model.FeedContent" Role="FeedContent" Multiplicity="1" />
+    <End Type="Take65Model.FeedContentTag" Role="FeedContentTag" Multiplicity="*" />
+  </Association>
+  <Association Name="FeedContentTagSystemTag">
+    <End Type="Take65Model.FeedContentTag" Role="FeedContentTag" Multiplicity="1" />
+    <End Type="Take65Model.SystemTag" Role="SystemTag" Multiplicity="*" />
+  </Association>
+  <Association Name="UserUserWidget">
+    <End Type="Take65Model.User" Role="User" Multiplicity="1" />
+    <End Type="Take65Model.UserWidget" Role="UserWidget" Multiplicity="*" />
+  </Association>
+  <Association Name="UserWidgetSystemTag">
+    <End Type="Take65Model.UserWidget" Role="UserWidget" Multiplicity="1" />
+    <End Type="Take65Model.SystemTag" Role="SystemTag" Multiplicity="*" />
+  </Association>
+  <Association Name="TrustedSourceTagSystemTag">
+    <End Type="Take65Model.TrustedSourceTag" Role="TrustedSourceTag" Multiplicity="1" />
+    <End Type="Take65Model.SystemTag" Role="SystemTag" Multiplicity="*" />
+  </Association>
+  <Association Name="TrustedSourceTagTrustedSource">
+    <End Type="Take65Model.TrustedSourceTag" Role="TrustedSourceTag" Multiplicity="1" />
+    <End Type="Take65Model.TrustedSource" Role="TrustedSource" Multiplicity="*" />
+  </Association>
+  <Association Name="UserUserFacebookFriend">
+    <End Type="Take65Model.User" Role="User" Multiplicity="1" />
+    <End Type="Take65Model.UserFacebookFriend" Role="UserFacebookFriend" Multiplicity="*" />
+  </Association>
+  <Association Name="TagTypeTagType">
+    <End Type="Take65Model.TagType" Role="TagType" Multiplicity="1" />
+    <End Type="Take65Model.TagType" Role="TagType1" Multiplicity="*" />
+  </Association>
+  <Association Name="UserWidgetUserWidgetTrustedSourceFeed">
+    <End Type="Take65Model.UserWidget" Role="UserWidget" Multiplicity="1" />
+    <End Type="Take65Model.UserWidgetTrustedSourceFeed" Role="UserWidgetTrustedSourceFeed" Multiplicity="*" />
+  </Association>
+  <Association Name="TrustedSourceFeedUserWidgetTrustedSourceFeed">
+    <End Type="Take65Model.TrustedSourceFeed" Role="TrustedSourceFeed" Multiplicity="1" />
+    <End Type="Take65Model.UserWidgetTrustedSourceFeed" Role="UserWidgetTrustedSourceFeed" Multiplicity="*" />
+  </Association>
+  <Association Name="SuggestionBoxSuggestionBoxTag">
+    <End Type="Take65Model.SuggestionBox" Role="SuggestionBox" Multiplicity="1" />
+    <End Type="Take65Model.SuggestionBoxTag" Role="SuggestionBoxTag" Multiplicity="*" />
+  </Association>
+  <Association Name="SystemTagSuggestionBoxTag">
+    <End Type="Take65Model.SystemTag" Role="SystemTag" Multiplicity="1" />
+    <End Type="Take65Model.SuggestionBoxTag" Role="SuggestionBoxTag" Multiplicity="*" />
+  </Association>
+  <Association Name="SystemTagUserWidgetTrustedSource">
+    <End Type="Take65Model.SystemTag" Role="SystemTag" Multiplicity="1" />
+    <End Type="Take65Model.UserWidgetTrustedSource" Role="UserWidgetTrustedSource" Multiplicity="*" />
+  </Association>
+  <Association Name="TrustedSourceUserWidgetTrustedSource">
+    <End Type="Take65Model.TrustedSource" Role="TrustedSource" Multiplicity="1" />
+    <End Type="Take65Model.UserWidgetTrustedSource" Role="UserWidgetTrustedSource" Multiplicity="*" />
+  </Association>
+  <Association Name="UserUserWidgetTag">
+    <End Type="Take65Model.User" Role="User" Multiplicity="1" />
+    <End Type="Take65Model.UserWidgetTag" Role="UserWidgetTag" Multiplicity="*" />
+  </Association>
+  <Association Name="SystemTagUserWidgetTag">
+    <End Type="Take65Model.SystemTag" Role="SystemTag" Multiplicity="1" />
+    <End Type="Take65Model.UserWidgetTag" Role="UserWidgetTag" Multiplicity="*" />
+  </Association>
+  <Association Name="UserWidgetUserWidgetTag">
+    <End Type="Take65Model.UserWidget" Role="UserWidget" Multiplicity="1" />
+    <End Type="Take65Model.UserWidgetTag" Role="UserWidgetTag" Multiplicity="*" />
+  </Association>
+  <Association Name="TrustedSourceFeedContent">
+    <End Type="Take65Model.TrustedSource" Role="TrustedSource" Multiplicity="1" />
+    <End Type="Take65Model.FeedContent" Role="FeedContent" Multiplicity="*" />
+  </Association>
+  <Association Name="FeedContentFeedContentImage">
+    <End Type="Take65Model.FeedContent" Role="FeedContent" Multiplicity="1" />
+    <End Type="Take65Model.FeedContentImage" Role="FeedContentImage" Multiplicity="*" />
+  </Association>
+</Schema>

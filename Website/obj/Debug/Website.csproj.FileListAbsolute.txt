@@ -1,0 +1,1040 @@
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Website.dll.config
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Website.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Website.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Bll.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.Core.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.Core.UI.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.InfoCard.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.InfoCard.UI.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.Common.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.Client.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.Provider.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.UI.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Facebook.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Facebook.Web.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\ImapX.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Threading.Tasks.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Threading.Tasks.Extensions.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Model.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Newtonsoft.Json.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\ServiceStack.Text.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.IO.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.Extensions.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.Primitives.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.WebRequest.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Runtime.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Threading.Tasks.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\TestApiCore.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\WebGrease.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Controllers.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Core.Common.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Core.Communication.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Core.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Plugin.Framework.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Protocol.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Serialization.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Server.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.WebRTC.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Dal.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Live.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\OpenPop.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Google.GData.Client.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Google.GData.Contacts.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Google.GData.Extensions.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Org.Mentalis.Security.Cryptography.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Mono.Math.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Practices.ObjectBuilder.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Bll.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Model.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.Core.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.Core.UI.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.InfoCard.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.InfoCard.UI.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.Common.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.Client.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.Provider.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenId.UI.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Facebook.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Facebook.Web.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Threading.Tasks.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Threading.Tasks.Extensions.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\ServiceStack.Text.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.IO.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.Extensions.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.Primitives.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Net.Http.WebRequest.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Runtime.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\System.Threading.Tasks.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\TestApiCore.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\TestApiCore.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Controllers.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Core.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Core.Common.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Core.Communication.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Plugin.Framework.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Protocol.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Serialization.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.Server.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\XSockets.WebRTC.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Dal.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\OpenPop.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Org.Mentalis.Security.Cryptography.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\bin\Mono.Math.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\obj\Debug\Website.csproj.App.config
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\obj\Debug\Website.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Website\obj\Debug\Website.pdb
+C:\Project Work\take65\Website\bin\Website.dll.config
+C:\Project Work\take65\Website\bin\Website.dll
+C:\Project Work\take65\Website\bin\Website.pdb
+C:\Project Work\take65\Website\bin\Bll.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.Core.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.Core.UI.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.InfoCard.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.InfoCard.UI.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.Common.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.UI.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.dll
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.dll
+C:\Project Work\take65\Website\bin\Facebook.dll
+C:\Project Work\take65\Website\bin\Facebook.Web.dll
+C:\Project Work\take65\Website\bin\Google.Apis.Auth.dll
+C:\Project Work\take65\Website\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Project Work\take65\Website\bin\Google.Apis.Core.dll
+C:\Project Work\take65\Website\bin\Google.Apis.dll
+C:\Project Work\take65\Website\bin\Google.Apis.Oauth2.v2.dll
+C:\Project Work\take65\Website\bin\Google.Apis.PlatformServices.dll
+C:\Project Work\take65\Website\bin\Google.Apis.Plus.v1.dll
+C:\Project Work\take65\Website\bin\ImapX.dll
+C:\Project Work\take65\Website\bin\log4net.dll
+C:\Project Work\take65\Website\bin\Microsoft.Threading.Tasks.dll
+C:\Project Work\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Project Work\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Project Work\take65\Website\bin\Model.dll
+C:\Project Work\take65\Website\bin\Newtonsoft.Json.dll
+C:\Project Work\take65\Website\bin\Serilog.dll
+C:\Project Work\take65\Website\bin\Serilog.FullNetFx.dll
+C:\Project Work\take65\Website\bin\ServiceStack.Text.dll
+C:\Project Work\take65\Website\bin\System.IO.dll
+C:\Project Work\take65\Website\bin\System.Net.Http.dll
+C:\Project Work\take65\Website\bin\System.Net.Http.Extensions.dll
+C:\Project Work\take65\Website\bin\System.Net.Http.Primitives.dll
+C:\Project Work\take65\Website\bin\System.Net.Http.WebRequest.dll
+C:\Project Work\take65\Website\bin\System.Runtime.dll
+C:\Project Work\take65\Website\bin\System.Threading.Tasks.dll
+C:\Project Work\take65\Website\bin\TestApiCore.dll
+C:\Project Work\take65\Website\bin\WebGrease.dll
+C:\Project Work\take65\Website\bin\XSockets.Controllers.dll
+C:\Project Work\take65\Website\bin\XSockets.Core.Common.dll
+C:\Project Work\take65\Website\bin\XSockets.Core.Communication.dll
+C:\Project Work\take65\Website\bin\XSockets.Core.dll
+C:\Project Work\take65\Website\bin\XSockets.CustomProtocol.dll
+C:\Project Work\take65\Website\bin\XSockets.Enterprise.dll
+C:\Project Work\take65\Website\bin\XSockets.Logger.dll
+C:\Project Work\take65\Website\bin\XSockets.Plugin.Framework.dll
+C:\Project Work\take65\Website\bin\XSockets.Protocol.dll
+C:\Project Work\take65\Website\bin\XSockets.Serialization.dll
+C:\Project Work\take65\Website\bin\XSockets.Server.dll
+C:\Project Work\take65\Website\bin\XSockets.WebRTC.dll
+C:\Project Work\take65\Website\bin\Zlib.Portable.dll
+C:\Project Work\take65\Website\bin\Dal.dll
+C:\Project Work\take65\Website\bin\Microsoft.Live.dll
+C:\Project Work\take65\Website\bin\OpenPop.dll
+C:\Project Work\take65\Website\bin\Google.GData.Client.dll
+C:\Project Work\take65\Website\bin\Google.GData.Contacts.dll
+C:\Project Work\take65\Website\bin\Google.GData.Extensions.dll
+C:\Project Work\take65\Website\bin\Org.Mentalis.Security.Cryptography.dll
+C:\Project Work\take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Project Work\take65\Website\bin\Mono.Math.dll
+C:\Project Work\take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Project Work\take65\Website\bin\Microsoft.Practices.ObjectBuilder.dll
+C:\Project Work\take65\Website\bin\Bll.pdb
+C:\Project Work\take65\Website\bin\Model.pdb
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.Core.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.Core.UI.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.InfoCard.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.InfoCard.UI.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.Common.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenId.UI.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
+C:\Project Work\take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.xml
+C:\Project Work\take65\Website\bin\Facebook.xml
+C:\Project Work\take65\Website\bin\Facebook.Web.xml
+C:\Project Work\take65\Website\bin\Google.Apis.pdb
+C:\Project Work\take65\Website\bin\Google.Apis.xml
+C:\Project Work\take65\Website\bin\Google.Apis.Auth.pdb
+C:\Project Work\take65\Website\bin\Google.Apis.Auth.xml
+C:\Project Work\take65\Website\bin\Google.Apis.Auth.PlatformServices.pdb
+C:\Project Work\take65\Website\bin\Google.Apis.Auth.PlatformServices.xml
+C:\Project Work\take65\Website\bin\Google.Apis.Core.pdb
+C:\Project Work\take65\Website\bin\Google.Apis.Core.xml
+C:\Project Work\take65\Website\bin\Google.Apis.Oauth2.v2.pdb
+C:\Project Work\take65\Website\bin\Google.Apis.Oauth2.v2.xml
+C:\Project Work\take65\Website\bin\Google.Apis.PlatformServices.pdb
+C:\Project Work\take65\Website\bin\Google.Apis.PlatformServices.xml
+C:\Project Work\take65\Website\bin\Google.Apis.Plus.v1.pdb
+C:\Project Work\take65\Website\bin\Google.Apis.Plus.v1.xml
+C:\Project Work\take65\Website\bin\log4net.xml
+C:\Project Work\take65\Website\bin\Microsoft.Threading.Tasks.xml
+C:\Project Work\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Project Work\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Project Work\take65\Website\bin\ServiceStack.Text.xml
+C:\Project Work\take65\Website\bin\System.IO.xml
+C:\Project Work\take65\Website\bin\System.Net.Http.xml
+C:\Project Work\take65\Website\bin\System.Net.Http.Extensions.xml
+C:\Project Work\take65\Website\bin\System.Net.Http.Primitives.xml
+C:\Project Work\take65\Website\bin\System.Net.Http.WebRequest.xml
+C:\Project Work\take65\Website\bin\System.Runtime.xml
+C:\Project Work\take65\Website\bin\System.Threading.Tasks.xml
+C:\Project Work\take65\Website\bin\TestApiCore.pdb
+C:\Project Work\take65\Website\bin\TestApiCore.xml
+C:\Project Work\take65\Website\bin\XSockets.Controllers.xml
+C:\Project Work\take65\Website\bin\XSockets.Core.xml
+C:\Project Work\take65\Website\bin\XSockets.Core.Common.xml
+C:\Project Work\take65\Website\bin\XSockets.Core.Communication.xml
+C:\Project Work\take65\Website\bin\XSockets.CustomProtocol.xml
+C:\Project Work\take65\Website\bin\XSockets.Enterprise.xml
+C:\Project Work\take65\Website\bin\XSockets.Plugin.Framework.xml
+C:\Project Work\take65\Website\bin\XSockets.Protocol.xml
+C:\Project Work\take65\Website\bin\XSockets.Serialization.xml
+C:\Project Work\take65\Website\bin\XSockets.Server.xml
+C:\Project Work\take65\Website\bin\XSockets.WebRTC.xml
+C:\Project Work\take65\Website\bin\Zlib.Portable.xml
+C:\Project Work\take65\Website\bin\Dal.pdb
+C:\Project Work\take65\Website\bin\Org.Mentalis.Security.Cryptography.xml
+C:\Project Work\take65\Website\bin\Mono.Math.xml
+C:\Project Work\take65\Website\obj\Debug\Website.csproj.App.config
+C:\Project Work\take65\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+C:\Project Work\take65\Website\obj\Debug\Website.dll
+C:\Project Work\take65\Website\obj\Debug\Website.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Website.dll.config
+C:\Users\VijaynSwapna\take65\Website\bin\Website.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Website.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Bll.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.Core.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.Core.UI.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.InfoCard.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.InfoCard.UI.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.Common.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.UI.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.dll
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Facebook.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Facebook.Web.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Auth.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Core.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Oauth2.v2.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.PlatformServices.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Plus.v1.dll
+C:\Users\VijaynSwapna\take65\Website\bin\ImapX.dll
+C:\Users\VijaynSwapna\take65\Website\bin\log4net.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Live.Web.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Threading.Tasks.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Model.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Newtonsoft.Json.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Serilog.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Serilog.FullNetFx.dll
+C:\Users\VijaynSwapna\take65\Website\bin\ServiceStack.Text.dll
+C:\Users\VijaynSwapna\take65\Website\bin\System.IO.dll
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.dll
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.Extensions.dll
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.Primitives.dll
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.WebRequest.dll
+C:\Users\VijaynSwapna\take65\Website\bin\System.Runtime.dll
+C:\Users\VijaynSwapna\take65\Website\bin\System.Threading.Tasks.dll
+C:\Users\VijaynSwapna\take65\Website\bin\TestApiCore.dll
+C:\Users\VijaynSwapna\take65\Website\bin\WebGrease.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Controllers.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Core.Common.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Core.Communication.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Core.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.CustomProtocol.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Enterprise.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Logger.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Plugin.Framework.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Protocol.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Serialization.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Server.dll
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.WebRTC.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Zlib.Portable.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Dal.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Live.dll
+C:\Users\VijaynSwapna\take65\Website\bin\OpenPop.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.GData.Client.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.GData.Contacts.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Google.GData.Extensions.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Org.Mentalis.Security.Cryptography.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Mono.Math.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\VijaynSwapna\take65\Website\bin\Bll.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Model.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.Core.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.Core.UI.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.InfoCard.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.InfoCard.UI.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.Common.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenId.UI.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
+C:\Users\VijaynSwapna\take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Facebook.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Facebook.Web.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Auth.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Auth.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Auth.PlatformServices.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Auth.PlatformServices.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Core.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Core.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Oauth2.v2.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Oauth2.v2.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.PlatformServices.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.PlatformServices.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Plus.v1.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Google.Apis.Plus.v1.xml
+C:\Users\VijaynSwapna\take65\Website\bin\log4net.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Threading.Tasks.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Newtonsoft.Json.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Serilog.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Serilog.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Serilog.FullNetFx.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Serilog.FullNetFx.xml
+C:\Users\VijaynSwapna\take65\Website\bin\ServiceStack.Text.xml
+C:\Users\VijaynSwapna\take65\Website\bin\System.IO.xml
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.xml
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.Extensions.xml
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.Primitives.xml
+C:\Users\VijaynSwapna\take65\Website\bin\System.Net.Http.WebRequest.xml
+C:\Users\VijaynSwapna\take65\Website\bin\System.Runtime.xml
+C:\Users\VijaynSwapna\take65\Website\bin\System.Threading.Tasks.xml
+C:\Users\VijaynSwapna\take65\Website\bin\TestApiCore.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\TestApiCore.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Controllers.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Core.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Core.Common.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Core.Communication.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.CustomProtocol.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Enterprise.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Plugin.Framework.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Protocol.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Serialization.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.Server.xml
+C:\Users\VijaynSwapna\take65\Website\bin\XSockets.WebRTC.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Zlib.Portable.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Dal.pdb
+C:\Users\VijaynSwapna\take65\Website\bin\Org.Mentalis.Security.Cryptography.xml
+C:\Users\VijaynSwapna\take65\Website\bin\Mono.Math.xml
+C:\Users\VijaynSwapna\take65\Website\obj\Debug\Website.csproj.App.config
+C:\Users\VijaynSwapna\take65\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+C:\Users\VijaynSwapna\take65\Website\obj\Debug\Website.dll
+C:\Users\VijaynSwapna\take65\Website\obj\Debug\Website.pdb
+E:\take65_10_012015\Website\bin\Website.dll.config
+E:\take65_10_012015\Website\bin\Website.dll
+E:\take65_10_012015\Website\bin\Website.pdb
+E:\take65_10_012015\Website\bin\Bll.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.UI.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.UI.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Common.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.UI.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.dll
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdOAuth.dll
+E:\take65_10_012015\Website\bin\Facebook.dll
+E:\take65_10_012015\Website\bin\Facebook.Web.dll
+E:\take65_10_012015\Website\bin\Google.Apis.Auth.dll
+E:\take65_10_012015\Website\bin\Google.Apis.Auth.PlatformServices.dll
+E:\take65_10_012015\Website\bin\Google.Apis.Core.dll
+E:\take65_10_012015\Website\bin\Google.Apis.dll
+E:\take65_10_012015\Website\bin\Google.Apis.Oauth2.v2.dll
+E:\take65_10_012015\Website\bin\Google.Apis.PlatformServices.dll
+E:\take65_10_012015\Website\bin\Google.Apis.Plus.v1.dll
+E:\take65_10_012015\Website\bin\ImapX.dll
+E:\take65_10_012015\Website\bin\log4net.dll
+E:\take65_10_012015\Website\bin\Microsoft.Live.Web.dll
+E:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.dll
+E:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.dll
+E:\take65_10_012015\Website\bin\Model.dll
+E:\take65_10_012015\Website\bin\Newtonsoft.Json.dll
+E:\take65_10_012015\Website\bin\Serilog.dll
+E:\take65_10_012015\Website\bin\Serilog.FullNetFx.dll
+E:\take65_10_012015\Website\bin\System.IO.dll
+E:\take65_10_012015\Website\bin\System.Net.Http.dll
+E:\take65_10_012015\Website\bin\System.Net.Http.Extensions.dll
+E:\take65_10_012015\Website\bin\System.Net.Http.Primitives.dll
+E:\take65_10_012015\Website\bin\System.Net.Http.WebRequest.dll
+E:\take65_10_012015\Website\bin\System.Runtime.dll
+E:\take65_10_012015\Website\bin\System.Threading.Tasks.dll
+E:\take65_10_012015\Website\bin\TestApiCore.dll
+E:\take65_10_012015\Website\bin\WebGrease.dll
+E:\take65_10_012015\Website\bin\XSockets.Controllers.dll
+E:\take65_10_012015\Website\bin\XSockets.Core.Common.dll
+E:\take65_10_012015\Website\bin\XSockets.Core.Communication.dll
+E:\take65_10_012015\Website\bin\XSockets.Core.dll
+E:\take65_10_012015\Website\bin\XSockets.CustomProtocol.dll
+E:\take65_10_012015\Website\bin\XSockets.Enterprise.dll
+E:\take65_10_012015\Website\bin\XSockets.Logger.dll
+E:\take65_10_012015\Website\bin\XSockets.Plugin.Framework.dll
+E:\take65_10_012015\Website\bin\XSockets.Protocol.dll
+E:\take65_10_012015\Website\bin\XSockets.Serialization.dll
+E:\take65_10_012015\Website\bin\XSockets.Server.dll
+E:\take65_10_012015\Website\bin\Zlib.Portable.dll
+E:\take65_10_012015\Website\bin\Dal.dll
+E:\take65_10_012015\Website\bin\Microsoft.Live.dll
+E:\take65_10_012015\Website\bin\OpenPop.dll
+E:\take65_10_012015\Website\bin\Google.GData.Client.dll
+E:\take65_10_012015\Website\bin\Google.GData.Contacts.dll
+E:\take65_10_012015\Website\bin\Google.GData.Extensions.dll
+E:\take65_10_012015\Website\bin\Org.Mentalis.Security.Cryptography.dll
+E:\take65_10_012015\Website\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\take65_10_012015\Website\bin\Mono.Math.dll
+E:\take65_10_012015\Website\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\take65_10_012015\Website\bin\Microsoft.Practices.ObjectBuilder.dll
+E:\take65_10_012015\Website\bin\Bll.pdb
+E:\take65_10_012015\Website\bin\Model.pdb
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.UI.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.UI.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Common.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.UI.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
+E:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdOAuth.xml
+E:\take65_10_012015\Website\bin\Facebook.xml
+E:\take65_10_012015\Website\bin\Facebook.Web.xml
+E:\take65_10_012015\Website\bin\Google.Apis.pdb
+E:\take65_10_012015\Website\bin\Google.Apis.xml
+E:\take65_10_012015\Website\bin\Google.Apis.Auth.pdb
+E:\take65_10_012015\Website\bin\Google.Apis.Auth.xml
+E:\take65_10_012015\Website\bin\Google.Apis.Auth.PlatformServices.pdb
+E:\take65_10_012015\Website\bin\Google.Apis.Auth.PlatformServices.xml
+E:\take65_10_012015\Website\bin\Google.Apis.Core.pdb
+E:\take65_10_012015\Website\bin\Google.Apis.Core.xml
+E:\take65_10_012015\Website\bin\Google.Apis.Oauth2.v2.pdb
+E:\take65_10_012015\Website\bin\Google.Apis.Oauth2.v2.xml
+E:\take65_10_012015\Website\bin\Google.Apis.PlatformServices.pdb
+E:\take65_10_012015\Website\bin\Google.Apis.PlatformServices.xml
+E:\take65_10_012015\Website\bin\Google.Apis.Plus.v1.pdb
+E:\take65_10_012015\Website\bin\Google.Apis.Plus.v1.xml
+E:\take65_10_012015\Website\bin\log4net.xml
+E:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.xml
+E:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.xml
+E:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\take65_10_012015\Website\bin\Newtonsoft.Json.xml
+E:\take65_10_012015\Website\bin\Serilog.pdb
+E:\take65_10_012015\Website\bin\Serilog.xml
+E:\take65_10_012015\Website\bin\Serilog.FullNetFx.pdb
+E:\take65_10_012015\Website\bin\Serilog.FullNetFx.xml
+E:\take65_10_012015\Website\bin\System.IO.xml
+E:\take65_10_012015\Website\bin\System.Net.Http.xml
+E:\take65_10_012015\Website\bin\System.Net.Http.Extensions.xml
+E:\take65_10_012015\Website\bin\System.Net.Http.Primitives.xml
+E:\take65_10_012015\Website\bin\System.Net.Http.WebRequest.xml
+E:\take65_10_012015\Website\bin\System.Runtime.xml
+E:\take65_10_012015\Website\bin\System.Threading.Tasks.xml
+E:\take65_10_012015\Website\bin\TestApiCore.pdb
+E:\take65_10_012015\Website\bin\TestApiCore.xml
+E:\take65_10_012015\Website\bin\XSockets.Controllers.xml
+E:\take65_10_012015\Website\bin\XSockets.Core.xml
+E:\take65_10_012015\Website\bin\XSockets.Core.Common.xml
+E:\take65_10_012015\Website\bin\XSockets.Core.Communication.xml
+E:\take65_10_012015\Website\bin\XSockets.CustomProtocol.xml
+E:\take65_10_012015\Website\bin\XSockets.Enterprise.xml
+E:\take65_10_012015\Website\bin\XSockets.Plugin.Framework.xml
+E:\take65_10_012015\Website\bin\XSockets.Protocol.xml
+E:\take65_10_012015\Website\bin\XSockets.Serialization.xml
+E:\take65_10_012015\Website\bin\XSockets.Server.xml
+E:\take65_10_012015\Website\bin\Zlib.Portable.xml
+E:\take65_10_012015\Website\bin\Dal.pdb
+E:\take65_10_012015\Website\bin\Org.Mentalis.Security.Cryptography.xml
+E:\take65_10_012015\Website\bin\Mono.Math.xml
+E:\take65_10_012015\Website\obj\Debug\Website.csproj.App.config
+E:\take65_10_012015\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+E:\take65_10_012015\Website\obj\Debug\Website.dll
+E:\take65_10_012015\Website\obj\Debug\Website.pdb
+H:\take65_10_012015\Website\bin\Website.dll.config
+H:\take65_10_012015\Website\bin\Website.dll
+H:\take65_10_012015\Website\bin\Website.pdb
+H:\take65_10_012015\Website\bin\Bll.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.UI.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.UI.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Common.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Consumer.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.UI.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.dll
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdOAuth.dll
+H:\take65_10_012015\Website\bin\Facebook.dll
+H:\take65_10_012015\Website\bin\Facebook.Web.dll
+H:\take65_10_012015\Website\bin\Google.Apis.Auth.dll
+H:\take65_10_012015\Website\bin\Google.Apis.Auth.PlatformServices.dll
+H:\take65_10_012015\Website\bin\Google.Apis.Core.dll
+H:\take65_10_012015\Website\bin\Google.Apis.dll
+H:\take65_10_012015\Website\bin\Google.Apis.Oauth2.v2.dll
+H:\take65_10_012015\Website\bin\Google.Apis.PlatformServices.dll
+H:\take65_10_012015\Website\bin\Google.Apis.Plus.v1.dll
+H:\take65_10_012015\Website\bin\ImapX.dll
+H:\take65_10_012015\Website\bin\log4net.dll
+H:\take65_10_012015\Website\bin\Microsoft.Live.Web.dll
+H:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.dll
+H:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+H:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.dll
+H:\take65_10_012015\Website\bin\Model.dll
+H:\take65_10_012015\Website\bin\Newtonsoft.Json.dll
+H:\take65_10_012015\Website\bin\Serilog.dll
+H:\take65_10_012015\Website\bin\Serilog.FullNetFx.dll
+H:\take65_10_012015\Website\bin\System.IO.dll
+H:\take65_10_012015\Website\bin\System.Net.Http.dll
+H:\take65_10_012015\Website\bin\System.Net.Http.Extensions.dll
+H:\take65_10_012015\Website\bin\System.Net.Http.Primitives.dll
+H:\take65_10_012015\Website\bin\System.Net.Http.WebRequest.dll
+H:\take65_10_012015\Website\bin\System.Runtime.dll
+H:\take65_10_012015\Website\bin\System.Threading.Tasks.dll
+H:\take65_10_012015\Website\bin\TestApiCore.dll
+H:\take65_10_012015\Website\bin\WebGrease.dll
+H:\take65_10_012015\Website\bin\XSockets.Controllers.dll
+H:\take65_10_012015\Website\bin\XSockets.Core.Common.dll
+H:\take65_10_012015\Website\bin\XSockets.Core.Communication.dll
+H:\take65_10_012015\Website\bin\XSockets.Core.dll
+H:\take65_10_012015\Website\bin\XSockets.CustomProtocol.dll
+H:\take65_10_012015\Website\bin\XSockets.Enterprise.dll
+H:\take65_10_012015\Website\bin\XSockets.Logger.dll
+H:\take65_10_012015\Website\bin\XSockets.Plugin.Framework.dll
+H:\take65_10_012015\Website\bin\XSockets.Protocol.dll
+H:\take65_10_012015\Website\bin\XSockets.Serialization.dll
+H:\take65_10_012015\Website\bin\XSockets.Server.dll
+H:\take65_10_012015\Website\bin\Zlib.Portable.dll
+H:\take65_10_012015\Website\bin\Dal.dll
+H:\take65_10_012015\Website\bin\Microsoft.Live.dll
+H:\take65_10_012015\Website\bin\OpenPop.dll
+H:\take65_10_012015\Website\bin\Google.GData.Client.dll
+H:\take65_10_012015\Website\bin\Google.GData.Contacts.dll
+H:\take65_10_012015\Website\bin\Google.GData.Extensions.dll
+H:\take65_10_012015\Website\bin\Org.Mentalis.Security.Cryptography.dll
+H:\take65_10_012015\Website\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\take65_10_012015\Website\bin\Mono.Math.dll
+H:\take65_10_012015\Website\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\take65_10_012015\Website\bin\Microsoft.Practices.ObjectBuilder.dll
+H:\take65_10_012015\Website\bin\Bll.pdb
+H:\take65_10_012015\Website\bin\Model.pdb
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.Core.UI.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.InfoCard.UI.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Common.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.Consumer.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenId.UI.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
+H:\take65_10_012015\Website\bin\DotNetOpenAuth.OpenIdOAuth.xml
+H:\take65_10_012015\Website\bin\Facebook.xml
+H:\take65_10_012015\Website\bin\Facebook.Web.xml
+H:\take65_10_012015\Website\bin\Google.Apis.pdb
+H:\take65_10_012015\Website\bin\Google.Apis.xml
+H:\take65_10_012015\Website\bin\Google.Apis.Auth.pdb
+H:\take65_10_012015\Website\bin\Google.Apis.Auth.xml
+H:\take65_10_012015\Website\bin\Google.Apis.Auth.PlatformServices.pdb
+H:\take65_10_012015\Website\bin\Google.Apis.Auth.PlatformServices.xml
+H:\take65_10_012015\Website\bin\Google.Apis.Core.pdb
+H:\take65_10_012015\Website\bin\Google.Apis.Core.xml
+H:\take65_10_012015\Website\bin\Google.Apis.Oauth2.v2.pdb
+H:\take65_10_012015\Website\bin\Google.Apis.Oauth2.v2.xml
+H:\take65_10_012015\Website\bin\Google.Apis.PlatformServices.pdb
+H:\take65_10_012015\Website\bin\Google.Apis.PlatformServices.xml
+H:\take65_10_012015\Website\bin\Google.Apis.Plus.v1.pdb
+H:\take65_10_012015\Website\bin\Google.Apis.Plus.v1.xml
+H:\take65_10_012015\Website\bin\log4net.xml
+H:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.xml
+H:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.xml
+H:\take65_10_012015\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+H:\take65_10_012015\Website\bin\Newtonsoft.Json.xml
+H:\take65_10_012015\Website\bin\Serilog.pdb
+H:\take65_10_012015\Website\bin\Serilog.xml
+H:\take65_10_012015\Website\bin\Serilog.FullNetFx.pdb
+H:\take65_10_012015\Website\bin\Serilog.FullNetFx.xml
+H:\take65_10_012015\Website\bin\System.IO.xml
+H:\take65_10_012015\Website\bin\System.Net.Http.xml
+H:\take65_10_012015\Website\bin\System.Net.Http.Extensions.xml
+H:\take65_10_012015\Website\bin\System.Net.Http.Primitives.xml
+H:\take65_10_012015\Website\bin\System.Net.Http.WebRequest.xml
+H:\take65_10_012015\Website\bin\System.Runtime.xml
+H:\take65_10_012015\Website\bin\System.Threading.Tasks.xml
+H:\take65_10_012015\Website\bin\TestApiCore.pdb
+H:\take65_10_012015\Website\bin\TestApiCore.xml
+H:\take65_10_012015\Website\bin\XSockets.Controllers.xml
+H:\take65_10_012015\Website\bin\XSockets.Core.xml
+H:\take65_10_012015\Website\bin\XSockets.Core.Common.xml
+H:\take65_10_012015\Website\bin\XSockets.Core.Communication.xml
+H:\take65_10_012015\Website\bin\XSockets.CustomProtocol.xml
+H:\take65_10_012015\Website\bin\XSockets.Enterprise.xml
+H:\take65_10_012015\Website\bin\XSockets.Plugin.Framework.xml
+H:\take65_10_012015\Website\bin\XSockets.Protocol.xml
+H:\take65_10_012015\Website\bin\XSockets.Serialization.xml
+H:\take65_10_012015\Website\bin\XSockets.Server.xml
+H:\take65_10_012015\Website\bin\Zlib.Portable.xml
+H:\take65_10_012015\Website\bin\Dal.pdb
+H:\take65_10_012015\Website\bin\Org.Mentalis.Security.Cryptography.xml
+H:\take65_10_012015\Website\bin\Mono.Math.xml
+H:\take65_10_012015\Website\obj\Debug\Website.csproj.App.config
+H:\take65_10_012015\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+H:\take65_10_012015\Website\obj\Debug\Website.dll
+H:\take65_10_012015\Website\obj\Debug\Website.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Website.dll.config
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Website.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Website.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Bll.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.Core.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.Core.UI.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.InfoCard.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.InfoCard.UI.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.Common.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.Client.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.Provider.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.UI.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenIdOAuth.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Facebook.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Facebook.Web.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Auth.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Auth.PlatformServices.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Core.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Oauth2.v2.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.PlatformServices.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Plus.v1.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\ImapX.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\log4net.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Live.Web.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Threading.Tasks.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Model.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Newtonsoft.Json.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Serilog.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Serilog.FullNetFx.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.IO.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.Extensions.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.Primitives.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.WebRequest.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Runtime.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Threading.Tasks.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\TestApiCore.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\WebGrease.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Controllers.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Core.Common.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Core.Communication.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Core.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.CustomProtocol.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Enterprise.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Logger.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Plugin.Framework.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Protocol.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Serialization.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Server.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Zlib.Portable.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Dal.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Live.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\OpenPop.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.GData.Client.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.GData.Contacts.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.GData.Extensions.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Org.Mentalis.Security.Cryptography.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Mono.Math.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Bll.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Model.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.Core.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.Core.UI.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.InfoCard.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.InfoCard.UI.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.Common.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.Client.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.Provider.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenId.UI.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\DotNetOpenAuth.OpenIdOAuth.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Facebook.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Facebook.Web.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Auth.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Auth.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Auth.PlatformServices.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Auth.PlatformServices.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Core.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Core.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Oauth2.v2.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Oauth2.v2.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.PlatformServices.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.PlatformServices.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Plus.v1.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Google.Apis.Plus.v1.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\log4net.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Threading.Tasks.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Newtonsoft.Json.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Serilog.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Serilog.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Serilog.FullNetFx.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Serilog.FullNetFx.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.IO.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.Extensions.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.Primitives.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Net.Http.WebRequest.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Runtime.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\System.Threading.Tasks.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\TestApiCore.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\TestApiCore.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Controllers.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Core.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Core.Common.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Core.Communication.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.CustomProtocol.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Enterprise.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Plugin.Framework.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Protocol.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Serialization.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\XSockets.Server.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Zlib.Portable.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Dal.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Org.Mentalis.Security.Cryptography.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\bin\Mono.Math.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\obj\Debug\Website.csproj.App.config
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\obj\Debug\Website.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Website\obj\Debug\Website.pdb
+D:\Application\take65\Website\bin\Website.dll.config
+D:\Application\take65\Website\bin\Website.dll
+D:\Application\take65\Website\bin\Website.pdb
+D:\Application\take65\Website\bin\Bll.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.Core.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.Core.UI.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.InfoCard.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.InfoCard.UI.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.Common.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.UI.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.dll
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.dll
+D:\Application\take65\Website\bin\Facebook.dll
+D:\Application\take65\Website\bin\Facebook.Web.dll
+D:\Application\take65\Website\bin\Google.Apis.Auth.dll
+D:\Application\take65\Website\bin\Google.Apis.Auth.PlatformServices.dll
+D:\Application\take65\Website\bin\Google.Apis.Core.dll
+D:\Application\take65\Website\bin\Google.Apis.dll
+D:\Application\take65\Website\bin\Google.Apis.Oauth2.v2.dll
+D:\Application\take65\Website\bin\Google.Apis.PlatformServices.dll
+D:\Application\take65\Website\bin\Google.Apis.Plus.v1.dll
+D:\Application\take65\Website\bin\ImapX.dll
+D:\Application\take65\Website\bin\log4net.dll
+D:\Application\take65\Website\bin\Microsoft.Live.Web.dll
+D:\Application\take65\Website\bin\Microsoft.Threading.Tasks.dll
+D:\Application\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Application\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\Application\take65\Website\bin\Model.dll
+D:\Application\take65\Website\bin\Newtonsoft.Json.dll
+D:\Application\take65\Website\bin\Serilog.dll
+D:\Application\take65\Website\bin\Serilog.FullNetFx.dll
+D:\Application\take65\Website\bin\System.IO.dll
+D:\Application\take65\Website\bin\System.Net.Http.dll
+D:\Application\take65\Website\bin\System.Net.Http.Extensions.dll
+D:\Application\take65\Website\bin\System.Net.Http.Primitives.dll
+D:\Application\take65\Website\bin\System.Net.Http.WebRequest.dll
+D:\Application\take65\Website\bin\System.Runtime.dll
+D:\Application\take65\Website\bin\System.Threading.Tasks.dll
+D:\Application\take65\Website\bin\TestApiCore.dll
+D:\Application\take65\Website\bin\WebGrease.dll
+D:\Application\take65\Website\bin\XSockets.Controllers.dll
+D:\Application\take65\Website\bin\XSockets.Core.Common.dll
+D:\Application\take65\Website\bin\XSockets.Core.Communication.dll
+D:\Application\take65\Website\bin\XSockets.Core.dll
+D:\Application\take65\Website\bin\XSockets.CustomProtocol.dll
+D:\Application\take65\Website\bin\XSockets.Enterprise.dll
+D:\Application\take65\Website\bin\XSockets.Logger.dll
+D:\Application\take65\Website\bin\XSockets.Plugin.Framework.dll
+D:\Application\take65\Website\bin\XSockets.Protocol.dll
+D:\Application\take65\Website\bin\XSockets.Serialization.dll
+D:\Application\take65\Website\bin\XSockets.Server.dll
+D:\Application\take65\Website\bin\Zlib.Portable.dll
+D:\Application\take65\Website\bin\Dal.dll
+D:\Application\take65\Website\bin\Microsoft.Live.dll
+D:\Application\take65\Website\bin\OpenPop.dll
+D:\Application\take65\Website\bin\Google.GData.Client.dll
+D:\Application\take65\Website\bin\Google.GData.Contacts.dll
+D:\Application\take65\Website\bin\Google.GData.Extensions.dll
+D:\Application\take65\Website\bin\Org.Mentalis.Security.Cryptography.dll
+D:\Application\take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Application\take65\Website\bin\Mono.Math.dll
+D:\Application\take65\Website\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Application\take65\Website\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\Application\take65\Website\bin\Bll.pdb
+D:\Application\take65\Website\bin\Model.pdb
+D:\Application\take65\Website\bin\DotNetOpenAuth.Core.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.Core.UI.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.InfoCard.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.InfoCard.UI.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.Common.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth.ServiceProvider.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.AuthorizationServer.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.Client.UI.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.ClientAuthorization.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OAuth2.ResourceServer.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.Provider.UI.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.RelyingParty.UI.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenId.UI.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
+D:\Application\take65\Website\bin\DotNetOpenAuth.OpenIdOAuth.xml
+D:\Application\take65\Website\bin\Facebook.xml
+D:\Application\take65\Website\bin\Facebook.Web.xml
+D:\Application\take65\Website\bin\Google.Apis.pdb
+D:\Application\take65\Website\bin\Google.Apis.xml
+D:\Application\take65\Website\bin\Google.Apis.Auth.pdb
+D:\Application\take65\Website\bin\Google.Apis.Auth.xml
+D:\Application\take65\Website\bin\Google.Apis.Auth.PlatformServices.pdb
+D:\Application\take65\Website\bin\Google.Apis.Auth.PlatformServices.xml
+D:\Application\take65\Website\bin\Google.Apis.Core.pdb
+D:\Application\take65\Website\bin\Google.Apis.Core.xml
+D:\Application\take65\Website\bin\Google.Apis.Oauth2.v2.pdb
+D:\Application\take65\Website\bin\Google.Apis.Oauth2.v2.xml
+D:\Application\take65\Website\bin\Google.Apis.PlatformServices.pdb
+D:\Application\take65\Website\bin\Google.Apis.PlatformServices.xml
+D:\Application\take65\Website\bin\Google.Apis.Plus.v1.pdb
+D:\Application\take65\Website\bin\Google.Apis.Plus.v1.xml
+D:\Application\take65\Website\bin\log4net.xml
+D:\Application\take65\Website\bin\Microsoft.Threading.Tasks.xml
+D:\Application\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\Application\take65\Website\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Application\take65\Website\bin\Newtonsoft.Json.xml
+D:\Application\take65\Website\bin\Serilog.pdb
+D:\Application\take65\Website\bin\Serilog.xml
+D:\Application\take65\Website\bin\Serilog.FullNetFx.pdb
+D:\Application\take65\Website\bin\Serilog.FullNetFx.xml
+D:\Application\take65\Website\bin\System.IO.xml
+D:\Application\take65\Website\bin\System.Net.Http.xml
+D:\Application\take65\Website\bin\System.Net.Http.Extensions.xml
+D:\Application\take65\Website\bin\System.Net.Http.Primitives.xml
+D:\Application\take65\Website\bin\System.Net.Http.WebRequest.xml
+D:\Application\take65\Website\bin\System.Runtime.xml
+D:\Application\take65\Website\bin\System.Threading.Tasks.xml
+D:\Application\take65\Website\bin\TestApiCore.pdb
+D:\Application\take65\Website\bin\TestApiCore.xml
+D:\Application\take65\Website\bin\XSockets.Controllers.xml
+D:\Application\take65\Website\bin\XSockets.Core.xml
+D:\Application\take65\Website\bin\XSockets.Core.Common.xml
+D:\Application\take65\Website\bin\XSockets.Core.Communication.xml
+D:\Application\take65\Website\bin\XSockets.CustomProtocol.xml
+D:\Application\take65\Website\bin\XSockets.Enterprise.xml
+D:\Application\take65\Website\bin\XSockets.Plugin.Framework.xml
+D:\Application\take65\Website\bin\XSockets.Protocol.xml
+D:\Application\take65\Website\bin\XSockets.Serialization.xml
+D:\Application\take65\Website\bin\XSockets.Server.xml
+D:\Application\take65\Website\bin\Zlib.Portable.xml
+D:\Application\take65\Website\bin\Dal.pdb
+D:\Application\take65\Website\bin\Org.Mentalis.Security.Cryptography.xml
+D:\Application\take65\Website\bin\Mono.Math.xml
+D:\Application\take65\Website\obj\Debug\Website.csproj.App.config
+D:\Application\take65\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+D:\Application\take65\Website\obj\Debug\Website.dll
+D:\Application\take65\Website\obj\Debug\Website.pdb

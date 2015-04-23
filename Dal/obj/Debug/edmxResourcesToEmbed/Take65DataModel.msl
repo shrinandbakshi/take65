@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Take65ModelStoreContainer" CdmEntityContainer="Take65DataEntities">
+    <EntitySetMapping Name="C__RefactorLog">
+      <EntityTypeMapping TypeName="Take65Model.C__RefactorLog">
+        <MappingFragment StoreEntitySet="__RefactorLog">
+          <ScalarProperty Name="OperationKey" ColumnName="OperationKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeedContent">
+      <EntityTypeMapping TypeName="Take65Model.FeedContent">
+        <MappingFragment StoreEntitySet="FeedContent">
+          <ScalarProperty Name="FeedContentId" ColumnName="FeedContentId" />
+          <ScalarProperty Name="TrustedSourceFeedId" ColumnName="TrustedSourceFeedId" />
+          <ScalarProperty Name="TrustedSourceFeedCategory" ColumnName="TrustedSourceFeedCategory" />
+          <ScalarProperty Name="TrustedSourceId" ColumnName="TrustedSourceId" />
+          <ScalarProperty Name="TrustedSourceName" ColumnName="TrustedSourceName" />
+          <ScalarProperty Name="TrustedSourceOpenIFrame" ColumnName="TrustedSourceOpenIFrame" />
+          <ScalarProperty Name="FeedTitle" ColumnName="FeedTitle" />
+          <ScalarProperty Name="FeedLink" ColumnName="FeedLink" />
+          <ScalarProperty Name="FeedDescription" ColumnName="FeedDescription" />
+          <ScalarProperty Name="FeedPubDate" ColumnName="FeedPubDate" />
+          <ScalarProperty Name="FeedLastModified" ColumnName="FeedLastModified" />
+          <ScalarProperty Name="FeedThumb" ColumnName="FeedThumb" />
+          <ScalarProperty Name="FeedGuid" ColumnName="FeedGuid" />
+          <ScalarProperty Name="FeedViewCount" ColumnName="FeedViewCount" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="lastmodified" ColumnName="lastmodified" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="tmpImageSync" ColumnName="tmpImageSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeedContentImage">
+      <EntityTypeMapping TypeName="Take65Model.FeedContentImage">
+        <MappingFragment StoreEntitySet="FeedContentImage">
+          <ScalarProperty Name="FeedContentImageId" ColumnName="FeedContentImageId" />
+          <ScalarProperty Name="FeedContentId" ColumnName="FeedContentId" />
+          <ScalarProperty Name="FeedContentImageUrl" ColumnName="FeedContentImageUrl" />
+          <ScalarProperty Name="FeedContentImageTitle" ColumnName="FeedContentImageTitle" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeedContentTag">
+      <EntityTypeMapping TypeName="Take65Model.FeedContentTag">
+        <MappingFragment StoreEntitySet="FeedContentTag">
+          <ScalarProperty Name="FeedContentTagId" ColumnName="FeedContentTagId" />
+          <ScalarProperty Name="FeedContentTagParentId" ColumnName="FeedContentTagParentId" />
+          <ScalarProperty Name="FeedContentId" ColumnName="FeedContentId" />
+          <ScalarProperty Name="FeedContentTagNormalized" ColumnName="FeedContentTagNormalized" />
+          <ScalarProperty Name="FeedContentTagDisplay" ColumnName="FeedContentTagDisplay" />
+          <ScalarProperty Name="TagTypeId" ColumnName="TagTypeId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="File">
+      <EntityTypeMapping TypeName="Take65Model.File">
+        <MappingFragment StoreEntitySet="File">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileDescription" ColumnName="FileDescription" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileLink" ColumnName="FileLink" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageAdmin">
+      <EntityTypeMapping TypeName="Take65Model.PageAdmin">
+        <MappingFragment StoreEntitySet="PageAdmin">
+          <ScalarProperty Name="PageAdminId" ColumnName="PageAdminId" />
+          <ScalarProperty Name="PageAdminName" ColumnName="PageAdminName" />
+          <ScalarProperty Name="PageAdminLink" ColumnName="PageAdminLink" />
+          <ScalarProperty Name="PageAdminOrder" ColumnName="PageAdminOrder" />
+          <ScalarProperty Name="PageParentId" ColumnName="PageParentId" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SafeWebsite">
+      <EntityTypeMapping TypeName="Take65Model.SafeWebsite">
+        <MappingFragment StoreEntitySet="SafeWebsite">
+          <ScalarProperty Name="SafeWebsiteId" ColumnName="SafeWebsiteId" />
+          <ScalarProperty Name="SafeWebsiteUrl" ColumnName="SafeWebsiteUrl" />
+          <ScalarProperty Name="SafeWebsiteOpenIFrame" ColumnName="SafeWebsiteOpenIFrame" />
+          <ScalarProperty Name="SafeWebsiteGUID" ColumnName="SafeWebsiteGUID" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuggestionBox">
+      <EntityTypeMapping TypeName="Take65Model.SuggestionBox">
+        <MappingFragment StoreEntitySet="SuggestionBox">
+          <ScalarProperty Name="SuggestionId" ColumnName="SuggestionId" />
+          <ScalarProperty Name="SuggestionName" ColumnName="SuggestionName" />
+          <ScalarProperty Name="SuggestionUrl" ColumnName="SuggestionUrl" />
+          <ScalarProperty Name="SuggestionDescription" ColumnName="SuggestionDescription" />
+          <ScalarProperty Name="SuggestionImage" ColumnName="SuggestionImage" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuggestionBoxTag">
+      <EntityTypeMapping TypeName="Take65Model.SuggestionBoxTag">
+        <MappingFragment StoreEntitySet="SuggestionBoxTag">
+          <ScalarProperty Name="SuggestionBoxTagId" ColumnName="SuggestionBoxTagId" />
+          <ScalarProperty Name="SuggestionId" ColumnName="SuggestionId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Take65Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemTag">
+      <EntityTypeMapping TypeName="Take65Model.SystemTag">
+        <MappingFragment StoreEntitySet="SystemTag">
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+          <ScalarProperty Name="SystemTagParentId" ColumnName="SystemTagParentId" />
+          <ScalarProperty Name="SystemTagParentIdList" ColumnName="SystemTagParentIdList" />
+          <ScalarProperty Name="SystemTagNormalized" ColumnName="SystemTagNormalized" />
+          <ScalarProperty Name="SystemTagDisplay" ColumnName="SystemTagDisplay" />
+          <ScalarProperty Name="SystemTagIcon" ColumnName="SystemTagIcon" />
+          <ScalarProperty Name="SystemTagOrder" ColumnName="SystemTagOrder" />
+          <ScalarProperty Name="TagTypeId" ColumnName="TagTypeId" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemUser">
+      <EntityTypeMapping TypeName="Take65Model.SystemUser">
+        <MappingFragment StoreEntitySet="SystemUser">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserLastLogin" ColumnName="UserLastLogin" />
+          <ScalarProperty Name="UserGUID" ColumnName="UserGUID" />
+          <ScalarProperty Name="ForgotPassword" ColumnName="ForgotPassword" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TagType">
+      <EntityTypeMapping TypeName="Take65Model.TagType">
+        <MappingFragment StoreEntitySet="TagType">
+          <ScalarProperty Name="TagTypeId" ColumnName="TagTypeId" />
+          <ScalarProperty Name="TagTypeParentId" ColumnName="TagTypeParentId" />
+          <ScalarProperty Name="TagTypeName" ColumnName="TagTypeName" />
+          <ScalarProperty Name="TagTypeDisplay" ColumnName="TagTypeDisplay" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrustedSource">
+      <EntityTypeMapping TypeName="Take65Model.TrustedSource">
+        <MappingFragment StoreEntitySet="TrustedSource">
+          <ScalarProperty Name="TrustedSourceId" ColumnName="TrustedSourceId" />
+          <ScalarProperty Name="TrustedSourceName" ColumnName="TrustedSourceName" />
+          <ScalarProperty Name="TrustedSourceIcon" ColumnName="TrustedSourceIcon" />
+          <ScalarProperty Name="TrustedSourceTypeId" ColumnName="TrustedSourceTypeId" />
+          <ScalarProperty Name="TrustedSourceUrl" ColumnName="TrustedSourceUrl" />
+          <ScalarProperty Name="TrustedSourceOpenIFrame" ColumnName="TrustedSourceOpenIFrame" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrustedSourceFeed">
+      <EntityTypeMapping TypeName="Take65Model.TrustedSourceFeed">
+        <MappingFragment StoreEntitySet="TrustedSourceFeed">
+          <ScalarProperty Name="TrustedSourceFeedId" ColumnName="TrustedSourceFeedId" />
+          <ScalarProperty Name="TrustedSourceId" ColumnName="TrustedSourceId" />
+          <ScalarProperty Name="TrustedSourceFeedName" ColumnName="TrustedSourceFeedName" />
+          <ScalarProperty Name="TrustedSourceFeedUrl" ColumnName="TrustedSourceFeedUrl" />
+          <ScalarProperty Name="lastsync" ColumnName="lastsync" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrustedSourceFeedTag">
+      <EntityTypeMapping TypeName="Take65Model.TrustedSourceFeedTag">
+        <MappingFragment StoreEntitySet="TrustedSourceFeedTag">
+          <ScalarProperty Name="TrustedSourceFeedId" ColumnName="TrustedSourceFeedId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrustedSourceTag">
+      <EntityTypeMapping TypeName="Take65Model.TrustedSourceTag">
+        <MappingFragment StoreEntitySet="TrustedSourceTag">
+          <ScalarProperty Name="TrustedSourceId" ColumnName="TrustedSourceId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrustedSourceType">
+      <EntityTypeMapping TypeName="Take65Model.TrustedSourceType">
+        <MappingFragment StoreEntitySet="TrustedSourceType">
+          <ScalarProperty Name="TrustedSourceTypeId" ColumnName="TrustedSourceTypeId" />
+          <ScalarProperty Name="TrustedSourceTypeName" ColumnName="TrustedSourceTypeName" />
+          <ScalarProperty Name="register" ColumnName="register" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="Take65Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserGUID" ColumnName="UserGUID" />
+          <ScalarProperty Name="UserFacebookId" ColumnName="UserFacebookId" />
+          <ScalarProperty Name="UserFacebookTokenLong" ColumnName="UserFacebookTokenLong" />
+          <ScalarProperty Name="UserFacebookTokenShort" ColumnName="UserFacebookTokenShort" />
+          <ScalarProperty Name="UserFacebookTokenLongExpires" ColumnName="UserFacebookTokenLongExpires" />
+          <ScalarProperty Name="UserFacebookTokenLongExpiresDate" ColumnName="UserFacebookTokenLongExpiresDate" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserLogin" ColumnName="UserLogin" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserBirthdate" ColumnName="UserBirthdate" />
+          <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+          <ScalarProperty Name="UserAddressState" ColumnName="UserAddressState" />
+          <ScalarProperty Name="UserAddressCity" ColumnName="UserAddressCity" />
+          <ScalarProperty Name="UserAddressPostalCode" ColumnName="UserAddressPostalCode" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="inactive" ColumnName="inactive" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserFacebookFriend">
+      <EntityTypeMapping TypeName="Take65Model.UserFacebookFriend">
+        <MappingFragment StoreEntitySet="UserFacebookFriend">
+          <ScalarProperty Name="UserFacebookFriendId" ColumnName="UserFacebookFriendId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FacebookFriendId" ColumnName="FacebookFriendId" />
+          <ScalarProperty Name="FacebookFriendName" ColumnName="FacebookFriendName" />
+          <ScalarProperty Name="FacebookPhotoCount" ColumnName="FacebookPhotoCount" />
+          <ScalarProperty Name="register" ColumnName="register" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPreference">
+      <EntityTypeMapping TypeName="Take65Model.UserPreference">
+        <MappingFragment StoreEntitySet="UserPreference">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+          <ScalarProperty Name="register" ColumnName="register" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserWidget">
+      <EntityTypeMapping TypeName="Take65Model.UserWidget">
+        <MappingFragment StoreEntitySet="UserWidget">
+          <ScalarProperty Name="UserWidgetId" ColumnName="UserWidgetId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+          <ScalarProperty Name="UserWidgetName" ColumnName="UserWidgetName" />
+          <ScalarProperty Name="UserWidgetSize" ColumnName="UserWidgetSize" />
+          <ScalarProperty Name="UserWidgetOrder" ColumnName="UserWidgetOrder" />
+          <ScalarProperty Name="UserWidgetDefault" ColumnName="UserWidgetDefault" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="lastupdate" ColumnName="lastupdate" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserWidgetTag">
+      <EntityTypeMapping TypeName="Take65Model.UserWidgetTag">
+        <MappingFragment StoreEntitySet="UserWidgetTag">
+          <ScalarProperty Name="UserWidgetTagId" ColumnName="UserWidgetTagId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserWidgetId" ColumnName="UserWidgetId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserWidgetTrustedSource">
+      <EntityTypeMapping TypeName="Take65Model.UserWidgetTrustedSource">
+        <MappingFragment StoreEntitySet="UserWidgetTrustedSource">
+          <ScalarProperty Name="UserWidgetId" ColumnName="UserWidgetId" />
+          <ScalarProperty Name="SystemTagId" ColumnName="SystemTagId" />
+          <ScalarProperty Name="TrustedSourceId" ColumnName="TrustedSourceId" />
+          <ScalarProperty Name="UserWidgetTrustedSourceName" ColumnName="UserWidgetTrustedSourceName" />
+          <ScalarProperty Name="UserWidgetTrustedSourceUrl" ColumnName="UserWidgetTrustedSourceUrl" />
+          <ScalarProperty Name="register" ColumnName="register" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserWidgetTrustedSourceFeed">
+      <EntityTypeMapping TypeName="Take65Model.UserWidgetTrustedSourceFeed">
+        <MappingFragment StoreEntitySet="UserWidgetTrustedSourceFeed">
+          <ScalarProperty Name="UserWidgetTrustedSourceFeedId" ColumnName="UserWidgetTrustedSourceFeedId" />
+          <ScalarProperty Name="UserWidgetId" ColumnName="UserWidgetId" />
+          <ScalarProperty Name="TrustedSourceFeedId" ColumnName="TrustedSourceFeedId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AuthenticateSystemUser" FunctionName="Take65Model.Store.AuthenticateSystemUser" />
+    <FunctionImportMapping FunctionImportName="CreateFeedContentTag" FunctionName="Take65Model.Store.CreateFeedContentTag" />
+    <FunctionImportMapping FunctionImportName="DeleteSuggestionBoxTag" FunctionName="Take65Model.Store.DeleteSuggestionBoxTag" />
+    <FunctionImportMapping FunctionImportName="DeleteUserPreference" FunctionName="Take65Model.Store.DeleteUserPreference" />
+    <FunctionImportMapping FunctionImportName="DeleteUserWidget" FunctionName="Take65Model.Store.DeleteUserWidget" />
+    <FunctionImportMapping FunctionImportName="DeleteUserWidgetTrustedSource" FunctionName="Take65Model.Store.DeleteUserWidgetTrustedSource" />
+    <FunctionImportMapping FunctionImportName="FeedContentImageSave" FunctionName="Take65Model.Store.FeedContentImageSave" />
+    <FunctionImportMapping FunctionImportName="FeedContentSave" FunctionName="Take65Model.Store.FeedContentSave" />
+    <FunctionImportMapping FunctionImportName="GetCategory" FunctionName="Take65Model.Store.GetCategory" />
+    <FunctionImportMapping FunctionImportName="GetContentToSyncImg" FunctionName="Take65Model.Store.GetContentToSyncImg" />
+    <FunctionImportMapping FunctionImportName="GetFeedContentList" FunctionName="Take65Model.Store.GetFeedContentList" />
+    <FunctionImportMapping FunctionImportName="GetFeedContentListWidget" FunctionName="Take65Model.Store.GetFeedContentListWidget" />
+    <FunctionImportMapping FunctionImportName="GetFile" FunctionName="Take65Model.Store.GetFile" />
+    <FunctionImportMapping FunctionImportName="GetPageAdmin" FunctionName="Take65Model.Store.GetPageAdmin" />
+    <FunctionImportMapping FunctionImportName="GetSafeWebsite" FunctionName="Take65Model.Store.GetSafeWebsite" />
+    <FunctionImportMapping FunctionImportName="GetSafeWebsiteUnmapped" FunctionName="Take65Model.Store.GetSafeWebsiteUnmapped" />
+    <FunctionImportMapping FunctionImportName="GetSuggestionBox" FunctionName="Take65Model.Store.GetSuggestionBox" />
+    <FunctionImportMapping FunctionImportName="GetSuggestionBoxTag" FunctionName="Take65Model.Store.GetSuggestionBoxTag" />
+    <FunctionImportMapping FunctionImportName="GetSystemTag" FunctionName="Take65Model.Store.GetSystemTag" />
+    <FunctionImportMapping FunctionImportName="GetSystemUser" FunctionName="Take65Model.Store.GetSystemUser" />
+    <FunctionImportMapping FunctionImportName="GetTrustedSource" FunctionName="Take65Model.Store.GetTrustedSource" />
+    <FunctionImportMapping FunctionImportName="GetTrustedSourceFeed" FunctionName="Take65Model.Store.GetTrustedSourceFeed" />
+    <FunctionImportMapping FunctionImportName="GetUser" FunctionName="Take65Model.Store.GetUser" />
+    <FunctionImportMapping FunctionImportName="GetUserAll" FunctionName="Take65Model.Store.GetUserAll" />
+    <FunctionImportMapping FunctionImportName="GetUserFacebookFriends" FunctionName="Take65Model.Store.GetUserFacebookFriends" />
+    <FunctionImportMapping FunctionImportName="GetUserWidget" FunctionName="Take65Model.Store.GetUserWidget" />
+    <FunctionImportMapping FunctionImportName="GetUserWidgetBookmark" FunctionName="Take65Model.Store.GetUserWidgetBookmark" />
+    <FunctionImportMapping FunctionImportName="GetUserWidgetCategory" FunctionName="Take65Model.Store.GetUserWidgetCategory" />
+    <FunctionImportMapping FunctionImportName="GetUserWidgetContent" FunctionName="Take65Model.Store.GetUserWidgetContent" />
+    <FunctionImportMapping FunctionImportName="GetUserWidgetTrustedSource" FunctionName="Take65Model.Store.GetUserWidgetTrustedSource" />
+    <FunctionImportMapping FunctionImportName="SaveFacebookFriend" FunctionName="Take65Model.Store.SaveFacebookFriend" />
+    <FunctionImportMapping FunctionImportName="SaveFeedContentTag" FunctionName="Take65Model.Store.SaveFeedContentTag" />
+    <FunctionImportMapping FunctionImportName="SaveFile" FunctionName="Take65Model.Store.SaveFile" />
+    <FunctionImportMapping FunctionImportName="SaveSafeWebsite" FunctionName="Take65Model.Store.SaveSafeWebsite" />
+    <FunctionImportMapping FunctionImportName="SaveSuggestionBox" FunctionName="Take65Model.Store.SaveSuggestionBox" />
+    <FunctionImportMapping FunctionImportName="SaveSuggestionBoxTag" FunctionName="Take65Model.Store.SaveSuggestionBoxTag" />
+    <FunctionImportMapping FunctionImportName="SaveSystemTag" FunctionName="Take65Model.Store.SaveSystemTag" />
+    <FunctionImportMapping FunctionImportName="SaveTrustedSourceBookmark" FunctionName="Take65Model.Store.SaveTrustedSourceBookmark" />
+    <FunctionImportMapping FunctionImportName="SaveUser" FunctionName="Take65Model.Store.SaveUser" />
+    <FunctionImportMapping FunctionImportName="SaveUserFacebookToken" FunctionName="Take65Model.Store.SaveUserFacebookToken" />
+    <FunctionImportMapping FunctionImportName="SaveUserPreference" FunctionName="Take65Model.Store.SaveUserPreference" />
+    <FunctionImportMapping FunctionImportName="SaveUserWidget" FunctionName="Take65Model.Store.SaveUserWidget" />
+    <FunctionImportMapping FunctionImportName="SaveUserWidgetTag" FunctionName="Take65Model.Store.SaveUserWidgetTag" />
+    <FunctionImportMapping FunctionImportName="SaveUserWidgetTrustedSource" FunctionName="Take65Model.Store.SaveUserWidgetTrustedSource" />
+    <FunctionImportMapping FunctionImportName="SearchFeedContent" FunctionName="Take65Model.Store.SearchFeedContent" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Take65Model.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Take65Model.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Take65Model.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Take65Model.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Take65Model.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Take65Model.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Take65Model.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Take65Model.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Take65Model.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="Tegalize" FunctionName="Take65Model.Store.Tegalize" />
+    <FunctionImportMapping FunctionImportName="UserFacebookFriendClean" FunctionName="Take65Model.Store.UserFacebookFriendClean" />
+  </EntityContainerMapping>
+</Mapping>

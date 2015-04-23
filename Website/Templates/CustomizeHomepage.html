@@ -1,0 +1,195 @@
+﻿<div class="customize-homepage box-lightbox add-new-widget" data-ng-controller="CustomizeHomepageCtrl" data-resizecolorbox="" data-colorbox-close-reload="">
+    <header>
+		<h1>Join Take 65 - Customize Home Page</h1>
+        <div class="header-blue" data-ng-show="customStep > 0">
+		    <ul class="breadcrumb-steps">
+			    <li><a data-ng-class="{ active: customStep === 1 }">Step 1 »</a></li> <!--  data-ng-click="setCustomStep(1);" -->
+			    <li><a data-ng-class="{ active: customStep === 2 }">Step 2 »</a></li>
+		    </ul>
+		    <!--<label for="NameWidget">Name your feed widget</label>
+		    <input type="text" name="NameWidget" id="NameWidget" placeholder="Type your widget name">-->
+        </div>
+	</header>
+
+    <article class="customize-step step-0" data-ng-show="customStep === 0">
+		<p>
+			You can start using our DEFAULT content or you can
+			CUSTOMIZE your own home page.<br />
+            Please make your choice by clicking the appropriate box below:
+		</p>
+		<a class="btn-blue" data-ng-click="defaultHomepage();">
+			<span class="icon icon-blocks"></span>
+			<span class="text">Default Homepage</span>
+		</a>
+		<a class="btn-red" data-ng-click="resizeModal(); nextCustomStep();">
+			<span class="icon icon-btn-customize"></span>
+			<span class="text">Customize Homepage</span>
+		</a>
+    </article>
+
+    <form class="add-new-widget step2" data-param='{ "error": ".msg-feedback" }' data-ng-controller="AddNewWidget.FeedCtrl" data-typewidget="1" data-ng-submit="submitInRegister();" data-ng-show="customStep === 1"> <!-- data-fn="addNewWidget"  -->
+	    <article class="categories">
+		    <header>
+			    <h1>Customize your <b>NEWS TOPICS</b></h1>
+		    </header>
+            <p class="intro">Choose one or more news categories from the boxes below</p>
+		    <ul class="categories-list" id="categoriesList" data-alignBoxes="li">
+			    <li data-ng-repeat="category in categories" data-ng-class="{ red: category.chk, 'no-image': category.image.length < 1 }" data-ng-click="changeChecked(category);">
+                    <div class="sCheckbox check-red" data-ng-class="{ checked: category.chk }"><span class="check"></span></div>                    
+       		        <input type="checkbox" class="hidden check-red" value="{{category.id}}" name="category{{category.id}}" id="category{{category.id}}" data-ng-model="category.chk" />
+			        <label>
+                        <img data-ng-src="/Content/Categories/{{category.image}}" height="71" data-ng-hide="category.image.length < 1" />
+                        <span class="text">{{category.title}}</span>
+			        </label>
+			    </li>
+		    </ul>
+	    </article>
+        <div class="msg-feedback" data-ng-class="feedback.status" data-ng-show="feedback.msg.length > 0">{{feedback.msg}}</div>
+        <input type="submit" value="Next" class="next-step btn-red" data-ng-show="customStep === 1" data-ng-disabled="!clickSubmit" />
+    </form>
+
+    <section class="box-lightbox add-new-widget step2 box-my-websites" data-param='{ "error": ".msg-feedback" }' data-ng-controller="AddNewWidget.MyWebsiteCtrl" data-typewidget="1" data-ng-show="customStep === 2"><!-- data-fn="addNewWidget"  -->
+	    <article class="trusteds-mywebsites" data-ng-show="listTrusted.length > 0">
+            <header>
+                <h1 class="blue">Customize your Websites</h1>                
+            </header>
+
+            <form class="add-websites" data-ng-submit="setConfirmTrustedInCategory(true, custom.mywebsite.step);" name="addWidgetWebsite">
+                <p>You can also add websites of your own choice, type the web address and name into the fields below.</p>
+
+                <header class="header header-blue mb20">
+                    <div data-ng-hide="confirmTrusted">
+                        <div class="hold-labels websites-item-link">
+                            <label>Website Address</label>
+                            <input type="url" value="" name="websitesItemLink" placeholder="Type the Website Address (URL)" data-ng-model="newWebsite.link" data-check-url="" required />
+                        </div>
+                        <div class="hold-labels websites-item-name">
+                            <label>Website Nickname</label>
+                            <input type="text" value="" name="websitesItemName" maxlength="10" placeholder="Type a nickname" data-ng-model="newWebsite.title" required />
+                        </div>
+                        <button type="submit" class="btn-red btn-add">
+                            <span class="icon icon-add-white-22"></span>
+                            <span class="text">Add</span>
+                        </button>
+                    </div>
+                    <div class="confirm-add-website" data-ng-show="confirmTrusted">
+                        <span class="msg">{{newWebsite.title}} is not a trusted Take65.com website. Do you want to continue to add this source?
+                        </span>
+                        <div class="btns-confirm f-right">
+                            <a class="btn-red-small" data-ng-click="addWebsiteInCategory(custom.mywebsite.step);">Yes</a>
+                            <a class="btn-red-small" data-ng-click="setConfirmTrustedInCategory(false);">No</a>
+                        </div>
+                    </div>
+                </header>
+            </form>            
+
+            <ul class="list-categories">
+                <li data-ng-repeat="item in listTrusted" data-ng-click="custom.mywebsite.selectCategory($index, $item.id)" data-ng-class="{ active: custom.mywebsite.step === $index, disabled: $index > custom.mywebsite.step }">
+                    <a href="#category">{{item.title}} <span class="bold" data-ng-show="(item.trustedSource | countCheckeds) + trustedWebsites[$index].length > 0">({{(item.trustedSource | countCheckeds) + trustedWebsites[$index].length}})</span></a>
+                </li>
+            </ul>
+
+            <div class="list-sources">
+                <p class="ml0 mb40">Choose the <strong>{{currentCategory}}</strong> websites that you want to add to your home page</p>
+
+                <div class="clearfix" data-ng-repeat="trusted in listTrusted" data-category-id="trusted.id" data-ng-show="custom.mywebsite.step === $index">
+                    <ul>
+                        <li data-ng-repeat="source in trusted.trustedSource" data-categoryid="{{source.categoryId}}" data-ng-click="changeSourceInCategory($parent.$index, source);">
+                            <div class="sCheckbox check-red" data-ng-class="{ checked: source.chk }" data-ng-show="source.chk==false"><span class="check"></span></div>
+                            <div class="sCheckbox close-red" data-ng-class="{ checked: source.chk }" data-ng-show="source.chk"><span class="check"></span></div>
+                            <input type="checkbox" class="hidden check-red" value="{{source.id}}" name="category{{source.id}}" data-ng-model="source.chk" />
+			                <label>
+                                <img data-ng-src="/Content/Sources/{{source.image}}" alt="{{source.title}}" title="{{source.title}}" />
+			                </label>
+                        </li>
+                    </ul>                
+                    <!--<ul class="websites-links">
+                        <li data-ng-repeat="website in trustedWebsites[$index]">
+                            <span class="name" title="{{website.link}}">{{website.title}}</span>
+                            <a class="icon-check-red-checked btn-delete" title="Delete this item" data-ng-click="deleteWebsiteInCategory($index, trusted.id);">
+                                Delete
+                            </a>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
+
+            <div class="dashboard-customize dashboard-my-websites">
+                <h1 class="title-header">Preview <span class="icon icon-search-black"></span></h1>
+
+                <ul class="list-dashboard">
+                    <li class="box-column one-column type-2">
+                        <header class="nv-1">
+                            <div class="title-and-edit" data-ng-repeat="widget in listTrusted" data-ng-show="custom.mywebsite.step === $index">
+                                <h1 data-ng-bind="widget.title"></h1>
+                                <h1 data-ng-show="isEmpty(widget.title)">My Website</h1>
+                            </div>
+
+                            <div class="options" data-ng-hide="widget.editTitle">
+                                <ul>
+                                    <li>
+                                        <a title="EDIT" class="link-edit-name-widget">Edit</a>
+                                    </li>
+                                    <li class="change-zoom-box">
+                                        <a title="Increase text size" class="box-plus">A+</a>
+                                        <a title="Decrease text size" class="box-minus">A-</a>
+                                    </li>
+                                    <li>
+                                        <a title="DELETE" class="icon icon-delete-widget"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </header>
+
+                        <div class="content">
+                            <ul class="list-img-links-2" data-ng-repeat="trusted in listTrusted" data-category-id="trusted.id" data-ng-show="custom.mywebsite.step === $index">
+                                <li data-ng-repeat="source in trusted.trustedSource" data-ng-show="source.chk" data-categoryid="{{source.categoryId}}" data-ng-click="changeSourceInCategory($parent.$index, source);">
+                                    <div class="sCheckbox check-red" data-ng-class="{ checked: source.chk }" data-ng-show="source.chk==false"><span class="check"></span></div>
+                                    <div class="sCheckbox close-red" data-ng-class="{ checked: source.chk }" data-ng-show="source.chk"><span class="check"></span></div>
+                                    <input type="checkbox" class="hidden check-red" value="{{source.id}}" name="category{{source.id}}" data-ng-model="source.chk" />
+                                    <label class="item-border">
+                                        <img data-ng-src="/Content/Sources/{{source.image}}" alt="{{source.title}}" title="{{source.title}}" />
+                                    </label>
+                                </li>
+                                <li class="item-border" data-ng-repeat="website in trustedWebsites[$index]" data-categoryid="trusted.id" data-ng-click="deleteWebsiteInCategory($index, custom.mywebsite.step);">
+                                    <label class="item-border name" title="{{website.link}}">
+                                        {{website.title}}
+                                    </label>
+
+                                    <a class="icon-close-red-and-white-small btn-delete" title="Delete this item">
+                                        Delete
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+	    </article>
+        
+        
+
+        <div class="msg-feedback" data-ng-class="feedback.status" data-ng-show="feedback.msg.length > 0">{{feedback.msg}}</div>
+        <form data-ng-submit="submitInCategory();" data-ng-hide="custom.mywebsite.step !== cListTrusted - 1">
+            <input type="submit" value="Finish" class="next-step btn-red" />
+        </form>
+    </section>
+        
+    <div data-ng-hide="customStep === 0">
+        <!-- Next Step Button -->
+        <a href="#next" class="next-step btn-red" data-ng-click="nextCustomStep();" data-ng-hide="customStep === 2 || customStep === 1" id="btnNextStepRegister">Next</a>
+        <a href="#next" class="next-step btn-red" data-ng-click="custom.mywebsite.nextStep();" data-ng-show="customStep === 2 && custom.mywebsite.step < cListTrusted - 1">Next</a>        
+        
+        <!-- Prev Step Button -->
+        <!--<a href="#back" class="skip-step btn-red" data-ng-click="prevCustomStep();" data-ng-hide="customStep === 2 || customStep === 1">Back</a>-->
+        <a href="#back" class="skip-step btn-red" data-ng-click="prevCustomStep();" data-ng-hide="customStep === 2">Back</a>
+        <a href="#back" class="skip-step btn-red" data-ng-click="custom.mywebsite.prevStep();" data-ng-show="customStep === 2 && custom.mywebsite.step > 0">Back</a>
+        
+        <!-- Skip Button -->
+        <a href="#skip" class="skip-step btn-red" data-ng-click="setCustomStep(2);" data-ng-hide="customStep === 2">Skip</a>
+        <!--<a href="#skip" class="skip-step btn-red" data-ng-click="refreshPage();" data-ng-show="customStep === 2">Skip2</a>-->
+        <a href="#skip" class="skip-step btn-red" data-ng-click="custom.mywebsite.nextStep();" data-ng-show="customStep === 2 && custom.mywebsite.step < cListTrusted - 1">Skip</a>
+    </div>
+
+</div>

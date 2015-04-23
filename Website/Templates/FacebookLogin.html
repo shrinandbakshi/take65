@@ -1,0 +1,82 @@
+﻿<div class="box-lightbox add-new-widget login" data-ng-controller="FacebookLoginCtrl">
+<!--<div class="content">-->
+
+    <header>
+        <h1>Add Frame - Social Media Photos</h1>
+        <div class="header-blue">
+            <ul class="breadcrumb-steps">
+                <li><a class="active">Step 1 »</a></li>
+                <li><a href="#">Step 2</a></li>
+            </ul>
+            <!--Somente é visivel no Step2-->
+            <!--<div class="clearfix mt20">
+                <label>Frame Name</label>
+                <input class="i-right" type="text" value="" placeholder="Name Suggestion: Facebook Photos" />
+            </div>-->
+            <!--Somente é visivel no Step2-->
+        </div>
+    </header>
+
+    <!--Step 1-->
+    <!--<section class="hold-form">
+        <h1>Login</h1>
+        <p class="intro ml0 mr0 mb20">Fill out the fields below to login into your Facebook account.</p>
+
+        <form>
+            <div class="hold-line">
+                <label class="lbl-left">Login:</label>
+                <input class="i-right" type="text" value="" placeholder="Type your Facebook Login" />
+            </div>
+            <div class="hold-line">
+                <label class="lbl-left">Password:</label>
+                <input class="i-right" type="password" value="" placeholder="Type your Facebook Password" />
+            </div>
+            <a class="next-step btn-red mr0 mb0">Next</a>        
+        </form>
+    </section>-->
+
+    <!--Step 2-->
+    <section>
+        <div class="main-content">
+            <h1>Select your Friends</h1>
+            <p class="intro ml0 mr0">Below you see a list of contacts from your Facebook account, click on the thumbnails to add your friends.</p>
+
+            <ul class="list-friends-selected">
+                <li data-ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]">
+                    <figure>
+                        <img src="http://placehold.it/32x32/000000/ffffff" alt="">
+                    </figure>
+                    <span class="icon-close-red-and-white-small"></span>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="tr" />
+
+        <div class="main-content invite-friends">
+            <input class="i-filter-friends inputtext" type="text" value="" placeholder="Filter your friends" />
+            <button class="btn-search btn-red" type="submit">
+                <span class="icon icon-search"></span>
+                <span class="txt">Search Friends</span>
+            </button>
+            <ul class="list-friends">
+                <li data-ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]">
+                    <figure>
+                        <img src="http://placehold.it/50x50/000000/ffffff" alt="">
+                    </figure>
+                    <div class="info-friend">
+                        <p class="bold">friend.name</p>
+                    </div>
+                    <div class="sCheckbox check-red"><span class="check"></span></div>
+                    <input type="checkbox" class="hidden check-red" value="" name="" />
+                </li>
+            </ul>
+
+            <div class="clearfix mt20 mb20">
+                <a class="next-step btn-red mr0 mb0 fl">More Friends</a>        
+                <a class="next-step btn-red mr0 mb0 fr">Finish</a>
+            </div>
+        </div>
+    </section>
+
+</div>

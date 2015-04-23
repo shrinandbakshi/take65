@@ -1,0 +1,186 @@
+﻿section.register,
+.customize-homepage {
+	color: $dark-gray;
+	display: inline-block;
+	font-weight: $font-normal;
+	overflow: hidden;
+	margin: 0 0 40px;
+	min-width: 100%;
+
+	p.info-bottom {
+		float: left;
+		width: 80%;
+	}
+	.i-right {
+		line-height: 31px;
+		height: 31px;
+		width: 374px;
+	    .f-left {
+	    	margin-right: 30px;
+			@include respond-to(handhelds) {
+	    		margin-right: 0;
+			}
+	    }
+	}
+    .error input {
+    	border-color: $light-red;
+       
+    }
+	input.i-right {
+		@extend %i-txt-simple;
+		padding: 0 5px;
+		&:active, &:focus {
+	        @include box-shadow(0 0 5px rgba(19,55,100,.5), inset 0 2px 3px rgba(0,0,0,.1));
+	        border-color: #133764;
+	    }
+	}
+	.sSelect {
+		width: 364px;
+	}
+	input {
+		font-size: 1.3em;
+	}
+	p, h1 {
+		color: $dark-gray;
+		font-size: 1.6em;
+		font-weight: $font-normal;
+	}
+	.btn-red {
+		margin-bottom: 0;
+	}
+	.step-1 {
+		margin: 0 auto;
+		width: 309px;
+	}
+	.btn-sign-up {
+		color: #fff;
+		display: block;
+		font-size: 19px;
+		font-weight: $font-bold;
+		line-height: 60px;
+		margin: 0 auto;
+		text-align: center;
+	    height: 60px;
+	    width: 309px;
+	    .icon {
+			float: left;
+			margin: 16px 0 0 21px;
+	    }
+	    &.btn-sign {
+			margin-top: 65px;
+		    @include bg-sprite(btn-red);
+	    }
+	    &.btn-sign-face {
+		    @include bg-sprite(btn-blue);
+			margin-top: 20px;
+		    .icon { margin-left: 30px; }
+		}
+        &.btn-sign-google {
+            @include bg-sprite(btn-red);
+            margin-top: 20px;
+		    .icon { margin-left: 20px; }
+        }
+
+	}
+
+	.step-2 {
+		overflow: hidden;
+		width: 543px;
+		p {
+			margin: 17px 23px;
+		}
+		h1 {
+			@include clearfix;
+			margin: 0 0 22px;
+		}
+		.hold-line {
+			@include clearfix;
+			margin: 0 0 10px;
+		}
+		.lbl-left {
+			font-size: 1.3em;
+			float: left;
+			line-height: 31px;
+			width: 111px;
+		}
+		.login-information,
+		.personal-information {
+			padding: 17px 23px;
+		}
+		.login-information {
+			border-bottom: 1px solid $gray;
+		}
+	}
+	.step-3 {
+		padding: 17px 23px;
+		width: 690px;
+
+		.interests {
+			@include clearfix;
+			width: 100%;
+			li {
+				float: left;
+				font-size: 1.28em;
+				line-height: 34px;
+				padding: 0 30px 9px 0;
+				width: 200px;
+				label {
+					float: left;
+					margin-left: 10px;
+					/*width: 158px;*/
+					text-align: left;
+				}
+				input, .sCheckbox {
+					float: left;
+				}
+			}
+		}
+	}
+	.step-4 {
+		padding: 17px 23px;
+		text-align: left;
+		width: 910px;
+	}
+	.customize-step {
+		display: inline-block;
+		overflow: hidden;
+		width: 550px;
+		text-align: center;
+		p {
+			margin: 17px 23px 40px;
+			text-align: left;
+		}
+		a {
+			color: #fff;
+			margin: 0 10px 0 0;
+			padding: 0 15px;
+		}
+		.icon {
+			display: inline-block;
+			margin: 7px 10px -7px 0;
+		}
+	}
+	.msg-feedback {
+		float: left;
+		margin: 10px 0 0 23px;
+		text-align: center;
+		width: 400px;
+		&.msg-input {
+			float: right;
+			margin-top: 4px;
+		}
+		&.msg-register {
+			float: right;
+			margin: 0 25px 10px;
+			width: 100%;
+		}
+		p {
+			margin: 0;
+			font-size: inherit;
+		}
+		@include respond-to(handhelds) {
+			margin: 0;
+			width: 100%;
+		}
+	}
+}

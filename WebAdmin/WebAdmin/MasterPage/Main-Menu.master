@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage/Main.Master" AutoEventWireup="true" CodeBehind="Main-Menu.master.cs" Inherits="WebAdmin.MasterPage.Main_Menu" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentMenu" runat="server">
+    <asp:Repeater ID="rptMainMenuFirstLevel" runat="server">
+        <HeaderTemplate>
+            <div class="nav-border-top">
+                <div class="nav-border-bottom">
+                    <ul class="sf-menu">
+        </HeaderTemplate>
+        <ItemTemplate>
+            <li class="<%# ((CurrentPage == (((Layers.Admin.Model.PageAdmin)Container.DataItem).Link)) ? "active" : "") + " first-child" %>">
+                <a href="<%# DataBinder.Eval(Container.DataItem, "Link") %>"><span>
+                    <%# DataBinder.Eval(Container.DataItem, "Name")%></span></a>
+                <asp:Repeater ID="rptMainMenuSecondLevel" runat="server">
+                    <HeaderTemplate>
+                        <ul>
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <li><a href="<%# DataBinder.Eval(Container.DataItem, "Link") %>"><%# DataBinder.Eval(Container.DataItem, "Name") %></a>
+                            <asp:Repeater ID="rptMainMenuThirdLevel" runat="server">
+                                <HeaderTemplate>
+                                    <ul>
+                                </HeaderTemplate>
+                                <ItemTemplate>
+                                    <li><a href="<%# DataBinder.Eval(Container.DataItem, "Link") %>"><%# DataBinder.Eval(Container.DataItem, "Name")%></a></li>
+                                </ItemTemplate>
+                                <FooterTemplate>
+                                    </ul>
+                                </FooterTemplate>
+                            </asp:Repeater>
+                        </li>
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        </ul>
+                    </FooterTemplate>
+                </asp:Repeater>
+            </li>
+        </ItemTemplate>
+        <FooterTemplate>
+            <li class=" first-child">
+                <a href="<%= ConfigurationManager.AppSettings["Application.PublicHomePage"] %>?PublicHomePageToken=<%=System.Guid.NewGuid().ToString() %>" target="_blank"><span>
+                    Edit Public Home Page</span></a>
+                
+            </li>
+
+            </ul>
+            <div class='clear'>
+            </div>
+            </div> </div>
+        </FooterTemplate>
+    </asp:Repeater>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="contentPage" runat="server">
+    <asp:ContentPlaceHolder ID="contentPage" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

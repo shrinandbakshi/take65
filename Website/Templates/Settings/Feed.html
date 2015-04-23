@@ -1,0 +1,63 @@
+﻿<form class="box-lightbox add-new-widget step2" data-param='{ "error": ".msg-feedback" }' data-ng-controller="AddNewWidget.FeedCtrl" data-typewidget="1" data-resizecolorbox="" data-close-colorbox="" data-ng-submit="submitAdd()"> <!-- data-fn="addNewWidget"  -->
+    <header>
+		<h1>Add new Frame - News</h1>
+        <div class="header-blue mb15">
+		    <label>Name your frame: &nbsp;&nbsp;</label>
+            <input type="text" name="txtEdit" data-ng-model="widget.title" class="edit-name" placeholder="Type your frame name" /> <span class="msg-feedback error">{{validation.msg}}</span>
+		    <!--<label for="NameWidget">Name your frame</label>
+		    <input type="text" name="NameWidget" id="NameWidget" placeholder="Type your widget name">-->
+        </div>
+	</header>
+    
+    <div style="clear: both;">&nbsp;</div>
+	<article class="categories" data-ng-show="step === 1">
+		<header>
+			<h1>Categories</h1>
+		</header>
+        <p class="intro">Choose one or more news categories from the boxes below</p>
+		
+		<ul class="categories-list" id="categoriesList" data-alignBoxes="li">            
+			<li data-ng-class="{ red: changeAll.chk }" class="no-image" data-ng-click="changeAllCategories(changeAll);">
+                <div class="sCheckbox check-red" data-ng-class="{ checked: changeAll.chk }"><span class="check"></span></div>
+       		    <input type="checkbox" class="hidden check-red" value="{{changeAll.id}}" name="category0" data-ng-model="changeAll.chk" />
+			    <label>
+                    <span class="text">Select All</span>
+			    </label>
+			</li>
+			<li data-ng-repeat="category in categories" data-ng-class="{ red: category.chk, 'no-image': category.image.length < 1 }" data-ng-click="changeChecked(category);">
+                <div class="sCheckbox check-red" data-ng-class="{ checked: category.chk }"><span class="check"></span></div>
+       		    <input type="checkbox" class="hidden check-red" value="{{category.id}}" name="category{{category.id}}" id="category{{category.id}}" data-ng-model="category.chk" />
+			    <label>
+                    <img data-ng-src="/Content/Categories/{{category.image}}" height="71" data-ng-hide="category.image.length < 1" data-height="71" />
+                    <span class="text">{{category.title}}</span>
+			    </label>
+			</li>
+		</ul>
+	</article>
+
+<!--	<article class="trusted-feeds" data-ng-show="step === 2">
+        <header>
+            <h1>Now choose one or more news sources.</h1>
+        </header>
+		<ul>
+			<li data-ng-repeat="trusted in trustedSource" data-ng-class="{ red: trusted.chk }" data-ng-click="trusted.chk = !trusted.chk">
+                <div class="sCheckbox check-red" data-ng-class="{ checked: trusted.chk }"><span class="check"></span></div>
+       			<input type="checkbox" class="hidden check-red" value="{{trusted.id}}" name="category{{trusted.id}}" id="category{{trusted.id}}" data-ng-model="trusted.chk" />
+				<label>
+                    <img data-ng-src="/Content/Sources/{{trusted.image}}" alt="{{trusted.title}}" title="{{trusted.title}}" />
+				</label>
+			</li>
+		</ul>
+	</article>-->
+
+    <!--<a href="javascript:void(0);" class="next-step btn-red" data-ng-click="changeStep(2);" data-ng-hide="step === 2">Next</a>
+    <input type="submit" value="Finish" class="next-step btn-red" data-ng-show="step === 2" data-ng-disabled="!clickSubmit" />-->
+        
+    <input type="submit" value="Finish" class="next-step btn-red" data-ng-disabled="!clickSubmit" />
+
+    <div class="msg-feedback" data-ng-class="feedback.status" data-ng-show="feedback.msg.length > 0">{{feedback.msg}}</div>
+    
+    <!--<div style="padding-top:10px;">
+        <br /><br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
+    </div>-->
+</form>

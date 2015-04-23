@@ -1,0 +1,22 @@
+﻿<section class="box-lightbox invite-friends" data-ng-controller="FacebookPhotosManageFriendsCtrl">
+	<header>
+		<h1>Manage Your Facebook Friends</h1>
+	</header>
+    <div>
+         <br />
+	    <p>&nbsp;&nbsp;Select your Facebook Friends from the list below that you wish to follow</p>
+	    <ul class="list-friends">
+            <li data-ng-repeat="friend in userFacebookFriends" data-ng-click="friend.addedByUser = !friend.addedByUser;setFacebookFriend(friend.id)" data-ng-class="{ active: friend.addedByUser }">
+                <figure>
+                    <img data-ng-src="{{friend.photoProfile}}" alt="{{friend.name}}" data-ng-show="friend.photoProfile !== null">
+                </figure>
+                <div class="info-friend">
+                    <p class="bold">{{friend.name}}</p>
+                </div>
+                <div class="sCheckbox check-red" data-ng-class="{ checked: friend.addedByUser }"><span class="check"></span></div>
+                <input type="checkbox" class="hidden check-red" value="{{friend.id}}" name="email{{friend.id}}" data-ng-model="friend.addedByUser" />
+            </li>
+        </ul>
+    </div>
+
+</section>

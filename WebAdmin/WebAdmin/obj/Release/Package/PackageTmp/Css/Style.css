@@ -1,0 +1,794 @@
+@import "grid.css";
+@import "superfish.css";
+@import "forms.css";
+@import "ui.css";
+/* MAIN SETTING
+========================================================================= */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font: 13px/21px Arial, sans-serif;
+    background: #f6f6f6 url('../Img/body.jpg');
+    color: #939393;
+    min-width: 1200px;
+}
+
+a {
+    color: #939393;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.top {
+    height: 75px;
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.extra-wrap {
+    display: block;
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+h2 {
+    font: 400 22px/27px 'Ubuntu', sans-serif;
+    color: #737a7a;
+    text-shadow: #ffffff 1px 1px 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: 700 36px/44px 'Ubuntu', sans-serif;
+    text-shadow: #ffffff 1px 1px 1px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    color: #737a7a;
+}
+
+    h3 span, h4 span {
+        display: block;
+    }
+
+h4 {
+    font: 400 30px/36px 'Ubuntu', sans-serif;
+    color: #737a7a;
+    text-shadow: rgba(255,255,255,0.5) 1px 1px 1px;
+    text-transform: uppercase;
+    letter-spacing: -0.8pt;
+}
+
+    h4.color-1 {
+        color: #353434;
+        text-shadow: #fff 1px 1px 1px;
+    }
+
+    h4.color-2 {
+        color: #9E9E9E;
+        text-shadow: #fff 1px 1px 1px;
+        font-size: medium;
+    }
+
+h5 {
+    font: 400 24px/29px 'Ubuntu', sans-serif;
+    color: #373737;
+    text-shadow: rgba(255,255,255,0.24) 1px 1px 1px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+strong, strong a {
+    color: #0d0d0d;
+}
+
+    strong a:hover {
+        color: #939393;
+    }
+
+    strong.str-1 {
+        color: #414141;
+    }
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.button-1, .button-2, .list-1 li a, .list-3 li a, .policy a, .list-4 li a, .sf-menu li li a, strong a {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+/* IDENT's
+========================================================================= */
+.ident-bot-1 {
+    margin-bottom: 21px;
+}
+
+.ident-bot-2 {
+    margin-bottom: 22px;
+}
+
+.ident-bot-3 {
+    margin-bottom: 17px;
+}
+
+.ident-bot-4 {
+    margin-bottom: 32px;
+}
+
+.ident-bot-5 {
+    margin-bottom: 68px;
+}
+
+.ident-bot-6 {
+    margin-bottom: 40px;
+}
+
+.ident-bot-7 {
+    margin-bottom: 3px;
+}
+
+.ident-bot-8 {
+    margin-bottom: 7px;
+}
+
+.ident-bot-9 {
+    margin-bottom: 5px;
+}
+
+.ident-bot-10 {
+    margin-bottom: 78px;
+}
+
+.ident-bot-11 {
+    margin-bottom: 50px;
+}
+
+.ident-bot-12 {
+    margin-bottom: 16px;
+}
+
+.ident-bot-13 {
+    margin-bottom: 18px;
+}
+
+.ident-bot-14 {
+    margin-bottom: 24px;
+}
+
+.ident-bot-15 {
+    margin-bottom: 36px;
+}
+
+.ident-bot-16 {
+    margin-bottom: 62px;
+}
+
+.ident-bot-17 {
+    margin-bottom: 71px;
+}
+
+.ident-bot-18 {
+    margin-bottom: 23px;
+}
+
+.ident-bot-19 {
+    margin-bottom: 12px;
+}
+
+.ident-bot-20 {
+    margin-bottom: 54px;
+}
+
+.ident-bot-21 {
+    margin-bottom: 50px;
+}
+
+.ident-bot-22 {
+    margin-bottom: 20px;
+}
+
+.ident-bot-23 {
+    margin-bottom: 28px;
+}
+
+.ident-top-1 {
+    margin-top: -11px;
+}
+
+.ident-top-2 {
+    margin-top: -8px;
+}
+
+.ident-top-3 {
+    margin-top: -6px;
+}
+
+.ident-top-4 {
+    margin-top: -4px;
+}
+
+.ident-top-5 {
+    margin-top: 6px;
+}
+
+.ident-top-6 {
+    margin-top: 5px;
+}
+
+.ident-left-1 {
+    margin-left: 4px;
+}
+
+.ident-left-2 {
+    margin-left: 14px;
+}
+
+.ident-right-1 {
+    margin-right: 12px;
+}
+
+.inner-ident-1 {
+    padding-top: 38px;
+}
+
+.inner-ident-2 {
+    padding-top: 15px;
+}
+/* HEADER
+========================================================================= */
+h1 {
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+
+    h1 a {
+        display: block;
+        text-indent: -999em;
+        width: 388px;
+        height: 69px;
+        background: url('../Img/logo.png') no-repeat;
+        position: relative;
+        left: 50%;
+        margin-left: -194px;
+    }
+
+.slogan {
+    font: 400 14px/18px 'Ubuntu', sans-serif;
+    color: #878f8f;
+    text-shadow: #fff 1px 1px 1px;
+    text-align: center;
+    letter-spacing: 1.1pt;
+    margin-bottom: 28px;
+}
+
+.nav-border-bottom {
+    background: url('../Img/border-2.png') repeat-x 0 100%;
+    padding-bottom: 13px;
+}
+
+.nav-border-top {
+    background: url('../Img/border-2.png') repeat-x 0 0;
+}
+
+.nav-border-topo {
+    background: url('../Img/border-2.png') repeat-x 0 100%;
+    padding-bottom: 75px;
+}
+/* CONTENT
+========================================================================= */
+#content {
+    padding: 31px 0 50px 0;
+}
+
+#mpSimples #content {
+    padding: 11px 0 50px 0;
+}
+
+.line {
+    background: url('../Img/border-1.jpg') repeat-x;
+    height: 2px;
+    overflow: hidden;
+}
+
+.line-2 {
+    background: url('../Img/border-3.png') repeat-x;
+    height: 2px;
+    overflow: hidden;
+}
+
+.button {
+    display: inline-block;
+    color: #202020;
+    text-transform: uppercase;
+    font: 700 16px/20px 'Ubuntu', sans-serif;
+    padding-right: 9px;
+    background: url('../Img/marker-2.png') no-repeat 100% 8px;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+    .button:hover {
+        text-decoration: underline;
+    }
+
+.button-1 {
+    display: inline-block;
+    color: #202020;
+    text-transform: uppercase;
+    font: 700 16px/20px 'Ubuntu', sans-serif;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+    .button-1:hover {
+        color: #aaaaaa;
+    }
+
+.button-2 {
+    display: inline-block;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    font: 700 16px/20px 'Ubuntu', sans-serif;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+    .button-2:hover {
+        color: #202020;
+    }
+
+.button-3 {
+    display: inline-block;
+    color: #353434;
+    text-transform: uppercase;
+    font: 700 18px/22px 'Ubuntu', sans-serif;
+    padding-right: 9px;
+    background: url('../Img/marker-2.png') no-repeat 100% 9px;
+    text-shadow: rgba(255,255,255,0.24) 1px 1px 1px;
+}
+
+    .button-3:hover {
+        text-decoration: underline;
+    }
+
+.button-4 {
+    display: inline-block;
+    color: #fefefe;
+    text-transform: uppercase;
+    font: 12px/37px Arial, sans-serif;
+    background: url('../Img/button-2.jpg');
+    padding: 0 9px;
+}
+
+    .button-4:hover {
+        background: #7e7e7e;
+    }
+
+.button-5 {
+    display: inline-block;
+    color: #0d0d0d;
+    font: 13px/21px Arial, sans-serif;
+    text-decoration: underline;
+}
+
+    .button-5:hover {
+        text-decoration: none;
+    }
+
+.link-1 {
+    color: #000;
+}
+
+    .link-1:hover {
+        text-decoration: underline;
+    }
+
+.block-1 {
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    color: #9d9c9c;
+}
+
+.block-2 {
+    position: relative;
+}
+
+.block-3 {
+    text-align: center;
+}
+
+.text-1 {
+    font-size: 14px;
+    font-style: italic;
+    color: #252525;
+}
+
+.text-2 {
+    font-size: 14px;
+}
+
+.text-3 {
+    font-size: 14px;
+    font-style: italic;
+    color: #000;
+}
+
+.text-4 {
+    font: 400 18px/22px 'Ubuntu', sans-serif;
+    color: #b1b1b1;
+    text-shadow: #fff 1px 1px 1px;
+    letter-spacing: 0.1pt;
+}
+
+.text-5 {
+    font: 400 18px/22px 'Ubuntu', sans-serif;
+    color: #474747;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+    .text-5 span {
+        font-size: 14px;
+        display: inline-block;
+        padding-top: 2px;
+        padding-left: 8px;
+    }
+
+.text-6 {
+    color: #000;
+}
+
+.text-7 {
+    color: #232121;
+    font: 700 16px/24px 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 4px;
+    float: left;
+}
+
+.tetx-8 {
+    color: #0d0d0d;
+}
+
+.block-ident-1 {
+    padding-right: 50px;
+}
+
+.block-ident-2 {
+    padding-right: 20px;
+}
+
+.block-ident-3 {
+    padding-right: 30px;
+}
+
+.list-1 li {
+    float: left;
+    background: url('../Img/separato.jpg') no-repeat;
+}
+
+    .list-1 li:first-child {
+        background: none;
+    }
+
+    .list-1 li a {
+        margin: 0 12px;
+    }
+
+    .list-1 li:first-child a {
+        margin: 0 12px 0 0;
+    }
+
+.list-2 {
+    margin-left: 310px;
+    margin-bottom: 70px;
+}
+
+    .list-2 li {
+        float: left;
+    }
+
+        .list-2 li a {
+            font: 400 13px/38px 'Ubuntu', sans-serif;
+            color: #9a9a9a;
+            padding: 9px 0 11px 40px;
+        }
+
+            .list-2 li a:hover {
+                color: #202020;
+            }
+
+.s-icon-1 {
+    background: url('../Img/soc-icon.png') no-repeat;
+    margin-right: 21px;
+}
+
+.s-icon-2 {
+    background: url('../Img/soc-icoo.png') no-repeat;
+    margin-right: 21px;
+}
+
+.s-icon-3 {
+    background: url('../Img/soc-icop.png') no-repeat;
+}
+
+.s-icon-4 {
+    background: url('../Img/soc-icoq.png') no-repeat;
+}
+
+.list-3 li {
+    padding-left: 16px;
+    background: url('../Img/marker-1.png') no-repeat 0 12px;
+}
+
+    .list-3 li a {
+        color: #939393;
+        font: 13px/30px Arial, sans-serif;
+    }
+
+        .list-3 li a:hover {
+            color: #444;
+        }
+
+.list-4 {
+    padding-top: 14px;
+}
+
+    .list-4 li {
+        float: left;
+        margin-left: 12px;
+    }
+
+        .list-4 li a {
+            color: #8d8d8d;
+            font: 11px/14px Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+            .list-4 li a:hover {
+                color: #000;
+            }
+
+            .list-4 li a.active-2 {
+                color: #000;
+            }
+
+.heading-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+    .heading-wrapper h4 {
+        display: inline-block;
+    }
+
+.heading-before {
+    height: 2px;
+    background: #d0d0d0 url('../Img/border-1.jpg') repeat-x;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.heading-after {
+    height: 2px;
+    background: #d0d0d0 url('../Img/border-1.jpg') repeat-x;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.heading-wrapper-2 {
+    text-align: center;
+    position: relative;
+}
+
+    .heading-wrapper-2 h4 {
+        display: inline-block;
+    }
+
+.heading-before-2 {
+    height: 2px;
+    background: #d0d0d0 url('../Img/border-1.jpg') repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.heading-after-2 {
+    height: 2px;
+    background: #d0d0d0 url('../Img/border-1.jpg') repeat-x;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+}
+/* ACCORDION
+========================================================================= */
+dl#accordion {
+    list-style-type: none;
+    padding: 0;
+    height: auto !important;
+    padding-bottom: 45px;
+}
+
+    dl#accordion dt {
+        cursor: pointer;
+        display: block;
+    }
+
+        dl#accordion dt span.acc-arrow {
+            display: block;
+            width: 13px;
+            height: 15px;
+            background: url('../Img/accordio.png') no-repeat;
+            position: relative;
+            left: 50%;
+            margin-left: -6px;
+        }
+
+        dl#accordion dt.active span.acc-arrow {
+            background: url('../Img/accordio.png') no-repeat 0 -19px;
+        }
+
+    dl#accordion .bg-1 {
+        background: url('../Img/accordio.jpg');
+        padding: 9px 0 8px 0;
+        display: block;
+    }
+
+    dl#accordion .bg-2 {
+        background: url('../Img/accordip.jpg');
+        padding: 9px 0 8px 0;
+        display: block;
+    }
+
+    dl#accordion .bg-3 {
+        background: url('../Img/accordiq.jpg');
+        padding: 9px 0 8px 0;
+        display: block;
+    }
+
+    dl#accordion .bg-1:hover {
+        background: #dad115;
+    }
+
+    dl#accordion .bg-2:hover {
+        background: #d28e07;
+    }
+
+    dl#accordion .bg-3:hover {
+        background: #ce5108;
+    }
+
+    dl#accordion dd {
+        padding: 0 60px 14px 30px;
+    }
+
+.bg-1-1 {
+    background: url('../Img/accordio.jpg');
+}
+
+.bg-1-2 {
+    background: url('../Img/accordip.jpg');
+}
+
+.bg-1-3 {
+    background: url('../Img/accordiq.jpg');
+}
+
+.acc-ident {
+    padding-bottom: 1px;
+}
+
+    .acc-ident.active {
+        padding-bottom: 0;
+    }
+/* FOOTER
+========================================================================= */
+#footer {
+    padding-bottom: 36px;
+}
+
+.policy {
+    color: #939393;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+    .policy a {
+        color: #939393;
+        text-transform: uppercase;
+    }
+
+        .policy a:hover {
+            color: #444;
+        }
+
+.policy-color {
+    color: #232121;
+}
+
+.c-name {
+    font: 12px/12px 'Verdana';
+    letter-spacing: 1px;
+    color: #232121;
+}
+
+.policy-ident {
+    display: inline-block;
+}
+
+.tableMenuVertical {
+    width: 100%;
+}
+
+.tableMenuVerticalLeft {
+    width: 200px;
+}
+
+.tableMenuVerticalRight {
+    width: 1000px;
+}
+
+#navigation {
+    border-right: 1px solid #999;
+    padding: 10px 0px;
+    width: 176px;
+}
+
+    #navigation a {
+        background: url(../Img/btnMenuV.png);
+        display: block;
+        height: 47px;
+        text-indent: 35px;
+        font: 400 22px/27px 'Ubuntu', sans-serif;
+        line-height: 46px;
+        height: 46px;
+        vertical-align: middle;
+        font-size: 15px;
+    }
+
+        #navigation a:hover {
+            background-position: -176px 0px;
+            color: #fff;
+        }
+
+    #navigation a {
+        background-position: 0px -46px;
+    }
+
+        #navigation a.current {
+            background-position: -176px 0px;
+            color: #fff;
+        }

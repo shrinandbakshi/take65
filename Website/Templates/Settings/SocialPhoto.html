@@ -1,0 +1,59 @@
+﻿<div class="box-lightbox add-new-widget login" data-ng-controller="FacebookPhotosManageFriendsCtrl">
+<!--<div class="content">-->
+
+    <header>
+        <h1>Social Media Photos - Manage Friends</h1>
+    </header>
+
+    <section>
+        <div class="main-content">
+            
+            <p class="intro ml0 mr0">
+                Select from the list below the contact(s) from your Facebook account that you would like to add to your Social Media Photos Frame.</p>
+
+            <ul class="list-friends-selected" style="height: 45px;">
+                <li data-ng-repeat="friend in userFriends" data-ng-click="removeFriend($index, friend.id)">
+                    <figure>
+                        <img src="https://graph.facebook.com/{{friend.id}}/picture?access_token={{facebookToken}}&width=32&height=32" width="32" height="32" title="{{friend.name}}" alt="{{friend.name}}">
+                    </figure>
+                    <span class="icon-close-red-and-white-small"></span>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="tr" />
+
+        <div class="main-content invite-friends">
+            <form data-ng-submit="findFriend()">
+                <input class="i-filter-friends inputtext" type="text" data-ng-model="friendSearch.keywork" data-ng-keyup="findFriend()" value="" placeholder="Type your friend's name here" />
+                <button class="btn-search btn-red" type="submit">
+                    <span class="icon icon-search"></span>
+                    <span class="txt">Search Friends</span>
+                </button>
+            </form>
+            <ul class="list-friends-facebook">
+                <li data-ng-repeat="facebookFriend in facebookFriendsFilter" data-ng-click="facebookFriend.chk = !facebookFriend.chk; addFriend(facebookFriend);" data-ng-class="{ active: facebookFriend.chk }">
+                    <figure>
+                        <img src="https://graph.facebook.com/{{facebookFriend.id}}/picture?access_token={{facebookToken}}&width=50&height=50" title="{{facebookFriend.name}}" alt="{{facebookFriend.name}}">
+                    </figure>
+                    <div class="info-friend">
+                        <p class="bold">{{facebookFriend.name}}</p>
+                    </div>
+                    <div data-loading="" data-ng-class="{ hidden: !facebookFriend.verifing }"></div>
+                    <div class="sCheckbox check-red" data-ng-class="{ checked: facebookFriend.chk }"><span class="check"></span></div>
+                    <input type="checkbox" class="hidden check-red" value="" name="" />
+                </li>
+                <li data-ng-show="!facebookFriendsFilter.length && friendSearch.keywork != ''" class="no-border">
+                    No friends found for <b>{{friendSearch.keywork}}</b>
+                </li>
+            </ul>
+            <div data-loading="" data-ng-hide="facebookFriendsFilter.length || friendSearch.keywork != ''"></div>
+            
+            <div class="clearfix mt20 mb20">
+                <!--<a href="#" class="next-step btn-red mr0 mb0 fl">More Friends</a>        -->
+                <a href="#" data-ng-click="saveFriends()" class="next-step btn-red mr0 mb0 fr">Finish</a>
+            </div>
+        </div>
+    </section>
+
+</div>

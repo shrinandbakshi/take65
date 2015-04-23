@@ -1,0 +1,594 @@
+// Style of box's of widgets
+.list-gridster {
+	margin: -5px 0 0 -5px !important;
+	@include respond-to(wide-screens) {
+		width: 950px !important;
+	}
+}
+
+.box-column {
+	background-color: #fff;
+	.box-border {
+		border: 1px solid $gray;
+		display: block;
+		height: 340px;
+
+		@include respond-to(handhelds) {
+			
+		}
+	}
+	&.type-2 {
+		.content {
+			height: 253px;
+		}
+	}
+	&.type-5 {
+		@extend .hide-handhelds;
+	}
+	&.type-6 {
+		@extend .hide-handhelds;
+	}
+	&.no-gutter {
+		//margin-left: 0 !important;
+		@include clearfix;
+	}
+	&.one-column {
+		//width: $width-column;
+		//width: 100%;
+		header.nv-1 .edit-title input {
+			width: 45%;
+		}
+		@include respond-to(medium-screens) {
+			header.nv-1 .edit-title input {
+				width: 50%;
+			}
+			float: left;
+			margin-bottom: $gutter;
+			margin-left: $gutter;
+			width: 50% - $gutter/2;
+
+			&:nth-child(even) {
+				margin-left: 0;
+			}
+		}
+		@include respond-to(handhelds) {
+			margin-bottom: $gutter;
+			margin-left: 0;
+			width: 33%;
+			display:inline-block;
+		}
+	}
+	&.two-column {
+		width: ($width-column * 2) + $gutter;
+		@include respond-to(medium-screens) { width: 100%; margin-left: 0; }
+		@include respond-to(handhelds) { width: 100%; margin-left: 0; }
+	}
+	&.three-column {
+		margin-bottom: $gutter;
+		width: ($width-column * 3) + $gutter * 2;
+
+		@include respond-to(medium-screens) {
+			header.nv-1 .edit-title input {
+				width: 75%;
+			}
+		}
+	}
+	h2 { padding: 5px 0 0 8px; }
+
+	header.nv-1 {
+		@include clearfix;
+		background-color: $blue;
+		color: $box-header-font-color;
+		height: 35px;
+		position: relative;
+
+		&.red {
+			background-color: $red;
+		}
+
+		h1, h1 a {
+			color: #fff;
+			float: left;
+			font-size: 1.1em;
+			padding: 0 0 0 8px;
+			line-height: 32px;
+			max-width: 100%;
+
+			span {
+				float: left;
+			}
+		}
+		.title-and-edit {
+			overflow: hidden;
+
+			.back-to-friends {
+				padding: 7px 0 0 11px;
+
+				a {
+					border-left: 1px solid $gray;
+					font-size: 14px;
+					height: 20px;
+					line-height: 19px;
+				}
+			}
+		}
+		.link-cancel-name-widget,
+		.link-edit-name-widget {
+			color: #fff;
+		}
+		.edit-title {
+			margin: 5px 0 0 8px;
+			overflow: hidden;
+			//padding-right: 460px;
+
+			input {
+				float: left;
+				height: 24px;
+				line-height: 24px;
+				padding: 0 5px;
+				margin: 0;
+				width: 100%;
+			}
+			button {
+				background-color: $blue;
+				color: #fff;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.custom-select {
+		width: 200px;
+		position: absolute;
+		top: 5px;
+		right: 160px;
+		z-index: 2;
+	}
+
+	.options {
+		@include box-shadow(-12px 0 18px -9px rgba(20,84,146,.68));
+		background-color: $blue;
+		display: block;
+		font-size: 1.1em;
+		line-height: 35px;
+		height: 35px;
+		overflow: hidden;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+
+		@include respond-to(wide-screens) {
+			.move-box { display: block; }
+		}
+
+		.move-box { display: none; }
+		ul li {
+			border-left: 1px solid #fff;
+			float: left;
+			padding: 0 10px;
+			//width: 39px;
+			&:first-child {
+				border-left: 0 none;
+				padding-right: 10px;
+			}
+		}
+		.icon {
+			margin: 8px 0 0;
+		}
+		.change-zoom-box {
+			a {
+				color: #fff;
+				&.box-minus {
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+	.content {
+		overflow: hidden;
+
+		@include respond-to(handhelds) {
+			
+		}
+	}
+	footer.nv-1 {
+		border-top: 1px solid $red;
+		display: block;
+		font-size: 1.3em;
+		min-height: 44px;
+		height: auto;
+		line-height: 44px;
+		margin: 5px 10px 0;
+		overflow: hidden;
+		a {
+			color: $red;
+		}
+		.icon-add {
+			margin: 9px 5px 0 0;
+		}
+	}
+}
+
+// Widget News
+.widget-news {
+	h1 a {
+		font-weight: $font-bold;
+	}
+	a {
+		color: $dark-gray;
+		display: inline;
+		font-weight: $font-normal;
+	}
+	.highlight {
+		@include clearfix;
+		margin: 10px 10px 0 10px;
+		//font-size: 1.3em;
+		font-size: 1em;
+		//@include respond-to(wide-screens) {
+		//	font-size: 1em;
+		//}
+
+		figure {
+			float: left;
+			margin: 0 10px 0 0;
+		}
+		time {
+			font-size: 1em;
+		}
+	}
+
+	.feed {
+		min-height: 10px;
+		padding: 10px;
+
+		@include respond-to(medium-screens) {
+			display: none;
+		}
+
+		@include respond-to(wide-screens) {
+			display: none;
+		}
+
+		@include respond-to(handhelds) {
+			padding: 5px 10px !important;
+		}
+
+		figure {
+			@include respond-to(handhelds) {
+				display: none;
+			}
+		}
+	}
+
+	.slider {
+		margin: 10px 10px 0 10px;
+
+		@include respond-to(handhelds) {
+			display: none;
+		}
+
+		.scroll {
+			@include clearfix();
+		}
+
+		article {
+			display: block;
+
+			header {
+				min-height: 110px;
+			}
+
+			figure {
+				float: left;
+				margin: 0 15px 0 0;
+			}
+		}
+
+		.bx-wrapper {
+			padding: 0 30px;
+			max-width: 100% !important;
+		}
+
+		.icon-arrow-left-blue, .icon-arrow-right-blue {
+			cursor: pointer;
+			position: absolute;
+			text-indent: -9999px;
+			top: 40px;
+			z-index: 1;
+		}
+
+		.icon-arrow-left-blue {
+			left: 0;
+		}
+
+		.icon-arrow-right-blue {
+			right: 0;
+		}
+	}
+}
+
+// List of images for widgets
+ul.list-img-links {
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+
+	&.list-img-links-max-width {
+		li {
+			max-width: 133px;
+		}
+	}
+
+	li {
+		background-color: #fff;
+		display: inline-block;
+		float: left;
+		height: 41px;
+		overflow: hidden;
+		padding: 0 5px;
+		text-align: center;
+		margin-top: 15px;
+		width: 50%;
+		a {
+			border: 1px solid $gray;
+			display: block;
+			padding: 5px 0 4px;
+			color: #000;
+
+			&.active {
+				border-color: $red;
+				outline: none;
+			}
+
+			&.text {
+				padding: 10px 0 9px 0;
+			}
+
+			img {
+				vertical-align: middle;
+				max-height: 36px;
+				max-width: 111px;
+				width: 100%;
+			}
+			span{
+				font-size: 1.2em;
+				min-height: 29px;
+				display: block;
+			}
+		}
+	}
+	.all-itens {
+		color: $blue;
+		font-size: 1.5em;
+		font-weight: $font-bold;
+		&.active {
+			color: $red;
+		}
+		text-decoration: none;
+	}
+	.hold-bookmarks & {
+		padding-left: 10px;
+	}
+}
+
+// List of links
+ul.list-links {
+	@include clearfix;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+
+	li {
+		border-top: 1px solid $gray;
+
+		&:first-child {
+			border-top: 0 none;
+		}
+		&:hover {
+			background-color: #a0b9d1;
+		}
+		a {
+			color: $text-color;
+			display: block;
+			font-size: 1.3em;
+			font-weight: $font-bold;
+			line-height: 29px;
+			min-height: 29px;
+			padding: 5px 10px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// Hide Elemets
+.hidden {
+	display: none;
+}
+
+//Weather Widget
+.weather-widget{
+	.header {
+		padding: 10px;
+		@include clearfix;
+
+		@include respond-to(medium-screens) {
+			margin: 10px 0 20px 0;
+    	}
+
+		label {
+			//width: 110px;
+			float:left;
+			padding-right: 10px;
+			//padding-top: 10px;
+		}
+		input{
+			width: 80px;
+			padding-left: 5px;
+		}
+		div {
+			width: 170px;
+			float: left;
+		}
+	}
+
+	.wXbody {
+		margin-top: 5px;
+	}
+
+}
+
+// View more widgets
+.box-view-more {
+	background-color: #fff;
+	width: 100%;
+    @include respond-to(wide-screens) {
+		height: 100%;
+		overflow: hidden;
+    }
+
+	.hold-top {
+		overflow: auto;
+		display: none;
+		margin-bottom: 25px;
+
+	    @include respond-to(wide-screens) {
+	        display: block;
+	    }
+		header {
+			border-bottom: 1px solid $gray;
+			height: 50px;
+			width: 100%;
+			h1, h1 a {
+				color: $blue;
+				float: left;
+				line-height: 50px;
+				font-weight: $font-bold;
+				margin: 0 0 0 28px;
+				width: 21%;
+				min-width: 128px;
+			}
+			.f-right {
+				min-width: 452px;
+				width: 70%;
+			}
+			input {
+				@extend %inputtext;
+				float: right;
+				height: 35px;
+				line-height: 35px;
+				margin: 10px 0 0;
+				width: 60%;
+			}
+			.btn-search {
+				color: #fff;
+				float: right;
+				height: 40px;
+				line-height: 40px;
+				margin: 10px 10px 0 5px;
+				width: 169px;
+				max-width: 30%;
+				text-align: center;
+				.icon {
+					display: inline-block;
+					margin: 8px 3px -8px;
+				}
+			}
+		}
+
+	}
+
+}
+
+.i-filter-friends {
+	float: left;
+	font-size: 16px;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 10px 20px 5%;
+	width: 61%;
+}
+
+.wXbody {
+    background: url('../Img/Default/bg-weather.gif') no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border: medium none !important;
+    height: 125px !important;
+    margin: 20px auto 5px;
+	width: 180px;
+}
+
+.wXbody iframe {
+    margin-top: 8px;
+}
+
+.delete-widget {
+	.center-buttons {
+		text-align: center;
+		a {
+			margin: 0 10px;
+		}
+	}
+	.msg-feedback {
+		text-align: center;
+	}
+}
+.add-suggestion-widget {
+	@extend .delete-widget;
+
+	.custom-select {
+		margin: 0 auto;
+
+		li:first-child {
+			border-top: 0;
+		}
+	}
+
+	.btn-red {
+		@extend %btn-red-degrade-44;
+		color: #fff;
+		float: right;
+		margin: 70px 0 10px 0;
+		width: 64px;
+	}
+}
+
+
+
+
+
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	*zoom: 1;
+}
+
+.bx-viewport {
+	height: 100% !important;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+.bx-controls-direction {
+	.disabled {
+		@include opacity(0.5);
+		cursor: default !important;
+	}
+}

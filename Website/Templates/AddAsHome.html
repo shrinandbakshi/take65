@@ -1,0 +1,135 @@
+﻿<section class="box-lightbox addAsHome" data-fn="placeholder" data-resizecolorbox="" data-ng-controller="AddAsHomePageCtrl">
+    <h1>Take 65 As Home Page</h1>
+    <br />
+    <header class="header-logo">
+        <img data-ng-class="logo" src="../Img/Default/logo-main-small.png" alt="Take 65" />
+    </header>
+    <div id="mainHPageView">
+        <div ng-include="currentHPageTab"></div>
+    </div>
+
+    <script type="text/ng-template" id="AddAsHome.tpl.html">
+        <div id="AddAsHome" ng-app>
+            <div class="accord_container">
+                <!--Chrome-->
+                <div class="accord_q">
+                    <div class="accord_q-title" ng-click="openHPageQ('C 1')">Chrome</div>
+                    <div class="accord_q-maincontent" ng-show="isOpenHPageQ('C 1')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-subtitle">To Make Take65 Your Homepage in Chrome, Follow These Steps:</p>
+                                    <p class="accord_q-content">1. Click the Chrome menu icon on the browser toolbar.</p>
+                                    <p class="accord_q-content">2. Click Settings.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/step1and2chrome.png" alt="step1and2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-content">3. In the Appearance section, click on the "Change" link.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/setpageschrome.png" alt="Change">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-content">4. In the Home page area, select "Open this page" & type "http://www.take65.com" </p>
+                                    <p class="accord_q-content">5. Hit "OK" </p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/Change.png" alt="Change">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-subtitle"> To Open Take65 When You Start Your Browser, Follow These Steps:  </p>
+                                    <p class="accord_q-content">1 & 2. Click the Chrome menu icon on the browser toolbar and select settings as listed in steps 1 and 2 above. (If you're using a Chromebook, click Show advanced settings at the bottom of the page.)  </p>
+                                    <p class="accord_q-content">3. Add Take 65 to your Startup pages by entering the url: http://www.take65.com and selecting "OK".</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/startuppageschrome.png" alt="onstartupsetpages">
+                                    <br />
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/homepagechrome.png" alt="step4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p class="accord_q-content"><strong>That’s all it takes! Now, when you open Chrome on your computer, Take65 and all of your favorite online resources will be ready for you to use.</strong></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--Firefox-->
+                <div class="accord_q">
+                    <div class="accord_q-title" ng-click="openHPageQ('C 2')">Firefox</div>
+                    <div class="accord_q-maincontent" ng-show="isOpenHPageQ('C 2')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-subtitle">To Make Take65 Your Homepage, Follow These Steps:</p>
+                                    <p class="accord_q-content">1. Click on the Firefox menu icon in the top left corner of your computer screen.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/firefoxsettings.png" alt="step1 step2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-content">2. Click Preferences</p>
+                                    <p class="accord_q-content">3. From the preferences panel, click the General icon</p>
+                                    <p class="accord_q-content">4. To make Take65 your homepage, select Show My Homepage from the "When Firefox Starts" menu and type http://www.Take65.com into the Homepage field</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/homepagefirefox.png" alt="step3 step4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p class="accord_q-content"><strong>That’s all it takes! Now, when you open Firefox on your computer, Take65 and all of your favorite online resources will be ready for you to use.</strong> </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--Safari-->
+                <div class="accord_q">
+                    <div class="accord_q-title" ng-click="openHPageQ('C 3')">Safari</div>
+                    <div class="accord_q-maincontent" ng-show="isOpenHPageQ('C 3')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-subtitle">To Make Take65 Your Homepage or Open When You Open a New Tab, Follow These Steps:</p>
+                                    <p class="accord_q-content">1. Click on the Safari menu icon in the top left corner of your computer screen.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/safari-preferences.png" alt="safari preferences">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accord_q-content">2. Click Preferences</p>
+                                    <p class="accord_q-content">3. From the preferences panel, click the General icon</p>
+                                    <p class="accord_q-content">4. To make Take65 your homepage, type http://www.Take65.com into the Homepage field and select Homepage from the "New windows open with" drop down menu</p>
+                                    <p class="accord_q-content">To have all new tabs open with Take65, select Homepage from the "New tabs open with" drop down menu</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{homepageImgWidth}}px" data-ng-src="/Content/AddAsHome/homepage safari.png" alt="homepage">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p class="accord_q-content"><strong>That’s all it takes! Now, when you open Safari on your computer, Take65 and all of your favorite online resources will be ready for you to use.</strong> </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+</section>

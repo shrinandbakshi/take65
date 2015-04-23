@@ -1,0 +1,64 @@
+.box-settings {
+	.header-blue {
+		h2 {
+			margin-right: 0;
+			//width: 180px;
+			padding-right: 30px;
+
+			@include respond-to(handhelds) {
+                font-size: 1em;
+                margin-bottom: 5px;
+            }
+
+			@include respond-to(medium-screens) {
+                font-size: 1em;
+                margin-bottom: 5px;
+            }
+		}
+		.edit-name {
+			float: left;
+			//width: 630px;
+
+			@include respond-to(handhelds) {
+                font-size: 1em;
+            }
+
+			@include respond-to(medium-screens) {
+                font-size: 1em;
+            }
+		}
+	}
+
+
+	.btn-red {
+		&.btn-delete-widget {
+			color: #fff;
+			float: left;
+			font-size: 1.58em;
+			font-weight: $font-bold;
+			height: 44px;
+			line-height: 44px;
+			padding: 0 10px;
+			text-transform: uppercase;
+		}
+	}
+	.delete-widget {
+		float: left;
+		margin: 0 0 0 25px;
+		width: 600px;
+		.confirm-delete {
+			background-color: $light-gray;
+			float: left;
+			height: 44px;
+			padding: 0 10px 0 20px;
+			span.txt {
+				line-height: 44px;
+				margin: 0 5px;
+			}
+			a.btn-red-small {
+				display: inline-block;
+				margin: 8px 2px 0;
+			}
+		}
+	}
+}

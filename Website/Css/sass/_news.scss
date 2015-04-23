@@ -1,0 +1,81 @@
+.news {
+	.other-news { 
+		display: block;
+		margin: 23px 0 17px 27px;
+		overflow: hidden;
+	}
+	.hold-news { 
+		height: 100%;
+		overflow: auto; 
+	    @include respond-to(wide-screens) {
+			height: 618px;
+	    }
+	}
+
+
+	article {
+        @include clearfix;
+        padding: 12px 0 12px 27px;
+        margin-top: 15px;
+		a { color: $blue; text-decoration: none; }
+		p a { color: #000; }
+		header {
+			display: block;
+			ul { 
+				display: inline-block; 
+				font: {
+					size: 1.2em;
+					weight: 400;
+				};
+			}
+			li {
+				color: $blue;
+				float: left;
+				margin: 0 12px 0 0;
+			}
+			h1 {
+				color: $blue;
+				font-weight: $font-bold;
+				margin: 10px 0;
+			}
+		}
+		figure {
+			float: left;
+			height: 100px;
+			margin-right: 20px;
+			max-width: 100px;
+			width: 20%;
+			img {
+				max-height: 100px;
+				max-width: 100px;
+			}
+		}
+		p {
+			float: left;
+			width: 80%;
+		}
+		&.odd {
+			background-color: #ebebeb;
+		}
+		&.new-internal {
+			p {
+				width: 100%;
+			}
+		}
+	}
+	.btn-more-result {
+		@extend %btn-red;
+		background-repeat: repeat-x;
+		color: #FFFFFF;
+		display: block;
+		float: none;
+		font-family: $font-family;
+		font-size: 1.45em;
+		margin: 10px auto 20px;
+		overflow: hidden;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 165px;
+	}
+}

@@ -1,0 +1,7 @@
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\DataBase\Take65\Take65\bin\Debug\Take65.dacpac
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\DataBase\Take65\Take65\bin\Debug\Take65.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\DataBase\Take65\Take65\bin\Debug\Take65.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\DataBase\Take65\Take65\bin\Debug\Functions.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\DataBase\Take65\Take65\obj\Debug\Take65.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\DataBase\Take65\Take65\obj\Debug\Take65.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\DataBase\Take65\Take65\obj\Debug\Take65.sqlprojResolveAssemblyReference.cache

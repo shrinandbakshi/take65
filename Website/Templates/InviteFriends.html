@@ -1,0 +1,105 @@
+﻿<section class="box-lightbox invite-friends" data-ng-controller="InviteFriends" data-resizecolorbox="" data-ng-target="">
+    <header>
+        <h1>{{title}}</h1>
+    </header>
+    <article class="steps step1" data-ng-show="step === 1">
+        <p>
+            You can invite your friends to join TAKE 65 and start using the trusted source for security and simplicity on the web.<br />
+            Select your mail server or invite your friend(s) by typing their email address into the box below:
+        </p>
+
+        <ul class="list-of-servers">
+            <li data-ng-click="getGmailContacts()">
+                <img src="/Content/Invite/gmail.gif" alt="Gmail" title="Invite your friends of gmail.com">
+            </li>
+            <li data-ng-click="getOutlookContacts()">
+                <img src="/Content/Invite/hotmail.gif" alt="Hotmail" title="Invite your friends of Hotmail.com">
+            </li>
+       <!-- disabling yahoo and hotmail keeping the implementation intact
+                for Oct14 go live will enable in next iteration
+
+            <li data-ng-click="getOutlookContacts()">
+                <img src="/Content/Invite/hotmail.gif" alt="Hotmail" title="Invite your friends of Hotmail.com">
+            </li>-->
+            <li data-ng-click="getYahooContacts()">
+                <img src="/Content/Invite/yahoo.gif" alt="Yahoo" title="Invite your friends of yahoo.com">
+            </li>
+	
+
+        </ul>
+
+        <div class="invite-individual">
+            <h2><span class="icon icon-arrow-bottom-red"></span>Invite your friend(s) by individual email</h2>
+            <p>Type email addresses below, separated by commas.</p>
+            <form data-ng-submit="addIndividual();" name="addIndividualEmail" data-ng-target="">
+                <div class="wrap-invite">
+                    <input type="text" class="i-email" name="emailIndividual" data-ng-model="emailIndividual" ng-hide="firstAccess" required />
+                    <input type="text" class="i-email" name="emailIndividual" data-ng-model="emailIndividual" ng-show="firstAccess" style="width: 80%;" required />
+                    <input type="submit" class="btn btn-invite btn-red next-step" value="invite" ng-hide="firstAccess">
+                    <input type="submit" class="btn btn-invite btn-red next-step" value="invite" ng-show="firstAccess" style="right: 140px;">
+                    <button class="btn btn-invite btn-red next-step" ng-click="finishRegistration();" ng-show="firstAccess">finish</button>
+                </div>
+                <br class="clearfix" ng-show="firstAccess" />
+                <!--<a href="#next" class="btn btn-close btn-red next-step" data-colorbox-close="">Close</a>-->
+                <div class="msg-feedback" data-ng-class="classIndividualFeedback" data-ng-show="msgIndividualFeedback.length > 0">{{msgIndividualFeedback}}</div>
+
+            </form>
+        </div>
+    </article>
+
+    <article class="steps step2" data-ng-hide="step !== 2" data-ng-target="">
+        <p>
+            Please, type your Gmail account below to load your contacts.<br />
+            Take 65 is a secure environment and never stores or shares any personal information.
+        </p>
+        <form class="hold-form login" data-ng-submit="loginGmail()" autocomplete="off">
+            <div class="hold-line">
+                <label for="" class="lbl-left">Gmail login:</label>
+                <input type="email" name="login" class="i-txt i-right" id="fldLoginName" data-valid="empty" data-name="login" placeholder="Type your Gmail username" data-ng-model="login" required>
+            </div>
+            <div class="hold-line">
+                <label for="" class="lbl-left">Gmail password:</label>
+                <input type="password" name="password" class="i-txt i-right" id="fldLoginPassword" data-valid="empty" data-name="password" placeholder="Type your Gmail password" data-ng-model="password" required>
+            </div>
+            <div class="msg-feedback" data-ng-class="feedbackStatus" data-ng-show="loginMessage.length > 0">{{loginMessage}}</div>
+            <input type="submit" value="Login" class="btn btn-login btn-red next-step" id="btnLogin" data-valid="submit" />
+        </form>
+    </article>
+
+
+    <article class="steps step3" data-ng-show="step === 3">
+        <div class="msg-feedback msg-send-invite" data-ng-class="feedbackSendStatus">{{msgSendInvite}}</div>
+        <p>Invite friends from your email contacts below</p>
+
+        <a class="btn btn-login btn-red next-step" data-ng-click="inviteAllFriends()">Invite All</a>
+        <a class="btn btn-login btn-red next-step" data-ng-click="inviteFriends()">Invite</a>
+
+        <br class="clearfix" />
+        <form data-ng-submit="findFriend()">
+            <input class="i-filter-friends inputtext" type="text" data-ng-model="friendSearch.keywork" data-ng-keyup="findFriend()" style="width:70%;" value="" placeholder="Type your friend's name here" />
+            <button class="btn-search btn-red next-step" style="float:left;" type="submit">
+                <span class="icon icon-search"></span>
+                <span class="txt">Search</span>
+            </button>
+        </form>
+        <ul class="list-friends">
+            <li data-ng-repeat="friend in friendsFilter" ng-last-repeat="" data-ng-click="friend.chk = !friend.chk" data-ng-class="{ active: friend.chk }">
+                <figure data-ng-if="friend.image">
+                    <img data-ng-src="{{friend.image}}" alt="{{friend.name}}">
+                </figure>
+                <div class="info-friend">
+                    <p class="bold">{{friend.name}}</p>
+                    <p>{{friend.email}}</p>
+                </div>
+                <div class="sCheckbox check-red" data-ng-class="{ checked: friend.chk }"><span class="check"></span></div>
+                <input type="checkbox" class="hidden check-red" value="{{friend.email}}" name="email{{friend.email}}" data-ng-model="friend.chk" />
+            </li>
+        </ul>
+        <a class="btn btn-login btn-red next-step" data-ng-click="inviteAllFriends()">Invite All</a>
+        <a class="btn btn-login btn-red next-step" data-ng-click="inviteFriends()">Invite</a>
+    </article>
+    <article class="steps step4" data-ng-show="step === 4">
+        <p>{{ inviteMessage }}</p>
+    </article>
+    <div data-loading data-ng-show="hasLoad"></div>
+</section>

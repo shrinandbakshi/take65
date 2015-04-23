@@ -1,0 +1,44 @@
+// Variables ===================================================================================== /
+
+// Grids
+$max-width: 950px;
+$min-width: 95%;
+$width-column: 32%;
+$max-column: 3;
+$max-gutters: 2;
+$gutter: 2%;
+
+// Breakpoints
+//$break-small: 450px;
+//$break-large: 775px;
+//$break-1280: 1280px;
+$break-medium: 768px;
+$break-large: 1024px;
+$break-1280: 1280px;
+
+$hide-aside-box: 1060px;
+
+
+// Typography variables
+$base-color: #fff;
+$text-color: #333333;
+$font-family: 'Roboto', sans-serif;
+$font-size: 14px;
+$line-height: 1.375; // establish a consistent line-height equal to 22px
+$box-header-font-color: #fff;
+$font-bold: 400;
+$font-normal: 300;
+
+// Colors variables
+// $red, $blue e $gray são sempre padrões mesmo que no layout haja um hexa diferente
+$red: #b31f2b;
+$blue: #195590;
+$green: green;
+// usado mais em textos vermelhos
+$light-red: #ff0000;
+// usado mais para bordas
+$gray: #cccccc;
+// usado mais para cor de texto
+$dark-gray: #333;
+// usado para o fundo do topo
+$light-gray: #f7f7f7;

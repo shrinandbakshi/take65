@@ -1,0 +1,349 @@
+﻿<section class="box-lightbox faqs" data-fn="placeholder" data-resizecolorbox="" data-ng-controller="FAQsCtrl">
+    <h1>FAQs</h1>
+    <br />
+    <header>
+        <div class="header-blue">
+            <ul class="breadcrumb-steps">
+                <li ng-repeat="tab in tabs"
+                    ng-class="{active:isActiveTab(tab.url)}"
+                    ng-click="onClickTab(tab)">{{tab.title}}</li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="mainView">
+        <div ng-include="currentTab"></div>
+    </div>
+
+    <script type="text/ng-template" id="Registration.tpl.html">
+        <div id="Registration" ng-app>
+            <div class="accordion_container">
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('R 1')">Sign up process</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('R 1')">                        
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">Sign Up</p>
+                                    <p class="accordion_q-content">You may choose to sign up with your email and password OR Facebook OR via your Google+ account.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px" data-ng-src="/Content/FAQs/register.png" alt="{{faqImgWidth}}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">With Email and Password:</p>
+                                    <p class="accordion_q-content">A)Enter your email address</p>
+                                    <p class="accordion_q-content">B)Enter password and confirm password</p>
+                                    <p class="accordion_q-content">C)Enter your name, select your year of birth and gender</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"   data-ng-src="/Content/FAQs/email.png" alt="register with email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">With Facebook: </p>
+                                    <p class="accordion_q-content">D) Click NEXT </p>
+                                    <p class="accordion_q-content">A) Click on the Sign Up With Facebook Icon </p>
+                                    <p class="accordion_q-content">B) A pop up will appear asking you to authenticate your Facebook account </p>
+                                    <p class="accordion_q-content">C) Confirm that you want to use your Facebook account to log in to Take65 </p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/register with facebook.png" alt="register with facebook">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle"> With Google+:  </p>
+                                    <p class="accordion_q-content">A) Click on the Sign Up With Google Icon  </p>
+                                    <p class="accordion_q-content">B) A pop up will appear asking you to authenticate your Google account </p>
+                                    <p class="accordion_q-content">C) Confirm that you want to use your Google account to log in to Take65 </p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/gmail-popup.png" alt="gmail popup">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">Select Interests  </p>
+                                    <p class="accordion_q-content">A) Select the categories of topics that interest you. </p>
+                                    <p class="accordion_q-content">B) You can choose as many as you want or select them all. </p>
+                                    <p class="accordion_q-content">C) Click "FINISH" </p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/interests.png" alt="interests">
+                                </td>
+                            </tr>
+                        </table>                        
+                    </div>
+                </div>
+
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('R 2')">Default Homepage</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('R 2')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">Default Homepage</p>
+                                    <p class="accordion_q-content">After choosing DEFAULT HOMEPAGE, you may INVITE FRIENDS (via your Email server or Individual emails) then, click FINISH.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/default or custom homepage.png" alt="choose default or customize homepage" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('R 3')">Customize Homepage</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('R 3')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">Customize Homepage</p>
+                                    <p class="accordion_q-content">A) Select the News Topics you would like to appear in your News Frame</p>
+                                    <p class="accordion_q-content">B) Click NEXT</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/news interests.png" alt="select interests" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">Customize Your Frames</p>
+                                    <p class="accordion_q-content">There are two ways to customize your Frames:</p>
+                                    <p class="accordion_q-content">B) Click NEXT</p>
+                                    <p class="accordion_q-content"><b>Option 1:</b> You may add your own choice of website by entering the web address and a "nickname" for that website where prompted and clicking "Add".</p>
+                                    <p class="accordion_q-content">Note: You may receive a popup message indicating that the site you are adding "is not a trusted Take65 website". You can still add the site to your frame by selecting "Yes".</p>
+                                    <p class="accordion_q-content"><b>Option 2:</b> You may select websites from the choices we provide in each category.</p>
+                                    <p class="accordion_q-content">A) Select from the list of pre-approved websites you would like to add to each of the frame categories. In the example shown here, you would select the websites you would like added to your Business category frame. You can also add any other websites you would like added to that frame in the fields marked "Website Address" and "Website Nickname" and clicking "Add". Then, click NEXT to add websites to the next category frame or click SKIP if you would like to move to the next category without adding websites to the current category.</p>
+                                    <p class="accordion_q-content">B) Once you have selected the websites you want added to each frame category, c<span lang="SV">lick FINISH.</span></p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/customize-frames.png" alt="customize frames" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">Invite Friends</p>
+                                    <p class="accordion_q-subtitle">Invite Friends Using Your Gmail Contact Book</p>
+                                    <p class="accordion_q-content">A) To invite friends to join Take65 using your Gmail contact book, click on the Gmail icon.</p>
+                                    <p class="accordion_q-content">B) A Google+ pop up will appear, asking for your permission to let Take65 allow the contacts in your your Google+ circles to see that you are a member of Take65. You can customize your Google+ settings  by clicking on the pencil icon.</p>
+                                    <p class="accordion_q-content">C) Click "Accept"</p>
+                                    <p class="accordion_q-content">D) You will be brought to a Take65 window showing you your list of Gmail contacts. You may select all of your contacts, select individual contacts or search through your contacts to find and select the friends you would like to invite to Take65.</p>
+                                    <p class="accordion_q-content">E) When you have selected the contacts you would like to invite, click "Invite" </p>
+                                    <p class="accordion_q-content">5. Click Finish</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/gmail-popup.png" alt="gmail popup" />
+                                    <br />
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/invitefriends.png" alt="invite friends" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="Frames.tpl.html">
+        <div id="Frames" ng-app>
+            <div class="accordion_container">
+
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('F 1')">Add a Frame</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('F 1')">
+                        <table>
+                            <tr>
+                                  <td>                                  
+                                    <p class="accordion_q-subtitle">TO ADD A FRAME:</p>
+                                    <p class="accordion_q-content">1. Click on ADD A FRAME Icon on Top Right Side of Page</p>
+                                    <p class="accordion_q-content_bold">If You Would Like to Add a NEWS Frame choose "NEWS":</p>
+                                    <p class="accordion_q-content">A) Name your Frame</p>
+                                    <p class="accordion_q-content">B) Select news categories you would like to see in your news Frame</p>
+                                    <p class="accordion_q-content">C) Click FINISH</p>
+                                    <p class="accordion_q-content_bold">If you would like to add a customized Frame choose "MY WEBSITES":</p>
+                                    <p class="accordion_q-content">A) Name your Frame</p>
+                                    <p class="accordion_q-content">B) Type the website address in the field where indicated, give your site a nickname and Click "ADD"</p>
+                                    <p class="accordion_q-content">C) You may add as many websites to a frame as you would like and /or select one of TAKE 65’s suggested websites to add to your frame by clicking where indicated and choosing websites organized by topic.</p>
+                                    <p class="accordion_q-content_bold">If you would like to add a Frame displaying photos from your social media contacts, choose "SOCIAL MEDIA PHOTOS":</p>
+                                    <p class="accordion_q-content">(For now this consists of Facebook Photos only, in the future we hope to expand this function to include other photo sharing services)</p>
+                                    <p class="accordion_q-content">A) Click CONNECT TO FACEBOOK</p>
+                                    <p class="accordion_q-content">B) A Facebook popup message will appear. Click "OKAY" if you agree with FB's terms</p>
+                                    <p class="accordion_q-content">C) Select the Facebook friends whose photos you would like to see in your Frame.</p>
+                                    <p class="accordion_q-content">You may either begin typing a friend's name and then click "CHOOSE" or you can scroll through all of your friends and selecting the box next the friends you would like to choose.</p>
+                                    <p class="accordion_q-content">D) Click FINISH</p>
+                                    <p class="accordion_q-content">Your Social Media Photos Frame will appear on your homepage populated with photos of those friends you have chosen.</p>                                   
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/add a frame.png" alt="Add a Frame" />
+                                    <br />
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/choose frame type.png" alt="Choose Frame Type" />
+                                </td>
+                            </tr>                                                  
+                        </table>
+                    </div>
+                </div>
+              
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('F 2')">Edit a Frame</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('F 2')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">TO EDIT AN EXISTING FRAME:</p>
+                                    <p class="accordion_q-content">1. CLICK ON EDIT ON BLUE BAR ON TOP OF FRAME:</p>
+                                    <p class="accordion_q-content">A) You may edit the Frame's name, or the content of the Frame by adding additional websites in the same manner as the Setup process.</p>
+                                    <p class="accordion_q-content">B) You may delete content from a frame by clicking on the "x" next to the website name/icon</p>
+                                    <p class="accordion_q-content">C) Click FINISH</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/edit frame.png" alt="edit a frame" />                                     
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <img data-ng-src="/Content/FAQs/edit frame name.png" alt="edit frame" />
+                                 </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('F 3')">Delete a Frame</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('F 3')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">TO DELETE A FRAME:</p>
+                                    <p class="accordion_q-content">1. Click on the Trash Can on the blue bar on top of Frame. </p>
+                                    <p class="accordion_q-content">2. You will be asked if you are sure you want to delete the Frame, choose yes or no.</p>                                    
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/delete.png" alt="how to delete a frame" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>             
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('F 4')">Weather Frame</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('F 4')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-content">The Weather frame shows current temperature and weather conditions as well as the forecast for the next 2 days. </p>
+                                    <p class="accordion_q-content">Enter your zip code in the space provided and click "Load" to receive weather information for your location.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/weather.png" alt="Take65 weather frame" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>      
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('F 5')">Social Media Photo Frame</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('F 5')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-content">Social Media Photos provide the user the opportunity to view photos of family/friends posted on social media websites. At present we offer access to Facebook photos.</p>
+                                    <p class="accordion_q-content_bold">Once a Social Media Photos Frame has Been added to your Take65 homepage, you may:</p>
+                                    <p class="accordion_q-content">A) Click on a friend's profile picture</p>
+                                    <p class="accordion_q-content">B) Choose a photo you wuld like to see and click on it (the photo will be opened in a separate window which can be closed directly on the window or by clicking TAKE ME HOME  twice.</p>
+                                    <p class="accordion_q-content">C) You can scroll through a friend's photos using the white arrows on teh left and right hand sides of the Frame.</p>
+                                    <p class="accordion_q-content">D) In order to go back to viewing all of your Friends, click on "BACK TO ALL FRIENDS" on the blue portion of the Frame.</p>                                    
+                                    <p class="accordion_q-content_bold">To ADD friends: </p>
+                                    <p class="accordion_q-content">Click EDIT and you will be prompted to type a friend's name or you may scroll down and ADD a friend by clicking on the check mark next to his/her hame.</p>
+                                    <p class="accordion_q-content_bold">To DELETE friends:</p>
+                                    <p class="accordion_q-content">Click EDIT and then click the red "x" in the corner of your friend's photo. That person's phot will be removed from the Frame.</p>
+                                    <p class="accordion_q-content_bold">NOTE: Adding or deleting friends from your social media frame will not affect anything on your actual Facebook Profile.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/socialmediaphotos.png" alt="Social Media Photos Frame" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div> 
+                
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('F 6')">Facebook News Feed Frame</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('F 6')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-content_bold">The Facebook Newsfeed frame allows the user to view his/her Facebook newsfeed updates on the Take65 homepage.</p>
+                                    <p class="accordion_q-content">1. Click the Blue rectangle to login to Facebook and your friends’ posts will be displayed in your frame.</p>
+                                    <p class="accordion_q-content">2. The user can then click on a friend’s name to view that persons FACEBOOK page in a new window. To return to the TAKE 65 homepage click TAKE ME HOME two times.</p>
+                                    <p class="accordion_q-content">3. Use the scroll function in the FACEBOOK NEWS FEED Frame to see your friends' most recent posts.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/facebooknewsfeed.png" alt="FB Newsfeed" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                                     
+            </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="Misc.tpl.html">
+        <div id="Misc" ng-app>
+            <div class="accordion_container">
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('M 1')">Suggestion Box</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('M 1')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-content">The Suggestion Box is populated with suggestions for websites which the user can add to his/her frames.
+                                    <em>(Suggestions are based on the user's stated interests and history of use on Take65).</em></p>
+                                    <p class="accordion_q-content_bold">ADDING SUGGESTIONS TO A FRAME:</p>                                                                        
+                                    <p class="accordion_q-content">1. Click on "open" in SUGGESTION BOX</p>
+                                    <p class="accordion_q-content">A) To ADD a SUGGESTION, click the + sign then in the ADD SUGGESTION window, either select "NEW FRAME" to start a new Frame populated with the SUGGESTION or click on red arrow to pull down existing Frames to which you can add the SUGGESTION.</p>
+                                    <p class="accordion_q-content">B) If you choose to add a new Frame, it will appear on your homepage entitled "WEBSITES", you can EDIT the name of this Frame or its content by clicking EDIT in the blue section at the top of the Frame.</p>
+                                    <p class="accordion_q-content">C) If you choose to add the SUGGESTION to an existing Frame, it will be added to that Frame and will appear on the homepage.</p>
+                                    <p class="accordion_q-content_bold"> DISCARDING SUGGESTIONS:</p>
+                                    <p class="accordion_q-content">If you do not want to add a suggested website to your homepage you may click on the x/DELETE button in the SUGGESTION BOX and it will be removed from your SUGGESTIONS.</p>
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/suggestions-box.png" alt="suggestions box" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>   
+               
+                <div class="accordion_q">
+                    <div class="accordion_q-title" ng-click="openQ('M 2')">Editing Your Profile</div>
+                    <div class="accordion_q-maincontent" ng-show="isOpenQ('M 2')">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="accordion_q-subtitle">To edit your profile,  including changing your password, email address or to edit your interests, click on "MY PROFILE" on the top right side of the TAKE 65 homepage.</p>
+                                    <p class="accordion_q-content">1. The first window will allow you to EDIT your Email address, password, name, year of birth and gender.</p>
+                                    <p class="accordion_q-content">2. You may click NEXT to edit your interests and then UPDATE to save this information.</p>
+                                    <p class="accordion_q-content">3. If you do not click on UPDATE, your old information will remain in our system as is.</p>                                    
+                                </td>
+                                <td>
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/yourresourcesyourway.png" alt="Your Resources" />                                   
+                                    <br />
+                                    <img style="width:{{faqImgWidth}}px;padding-bottom:25px"  data-ng-src="/Content/FAQs/edit profile.png" alt="Edit Profile" />                                   
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+    </script>
+</section>

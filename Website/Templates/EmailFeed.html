@@ -1,0 +1,31 @@
+﻿<div id="email-feed-scope" class="content email-feed" data-ng-controller="EmailFeedCtrl" data-ng-target="">
+    <div data-loading="" data-ng-class="{ hidden: wasLoaded }"></div>
+    <section data-ng-show="userHasEmailAccount">
+        <ul class="feed">
+            <!--<li data-ng-repeat="email in userEmailFeed" ng-href="{{email.link}}" class="openIframe" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "80%", "height": "80%" }'>-->
+            <li data-ng-repeat="email in userEmailFeed" data-ng-href="http://www.gmail.com" class="openIframe" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "80%", "height": "80%" }'>
+                <span title="{{email.fromEmail}}">{{ email.fromName || email.fromEmail }}</span>
+                <p>
+                    <a href="#">{{email.title}}</a>
+                </p>
+                <time>{{email.lastmodifiedLabel}}</time>
+            </li>
+        </ul>
+        <center data-ng-show="userEmailFeed.length === 0">
+            <br /><br />
+            You have no new messages.<br /><br /><br />
+        </center>
+    </section>
+    <section data-ng-hide="userHasEmailAccount">
+        <ul class="active-providers">
+            <li data-ng-repeat="provider in providers">
+                <!--<a href="#modalSliderAjax" title="EDIT" class="link-edit-name-widget" data-ng-click="setServerType(provider.serverType)" data-ngopenpop="/Templates/Settings/EmailAccount.html" data-id="{{widget.id}}" data-fn="openPop" data-param='{ "type": "inline", "height": "auto", "width": "710px", "close": "TAKE ME <span class=bold>HOME</span>" }'>
+                    <img data-ng-src="/Content/Temp/{{ provider.image }}" alt="{{ provider.name }}" />
+                </a>-->
+                <a class="link-edit-name-widget" data-ng-click="setEmailAccount(provider.serverType)">
+                    <img data-ng-src="/Content/Temp/{{ provider.image }}" alt="{{ provider.name }}" />
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>

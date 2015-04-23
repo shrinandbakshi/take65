@@ -1,0 +1,14 @@
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Layers.Admin.Bll.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Layers.Admin.Bll.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Layers.Admin.Dal.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Layers.Admin.Model.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\NetBiis.Library.Serialization.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Layers.Admin.Dal.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\Layers.Admin.Model.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\bin\Release\NetBiis.Library.Serialization.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\obj\Release\Bll.csprojResolveAssemblyReference.cache
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\obj\Release\Layers.Admin.Bll.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Bll\obj\Release\Layers.Admin.Bll.pdb

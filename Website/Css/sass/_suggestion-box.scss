@@ -1,0 +1,727 @@
+.aside-box {
+	background-color: #fff;
+	border: 1px solid $gray;
+	display: none;
+	min-height: 283px;
+	width: 411px;
+
+	position: absolute;
+	top: 200px;
+	z-index: 100;
+	@include transition(left 0.3s ease-in-out);
+
+    header.main-header {
+		background-color: $blue;
+		color:red;
+		display: block;
+
+    	h1 {
+    		@include icon-sprite(title-suggestion-box-horz);
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		h2 {
+			font-size: 12px;
+			height: 65px;
+			padding: 16px 0 0 30px;
+			text-transform: uppercase;
+
+			.msg {
+				float: left;
+				margin-top: 4px;
+			}
+
+			strong {
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			.count {
+				background-color: #fff;
+				color: $red;
+				display: block;
+				float: left;
+				font: bold 16px/32px $font-family;
+				height: 32px;
+				margin-right: 10px;
+				text-align: center;
+				width: 32px;
+
+				@include border-radius(50px);
+			}
+
+			.btn-next {
+				float: right;
+				margin: 7px 20px 0 0;
+			}
+		}
+    }
+
+	header.aside-header {
+		background-color: $blue;
+		border-left: 1px solid #e2e1de;
+		display: none;
+		height: 281px;
+		width: 60px;
+
+		position: absolute;
+		top: 0;
+		z-index: 100;
+
+		h1 {
+    		@include icon-sprite(title-suggestion-box);
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		h2 {
+			background-color: #fff;
+			color: $red;
+			font: bold 16px/32px $font-family;
+			height: 32px;
+			text-align: center;
+			width: 32px;
+			@include border-radius(50px);
+
+			position: absolute;
+			top: 20px;
+			right: 14px;
+		}
+	}
+
+	&.close {
+		header.main-header, .wrap-suggestions-links, .pagination, .btn-close-aside-box {
+			display: none;
+		}
+
+		header.aside-header {
+			cursor: pointer;
+			display: block;
+		}
+	}
+
+
+	&.aside-box-left {
+		left: 0;
+
+		header {
+			right: 0;
+		}
+
+		&.close {
+			left: -350px;
+			//left: 0;
+		}
+
+		.btn-close-aside-box {
+			text-align: right;
+		}
+	}
+
+	&.aside-box-right {
+		right: 0;
+
+		header.aside-header {
+			left: -2px;
+
+			h1 {
+				@include icon-sprite(title-take-talk);
+			}
+		}
+
+		&.close {
+			right: -351px;
+		}
+	}
+
+	&.aside-box2 {
+		top: 500px;
+
+		header {
+			h1 {
+				@include icon-sprite(title-resource-center);
+			}
+		}
+
+		.btn-close-aside-box {
+			background-color: #7f7f7f;
+		}
+	}
+
+	@include respond-to(hide-aside-box) {
+        display: block;
+    }
+
+	.wrap-suggestions-links {
+		padding: 0 150px 0 0;
+
+		p {
+			color: $blue;
+			margin-bottom: 15px;
+		}
+
+		ul.suggestions-links {
+			min-height: 110px;
+
+			li {
+				border-bottom: 1px solid #e2e1de;
+				height: 77px;
+				padding-left: 30px;
+				position: relative;
+
+				@include clearfix;
+
+				.openIframe {
+					color: $blue;
+					margin-top: 19px;
+
+					&:hover {
+						text-decoration: none;
+
+						.from {
+							text-decoration: underline;
+						}
+					}
+
+					strong, .from {
+						width: 230px;
+						@include ellipsis;
+					}
+
+					strong {
+						display: block;
+						font-weight: 600;
+						text-transform: uppercase;
+					}
+
+					.from {
+						color: $red;
+						display: block;
+						font-size: 13px;
+					}
+				}
+
+				.btn-add-suggestion, .btn-remove-suggestion {
+					border-bottom: 1px solid #e2e1de;
+					height: 77px;
+					width: 75px;
+
+					position: absolute;
+					top: 0;
+
+					&.btn-add-suggestion {
+						background-color: #f1f0ee;
+						right: -150px;
+
+						.icon {
+							margin: -20px 0 0 -20px;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+
+							@include opacity(0.9);
+							@include transition(opacity 0.2s ease-in-out);
+
+							&:hover {
+								@include opacity(1);
+								@include transition(opacity 0.1s ease-in-out);
+							}
+						}
+					}
+
+					&.btn-remove-suggestion {
+						right: -75px;
+
+						.icon {
+							margin: -12px 0 0 -12px;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+
+							@include opacity(0.4);
+							@include transition(opacity 0.2s ease-in-out);
+
+							&:hover {
+								@include opacity(1);
+								@include transition(opacity 0.1s ease-in-out);
+							}
+						}
+					}
+
+					.icon {
+						display: block;
+						text-indent: -9999px;
+					}
+				}
+			}
+		}
+	}
+
+	.pagination {
+		padding: 0 18px 0 30px;
+		@include clearfix;
+
+		li {
+			color: $blue;
+			float: right;
+			font-size: 12px;
+			height: 35px;
+			line-height: 35px;
+			text-transform: uppercase;
+
+			&:first-child {
+				float: left;
+			}
+
+			a {
+				color: $blue;
+			}
+
+			.icon {
+				display: block;
+				float: right;
+				margin-top: 15px;
+
+				&.icon-arrow-left {
+					float: left;
+					margin-right: 5px;
+				}
+
+				&.icon-arrow-right {
+					float: right;
+					margin-left: 5px;
+				}
+			}
+
+			strong {
+				font-weight: bold;
+				font-size: 15px;
+			}
+		}
+	}
+
+	.btn-close-aside-box {
+		background-color: $blue;
+		color: #fff;
+		display: block;
+		font-size: 13px;
+		height: 40px;
+		line-height: 40px;
+		padding-right: 18px;
+		text-transform: uppercase;
+
+		strong {
+			font-weight: bold;
+		}
+	}
+
+	.wrap-user-list {
+		padding: 7px 15px 0 65px;
+
+		h1 {
+			color: $green;
+			padding-bottom: 9px;
+		}
+
+		.user-list {
+			max-height: 205px;
+			overflow: auto;
+			li {
+				margin-bottom: 3px;
+				a {
+					color: #333;
+					display: block;
+					padding: 2px 5px;
+					@include transition(all 0.4s ease-in-out);
+
+					&:hover {
+						background-color: $light-gray;
+						@include transition(all 0.1s ease-in-out);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.aside-box.aside-box-logout {
+
+	.wrap-suggestions-links {
+		padding-right: 75px;
+	}
+
+}
+
+/*[SA] - Suggestion Box Changes*/
+.aside-boxNew {   
+
+    width: 19%;
+    float: left;    
+    top: 200px;
+	z-index: 100;
+	@include transition(left 0.3s ease-in-out);
+ 
+    header.main-header {
+		background-color: $blue;
+		color:red;
+		display: block;
+
+    	h1 {
+    		@include icon-sprite(title-suggestion-box-horz);
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+            width:auto;
+		}
+
+		h2 {
+			font-size: 12px;
+			height: 65px;
+			padding: 16px 0 0 30px;
+			text-transform: uppercase;
+
+			.msg {
+				float: left;
+				margin-top: 4px;
+			}
+
+			strong {
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			.count {
+				background-color: #fff;
+				color: $red;
+				display: block;
+				float: left;
+				font: bold 16px/32px $font-family;
+				height: 32px;
+				margin-right: 10px;
+				text-align: center;
+				width: 32px;
+
+				@include border-radius(50px);
+			}
+
+			.btn-next {
+				float: right;
+				margin: 7px 20px 0 0;
+			}
+		}
+    }
+
+	header.aside-header {
+		background-color: $blue;
+		border-left: 1px solid #e2e1de;
+		display: none;
+		height: 281px;
+		width: 60px;
+		top: 0;
+		z-index: 100;
+
+		h1 {
+    		@include icon-sprite(title-suggestion-box);
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;                              
+		}		
+        h2 {
+			font-size: 12px;
+			height: 65px;
+			padding: 26px 0 0 10px;
+			text-transform: uppercase;
+
+			.msg {
+				float: left;
+				margin-top: 4px;
+			}
+
+			strong {
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			.count {
+				background-color: #fff;
+				color: $red;
+				display: block;
+				float: left;
+				font: bold 16px/32px $font-family;
+				height: 32px;
+				margin-right: 10px;
+				text-align: center;
+				width: 32px;
+
+				@include border-radius(50px);
+			}
+
+			.btn-next {
+				float: right;
+				margin: 7px 20px 0 0;
+			}
+		}
+	}
+
+	&.close {
+		header.main-header, .wrap-suggestions-links, .pagination, .btn-close-aside-box {
+			display: none;
+		}
+
+		header.aside-header {
+			cursor: pointer;
+			display: block;
+		}
+	}
+
+
+	&.aside-box-left {
+		left: 0;
+
+		header {
+			right: 0;
+		}
+
+		&.close {
+			left: -350px;
+			//left: 0;
+		}
+
+		.btn-close-aside-box {
+			text-align: right;
+		}
+	}
+
+	&.aside-box-right {
+		right: 0;
+
+		header.aside-header {
+			left: -2px;
+
+			h1 {
+				@include icon-sprite(title-take-talk);
+			}
+		}
+
+		&.close {
+			right: -351px;
+		}
+	}
+
+	&.aside-box2 {
+		top: 500px;
+
+		header {
+			h1 {
+				@include icon-sprite(title-resource-center);
+			}
+		}
+
+		.btn-close-aside-box {
+			background-color: #7f7f7f;
+		}
+	}
+
+	@include respond-to(hide-aside-box) {
+        display: block;
+    }
+
+	.wrap-suggestions-links {
+		padding: 0 150px 0 0;
+
+		p {
+			color: $blue;
+			margin-bottom: 15px;
+		}
+
+		ul.suggestions-links {
+			min-height: 110px;
+
+			li {
+				border-bottom: 1px solid #e2e1de;
+				height: 77px;
+				/*padding-left: 30px;*/
+                padding-left: 20px;
+				position: relative;
+
+				@include clearfix;
+
+				.openIframe {
+					color: $blue;
+					margin-top: 19px;
+
+					&:hover {
+						text-decoration: none;
+
+						.from {
+							text-decoration: underline;
+						}
+					}
+
+					strong, .from {
+						width: 230px;
+						@include ellipsis;
+					}
+
+					strong {
+						display: block;
+						font-weight: 600;
+						text-transform: uppercase;
+					}
+
+					.from {
+						color: $red;
+						display: block;
+						font-size: 13px;
+					}
+				}
+
+				.btn-add-suggestion, .btn-remove-suggestion {
+					/*border-bottom: 1px solid #e2e1de;
+					height: 77px;
+					width: 75px;*/
+                    
+					height: 57px;
+					width: 55px;
+
+					position: absolute;
+					top: 0;
+
+					&.btn-add-suggestion {
+						background-color: #f1f0ee;
+						right: -150px;
+
+						.icon {
+							margin: -20px 0 0 -20px;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+
+							@include opacity(0.9);
+							@include transition(opacity 0.2s ease-in-out);
+
+							&:hover {
+								@include opacity(1);
+								@include transition(opacity 0.1s ease-in-out);
+							}
+						}
+					}
+
+					&.btn-remove-suggestion {
+						/*right: -75px;*/
+                        right: -100px;
+
+						.icon {
+							margin: -12px 0 0 -12px;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+
+							@include opacity(0.4);
+							@include transition(opacity 0.2s ease-in-out);
+
+							&:hover {
+								@include opacity(1);
+								@include transition(opacity 0.1s ease-in-out);
+							}
+						}
+					}
+
+					.icon {
+						display: block;
+						text-indent: -9999px;
+					}
+				}
+			}
+		}
+	}
+
+	.pagination {
+		padding: 0 18px 0 30px;
+		@include clearfix;
+
+		li {
+			color: $blue;
+			float: right;
+			font-size: 12px;
+			height: 35px;
+			line-height: 35px;
+			text-transform: uppercase;
+
+			&:first-child {
+				float: left;
+			}
+
+			a {
+				color: $blue;
+			}
+
+			.icon {
+				display: block;
+				float: right;
+				margin-top: 15px;
+
+				&.icon-arrow-left {
+					float: left;
+					margin-right: 5px;
+				}
+
+				&.icon-arrow-right {
+					float: right;
+					margin-left: 5px;
+				}
+			}
+
+			strong {
+				font-weight: bold;
+				font-size: 15px;
+			}
+		}
+	}
+
+	.btn-close-aside-box {
+		background-color: $blue;
+		color: #fff;
+		display: block;
+		font-size: 13px;
+		height: 40px;
+		line-height: 40px;
+		padding-right: 18px;
+		text-transform: uppercase;
+
+		strong {
+			font-weight: bold;
+		}
+	}
+
+	.wrap-user-list {
+		padding: 7px 15px 0 65px;
+
+		h1 {
+			color: $green;
+			padding-bottom: 9px;
+		}
+
+		.user-list {
+			max-height: 205px;
+			overflow: auto;
+			li {
+				margin-bottom: 3px;
+				a {
+					color: #333;
+					display: block;
+					padding: 2px 5px;
+					@include transition(all 0.4s ease-in-out);
+
+					&:hover {
+						background-color: $light-gray;
+						@include transition(all 0.1s ease-in-out);
+					}
+				}
+			}
+		}
+	}
+}

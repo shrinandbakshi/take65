@@ -1,0 +1,13 @@
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Test.dll.config
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Test.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Test.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Dal.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Model.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Dal.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\bin\Debug\Model.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\obj\Debug\Test.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Test\obj\Debug\Test.pdb

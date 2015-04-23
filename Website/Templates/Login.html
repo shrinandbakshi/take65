@@ -1,0 +1,74 @@
+﻿<!-- FACEBOOK -->
+<script>
+    window.fbAsyncInit = function () {
+        // init the FB JS SDK
+        FB.init({
+            appId: _facebookAppId,                        // App ID from the app dashboard
+            // channelUrl: 'http://take65.sandbox.netbiis.com/', // Channel file for x-domain comms
+            status: true,                                 // Check Facebook Login status
+            xfbml: true                                  // Look for social plugins on the page
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+    };
+
+    // Load the SDK asynchronously
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<section class="box-lightbox login" data-fn="placeholder" data-resizecolorbox="" data-ng-controller="LoginCtrl">
+    <header>
+        <h1>{{title}}</h1>
+    </header>
+    <form class="hold-form" data-ng-submit="submit()" name="loginForm" data-nglogged="" data-ng-hide="forgotPass" data-fn="formValidation" data-param='{ "error": "#loginMessage", "submit": "#btnLogin", "colorbox": true }'>
+        <div class="hold-line">
+            <label for="fldLoginName" class="lbl-left">Email</label>
+            <input type="email" name="login" class="i-txt i-right" id="fldLoginName" data-valid="empty" data-name="email" placeholder="Type your email address" data-ng-model="login">
+        </div>
+        <div class="hold-line">
+            <label for="fldLoginPassword" class="lbl-left">Password</label>
+            <input type="password" name="password" class="i-txt i-right" id="fldLoginPassword" data-valid="empty" data-name="password" placeholder="Type your Take 65 password" data-ng-model="password">
+        </div>
+        <div class="hidden hold-line keep-logged">
+            <div class="sCheckbox chk-17" data-ng-class="{ checked: keepMeLoggedIn }" data-ng-click="keepMeLoggedIn = !keepMeLoggedIn"><span class="check"></span></div>
+            <input type="checkbox" class="hidden" value="keepMeLoggedIn" name="loggedCookie" id="keepMeLoggedIn" data-ng-model="keepMeLoggedIn" />
+            <label for="keepMeLoggedIn">Keep me logged in</label>
+        </div>
+        <div id="loginMessage" class="msg-feedback error" data-ng-hide="isSending"></div>
+        <div class="msg-feedback" data-ng-class="feedbackStatus" data-ng-show="isFeedback">{{feedbackMessage}}</div>
+        <div class="msg-feedback" data-ng-class="feedbackStatus" data-ng-show="isSending">{{loginMessage}}</div>
+
+        <div class="more-options-login">
+            <a href="javascript:void(0);" id="btnForgotPassword" data-ng-click="setForgotPass(true);" data-ng-hide="forgotPass">Forgot your password?</a>
+            <a href="#modalSliderAjax" data-ngopenpop="/Templates/Register.html" data-fn="openPop" data-param='{ "type": "inline", "closeButton": false, "height":"80%", "width": 560 }'>Sign up now</a>
+        </div>
+        <input type="submit" value="Login" class="btn btn-login btn-red" id="btnLogin" data-valid="submit" />
+        <!--<a href="javascript:void(0);" class="btn btn-login btn-red" id="btnLogin" data-valid="submit" data-trigger="login"><span class="text">Login</span></a>-->
+        <div class="clearfix">
+            <a href="#/loginFacebook" class="btn-sign-face btn-sign-up" data-ng-click="loginFacebook()"><span class="icon icon-face-sign"></span><span class="text">Sign in with Facebook</span></a>
+            <a href="#/loginGoogle" class="btn-sign-google btn-sign-up" data-ng-click="loginGoogle();"><span class="icon icon-gplus-sign"></span><span class="text">Sign in with Google</span></a>
+        </div>
+
+        <div id="facebookMessage" class="msg-feedback error" data-ng-class="feedbackFacebook" data-ng-show="facebookSending">{{facebookMessage}}</div>
+        <div id="googleMessage" class="msg-feedback error" data-ng-class="feedbackGoogle" data-ng-show="googleSending">{{googleMessage}}</div>
+    </form>
+    <form class="hold-form forgot-form" data-ng-submit="forgotPassword()" name="forgotForm" data-ng-show="forgotPass" data-fn="formValidation" data-param='{ "error": "#loginMessageForgot", "submit": "#btnForgotPass", "colorbox": true }'>
+        <div class="hold-line" data-ng-class="{ error: !forgotPasswordValid }">
+            <label for="" class="lbl-left">Email:</label>
+            <input type="email" name="login" class="i-txt i-right" id="Text1" data-valid="empty" data-name="email" placeholder="Type your email address" data-ng-model="loginForgot">
+        </div>
+        <div id="loginMessageForgot" class="msg-feedback error" data-ng-hide="isSendingForgot"></div>
+        <div class="msg-feedback" data-ng-class="feedbackStatusForgot" data-ng-show="isSendingForgot">{{forgotMessage}}</div>
+        <div class="more-options-login">
+            <a href="javascript:void(0);" data-ng-click="setForgotPass(false);" data-ng-show="forgotPass">Go back</a>
+        </div>
+        <input type="submit" value="Ok" class="btn btn-login btn-red" id="btnForgotPass" data-valid="submit" />
+    </form>
+    <a id="openChangePassword" href="#modalSliderAjax" data-ngopenpop="/Templates/Settings/ChangePassword.html" data-fn="openPop" data-param='{ "type": "inline", "allowClose": false, "closeButton": false, "height":420, "width": 390 }' class="hidden">content</a>
+</section>

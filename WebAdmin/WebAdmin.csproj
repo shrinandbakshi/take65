@@ -1,0 +1,1157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.props" Condition="Exists('packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A0FFABF-DD23-4402-BC0C-6B766084A0FE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAdmin</RootNamespace>
+    <AssemblyName>WebAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Website\bin\Bll.dll</HintPath>
+    </Reference>
+    <Reference Include="Imazen.Crop, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Imazen.Crop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Live, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\LiveSDK.5.6.1\lib\net40\Microsoft.Live.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform">
+      <HintPath>packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Website\bin\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=2.8.50926.602, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\NuGet.Core.2.8.3\lib\net40-Client\NuGet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CKEditor\build-config.js" />
+    <Content Include="CKEditor\ckeditor.js" />
+    <Content Include="CKEditor\config.js" />
+    <Content Include="CKEditor\contents.css" />
+    <Content Include="CKEditor\lang\af.js" />
+    <Content Include="CKEditor\lang\ar.js" />
+    <Content Include="CKEditor\lang\bg.js" />
+    <Content Include="CKEditor\lang\bn.js" />
+    <Content Include="CKEditor\lang\bs.js" />
+    <Content Include="CKEditor\lang\ca.js" />
+    <Content Include="CKEditor\lang\cs.js" />
+    <Content Include="CKEditor\lang\cy.js" />
+    <Content Include="CKEditor\lang\da.js" />
+    <Content Include="CKEditor\lang\de.js" />
+    <Content Include="CKEditor\lang\el.js" />
+    <Content Include="CKEditor\lang\en-au.js" />
+    <Content Include="CKEditor\lang\en-ca.js" />
+    <Content Include="CKEditor\lang\en-gb.js" />
+    <Content Include="CKEditor\lang\en.js" />
+    <Content Include="CKEditor\lang\eo.js" />
+    <Content Include="CKEditor\lang\es.js" />
+    <Content Include="CKEditor\lang\et.js" />
+    <Content Include="CKEditor\lang\eu.js" />
+    <Content Include="CKEditor\lang\fa.js" />
+    <Content Include="CKEditor\lang\fi.js" />
+    <Content Include="CKEditor\lang\fo.js" />
+    <Content Include="CKEditor\lang\fr-ca.js" />
+    <Content Include="CKEditor\lang\fr.js" />
+    <Content Include="CKEditor\lang\gl.js" />
+    <Content Include="CKEditor\lang\gu.js" />
+    <Content Include="CKEditor\lang\he.js" />
+    <Content Include="CKEditor\lang\hi.js" />
+    <Content Include="CKEditor\lang\hr.js" />
+    <Content Include="CKEditor\lang\hu.js" />
+    <Content Include="CKEditor\lang\is.js" />
+    <Content Include="CKEditor\lang\it.js" />
+    <Content Include="CKEditor\lang\ja.js" />
+    <Content Include="CKEditor\lang\ka.js" />
+    <Content Include="CKEditor\lang\km.js" />
+    <Content Include="CKEditor\lang\ko.js" />
+    <Content Include="CKEditor\lang\ku.js" />
+    <Content Include="CKEditor\lang\lt.js" />
+    <Content Include="CKEditor\lang\lv.js" />
+    <Content Include="CKEditor\lang\mk.js" />
+    <Content Include="CKEditor\lang\mn.js" />
+    <Content Include="CKEditor\lang\ms.js" />
+    <Content Include="CKEditor\lang\nb.js" />
+    <Content Include="CKEditor\lang\nl.js" />
+    <Content Include="CKEditor\lang\no.js" />
+    <Content Include="CKEditor\lang\pl.js" />
+    <Content Include="CKEditor\lang\pt-br.js" />
+    <Content Include="CKEditor\lang\pt.js" />
+    <Content Include="CKEditor\lang\ro.js" />
+    <Content Include="CKEditor\lang\ru.js" />
+    <Content Include="CKEditor\lang\sk.js" />
+    <Content Include="CKEditor\lang\sl.js" />
+    <Content Include="CKEditor\lang\sr-latn.js" />
+    <Content Include="CKEditor\lang\sr.js" />
+    <Content Include="CKEditor\lang\sv.js" />
+    <Content Include="CKEditor\lang\th.js" />
+    <Content Include="CKEditor\lang\tr.js" />
+    <Content Include="CKEditor\lang\ug.js" />
+    <Content Include="CKEditor\lang\uk.js" />
+    <Content Include="CKEditor\lang\vi.js" />
+    <Content Include="CKEditor\lang\zh-cn.js" />
+    <Content Include="CKEditor\lang\zh.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="CKEditor\plugins\about\dialogs\about.js" />
+    <Content Include="CKEditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="CKEditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="CKEditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="CKEditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="CKEditor\plugins\div\dialogs\div.js" />
+    <Content Include="CKEditor\plugins\fakeobjects\images\spacer.gif" />
+    <Content Include="CKEditor\plugins\fileupload\images\icon.png" />
+    <Content Include="CKEditor\plugins\fileupload\plugin.js" />
+    <Content Include="CKEditor\plugins\find\dialogs\find.js" />
+    <Content Include="CKEditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="CKEditor\plugins\flash\images\placeholder.png" />
+    <Content Include="CKEditor\plugins\forms\dialogs\button.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\form.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\select.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="CKEditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="CKEditor\plugins\icons.png" />
+    <Content Include="CKEditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="CKEditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="CKEditor\plugins\image\dialogs\image.js" />
+    <Content Include="CKEditor\plugins\image\images\noimage.png" />
+    <Content Include="CKEditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="CKEditor\plugins\link\dialogs\link.js" />
+    <Content Include="CKEditor\plugins\link\images\anchor.png" />
+    <Content Include="CKEditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="CKEditor\plugins\magicline\images\icon.png" />
+    <Content Include="CKEditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="CKEditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="CKEditor\plugins\preview\preview.html" />
+    <Content Include="CKEditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="CKEditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="CKEditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="CKEditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\heart.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="CKEditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="CKEditor\plugins\table\dialogs\table.js" />
+    <Content Include="CKEditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="CKEditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="CKEditor\plugins\templates\templates\default.js" />
+    <Content Include="CKEditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="CKEditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="CKEditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="CKEditor\plugins\youtube\images\icon.png" />
+    <Content Include="CKEditor\plugins\youtube\plugin.js" />
+    <Content Include="CKEditor\samples\ajax.html" />
+    <Content Include="CKEditor\samples\api.html" />
+    <Content Include="CKEditor\samples\appendto.html" />
+    <Content Include="CKEditor\samples\assets\inlineall\logo.png" />
+    <Content Include="CKEditor\samples\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="CKEditor\samples\assets\sample.css" />
+    <Content Include="CKEditor\samples\assets\sample.jpg" />
+    <Content Include="CKEditor\samples\assets\uilanguages\languages.js" />
+    <Content Include="CKEditor\samples\divreplace.html" />
+    <Content Include="CKEditor\samples\index.html" />
+    <Content Include="CKEditor\samples\inlineall.html" />
+    <Content Include="CKEditor\samples\inlinebycode.html" />
+    <Content Include="CKEditor\samples\plugins\dialog\assets\my_dialog.js" />
+    <Content Include="CKEditor\samples\plugins\dialog\dialog.html" />
+    <Content Include="CKEditor\samples\plugins\enterkey\enterkey.html" />
+    <Content Include="CKEditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="CKEditor\samples\plugins\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="CKEditor\samples\plugins\htmlwriter\outputforflash.html" />
+    <Content Include="CKEditor\samples\plugins\htmlwriter\outputhtml.html" />
+    <Content Include="CKEditor\samples\plugins\magicline\magicline.html" />
+    <Content Include="CKEditor\samples\plugins\toolbar\toolbar.html" />
+    <Content Include="CKEditor\samples\plugins\wysiwygarea\fullpage.html" />
+    <Content Include="CKEditor\samples\readonly.html" />
+    <Content Include="CKEditor\samples\replacebyclass.html" />
+    <Content Include="CKEditor\samples\replacebycode.html" />
+    <Content Include="CKEditor\samples\sample.css" />
+    <Content Include="CKEditor\samples\sample.js" />
+    <Content Include="CKEditor\samples\tabindex.html" />
+    <Content Include="CKEditor\samples\uicolor.html" />
+    <Content Include="CKEditor\samples\uilanguages.html" />
+    <Content Include="CKEditor\samples\xhtmlstyle.html" />
+    <Content Include="CKEditor\skins\moono-dark\colorpanel.css" />
+    <Content Include="CKEditor\skins\moono-dark\dialog.css" />
+    <Content Include="CKEditor\skins\moono-dark\dialog_ie.css" />
+    <Content Include="CKEditor\skins\moono-dark\dialog_ie7.css" />
+    <Content Include="CKEditor\skins\moono-dark\dialog_ie8.css" />
+    <Content Include="CKEditor\skins\moono-dark\editor.css" />
+    <Content Include="CKEditor\skins\moono-dark\editor_ie.css" />
+    <Content Include="CKEditor\skins\moono-dark\editor_ie7.css" />
+    <Content Include="CKEditor\skins\moono-dark\editor_ie8.css" />
+    <Content Include="CKEditor\skins\moono-dark\elementspath.css" />
+    <Content Include="CKEditor\skins\moono-dark\icons\about.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\anchor-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\anchor.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\bgcolor.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\bidiltr.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\bidirtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\blockquote.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\bold.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\bulletedlist-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\bulletedlist.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\button.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\checkbox.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\copy-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\copy.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\creatediv.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\cut-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\cut.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\find-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\find.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\flash.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\form.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\hiddenfield.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\horizontalrule.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\iframe.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\image.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\imagebutton.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\indent-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\indent.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\italic.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\justifyblock.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\justifycenter.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\justifyleft.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\justifyright.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\link.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\maximize.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\newpage-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\newpage.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\numberedlist-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\numberedlist.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\outdent-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\outdent.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\pagebreak-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\pagebreak.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\paste-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\paste.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\pastefromword-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\pastefromword.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\pastetext-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\pastetext.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\preview-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\preview.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\print.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\radio.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\redo-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\redo.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\removeformat.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\replace.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\save.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\scayt.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\select-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\select.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\selectall.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\showblocks-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\showblocks.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\smiley.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\source-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\source.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\specialchar.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\spellchecker.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\strike.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\subscript.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\superscript.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\table.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\templates-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\templates.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\textarea-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\textarea.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\textcolor.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\textfield-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\textfield.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\underline.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\undo-rtl.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\undo.png" />
+    <Content Include="CKEditor\skins\moono-dark\icons\unlink.png" />
+    <Content Include="CKEditor\skins\moono-dark\images\arrow.png" />
+    <Content Include="CKEditor\skins\moono-dark\images\close.png" />
+    <Content Include="CKEditor\skins\moono-dark\images\mini.gif" />
+    <Content Include="CKEditor\skins\moono-dark\mainui.css" />
+    <Content Include="CKEditor\skins\moono-dark\menu.css" />
+    <Content Include="CKEditor\skins\moono-dark\panel.css" />
+    <Content Include="CKEditor\skins\moono-dark\presets.css" />
+    <Content Include="CKEditor\skins\moono-dark\reset.css" />
+    <Content Include="CKEditor\skins\moono-dark\richcombo.css" />
+    <Content Include="CKEditor\skins\moono-dark\skin.js" />
+    <Content Include="CKEditor\skins\moono-dark\toolbar.css" />
+    <Content Include="CKEditor\skins\moono-light\colorpanel.css" />
+    <Content Include="CKEditor\skins\moono-light\dialog.css" />
+    <Content Include="CKEditor\skins\moono-light\dialog_ie.css" />
+    <Content Include="CKEditor\skins\moono-light\dialog_ie7.css" />
+    <Content Include="CKEditor\skins\moono-light\dialog_ie8.css" />
+    <Content Include="CKEditor\skins\moono-light\dialog_opera.css" />
+    <Content Include="CKEditor\skins\moono-light\editor.css" />
+    <Content Include="CKEditor\skins\moono-light\editor_ie.css" />
+    <Content Include="CKEditor\skins\moono-light\editor_ie7.css" />
+    <Content Include="CKEditor\skins\moono-light\editor_ie8.css" />
+    <Content Include="CKEditor\skins\moono-light\elementspath.css" />
+    <Content Include="CKEditor\skins\moono-light\icons\about.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\anchor-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\anchor.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\bgcolor.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\bidiltr.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\bidirtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\blockquote.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\bold.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\bulletedlist-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\bulletedlist.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\button.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\checkbox.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\copy-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\copy.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\creatediv.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\cut-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\cut.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\find-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\find.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\flash.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\form.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\hiddenfield.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\horizontalrule.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\iframe.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\image.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\imagebutton.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\indent-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\indent.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\italic.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\justifyblock.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\justifycenter.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\justifyleft.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\justifyright.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\link.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\maximize.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\newpage-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\newpage.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\numberedlist-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\numberedlist.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\outdent-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\outdent.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\pagebreak-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\pagebreak.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\paste-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\paste.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\pastefromword-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\pastefromword.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\pastetext-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\pastetext.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\preview-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\preview.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\print.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\radio.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\redo-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\redo.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\removeformat.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\replace.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\save.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\scayt.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\select-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\select.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\selectall.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\showblocks-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\showblocks.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\smiley.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\source-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\source.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\specialchar.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\spellchecker.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\strike.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\subscript.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\superscript.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\table.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\templates-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\templates.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\textarea-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\textarea.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\textcolor.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\textfield-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\textfield.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\underline.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\undo-rtl.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\undo.png" />
+    <Content Include="CKEditor\skins\moono-light\icons\unlink.png" />
+    <Content Include="CKEditor\skins\moono-light\images\arrow.png" />
+    <Content Include="CKEditor\skins\moono-light\images\close.png" />
+    <Content Include="CKEditor\skins\moono-light\images\mini.png" />
+    <Content Include="CKEditor\skins\moono-light\mainui.css" />
+    <Content Include="CKEditor\skins\moono-light\menu.css" />
+    <Content Include="CKEditor\skins\moono-light\panel.css" />
+    <Content Include="CKEditor\skins\moono-light\presets.css" />
+    <Content Include="CKEditor\skins\moono-light\reset.css" />
+    <Content Include="CKEditor\skins\moono-light\richcombo.css" />
+    <Content Include="CKEditor\skins\moono-light\skin.js" />
+    <Content Include="CKEditor\skins\moono-light\toolbar.css" />
+    <Content Include="CKEditor\skins\moono\dialog.css" />
+    <Content Include="CKEditor\skins\moono\dialog_ie.css" />
+    <Content Include="CKEditor\skins\moono\dialog_ie7.css" />
+    <Content Include="CKEditor\skins\moono\dialog_ie8.css" />
+    <Content Include="CKEditor\skins\moono\dialog_iequirks.css" />
+    <Content Include="CKEditor\skins\moono\dialog_opera.css" />
+    <Content Include="CKEditor\skins\moono\editor.css" />
+    <Content Include="CKEditor\skins\moono\editor_gecko.css" />
+    <Content Include="CKEditor\skins\moono\editor_ie.css" />
+    <Content Include="CKEditor\skins\moono\editor_ie7.css" />
+    <Content Include="CKEditor\skins\moono\editor_ie8.css" />
+    <Content Include="CKEditor\skins\moono\editor_iequirks.css" />
+    <Content Include="CKEditor\skins\moono\icons.png" />
+    <Content Include="CKEditor\skins\moono\images\arrow.png" />
+    <Content Include="CKEditor\skins\moono\images\close.png" />
+    <Content Include="CKEditor\skins\moono\images\mini.png" />
+    <Content Include="CKEditor\skins\ozone\colorpanel.css" />
+    <Content Include="CKEditor\skins\ozone\dialog.css" />
+    <Content Include="CKEditor\skins\ozone\dialog_ie.css" />
+    <Content Include="CKEditor\skins\ozone\dialog_opera.css" />
+    <Content Include="CKEditor\skins\ozone\editor.css" />
+    <Content Include="CKEditor\skins\ozone\editor_ie.css" />
+    <Content Include="CKEditor\skins\ozone\elementspath.css" />
+    <Content Include="CKEditor\skins\ozone\icons\about.png" />
+    <Content Include="CKEditor\skins\ozone\icons\anchor-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\anchor.png" />
+    <Content Include="CKEditor\skins\ozone\icons\bgcolor.png" />
+    <Content Include="CKEditor\skins\ozone\icons\bidiltr.png" />
+    <Content Include="CKEditor\skins\ozone\icons\bidirtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\blockquote.png" />
+    <Content Include="CKEditor\skins\ozone\icons\bold.png" />
+    <Content Include="CKEditor\skins\ozone\icons\bulletedlist-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\bulletedlist.png" />
+    <Content Include="CKEditor\skins\ozone\icons\button.png" />
+    <Content Include="CKEditor\skins\ozone\icons\checkbox.png" />
+    <Content Include="CKEditor\skins\ozone\icons\copy-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\copy.png" />
+    <Content Include="CKEditor\skins\ozone\icons\creatediv.png" />
+    <Content Include="CKEditor\skins\ozone\icons\cut-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\cut.png" />
+    <Content Include="CKEditor\skins\ozone\icons\find-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\find.png" />
+    <Content Include="CKEditor\skins\ozone\icons\flash.png" />
+    <Content Include="CKEditor\skins\ozone\icons\form.png" />
+    <Content Include="CKEditor\skins\ozone\icons\hiddenfield.png" />
+    <Content Include="CKEditor\skins\ozone\icons\horizontalrule.png" />
+    <Content Include="CKEditor\skins\ozone\icons\iframe.png" />
+    <Content Include="CKEditor\skins\ozone\icons\image.png" />
+    <Content Include="CKEditor\skins\ozone\icons\imagebutton.png" />
+    <Content Include="CKEditor\skins\ozone\icons\indent-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\indent.png" />
+    <Content Include="CKEditor\skins\ozone\icons\italic.png" />
+    <Content Include="CKEditor\skins\ozone\icons\justifyblock.png" />
+    <Content Include="CKEditor\skins\ozone\icons\justifycenter.png" />
+    <Content Include="CKEditor\skins\ozone\icons\justifyleft.png" />
+    <Content Include="CKEditor\skins\ozone\icons\justifyright.png" />
+    <Content Include="CKEditor\skins\ozone\icons\link.png" />
+    <Content Include="CKEditor\skins\ozone\icons\maximize.png" />
+    <Content Include="CKEditor\skins\ozone\icons\newpage-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\newpage.png" />
+    <Content Include="CKEditor\skins\ozone\icons\numberedlist-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\numberedlist.png" />
+    <Content Include="CKEditor\skins\ozone\icons\outdent-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\outdent.png" />
+    <Content Include="CKEditor\skins\ozone\icons\pagebreak-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\pagebreak.png" />
+    <Content Include="CKEditor\skins\ozone\icons\paste-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\paste.png" />
+    <Content Include="CKEditor\skins\ozone\icons\pastefromword-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\pastefromword.png" />
+    <Content Include="CKEditor\skins\ozone\icons\pastetext-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\pastetext.png" />
+    <Content Include="CKEditor\skins\ozone\icons\preview-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\preview.png" />
+    <Content Include="CKEditor\skins\ozone\icons\print.png" />
+    <Content Include="CKEditor\skins\ozone\icons\radio.png" />
+    <Content Include="CKEditor\skins\ozone\icons\redo-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\redo.png" />
+    <Content Include="CKEditor\skins\ozone\icons\removeformat.png" />
+    <Content Include="CKEditor\skins\ozone\icons\replace.png" />
+    <Content Include="CKEditor\skins\ozone\icons\resize-br.png" />
+    <Content Include="CKEditor\skins\ozone\icons\save.png" />
+    <Content Include="CKEditor\skins\ozone\icons\scayt.png" />
+    <Content Include="CKEditor\skins\ozone\icons\select-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\select.png" />
+    <Content Include="CKEditor\skins\ozone\icons\selectall.png" />
+    <Content Include="CKEditor\skins\ozone\icons\showblocks-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\showblocks.png" />
+    <Content Include="CKEditor\skins\ozone\icons\smiley.png" />
+    <Content Include="CKEditor\skins\ozone\icons\source-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\source.png" />
+    <Content Include="CKEditor\skins\ozone\icons\specialchar.png" />
+    <Content Include="CKEditor\skins\ozone\icons\spellchecker.png" />
+    <Content Include="CKEditor\skins\ozone\icons\strike.png" />
+    <Content Include="CKEditor\skins\ozone\icons\subscript.png" />
+    <Content Include="CKEditor\skins\ozone\icons\superscript.png" />
+    <Content Include="CKEditor\skins\ozone\icons\table.png" />
+    <Content Include="CKEditor\skins\ozone\icons\templates-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\templates.png" />
+    <Content Include="CKEditor\skins\ozone\icons\textalt.png" />
+    <Content Include="CKEditor\skins\ozone\icons\textarea-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\textarea.png" />
+    <Content Include="CKEditor\skins\ozone\icons\textcolor.png" />
+    <Content Include="CKEditor\skins\ozone\icons\textfield.png" />
+    <Content Include="CKEditor\skins\ozone\icons\underline.png" />
+    <Content Include="CKEditor\skins\ozone\icons\undo-rtl.png" />
+    <Content Include="CKEditor\skins\ozone\icons\undo.png" />
+    <Content Include="CKEditor\skins\ozone\icons\unlink.png" />
+    <Content Include="CKEditor\skins\ozone\mainui.css" />
+    <Content Include="CKEditor\skins\ozone\menu.css" />
+    <Content Include="CKEditor\skins\ozone\panel.css" />
+    <Content Include="CKEditor\skins\ozone\presets.css" />
+    <Content Include="CKEditor\skins\ozone\reset.css" />
+    <Content Include="CKEditor\skins\ozone\richcombo.css" />
+    <Content Include="CKEditor\skins\ozone\screenshot.png" />
+    <Content Include="CKEditor\skins\ozone\skin.js" />
+    <Content Include="CKEditor\skins\ozone\toolbar.css" />
+    <Content Include="CKEditor\skins\silver-master\colorpanel.css" />
+    <Content Include="CKEditor\skins\silver-master\dialog.css" />
+    <Content Include="CKEditor\skins\silver-master\dialog_ie.css" />
+    <Content Include="CKEditor\skins\silver-master\dialog_ie7.css" />
+    <Content Include="CKEditor\skins\silver-master\dialog_ie8.css" />
+    <Content Include="CKEditor\skins\silver-master\dialog_iequirks.css" />
+    <Content Include="CKEditor\skins\silver-master\dialog_opera.css" />
+    <Content Include="CKEditor\skins\silver-master\editor.css" />
+    <Content Include="CKEditor\skins\silver-master\editor_ie.css" />
+    <Content Include="CKEditor\skins\silver-master\editor_ie7.css" />
+    <Content Include="CKEditor\skins\silver-master\editor_ie8.css" />
+    <Content Include="CKEditor\skins\silver-master\editor_iequirks.css" />
+    <Content Include="CKEditor\skins\silver-master\elementspath.css" />
+    <Content Include="CKEditor\skins\silver-master\icons\about.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\anchor-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\anchor.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\bgcolor.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\bidiltr.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\bidirtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\blockquote.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\bold.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\bulletedlist-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\bulletedlist.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\button.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\checkbox.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\copy-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\copy.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\creatediv.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\cut-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\cut.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\docprops-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\docprops.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\find-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\find.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\flash.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\form.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\hiddenfield.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\horizontalrule.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\icons.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\iframe.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\image.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\imagebutton.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\indent-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\indent.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\italic.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\justifyblock.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\justifycenter.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\justifyleft.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\justifyright.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\link.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\maximize.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\newpage-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\newpage.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\numberedlist-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\numberedlist.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\outdent-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\outdent.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\pagebreak-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\pagebreak.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\paste-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\paste.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\pastefromword-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\pastefromword.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\pastetext-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\pastetext.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\preview-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\preview.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\print.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\radio.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\redo-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\redo.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\removeformat.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\replace.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\save.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\scayt.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\select-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\select.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\selectall.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\showblocks-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\showblocks.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\smiley.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\source-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\source.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\specialchar.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\spellchecker.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\strike.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\subscript.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\superscript.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\table.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\templates-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\templates.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\textarea-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\textarea.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\textcolor.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\textfield.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\underline.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\undo-rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\undo.png" />
+    <Content Include="CKEditor\skins\silver-master\icons\unlink.png" />
+    <Content Include="CKEditor\skins\silver-master\images\custom\comboBg.png" />
+    <Content Include="CKEditor\skins\silver-master\images\custom\comboBgHover.png" />
+    <Content Include="CKEditor\skins\silver-master\images\custom\resizer.png" />
+    <Content Include="CKEditor\skins\silver-master\images\custom\toolBg.png" />
+    <Content Include="CKEditor\skins\silver-master\images\custom\toolBgStriped.png" />
+    <Content Include="CKEditor\skins\silver-master\images\custom\toolEnd.png" />
+    <Content Include="CKEditor\skins\silver-master\images\dialog_sides.gif" />
+    <Content Include="CKEditor\skins\silver-master\images\dialog_sides.png" />
+    <Content Include="CKEditor\skins\silver-master\images\dialog_sides_rtl.png" />
+    <Content Include="CKEditor\skins\silver-master\images\mini.gif" />
+    <Content Include="CKEditor\skins\silver-master\images\sprites.png" />
+    <Content Include="CKEditor\skins\silver-master\images\sprites_ie6.png" />
+    <Content Include="CKEditor\skins\silver-master\images\toolbar_start.gif" />
+    <Content Include="CKEditor\skins\silver-master\mainui.css" />
+    <Content Include="CKEditor\skins\silver-master\menu.css" />
+    <Content Include="CKEditor\skins\silver-master\panel.css" />
+    <Content Include="CKEditor\skins\silver-master\presets.css" />
+    <Content Include="CKEditor\skins\silver-master\preview\preview.png" />
+    <Content Include="CKEditor\skins\silver-master\preview\uicolor.png" />
+    <Content Include="CKEditor\skins\silver-master\reset.css" />
+    <Content Include="CKEditor\skins\silver-master\richcombo.css" />
+    <Content Include="CKEditor\skins\silver-master\skin.js" />
+    <Content Include="CKEditor\skins\silver-master\toolbar.css" />
+    <Content Include="CKEditor\styles.js" />
+    <Content Include="Css\colorbox.css" />
+    <Content Include="Css\colorpicker.css" />
+    <Content Include="Css\FontFace.css" />
+    <Content Include="Css\Grid.css" />
+    <Content Include="Css\images\border.png" />
+    <Content Include="Css\images\controls.png" />
+    <Content Include="Css\images\loading.gif" />
+    <Content Include="Css\images\loading_background.png" />
+    <Content Include="Css\images\overlay.png" />
+    <Content Include="Css\layout.css" />
+    <Content Include="Css\Reset.css" />
+    <Content Include="Css\Style.css" />
+    <Content Include="Css\SuperfishMenu.css" />
+    <Content Include="Css\Table.css" />
+    <Content Include="Css\Tools.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Img\accordio.jpg" />
+    <Content Include="Img\accordio.png" />
+    <Content Include="Img\accordip.jpg" />
+    <Content Include="Img\accordiq.jpg" />
+    <Content Include="Img\arrow-10.png" />
+    <Content Include="Img\arrow-20.png" />
+    <Content Include="Img\auto-arr.png" />
+    <Content Include="Img\body.jpg" />
+    <Content Include="Img\border-1.jpg" />
+    <Content Include="Img\border-2.png" />
+    <Content Include="Img\border-3.png" />
+    <Content Include="Img\border-menu.png" />
+    <Content Include="Img\btnMenuV.png" />
+    <Content Include="Img\button-2.jpg" />
+    <Content Include="Img\colorpicker\blank.gif" />
+    <Content Include="Img\colorpicker\colorpicker_background.png" />
+    <Content Include="Img\colorpicker\colorpicker_hex.png" />
+    <Content Include="Img\colorpicker\colorpicker_hsb_b.png" />
+    <Content Include="Img\colorpicker\colorpicker_hsb_h.png" />
+    <Content Include="Img\colorpicker\colorpicker_hsb_s.png" />
+    <Content Include="Img\colorpicker\colorpicker_indic.gif" />
+    <Content Include="Img\colorpicker\colorpicker_overlay.png" />
+    <Content Include="Img\colorpicker\colorpicker_rgb_b.png" />
+    <Content Include="Img\colorpicker\colorpicker_rgb_g.png" />
+    <Content Include="Img\colorpicker\colorpicker_rgb_r.png" />
+    <Content Include="Img\colorpicker\colorpicker_select.gif" />
+    <Content Include="Img\colorpicker\colorpicker_submit.png" />
+    <Content Include="Img\colorpicker\custom_background.png" />
+    <Content Include="Img\colorpicker\custom_hex.png" />
+    <Content Include="Img\colorpicker\custom_hsb_b.png" />
+    <Content Include="Img\colorpicker\custom_hsb_h.png" />
+    <Content Include="Img\colorpicker\custom_hsb_s.png" />
+    <Content Include="Img\colorpicker\custom_indic.gif" />
+    <Content Include="Img\colorpicker\custom_rgb_b.png" />
+    <Content Include="Img\colorpicker\custom_rgb_g.png" />
+    <Content Include="Img\colorpicker\custom_rgb_r.png" />
+    <Content Include="Img\colorpicker\custom_submit.png" />
+    <Content Include="Img\colorpicker\select.png" />
+    <Content Include="Img\colorpicker\select2.png" />
+    <Content Include="Img\colorpicker\slider.png" />
+    <Content Include="Img\icon.ico" />
+    <Content Include="Img\Icon\icon_arrow-left.png" />
+    <Content Include="Img\Icon\icon_arrow-right.png" />
+    <Content Include="Img\logo-main.png" />
+    <Content Include="Img\logo.png" />
+    <Content Include="Img\marker-1.png" />
+    <Content Include="Img\marker-2.png" />
+    <Content Include="Img\marker4.png" />
+    <Content Include="Img\phone-ic.png" />
+    <Content Include="Img\separato.jpg" />
+    <Content Include="Img\site-title.gif" />
+    <Content Include="Img\soc-icon.png" />
+    <Content Include="Img\soc-icoo.png" />
+    <Content Include="Img\soc-icop.png" />
+    <Content Include="Img\soc-icoq.png" />
+    <Content Include="Img\sub-bg-1-s.png" />
+    <Content Include="Img\sub-bg-1.png" />
+    <Content Include="Img\sub-bg00.jpg" />
+    <Content Include="Img\test_bg.png" />
+    <Content Include="Img\top00000.png" />
+    <Content Include="Img\top_stripe2.jpg" />
+    <Content Include="Img\user.png" />
+    <Content Include="Img\visibleFalse.png" />
+    <Content Include="Js\colorpicker.js" />
+    <Content Include="Js\eye.js" />
+    <Content Include="Js\forms.js" />
+    <Content Include="Js\gridview.js" />
+    <Content Include="Js\jquery-2.0.3.min.js" />
+    <Content Include="Js\jquery.colorbox-min.js" />
+    <Content Include="Js\jquery.easing.1.3.js" />
+    <Content Include="Js\jquery.mask.money.js" />
+    <Content Include="Js\jquery.masked.input.v1.3.js" />
+    <Content Include="Js\jquery.superfish.js" />
+    <Content Include="Js\jquery.ui.totop.js" />
+    <Content Include="Js\jquery.v1.8.0.min.js" />
+    <Content Include="Js\layout.js" />
+    <Content Include="Js\NoIE6\background_browser.gif" />
+    <Content Include="Js\NoIE6\browser_chrome.gif" />
+    <Content Include="Js\NoIE6\browser_firefox.gif" />
+    <Content Include="Js\NoIE6\browser_ie.gif" />
+    <Content Include="Js\NoIE6\browser_opera.gif" />
+    <Content Include="Js\NoIE6\browser_safari.gif" />
+    <Content Include="Js\NoIE6\index.html" />
+    <Content Include="Js\NoIE6\warning.js" />
+    <Content Include="Js\script.js" />
+    <Content Include="Js\utils.js" />
+    <Content Include="Page\Login\Login.aspx" />
+    <Content Include="Page\Page\HomeAdmin.aspx" />
+    <Content Include="Page\Page\Non-registeredUsers.aspx" />
+    <Content Include="Page\Page\RegisteredUsers.aspx" />
+    <Content Include="Page\Page\RelatedInterests.aspx" />
+    <Content Include="Page\Page\Report-CustomWebsites.aspx" />
+    <Content Include="Page\Page\Report-Users.aspx" />
+    <Content Include="Page\Page\SafeWebsites.aspx" />
+    <Content Include="Page\Page\SafeWebsites_Admin.aspx" />
+    <Content Include="Page\Page\SuggestionBox.aspx" />
+    <Content Include="Page\Page\SuggestionBox_Admin.aspx" />
+    <Content Include="Page\Page\TrustedSourcesWebsites.aspx" />
+    <Content Include="Page\Page\TrustedSourcesWebsites_Admin.aspx" />
+    <Content Include="Page\Toolbox\Upload_SimpleImage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Main-Menu.master.cs">
+      <DependentUpon>Main-Menu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Main-Menu.master.designer.cs">
+      <DependentUpon>Main-Menu.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\HomeAdmin.aspx.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\HomeAdmin.aspx.designer.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\Non-registeredUsers.aspx.cs">
+      <DependentUpon>Non-registeredUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\Non-registeredUsers.aspx.designer.cs">
+      <DependentUpon>Non-registeredUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\RegisteredUsers.aspx.cs">
+      <DependentUpon>RegisteredUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\RegisteredUsers.aspx.designer.cs">
+      <DependentUpon>RegisteredUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\RelatedInterests.aspx.cs">
+      <DependentUpon>RelatedInterests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\RelatedInterests.aspx.designer.cs">
+      <DependentUpon>RelatedInterests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\Report-CustomWebsites.aspx.cs">
+      <DependentUpon>Report-CustomWebsites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\Report-CustomWebsites.aspx.designer.cs">
+      <DependentUpon>Report-CustomWebsites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\Report-Users.aspx.cs">
+      <DependentUpon>Report-Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\Report-Users.aspx.designer.cs">
+      <DependentUpon>Report-Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\SafeWebsites.aspx.cs">
+      <DependentUpon>SafeWebsites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\SafeWebsites.aspx.designer.cs">
+      <DependentUpon>SafeWebsites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\SafeWebsites_Admin.aspx.cs">
+      <DependentUpon>SafeWebsites_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\SafeWebsites_Admin.aspx.designer.cs">
+      <DependentUpon>SafeWebsites_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\SuggestionBox.aspx.cs">
+      <DependentUpon>SuggestionBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\SuggestionBox.aspx.designer.cs">
+      <DependentUpon>SuggestionBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\SuggestionBox_Admin.aspx.cs">
+      <DependentUpon>SuggestionBox_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\SuggestionBox_Admin.aspx.designer.cs">
+      <DependentUpon>SuggestionBox_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\TrustedSourcesWebsites.aspx.cs">
+      <DependentUpon>TrustedSourcesWebsites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\TrustedSourcesWebsites.aspx.designer.cs">
+      <DependentUpon>TrustedSourcesWebsites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Page\TrustedSourcesWebsites_Admin.aspx.cs">
+      <DependentUpon>TrustedSourcesWebsites_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Page\TrustedSourcesWebsites_Admin.aspx.designer.cs">
+      <DependentUpon>TrustedSourcesWebsites_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Toolbox\Upload_SimpleImage.aspx.cs">
+      <DependentUpon>Upload_SimpleImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Toolbox\Upload_SimpleImage.aspx.designer.cs">
+      <DependentUpon>Upload_SimpleImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\AppSettings.config" />
+    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="CKEditor\CHANGES.md" />
+    <Content Include="CKEditor\LICENSE.md" />
+    <Content Include="CKEditor\plugins\scayt\LICENSE.md" />
+    <Content Include="CKEditor\plugins\scayt\README.md" />
+    <Content Include="CKEditor\plugins\wsc\LICENSE.md" />
+    <Content Include="CKEditor\plugins\wsc\README.md" />
+    <Content Include="CKEditor\README.md" />
+    <Content Include="CKEditor\samples\assets\posteddata.php" />
+    <Content Include="CKEditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <Content Include="CKEditor\samples\sample_posteddata.php" />
+    <Content Include="CKEditor\skins\moono-dark\readme.md" />
+    <Content Include="CKEditor\skins\moono-light\readme.md" />
+    <Content Include="CKEditor\skins\moono\readme.md" />
+    <Content Include="CKEditor\skins\ozone\readme.md" />
+    <Content Include="CKEditor\skins\silver-master\readme.md" />
+    <Content Include="Css\Font\Ubuntu-Bold.woff" />
+    <Content Include="Css\Font\Ubuntu.woff" />
+    <Content Include="Css\Font\Yellowtail.woff" />
+    <Content Include="MasterPage\Main-Menu.master" />
+    <Content Include="MasterPage\Main.Master" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fonts\LiveSymbol.ttf" />
+    <None Include="Properties\PublishProfiles\Take65-Admin.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Img\Upload\CKEditor\" />
+    <Folder Include="Img\Upload\Image\" />
+    <Folder Include="Img\Upload\Temp\" />
+    <Folder Include="Img\Upload\Thumbnail\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Language.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Language.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19891</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:15702/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://admin.take65.local.netbiis.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.props'))" />
+    <Error Condition="!Exists('packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.targets'))" />
+  </Target>
+  <Import Project="packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.targets" Condition="Exists('packages\NuGet.Services.Build.3.0.6\build\NuGet.Services.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

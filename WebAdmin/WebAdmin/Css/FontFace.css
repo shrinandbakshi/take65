@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('Font\Ubuntu-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ubuntu'), url('Font\Ubuntu.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Yellowtail'), url('Font\Yellowtail.woff') format('woff');
+}

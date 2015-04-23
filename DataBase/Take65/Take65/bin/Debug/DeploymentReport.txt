@@ -1,0 +1,103 @@
+﻿** Warnings
+     Procedure: [dbo].[SearchFeedContent] contains an unresolved reference to an object. Either the object does not exist or
+       the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[TSF]::[SystemTagIdList], [dbo].[TrustedSource].[TSF]::[SystemTagIdList],
+       [dbo].[TrustedSourceFeed].[SystemTagIdList], [dbo].[TrustedSourceFeed].[TSF]::[SystemTagIdList],
+       [dbo].[UserWidget].[TSF]::[SystemTagIdList] or [dbo].[UserWidgetTrustedSource].[TSF]::[SystemTagIdList].
+     Procedure: [dbo].[SearchFeedContent] contains an unresolved reference to an object. Either the object does not exist or
+       the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[TSF]::[SystemTagIdList], [dbo].[TrustedSource].[TSF]::[SystemTagIdList],
+       [dbo].[TrustedSourceFeed].[SystemTagIdList], [dbo].[TrustedSourceFeed].[TSF]::[SystemTagIdList],
+       [dbo].[UserWidget].[TSF]::[SystemTagIdList] or [dbo].[UserWidgetTrustedSource].[TSF]::[SystemTagIdList].
+     Procedure: [dbo].[SearchFeedContent] contains an unresolved reference to an object. Either the object does not exist or
+       the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[TSF]::[SystemTagIdList], [dbo].[TrustedSource].[TSF]::[SystemTagIdList],
+       [dbo].[TrustedSourceFeed].[SystemTagIdList], [dbo].[TrustedSourceFeed].[TSF]::[SystemTagIdList],
+       [dbo].[UserWidget].[TSF]::[SystemTagIdList] or [dbo].[UserWidgetTrustedSource].[TSF]::[SystemTagIdList].
+     Procedure: [dbo].[SearchFeedContent] contains an unresolved reference to an object. Either the object does not exist or
+       the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[TSF]::[SystemTagIdList], [dbo].[TrustedSource].[TSF]::[SystemTagIdList],
+       [dbo].[TrustedSourceFeed].[SystemTagIdList], [dbo].[TrustedSourceFeed].[TSF]::[SystemTagIdList],
+       [dbo].[UserWidget].[TSF]::[SystemTagIdList] or [dbo].[UserWidgetTrustedSource].[TSF]::[SystemTagIdList].
+     Procedure: [dbo].[SearchFeedContent] contains an unresolved reference to an object. Either the object does not exist or
+       the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[TSF]::[SystemTagIdList], [dbo].[TrustedSource].[TSF]::[SystemTagIdList],
+       [dbo].[TrustedSourceFeed].[SystemTagIdList], [dbo].[TrustedSourceFeed].[TSF]::[SystemTagIdList],
+       [dbo].[UserWidget].[TSF]::[SystemTagIdList] or [dbo].[UserWidgetTrustedSource].[TSF]::[SystemTagIdList].
+     Procedure: [dbo].[SearchFeedContent] contains an unresolved reference to an object. Either the object does not exist or
+       the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[TSF]::[SystemTagIdList], [dbo].[TrustedSource].[TSF]::[SystemTagIdList],
+       [dbo].[TrustedSourceFeed].[SystemTagIdList], [dbo].[TrustedSourceFeed].[TSF]::[SystemTagIdList],
+       [dbo].[UserWidget].[TSF]::[SystemTagIdList] or [dbo].[UserWidgetTrustedSource].[TSF]::[SystemTagIdList].
+     Procedure: [dbo].[SearchFeedContent] contains an unresolved reference to an object. Either the object does not exist or
+       the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[TSF]::[SystemTagIdList], [dbo].[TrustedSource].[TSF]::[SystemTagIdList],
+       [dbo].[TrustedSourceFeed].[SystemTagIdList], [dbo].[TrustedSourceFeed].[TSF]::[SystemTagIdList],
+       [dbo].[UserWidget].[TSF]::[SystemTagIdList] or [dbo].[UserWidgetTrustedSource].[TSF]::[SystemTagIdList].
+     Procedure: [dbo].[SearchFeedContent] has an unresolved reference to object [dbo].[sp_executesql].
+     Procedure: [dbo].[SearchFeedContent] has an unresolved reference to object [dbo].[sp_executesql].[@XmlReturn].
+     Procedure: [dbo].[CreateFeedContentTag] contains an unresolved reference to an object. Either the object does not exist
+       or the reference is ambiguous because it could refer to any of the following objects:
+       [dbo].[FeedContent].[SystemTagIdList] or [dbo].[TrustedSourceFeed].[SystemTagIdList].
+     The object reference [dbo].[UserWidgetTag].[userwidgetid] differs only by case from the object definition
+       [dbo].[UserWidgetTag].[UserWidgetId].
+     The object reference [dbo].[userwidgettrustedsource] differs only by case from the object definition
+       [dbo].[UserWidgetTrustedSource].
+     The object reference [dbo].[userwidgettrustedsource].[TrustedSourceId] differs only by case from the object definition
+       [dbo].[UserWidgetTrustedSource].[TrustedSourceId].
+     The object reference [dbo].[userwidgettrustedsource].[UserWidgetId] differs only by case from the object definition
+       [dbo].[UserWidgetTrustedSource].[UserWidgetId].
+     The object reference [dbo].[SYSTEMTAG] differs only by case from the object definition [dbo].[SystemTag].
+     The object reference [dbo].[SYSTEMTAG].[SystemTagId] differs only by case from the object definition
+       [dbo].[SystemTag].[SystemTagId].
+     The object reference [dbo].[SYSTEMTAG].[SystemTagDisplay] differs only by case from the object definition
+       [dbo].[SystemTag].[SystemTagDisplay].
+     The object reference [dbo].[SYSTEMTAG].[SystemTagIcon] differs only by case from the object definition
+       [dbo].[SystemTag].[SystemTagIcon].
+     The object reference [dbo].[TRUSTEDSOURCE] differs only by case from the object definition [dbo].[TrustedSource].
+     The object reference [dbo].[TRUSTEDSOURCEFEED] differs only by case from the object definition
+       [dbo].[TrustedSourceFeed].
+     The object reference [dbo].[TRUSTEDSOURCEFEED].[TrustedSourceId] differs only by case from the object definition
+       [dbo].[TrustedSourceFeed].[TrustedSourceId].
+     The object reference [dbo].[TRUSTEDSOURCE].[TrustedSourceId] differs only by case from the object definition
+       [dbo].[TrustedSource].[TrustedSourceId].
+     The object reference [dbo].[TRUSTEDSOURCEFEEDTAG] differs only by case from the object definition
+       [dbo].[TrustedSourceFeedTag].
+     The object reference [dbo].[TRUSTEDSOURCEFEEDTAG].[TrustedsourceFeedId] differs only by case from the object definition
+       [dbo].[TrustedSourceFeedTag].[TrustedSourceFeedId].
+     The object reference [dbo].[TRUSTEDSOURCEFEED].[TrustedsourceFeedId] differs only by case from the object definition
+       [dbo].[TrustedSourceFeed].[TrustedSourceFeedId].
+     The object reference [dbo].[TRUSTEDSOURCE].[TrustedSourceId] differs only by case from the object definition
+       [dbo].[TrustedSource].[TrustedSourceId].
+     The object reference [dbo].[TRUSTEDSOURCE].[TrustedSourceName] differs only by case from the object definition
+       [dbo].[TrustedSource].[TrustedSourceName].
+     The object reference [dbo].[TRUSTEDSOURCE].[TrustedSourceIcon] differs only by case from the object definition
+       [dbo].[TrustedSource].[TrustedSourceIcon].
+     The object reference [dbo].[TRUSTEDSOURCEFEEDTAG].[SYSTEMTAGID] differs only by case from the object definition
+       [dbo].[TrustedSourceFeedTag].[SystemTagId].
+     The object reference [dbo].[SYSTEMTAG].[SystemTagId] differs only by case from the object definition
+       [dbo].[SystemTag].[SystemTagId].
+     The object reference [dbo].[TRUSTEDSOURCE].[TrustedSourceId] differs only by case from the object definition
+       [dbo].[TrustedSource].[TrustedSourceId].
+     The object reference [dbo].[TRUSTEDSOURCE].[TRustedSourceName] differs only by case from the object definition
+       [dbo].[TrustedSource].[TrustedSourceName].
+     The object reference [dbo].[TRUSTEDSOURCE].[TrustedSourceIcon] differs only by case from the object definition
+       [dbo].[TrustedSource].[TrustedSourceIcon].
+     The object reference [dbo].[SYSTEMTAG].[TAGTypeId] differs only by case from the object definition
+       [dbo].[SystemTag].[TagTypeId].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[SaveUserWidgetTrustedSourceAllSources] (Procedure)
+
+** Supporting actions

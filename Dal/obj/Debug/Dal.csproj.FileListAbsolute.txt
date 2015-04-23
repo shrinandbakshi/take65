@@ -1,0 +1,101 @@
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Dal.dll.config
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Dal.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Dal.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Model.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\bin\Debug\Model.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\obj\Debug\Dal.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Dal\obj\Debug\Dal.pdb
+C:\Project Work\take65\Dal\bin\Debug\Dal.dll.config
+C:\Project Work\take65\Dal\bin\Debug\Dal.dll
+C:\Project Work\take65\Dal\bin\Debug\Dal.pdb
+C:\Project Work\take65\Dal\bin\Debug\EntityFramework.dll
+C:\Project Work\take65\Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project Work\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Project Work\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Project Work\take65\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Project Work\take65\Dal\bin\Debug\Model.dll
+C:\Project Work\take65\Dal\bin\Debug\Model.pdb
+C:\Project Work\take65\Dal\bin\Debug\EntityFramework.xml
+C:\Project Work\take65\Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project Work\take65\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+C:\Project Work\take65\Dal\obj\Debug\Dal.dll
+C:\Project Work\take65\Dal\obj\Debug\Dal.pdb
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Dal.dll.config
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Dal.dll
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Dal.pdb
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\EntityFramework.dll
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Model.dll
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\Model.pdb
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\EntityFramework.xml
+C:\Users\VijaynSwapna\take65\Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\VijaynSwapna\take65\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+C:\Users\VijaynSwapna\take65\Dal\obj\Debug\Dal.dll
+C:\Users\VijaynSwapna\take65\Dal\obj\Debug\Dal.pdb
+E:\take65_10_012015\Dal\bin\Debug\Dal.dll.config
+E:\take65_10_012015\Dal\bin\Debug\Dal.dll
+E:\take65_10_012015\Dal\bin\Debug\Dal.pdb
+E:\take65_10_012015\Dal\bin\Debug\EntityFramework.dll
+E:\take65_10_012015\Dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\take65_10_012015\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\take65_10_012015\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\take65_10_012015\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\take65_10_012015\Dal\bin\Debug\Model.dll
+E:\take65_10_012015\Dal\bin\Debug\Model.pdb
+E:\take65_10_012015\Dal\bin\Debug\EntityFramework.xml
+E:\take65_10_012015\Dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\take65_10_012015\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+E:\take65_10_012015\Dal\obj\Debug\Dal.dll
+E:\take65_10_012015\Dal\obj\Debug\Dal.pdb
+H:\take65_10_012015\Dal\bin\Debug\Dal.dll.config
+H:\take65_10_012015\Dal\bin\Debug\Dal.dll
+H:\take65_10_012015\Dal\bin\Debug\Dal.pdb
+H:\take65_10_012015\Dal\bin\Debug\EntityFramework.dll
+H:\take65_10_012015\Dal\bin\Debug\EntityFramework.SqlServer.dll
+H:\take65_10_012015\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\take65_10_012015\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\take65_10_012015\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+H:\take65_10_012015\Dal\bin\Debug\Model.dll
+H:\take65_10_012015\Dal\bin\Debug\Model.pdb
+H:\take65_10_012015\Dal\bin\Debug\EntityFramework.xml
+H:\take65_10_012015\Dal\bin\Debug\EntityFramework.SqlServer.xml
+H:\take65_10_012015\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+H:\take65_10_012015\Dal\obj\Debug\Dal.dll
+H:\take65_10_012015\Dal\obj\Debug\Dal.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Dal.dll.config
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Dal.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Dal.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\EntityFramework.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Model.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\Model.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\EntityFramework.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\obj\Debug\Dal.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\obj\Debug\Dal.pdb
+D:\Application\take65\Dal\bin\Debug\Dal.dll.config
+D:\Application\take65\Dal\bin\Debug\Dal.dll
+D:\Application\take65\Dal\bin\Debug\Dal.pdb
+D:\Application\take65\Dal\bin\Debug\EntityFramework.dll
+D:\Application\take65\Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Application\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Application\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Application\take65\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Application\take65\Dal\bin\Debug\Model.dll
+D:\Application\take65\Dal\bin\Debug\Model.pdb
+D:\Application\take65\Dal\bin\Debug\EntityFramework.xml
+D:\Application\take65\Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Application\take65\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\Application\take65\Dal\obj\Debug\Dal.dll
+D:\Application\take65\Dal\obj\Debug\Dal.pdb

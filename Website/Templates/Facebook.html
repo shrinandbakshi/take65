@@ -1,0 +1,35 @@
+﻿<div class="content facebook-newsfeed" data-ng-controller="FacebookCtrl">                                
+    <div data-ng-show="!facebookUserLogged">
+        <center>
+            <br /><br />
+            Please, click on the button below to login with your Facebook account.<br /><br /><br />
+            <a  data-ng-click="facebookLogin();"><img src="Img/Default/btn_connect_facebook.png" /></a>
+        </center>
+    </div>
+    <div class="facebook-feed" data-ng-show="facebookUserLogged" data-ng-target="">
+        <div data-loading="" data-ng-class="{ hidden: wasLoaded }"></div>
+        <ul id="fb-plugin" class="fb-plugin">
+            <li data-ng-repeat="item in facebookFeed">
+                <div class="container">
+                    <div class="fb-thumb">
+                        <a ng-href="{{item.url}}" ng-hide="item.id === 0" class="openIframe" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "80%", "height": "80%" }'>
+                            <img src="{{item.photo}}" width="34" height="34" alt="" />
+                        </a>
+                        <a href="#" ng-show="item.id === 0">
+                            <img src="{{item.photo}}" width="34" height="34" alt="" />
+                        </a>
+                    </div>
+                    <div class="fb-desc">
+                        <p>
+                            <span class="fb-user">
+                                <a ng-href="{{item.url}}" ng-hide="item.id === 0" class="openIframe" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "80%", "height": "80%" }'>{{item.nameFrom}}</a>
+                                <a href="#" ng-show="item.id === 0">{{item.nameFrom}}</a>
+                            </span>
+                            {{item.message}}
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

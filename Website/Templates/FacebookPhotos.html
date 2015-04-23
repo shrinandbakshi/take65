@@ -1,0 +1,93 @@
+﻿<div class="content" data-ng-controller="FacebookPhotosCtrl" data-ng-target="">
+
+    <!--<a href="#modalSliderAjax" class="fb-photo-user" data-ngopenpop="/Templates/FacebookLogin.html" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>-->
+    <!--<a href="#modalSliderAjax" class="fb-photo-user" data-ngopenpop="/Templates/FacebookLogin.html" data-fn="openPop" data-param='{ "type": "inline", "width": 980, "height": 1160, "close": "TAKE ME <span class=bold>HOME</span>" }'>
+        FB Login
+    </a>-->
+    <div class="login">
+        <section class="hold-form" data-ng-show="!hasValidFacebookToken">
+            <h1>Login</h1>
+            <p class="intro ml0 mr0 mb20">You need to login to your Facebook Account in order to load your <b>Social Media Photos</b>.</p>
+            <p class="intro ml0 mr0 mb20">Please, click on the button below to login with your Facebook account.<br /><br /><br />
+                <center>
+                    <a data-ng-click="facebookLogin();"><img src="Img/Default/btn_connect_facebook.png" /></a>
+                </center>
+            </p>
+        </section>
+    </div>
+    
+    <div class="login" data-ng-show="!hasLoad && (!userFriends.length && hasValidFacebookToken)">
+        <section class="hold-form">
+            <br />
+            <p class="intro ml0 mr0 mb20">
+                <center>
+                    You don't have any friends on your friend list.<br />
+                    <a href="#modalSliderAjax" id="lnk-edit-facebook-photo" title="EDIT" class="link-edit-name-widget" data-ngopenpop="/Templates/Settings/SocialPhoto.html" data-fn="openPop" data-param='{ "type": "inline", "height": "auto", "width": "910px", "closeButton": false }'><b>Click here</b></a> to manage your friend list.<br /><br /><br />
+                </center>
+            </p>
+        </section>
+    </div>
+
+    <div class="fb-photo-carousel" data-ng-hide="photos.length || hasLoad">
+        <div class="fb-photo-carousel-wrap">
+            <ul class="fb-photo-list">
+
+                <li class="highlight" data-ng-show="highlightFriend.id != 0">
+                    <a href="javascript:void(0);" class="fb-photo-user"  data-ng-click="viewUserPhotos(highlightFriend)">
+                        <img src="https://graph.facebook.com/{{highlightFriend.id}}/picture?access_token={{facebookToken}}&width=243&height=261" width="243" height="261" alt="" />
+                        <span class="number">{{highlightFriend.photoCount}}</span>
+                        <span class="fb-photo-username"><span>{{highlightFriend.name}}</span></span>
+                    </a>
+                </li>
+
+                <li data-ng-repeat="friend in userFriends">
+                    <a href="javascript:void(0);" class="fb-photo-user"  data-ng-click="viewUserPhotos(friend)">
+                        <img src="https://graph.facebook.com/{{friend.id}}/picture?access_token={{facebookToken}}&width=140&height=130" width="140" height="130" alt="" />
+                        <span class="number">{{friend.photoCount}}</span>
+                        <span class="fb-photo-username"><span>{{friend.name}}</span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--
+        <div class="controls">        
+            <a href="#" class="prev-slide icon-arrow-left-blue"></a>
+            <a href="#" class="next-slide icon-arrow-right-blue"></a>
+        </div> -->
+
+        <span class="transp-left" data-ng-show="photos.length"></span>
+        <span class="transp-right" data-ng-show="photos.length"></span>
+    </div>
+    <div class="fb-photo-carousel" data-ng-show="hasLoad">
+        <div data-loading=""></div>
+    </div>
+    <div class="fb-photo-carousel" data-ng-show="photos.length">
+        <!--<div class="fb-photo-carousel-wrap">-->
+            <ul class="fb-photo-list">
+
+                <li class="highlight">
+                    <a href="javascript:void(0);" class="fb-photo-user">
+                        <img src="/REST/UserWidgetFacebookPhotos/PreviewPhoto/243x261/?u=https%3A%2F%2Fgraph.facebook.com%2F{{currentUser.id}}%2Fpicture%3Faccess_token%3D{{facebookToken}}%26width%3D243%26height%3D261%26redirect%3Dfalse&type=json" width="243" height="261" alt="" />
+                        <span class="number">{{currentUser.photoCount}}</span>
+                        <span class="fb-photo-username"><span>{{currentUser.name}}</span></span>
+                    </a>
+                </li>
+
+                <li data-ng-repeat="photo in photos | startFrom:currentPage*pageSize | limitTo:pageSize">                    
+                    <a data-ng-href="/Templates/FacebookPhotoDetail.aspx?p={{photo.photo}}&c={{photo.name | escape}}" class="fb-photo-user" data-ng-class="{ openIframe: true }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'> <!-- data-fn="openPop"
+                        data-param='{ "type": "iframe" ,"width": {{photo.width+30}}, "height":{{photo.height+80}}, "close": "TAKE ME <span class=bold>HOME</span>" }' -->
+                        <img src="/REST/UserWidgetFacebookPhotos/PreviewPhoto/100x100/?u={{photo.photo | escape}}" width="140" height="130" alt="{{photo.name}}" />
+                        <span class="fb-photo-username"><span>{{photo.createdTime}}</span></span>
+                    </a>
+                </li>
+            </ul>
+        <!--</div>        -->
+        
+        <div class="controls">        
+            <a class="prev-slide icon-arrow-left-white icon-sprite" data-ng-hide="currentPage == 0" data-ng-click="currentPage=currentPage-1;rebind()"></a>
+            <a class="next-slide icon-arrow-right-white icon-sprite" data-ng-hide="currentPage >= photos.length/pageSize - 1" data-ng-click="currentPage=currentPage+1;rebind()">Next</a>
+        </div>
+        <span class="transp-left"></span>
+        <span class="transp-right"></span>
+    </div>
+</div>

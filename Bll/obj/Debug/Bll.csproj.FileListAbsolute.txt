@@ -1,0 +1,385 @@
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Bll.dll.config
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Bll.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Bll.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Dal.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Google.GData.Client.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Google.GData.Contacts.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Google.GData.Extensions.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Live.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Threading.Tasks.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Model.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\OpenPop.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\System.Runtime.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\System.Threading.Tasks.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\TestApiCore.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Dal.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Model.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Threading.Tasks.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\OpenPop.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\System.Runtime.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\bin\Debug\System.Threading.Tasks.xml
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\obj\Debug\Bll.csproj.App.config
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\obj\Debug\Bll.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Bll\obj\Debug\Bll.pdb
+C:\Project Work\take65\Bll\bin\Debug\Bll.dll.config
+C:\Project Work\take65\Bll\bin\Debug\Bll.dll
+C:\Project Work\take65\Bll\bin\Debug\Bll.pdb
+C:\Project Work\take65\Bll\bin\Debug\Dal.dll
+C:\Project Work\take65\Bll\bin\Debug\EntityFramework.dll
+C:\Project Work\take65\Bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.Core.dll
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.dll
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Project Work\take65\Bll\bin\Debug\Google.GData.Client.dll
+C:\Project Work\take65\Bll\bin\Debug\Google.GData.Contacts.dll
+C:\Project Work\take65\Bll\bin\Debug\Google.GData.Extensions.dll
+C:\Project Work\take65\Bll\bin\Debug\log4net.dll
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Live.dll
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Project Work\take65\Bll\bin\Debug\Model.dll
+C:\Project Work\take65\Bll\bin\Debug\Newtonsoft.Json.dll
+C:\Project Work\take65\Bll\bin\Debug\OpenPop.dll
+C:\Project Work\take65\Bll\bin\Debug\System.IO.dll
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.dll
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.Extensions.dll
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.Primitives.dll
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Project Work\take65\Bll\bin\Debug\System.Runtime.dll
+C:\Project Work\take65\Bll\bin\Debug\System.Threading.Tasks.dll
+C:\Project Work\take65\Bll\bin\Debug\TestApiCore.dll
+C:\Project Work\take65\Bll\bin\Debug\Zlib.Portable.dll
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Project Work\take65\Bll\bin\Debug\Dal.pdb
+C:\Project Work\take65\Bll\bin\Debug\Model.pdb
+C:\Project Work\take65\Bll\bin\Debug\EntityFramework.xml
+C:\Project Work\take65\Bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.pdb
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.xml
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.Core.pdb
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.Core.xml
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.PlatformServices.pdb
+C:\Project Work\take65\Bll\bin\Debug\Google.Apis.PlatformServices.xml
+C:\Project Work\take65\Bll\bin\Debug\log4net.xml
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Project Work\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Project Work\take65\Bll\bin\Debug\Newtonsoft.Json.xml
+C:\Project Work\take65\Bll\bin\Debug\System.IO.xml
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.xml
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.Extensions.xml
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.Primitives.xml
+C:\Project Work\take65\Bll\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Project Work\take65\Bll\bin\Debug\System.Runtime.xml
+C:\Project Work\take65\Bll\bin\Debug\System.Threading.Tasks.xml
+C:\Project Work\take65\Bll\bin\Debug\Zlib.Portable.xml
+C:\Project Work\take65\Bll\obj\Debug\Bll.csproj.App.config
+C:\Project Work\take65\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+C:\Project Work\take65\Bll\obj\Debug\Bll.dll
+C:\Project Work\take65\Bll\obj\Debug\Bll.pdb
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Bll.dll.config
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Bll.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Bll.pdb
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Dal.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\EntityFramework.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.Core.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.GData.Client.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.GData.Contacts.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.GData.Extensions.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\log4net.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Live.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Model.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Newtonsoft.Json.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\OpenPop.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.IO.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Runtime.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Threading.Tasks.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\TestApiCore.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Zlib.Portable.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Dal.pdb
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Model.pdb
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\EntityFramework.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.pdb
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.Core.pdb
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.Core.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.PlatformServices.pdb
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Google.Apis.PlatformServices.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\log4net.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Newtonsoft.Json.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.IO.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Runtime.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\System.Threading.Tasks.xml
+C:\Users\VijaynSwapna\take65\Bll\bin\Debug\Zlib.Portable.xml
+C:\Users\VijaynSwapna\take65\Bll\obj\Debug\Bll.csproj.App.config
+C:\Users\VijaynSwapna\take65\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+C:\Users\VijaynSwapna\take65\Bll\obj\Debug\Bll.dll
+C:\Users\VijaynSwapna\take65\Bll\obj\Debug\Bll.pdb
+E:\take65_10_012015\Bll\bin\Debug\Bll.dll.config
+E:\take65_10_012015\Bll\bin\Debug\Bll.dll
+E:\take65_10_012015\Bll\bin\Debug\Bll.pdb
+E:\take65_10_012015\Bll\bin\Debug\Dal.dll
+E:\take65_10_012015\Bll\bin\Debug\EntityFramework.dll
+E:\take65_10_012015\Bll\bin\Debug\EntityFramework.SqlServer.dll
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.Core.dll
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.dll
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.PlatformServices.dll
+E:\take65_10_012015\Bll\bin\Debug\Google.GData.Client.dll
+E:\take65_10_012015\Bll\bin\Debug\Google.GData.Contacts.dll
+E:\take65_10_012015\Bll\bin\Debug\Google.GData.Extensions.dll
+E:\take65_10_012015\Bll\bin\Debug\log4net.dll
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Live.dll
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\take65_10_012015\Bll\bin\Debug\Model.dll
+E:\take65_10_012015\Bll\bin\Debug\Newtonsoft.Json.dll
+E:\take65_10_012015\Bll\bin\Debug\OpenPop.dll
+E:\take65_10_012015\Bll\bin\Debug\System.IO.dll
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.dll
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Extensions.dll
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Primitives.dll
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.WebRequest.dll
+E:\take65_10_012015\Bll\bin\Debug\System.Runtime.dll
+E:\take65_10_012015\Bll\bin\Debug\System.Threading.Tasks.dll
+E:\take65_10_012015\Bll\bin\Debug\TestApiCore.dll
+E:\take65_10_012015\Bll\bin\Debug\Zlib.Portable.dll
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\take65_10_012015\Bll\bin\Debug\Dal.pdb
+E:\take65_10_012015\Bll\bin\Debug\Model.pdb
+E:\take65_10_012015\Bll\bin\Debug\EntityFramework.xml
+E:\take65_10_012015\Bll\bin\Debug\EntityFramework.SqlServer.xml
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.pdb
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.xml
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.Core.pdb
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.Core.xml
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.PlatformServices.pdb
+E:\take65_10_012015\Bll\bin\Debug\Google.Apis.PlatformServices.xml
+E:\take65_10_012015\Bll\bin\Debug\log4net.xml
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\take65_10_012015\Bll\bin\Debug\Newtonsoft.Json.xml
+E:\take65_10_012015\Bll\bin\Debug\System.IO.xml
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.xml
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Extensions.xml
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Primitives.xml
+E:\take65_10_012015\Bll\bin\Debug\System.Net.Http.WebRequest.xml
+E:\take65_10_012015\Bll\bin\Debug\System.Runtime.xml
+E:\take65_10_012015\Bll\bin\Debug\System.Threading.Tasks.xml
+E:\take65_10_012015\Bll\bin\Debug\Zlib.Portable.xml
+E:\take65_10_012015\Bll\obj\Debug\Bll.csproj.App.config
+E:\take65_10_012015\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+E:\take65_10_012015\Bll\obj\Debug\Bll.dll
+E:\take65_10_012015\Bll\obj\Debug\Bll.pdb
+H:\take65_10_012015\Bll\bin\Debug\Bll.dll.config
+H:\take65_10_012015\Bll\bin\Debug\Bll.dll
+H:\take65_10_012015\Bll\bin\Debug\Bll.pdb
+H:\take65_10_012015\Bll\bin\Debug\Dal.dll
+H:\take65_10_012015\Bll\bin\Debug\EntityFramework.dll
+H:\take65_10_012015\Bll\bin\Debug\EntityFramework.SqlServer.dll
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.Core.dll
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.dll
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.PlatformServices.dll
+H:\take65_10_012015\Bll\bin\Debug\Google.GData.Client.dll
+H:\take65_10_012015\Bll\bin\Debug\Google.GData.Contacts.dll
+H:\take65_10_012015\Bll\bin\Debug\Google.GData.Extensions.dll
+H:\take65_10_012015\Bll\bin\Debug\log4net.dll
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Live.dll
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.dll
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+H:\take65_10_012015\Bll\bin\Debug\Model.dll
+H:\take65_10_012015\Bll\bin\Debug\Newtonsoft.Json.dll
+H:\take65_10_012015\Bll\bin\Debug\OpenPop.dll
+H:\take65_10_012015\Bll\bin\Debug\System.IO.dll
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.dll
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Extensions.dll
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Primitives.dll
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.WebRequest.dll
+H:\take65_10_012015\Bll\bin\Debug\System.Runtime.dll
+H:\take65_10_012015\Bll\bin\Debug\System.Threading.Tasks.dll
+H:\take65_10_012015\Bll\bin\Debug\TestApiCore.dll
+H:\take65_10_012015\Bll\bin\Debug\Zlib.Portable.dll
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+H:\take65_10_012015\Bll\bin\Debug\Dal.pdb
+H:\take65_10_012015\Bll\bin\Debug\Model.pdb
+H:\take65_10_012015\Bll\bin\Debug\EntityFramework.xml
+H:\take65_10_012015\Bll\bin\Debug\EntityFramework.SqlServer.xml
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.pdb
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.xml
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.Core.pdb
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.Core.xml
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.PlatformServices.pdb
+H:\take65_10_012015\Bll\bin\Debug\Google.Apis.PlatformServices.xml
+H:\take65_10_012015\Bll\bin\Debug\log4net.xml
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.xml
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+H:\take65_10_012015\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+H:\take65_10_012015\Bll\bin\Debug\Newtonsoft.Json.xml
+H:\take65_10_012015\Bll\bin\Debug\System.IO.xml
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.xml
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Extensions.xml
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.Primitives.xml
+H:\take65_10_012015\Bll\bin\Debug\System.Net.Http.WebRequest.xml
+H:\take65_10_012015\Bll\bin\Debug\System.Runtime.xml
+H:\take65_10_012015\Bll\bin\Debug\System.Threading.Tasks.xml
+H:\take65_10_012015\Bll\bin\Debug\Zlib.Portable.xml
+H:\take65_10_012015\Bll\obj\Debug\Bll.csproj.App.config
+H:\take65_10_012015\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+H:\take65_10_012015\Bll\obj\Debug\Bll.dll
+H:\take65_10_012015\Bll\obj\Debug\Bll.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Bll.dll.config
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Bll.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Bll.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Dal.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\EntityFramework.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\EntityFramework.SqlServer.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.Core.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.PlatformServices.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.GData.Client.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.GData.Contacts.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.GData.Extensions.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\log4net.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Live.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Model.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Newtonsoft.Json.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\OpenPop.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.IO.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.Extensions.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.Primitives.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.WebRequest.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Runtime.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Threading.Tasks.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\TestApiCore.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Zlib.Portable.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Dal.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Model.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\EntityFramework.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\EntityFramework.SqlServer.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.Core.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.Core.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.PlatformServices.pdb
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Google.Apis.PlatformServices.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\log4net.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Newtonsoft.Json.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.IO.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.Extensions.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.Primitives.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Net.Http.WebRequest.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Runtime.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\System.Threading.Tasks.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\bin\Debug\Zlib.Portable.xml
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\obj\Debug\Bll.csproj.App.config
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\obj\Debug\Bll.dll
+D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Bll\obj\Debug\Bll.pdb
+D:\Application\take65\Bll\bin\Debug\Bll.dll.config
+D:\Application\take65\Bll\bin\Debug\Bll.dll
+D:\Application\take65\Bll\bin\Debug\Bll.pdb
+D:\Application\take65\Bll\bin\Debug\Dal.dll
+D:\Application\take65\Bll\bin\Debug\EntityFramework.dll
+D:\Application\take65\Bll\bin\Debug\EntityFramework.SqlServer.dll
+D:\Application\take65\Bll\bin\Debug\Google.Apis.Core.dll
+D:\Application\take65\Bll\bin\Debug\Google.Apis.dll
+D:\Application\take65\Bll\bin\Debug\Google.Apis.PlatformServices.dll
+D:\Application\take65\Bll\bin\Debug\Google.GData.Client.dll
+D:\Application\take65\Bll\bin\Debug\Google.GData.Contacts.dll
+D:\Application\take65\Bll\bin\Debug\Google.GData.Extensions.dll
+D:\Application\take65\Bll\bin\Debug\log4net.dll
+D:\Application\take65\Bll\bin\Debug\Microsoft.Live.dll
+D:\Application\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\Application\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Application\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\Application\take65\Bll\bin\Debug\Model.dll
+D:\Application\take65\Bll\bin\Debug\Newtonsoft.Json.dll
+D:\Application\take65\Bll\bin\Debug\OpenPop.dll
+D:\Application\take65\Bll\bin\Debug\System.IO.dll
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.dll
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.Extensions.dll
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.Primitives.dll
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.WebRequest.dll
+D:\Application\take65\Bll\bin\Debug\System.Runtime.dll
+D:\Application\take65\Bll\bin\Debug\System.Threading.Tasks.dll
+D:\Application\take65\Bll\bin\Debug\TestApiCore.dll
+D:\Application\take65\Bll\bin\Debug\Zlib.Portable.dll
+D:\Application\take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Application\take65\Bll\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Application\take65\Bll\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Application\take65\Bll\bin\Debug\Dal.pdb
+D:\Application\take65\Bll\bin\Debug\Model.pdb
+D:\Application\take65\Bll\bin\Debug\EntityFramework.xml
+D:\Application\take65\Bll\bin\Debug\EntityFramework.SqlServer.xml
+D:\Application\take65\Bll\bin\Debug\Google.Apis.pdb
+D:\Application\take65\Bll\bin\Debug\Google.Apis.xml
+D:\Application\take65\Bll\bin\Debug\Google.Apis.Core.pdb
+D:\Application\take65\Bll\bin\Debug\Google.Apis.Core.xml
+D:\Application\take65\Bll\bin\Debug\Google.Apis.PlatformServices.pdb
+D:\Application\take65\Bll\bin\Debug\Google.Apis.PlatformServices.xml
+D:\Application\take65\Bll\bin\Debug\log4net.xml
+D:\Application\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\Application\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\Application\take65\Bll\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Application\take65\Bll\bin\Debug\Newtonsoft.Json.xml
+D:\Application\take65\Bll\bin\Debug\System.IO.xml
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.xml
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.Extensions.xml
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.Primitives.xml
+D:\Application\take65\Bll\bin\Debug\System.Net.Http.WebRequest.xml
+D:\Application\take65\Bll\bin\Debug\System.Runtime.xml
+D:\Application\take65\Bll\bin\Debug\System.Threading.Tasks.xml
+D:\Application\take65\Bll\bin\Debug\Zlib.Portable.xml
+D:\Application\take65\Bll\obj\Debug\Bll.csproj.App.config
+D:\Application\take65\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+D:\Application\take65\Bll\obj\Debug\Bll.dll
+D:\Application\take65\Bll\obj\Debug\Bll.pdb

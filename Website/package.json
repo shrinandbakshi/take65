@@ -1,0 +1,11 @@
+﻿{
+  "name": "Take65",
+  "version": "0.0.1",
+  "title": "Take 65 - The web for seniors",
+  "description": "Take 65 - The web for seniors",
+   "repository":  {
+        "type": "",
+        "url": ""
+            },
+   "private":  true
+}

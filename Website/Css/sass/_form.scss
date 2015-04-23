@@ -1,0 +1,169 @@
+/* Form */
+%sSelect,
+.sSelect {
+	@extend %i-txt-simple;
+	@extend %modal-input;
+	$sizeSelect: 31px;
+
+	border: 1px solid $gray;
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+	height: $sizeSelect;
+	line-height: $sizeSelect;
+	position: relative;
+	z-index: 50;
+
+	.select-arrow {
+		@include icon-sprite(arrow-bottom-blue);
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		z-index: 2;
+	}
+	.options {
+		border: {
+			left: 1px solid $gray;
+			right: 1px solid $gray;
+			bottom: 1px solid $gray;
+		};
+		display: none;
+		height: auto;
+		width: 100%;
+	}
+	a {
+		color: $dark-gray;
+		left: 0;
+		line-height: $sizeSelect;
+		position: absolute;
+		z-index: 10;
+		span {
+			float: left;
+			width: 100%;
+			&.select {
+				margin-left: 10px;
+			}
+			&.options {
+				background-color: #fff;
+				left: -1px;
+				max-height: 94px;
+				overflow-x: hidden;
+				overflow-y: auto;
+				padding: 0 10px;
+				position: absolute;
+				top: $sizeSelect;
+				width: 100%;
+				span {
+					float: left;
+					left: -10px;
+					padding: 0 10px;
+					position: relative;
+					width: 100%;
+				}
+				.selected,
+				span:hover {
+					background-color: $blue;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+%sCheckbox,
+.sCheckbox {
+    @include icon-sprite(check-32);
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0 -10px;
+    .check {
+    	@include icon-sprite(check-32-checked);
+	    display: none;
+	    float: left;
+	    margin: 4px 0 0 3px;
+	}
+	&.checked .check { display: block; }
+
+	&.chk-17 {
+    	@include icon-sprite(check-17);
+    	margin: 0 0 -3px;
+    	.check {
+    		@include icon-sprite(check-17-checked);
+		    float: left;
+		    margin: 3px 0 0 2px;
+    	}
+	}
+}
+.check-red {
+	@extend %sCheckbox;
+	@include icon-sprite(check-gray-checked);
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	.check {
+		@include icon-sprite(check-red-checked);
+	    margin: 0;
+	}
+}
+.check-red {
+	@extend %sCheckbox;
+	@include icon-sprite(check-gray-checked);
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	.check {
+		@include icon-sprite(check-red-checked);
+	    margin: 0;
+	}
+}
+
+
+.sRadio {
+    @include icon-sprite(radio-27);
+    cursor: pointer;
+    display: inline-block;
+    height: 27px;
+    margin: 0 5px -6px;
+    width: 27px;
+    .check {
+    	@include icon-sprite(radio-27-checked);
+        display: none;
+        float: left;
+        height: 11px;
+        margin: 8px 0 0 8px;
+        width: 11px;
+    }
+    &.checked .check { display: block; }
+}
+
+/*%sCloseCheckbox,
+.sCloseCheckbox {    
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0 -10px;   
+	&.checked .check { display: block; }
+}*/
+.close-red {
+	@extend %sCheckbox;	
+	position: absolute;
+	top: -12px;
+	right: -10px;
+    height: 15px;
+    width: 15px;
+	.check {
+		@include icon-sprite(close-red-and-white-small);
+	    margin: 0;
+	}
+}
+
+/* End Form */
+
+
+// Angular Validate
+input.has-visited.ng-invalid:not(.has-focus) {
+	border: 1px solid red;
+}
+
+.submitted input.has-visited.ng-invalid:not(.has-focus) {
+	border: 1px solid red;
+}

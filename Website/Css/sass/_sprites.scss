@@ -1,0 +1,11 @@
+﻿/*** Sprite definition ****/
+//Icon sprite
+$icon-sprite-dimensions: true;
+$icon-spacing: 5px;
+$icon-layout: horizontal;
+@import "Sprites/icon/*.png"; // Sprite icon
+@include all-icon-sprites; // include sprite with icon- 
+
+$bg-layout: vertical;
+$bg-repeat: repeat-x;
+@import "Sprites/bg/*.png"; // Sprite bg

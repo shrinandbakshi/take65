@@ -1,0 +1,97 @@
+﻿<section class="box-lightbox add-new-widget step1" data-ng-controller="AddNewWidgetCtrl" data-resizecolorbox="" data-close-colorbox="">
+	<header>
+		<h1>Add New Frame</h1>
+        <!--<a href="#home" class="btn-close-colorbox icon-close-red-and-white" data-colorbox-close="">Close</a>-->
+	</header>
+    <div class="box-add-widgets" data-ng-hide="hasLoad">
+	    <p>Select the type of frame you want to add</p>        
+	    <div class="widgets">
+		    <ul>
+			    <li>
+				    <a href="#modalSliderAjax" data-ngopenpop="/Templates/AddNewWidget/Feed.html" data-fn="openPop" data-param='{ "type": "inline", "height":"80%", "width": 910, "closeButton": false, "resizeBoxLightbox": true }'>
+					    <img src="/Content/Widgets/add-feed.png" alt="">
+					    <span class="label">News</span>
+				    </a>
+				    <a href="#modalSliderAjax" data-ngopenpop="/Templates/AddNewWidget/Feed.html" data-fn="openPop" data-param='{ "type": "inline", "width": 910, "height":"80%", "closeButton": false, "resizeBoxLightbox": true }' class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+			    </li>		
+                <li>
+                    <a href="#modalSliderAjax" data-ngopenpop="/Templates/AddNewWidget/MyWebsites.html" data-fn="openPop" data-param='{ "type": "inline", "height":"auto", "width": "auto", "closeButton": false, "resizeBoxLightbox": true }'>
+                        <img src="/Content/Widgets/add-bookmark.png" alt="">
+                        <span class="label">My Websites</span>
+                    </a>
+                    <a href="#modalSliderAjax" data-ngopenpop="/Templates/AddNewWidget/MyWebsites.html" data-fn="openPop" data-param='{ "type": "inline", "height":"auto", "width": "auto",  "closeButton": false, "resizeBoxLightbox": true }' class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>                    
+                </li>
+                <li data-ng-show="!hasSocialMediaFrame">
+                    <a href="#modalSliderAjax" data-ngopenpop="/Templates/FacebookPhotos.html" data-fn="openPop" data-param='{ "type": "inline", "height": "auto", "width": "auto", "closeButton": false, "resizeBoxLightbox": true }'>
+                        <img src="/Content/Widgets/add-social-media-photos.png" alt="" class="social-media">
+                        <span class="label">Social Media Photos</span>
+                    </a>
+                    <a href="#modalSliderAjax" data-ngopenpop="/Templates/FacebookPhotos.html" data-fn="openPop" data-param='{ "type": "inline", "height": "auto", "width": "auto",  "closeButton": false, "resizeBoxLightbox": true }' class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+                </li>
+                <li data-ng-show="hasSocialMediaFrame">
+                    <a data-ng-click="VerifyForSocialMediaFrame();">
+                        <img src="/Content/Widgets/add-social-media-photos.png" alt="" class="social-media">
+                        <span class="labeldisabled">Social Media Photos</span>
+                    </a>
+                    <a class="btn-red btn-add-widget" data-ng-click="VerifyForSocialMediaFrame();"><span class="icon-add-white-22"></span><span class="textdisabled">ADD</span></a>
+                </li>
+                <!--
+			    <li data-ng-click="addTravel();">
+				    <a href="#addTravel">
+					    <img src="/Content/Widgets/add-travel.png" alt="">
+					    <span class="label">Travel</span>
+				    </a>
+				    <a href="#addTravel" class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+			    </li>		
+                
+			    <li data-ng-click="addWeather();">
+				    <a href="#addWeather">
+					    <img src="/Content/Widgets/add-weather.png" alt="">
+					    <span class="label">Weather</span>
+				    </a>
+				    <a href="#addWeather" class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+			    </li>
+			    <li>
+				    <a href="/Services/Category-List.aspx" data-fn="openPop" data-param='{ "type": "ajax", "resizeBoxLightbox": true, "height":"80%", "closeButton": false, "resizeBoxLightbox": true }'>
+					    <img src="/Content/Widgets/add-email.png" alt="">
+					    <span class="label">Email</span>
+				    </a>
+				    <a href="/Services/Category-List.aspx" data-fn="openPop" data-param='{ "type": "ajax", "resizeBoxLightbox": true, "height":"80%", "closeButton": false, "resizeBoxLightbox": true }' class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+			    </li>		
+			    <li>
+				    <a href="/Services/Category-List.aspx" data-fn="openPop" data-param='{ "type": "ajax", "resizeBoxLightbox": true, "height":"80%", "closeButton": false, "resizeBoxLightbox": true }'>
+					    <img src="/Content/Widgets/add-map.png" alt="">
+					    <span class="label">Map</span>
+				    </a>
+				    <a href="/Services/Category-List.aspx" data-fn="openPop" data-param='{ "type": "ajax", "resizeBoxLightbox": true, "height":"80%", "closeButton": false, "resizeBoxLightbox": true }' class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+			    </li>	
+                <li data-ng-click="addFacebook();">
+				    <a href="#addFacebook">
+					    <img src="/Content/Widgets/add-facebook.png" alt="">
+					    <span class="label">News Feed</span>
+				    </a>
+				    <a href="#addFacebook" class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+			    </li>-->	
+
+                <!--<li >
+				    <a data-ng-click="addFacebookPhotos();">
+					    <img src="/Content/Widgets/add-social-media-photos.png" alt="" class="social-media">
+					    <span class="label">Social Media Photos</span>
+				    </a>
+				    <a data-ng-click="addFacebookPhotos();" href="#addFacebook" class="btn-red btn-add-widget"><span class="icon-add-white-22"></span><span class="text">ADD</span></a>
+			    </li>-->	
+	
+		    </ul>
+	    </div>                        
+
+         <p class="msg-info" data-ng-show="isSocialMediaAdded">
+            Your social media photos’ frame is already set up. <br />
+	    To update this frame, please locate it on your homepage <br />
+	    and click ‘Edit’ in the top right hand corner.
+         </p>                
+    </div>
+
+    <div data-ng-show="hasLoad" class="add-new-widget-load">
+        <div data-loading=""></div>
+    </div>
+</section>

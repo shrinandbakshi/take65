@@ -1,0 +1,134 @@
+﻿<section class="box-lightbox register" data-fn="placeholder styleForms" data-param='{ "classStep": ".register-step" }' data-ng-controller="RegisterCtrl" data-resizecolorbox="">
+    <header>
+        <h1>Join Take 65 - Register</h1>
+    </header>
+    <article class="register-step step-1 active" data-ng-show="step === 1">
+        <a href="javascript:void(0);" class="btn-sign btn-sign-up change-step change-in-click" data-ng-click="setStep(2);"><span class="icon icon-door"></span><span class="text">Sign Up</span></a>
+        <a id="btnFacebookSignup" href="javascript:void(0);" class="btn-sign-face btn-sign-up" data-ng-click="registerFacebook();"><span class="icon icon-face-sign"></span><span class="text">Sign up with Facebook</span></a>
+        <!-- register g+ account goes here -->
+        <a id="btnGplusSignup" href="javascript:void(0);" class="btn-sign-google btn-sign-up" data-ng-click="registerGoogle();"><span class="icon icon-gplus-sign"></span><span class="text">Sign up with Google</span></a>
+        
+        <div id="facebookMessage" class="msg-feedback msg-register" data-ng-class="{ error: !facebook.feedback.status, success: facebook.feedback.status }" data-ng-show="facebook.feedback.msg.length > 0">{{facebook.feedback.msg}}</div>
+        <div id="googleMessage" class="msg-feedback msg-register" data-ng-class="{ error: !google.feedback.status, success: google.feedback.status }" data-ng-show="google.feedback.msg.length > 0">{{google.feedback.msg}}</div>
+            <div/> <div/>
+     </article>
+
+    <article class="register-step step-2" data-param='{ "error": ".msg-feedback2", "submit": ".next-step" }' data-ng-show="step === 2">
+        <p>
+            Please fill out the fields below to create your account on Take 65.<br />
+            <!--All fields marked with * are required.-->
+        </p>
+        <form name="register" data-ng-submit="setStep(3)" data-ng-class="{ submitted: submitted }" novalidate>
+            <section class="informations-user">
+                <article class="login-information" data-ng-hide="facebook.register || google.register">
+
+                    <h1>Login information</h1>
+                    <div class="hold-line">
+                        <label for="register-email" class="lbl-left">*Email</label>
+                        <!--<input id="register-email" type="email" class="i-right" placeholder="Type your email address" name="email" data-ng-model="user.email" data-ng-focus data-ensure-unique-email data-unique="user.unique.email" data-ng-required="!facebook.register">-->
+                        <input id="register-email" type="text" class="i-right" placeholder="Type your email address" name="email" data-ng-model="user.email" data-ensure-unique-email="" data-unique="user.unique.email" data-ng-required="!facebook.register && !google.register" data-ng-pattern='/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'>
+
+                        <span class="msg-feedback msg-input" data-ng-class="{ error: (!user.unique.email.status || !register.email.$valid), success: (user.unique.email.status && register.email.$valid) }" data-ng-show="!register.email.$error.required && !register.email.$error.$email">
+                            <span ng-show="register.email.$valid">{{user.unique.email.response}}</span>
+                            <span class="error" ng-show="!register.email.$valid && user.unique.email.status">Invalid e-mail</span>
+                            <span class="error" ng-show="!register.email.$valid && !user.unique.email.status">{{user.unique.email.response}}</span>
+                        </span>
+                    </div>
+
+                    <div class="hold-line">
+                        <label for="register-password" class="lbl-left">*Password</label>                        
+                        <input id="pw1" class="i-right" name="pw1" type="password" data-ng-model="user.password" data-ng-required="!facebook.register && !google.register" placeholder="Choose your Take 65 password">
+                    </div>
+                    <div class="hold-line">
+                        <label for="register-confirm-password" class="lbl-left">*Confirm Password</label>
+                        <input id="pw2" class="i-right" name="pw2" type="password" data-ng-model="pw2" pw-check="pw1" data-ng-required="!facebook.register && !google.register" placeholder="Re-enter your Take 65 password">
+                    </div>
+                    <input id="fldRegisterFacebookId" type="hidden" name="facebookId" />
+                </article>
+
+                <article class="personal-information">
+                    <h1>Personal Information</h1>
+                    <div class="hold-line">
+                        <label for="" class="lbl-left">Name</label>
+                        <input id="fldRegisterName" type="text" class="i-right" name="name" placeholder="Type your full name" data-ng-model="user.name">
+                    </div>
+                    <div class="hold-line">
+                        <label class="lbl-left">Year of Birth</label>
+                        <!--<select id="fldRegisterBirthdate" class="i-right" step="1" name="birthdate" data-ng-model="user.yearofbirth" ng-options="y.value as y.label for y in byears">
+                            <option value="">-- choose birth year --</option>
+                        </select>-->
+                        <select id="fldRegisterBirthdate" class="i-right" step="1" name="birthdate" data-ng-model="user.yearofbirth">
+                            <option value="">-- choose birth year --</option>
+                            <option ng-repeat="y in byears">{{y}}</option>
+                        </select>
+                    </div>
+                    <div class="hold-line">
+                        <label for="" class="lbl-left">Gender</label>
+                        <div class="i-right">
+                            <div class="f-left" data-ng-click="user.gender = 'male'">
+                                <div class="sRadio gende" id="gender0" data-ng-class="{ checked: user.gender === 'male' }"><span class="check"></span></div>
+                                <input id="fldRegisterGenderMale" type="radio" value="male" name="gender" class="hidden" data-ng-model="user.gender" data-ng-checked="user.gender === 'male'">
+                                <label for="fldRegisterGenderMale">Male</label>
+                            </div>
+                            <div class="f-left" data-ng-click="user.gender = 'female'">
+                                <div class="sRadio gende" id="gender1" data-ng-class="{ checked: user.gender === 'female' }"><span class="check"></span></div>
+                                <input id="fldRegisterGenderFemale" type="radio" value="female" name="gender" class="hidden" data-ng-model="user.gender" data-ng-checked="user.gender === 'female'">
+                                <label for="fldRegisterGenderFemale">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="msg-feedback" data-ng-class="{ error: register.$invalid, success: !register.$invalid }" data-ng-show="register.showMessage">
+                <p data-ng-show="register.birthdate.$invalid">Year of birth must be in format 'yyyy'</p>
+                <p data-ng-show="register.email.$error.required && !register.email.$invalid">Please fill out the field of email.</p>
+                <p data-ng-show="register.email.$invalid || register.email.required">Invalid email address.</p>
+                <p data-ng-show="register.pw1.$error.required || register.pw2.$error.required">Please fill out the field of password.</p>
+                <p data-ng-show="register.pw2.$error.pwmatch">Passwords don't match.</p>
+            </div>
+            <!--<div class="msg-feedback msg-feedback2"></div>-->
+            <input type="submit" class="change-step next-step btn-red" value="Next" data-ng-click="submitted=true" />
+        </form>
+
+    </article>
+
+    <article class="register-step step-3" data-ng-show="step === 3">
+        <div data-loading="" data-ng-class="{ hidden: wasLoaded }"></div>
+        <p>
+            Select your interests so we can offer you customized content.
+        </p>
+        <ul class="interests">
+            <li data-ng-repeat="uPrefence in userPrefences" data-ng-click="uPrefence.chk = !uPrefence.chk">
+                <div class="sCheckbox preferenceCheckbox" data-ng-class="{ checked: uPrefence.chk }"><span class="check"></span></div>
+                <input type="checkbox" class="hidden" value="{{uPrefence.title}}" name="{{uPrefence.title}}" id="uPreference{{uPrefence.id}}" data-ng-model="uPrefence.chk" />
+                <label for="{{uPrefence.id}}">{{uPrefence.title}}</label>
+            </li>
+        </ul>
+        <!--<a href="javascript:void(0);" class="change-step next-step btn-red change-in-click" data-ng-click="setStep(4);">Next</a>-->
+        <a href="#modalSliderAjax" class="finish-step btn-red" data-ng-click="submit()">Finish</a>
+        <a href="#modalSliderAjax" data-ngopenpop="/Templates/CustomizeHomepage.html" data-fn="openPop" data-param='{ "type": "inline", "allowClose": false, "closeButton": false, "height":"80%", "width": 560 }' class="hidden" id="openWizard">content</a>
+    </article>
+
+    <!--<article class="register-step step-4" data-ng-show="step === 4">
+            <div data-loading="" data-ng-class="{ hidden: wasLoadedCategories }"></div>
+            <div class="categories">
+                <header>
+                    <h1>You can start by selecting one of our template widgets.</h1>
+                </header>
+                <ul class="categories-list" id="categoriesList">
+                    <li data-ng-repeat="cat in categories" data-ng-click="cat.chk = !cat.chk">
+                        <div class="sCheckbox check-red categoryCheckbox" data-ng-class="{ checked: cat.chk }"><span class="check"></span></div>
+                        <input type="checkbox" class="hidden" value="{{cat.title}}" name="{{cat.title}}" id="categories{{cat.id}}" data-ng-model="cat.chk" />
+                        <label for="categories{{cat.id}}">
+                            <img data-ng-src="/Content/Categories/{{cat.image}}" alt="{{cat.title}}" />
+                            <span class="text">{{cat.title}}</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);#" class="change-step skip-step btn-red" data-index="4" data-fn="colorbox" data-param='{ "action": "close" }'>Skip</a>
+            <div class="msg-feedback msg-register" data-ng-class="{ error: !feedbackRegister.status, success: feedbackRegister.status }" data-ng-show="feedbackRegister.msg.length > 0">{{feedbackRegister.msg}}</div>
+            <p class="info-bottom">You always can add new widgets form your homepage.</p>
+        </article>-->
+    <!-- </form>-->
+</section>

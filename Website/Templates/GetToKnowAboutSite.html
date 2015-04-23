@@ -1,0 +1,45 @@
+﻿
+<section class="box-lightbox login" id="knowAboutSite" data-fn="placeholder" data-resizecolorbox="" data-ng-controller="GetToKnowAboutSiteCtrl">
+    <header style="background-color: #195590;">
+        <div class="header-blue mb15">
+            <h1 style="color:white !important">{{title}}</h1>
+        </div>
+    </header>
+
+    <div style="margin:20px auto; width:345px; overflow:hidden;">
+        <div class="hold-line">
+            <b>Take65.com is <span style="color:red"><b style="font-weight:700 !important">FREE</b></span> to join</b>
+        </div>
+
+        <div class="hold-line">
+            <label for="fldLoginName" class="lbl-left">Email</label>
+            <input type="email" name="login" class="i-txt i-right" id="fldLoginName" data-valid="empty" data-name="email" placeholder="Type your email address" data-ng-model="newUseremail">
+        </div>
+        <div class="hold-line" style="min-height:53px !important; text-align:center !important;">
+            <div style="float:left; margin-top:18px;"><a id="learnMoreAboutTake65" href="https://www.youtube.com/watch?v=W_jzYOy17H0&feature=youtu.be​" data-ng-click="regsterEmail()" target="_blank"><u>Learn More About Take65</u></a></div>
+            <div style="float:right;"><a href="#modalSliderAjax" data-ngopenpop="/Templates/Register.html" class="btn btn-login btn-red" data-fn="openPop" data-param='{ "type": "inline", "closeButton": false, "height":"80%", "width": 560 }'><b>Get Started</b></a></div>
+        </div>
+
+        <div class="hold-line" style="float:right; margin-top:5px;">
+            Already a member? <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/Login.html" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "height": 420, "closeButton": false }' title="Login"><u>Login here</u></a>
+        </div>
+    </div>
+</section>
+<style type="text/css">
+
+    #cboxClose {
+        background-image: none !important;
+        width: 50px !important;
+        color: black;
+    }
+</style>
+<script src="../Scripts/jquery-2.0.3.min.js"></script>
+<script>
+    $(document).ready(function () {
+        alert("sasasasasasa");
+        $("#cboxClose").removeAttr("click");
+        $("#cboxClose").click(function () {
+            alert("sasasasasasa");
+        });
+    });
+</script>

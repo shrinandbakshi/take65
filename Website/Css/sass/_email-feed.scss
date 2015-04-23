@@ -1,0 +1,110 @@
+﻿.email-feed {
+	height: 303px;
+	overflow-y: scroll !important;
+
+	ul.feed{
+		width: 100%;
+
+
+		li{
+			cursor: pointer;
+			border-bottom: 1px solid $gray;
+			padding: 7px;
+			span {
+				font-weight: bold;
+			}
+			p {
+				margin: 0;
+				a{
+					color: $red;
+					text-decoration: none;
+					text-weight: bold;
+				}
+			}
+			time{
+				color: #555555;
+			}
+		}
+
+		li:hover{
+			background-color: #F7F7F7;
+		}
+	}
+
+	ul.active-providers {
+		display: block;
+		overflow: hidden;
+		padding: 5px;
+
+		li {
+			display: inline-block;
+			float: left;
+			overflow: hidden;
+			padding: 0 5px;
+			text-align: center;
+			margin-top: 10px;
+			width: 50%;
+			a {
+				background-color: #f7f7f7;
+				border: 1px solid $gray;
+				display: block;
+				padding: 5px 0 4px;
+				color: #000;
+
+				&.active {
+					border-color: $red;
+					outline: none;
+				}
+				img {
+					vertical-align: middle;
+					max-height: 36px;
+					max-width: 111px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.email-feed-manage {
+	.steps {
+		@include clearfix;
+		margin: 10px 0 0 13px;
+	}
+	p {
+		font-size: 1.25em;
+		font-weight: $font-normal;
+		&.bold {
+			font-weight: $font-bold;
+		}
+	}
+
+	ul.list-of-servers{
+		@include clearfix;
+		li{
+			cursor: pointer;
+			display: inline-block;
+			float: left;
+			position: relative;
+
+			.check-red {
+				right: -11px;
+				top: -11px;
+			}
+
+		}
+	}
+
+	.providers{
+		@include clearfix;
+		border-top:  1px solid $gray;
+		padding-top: 10px;
+		margin-right: 15px;
+
+		.gmail{
+			label{
+				width: 150px;
+			}
+		}
+	}
+}

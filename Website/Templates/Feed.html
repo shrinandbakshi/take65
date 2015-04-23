@@ -1,0 +1,44 @@
+﻿<section class="widget widget-news" data-ng-controller="FeedCtrl" data-ng-target="">
+    <div data-loading="" data-ng-class="{ hidden: wasLoaded }"></div>
+	<article class="highlight">
+		<figure data-ng-show="highlight.image.length !== null">
+			<a href="{{highlight.link}}" data-ng-class="{ openIframe: !highlight.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'><img data-ng-src="{{highlight.image}}" width="100" height="100" /></a>
+		</figure>
+		<header>
+			<time pubdate="{{highlight.publishDate | pubdate}}"><a data-ng-href="{{highlight.link}}" data-ng-class="{ openIframe: !highlight.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }' title="{{highlight.publishDate | formatDate}}">{{highlight.publishDateRelative}} | {{highlight.categoryName[0]}} | {{highlight.trustedSourceName}}</a></time>
+			<h1><a data-ng-href="{{highlight.link}}" data-ng-class="{ openIframe: !highlight.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>{{highlight.title}}</a></h1>
+		</header>
+		<p><a data-ng-href="{{highlight.link}}" data-ng-class="{ openIframe: !highlight.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }' data-ng-bind-html-unsafe="highlight.description">{{highlight.description}}</a></p>
+	</article>
+
+    <article class="feed" data-ng-repeat="feed in feeds" ng-hide="$index > 2" ng-repeat-finished="">
+        <figure data-ng-show="feed.image.length !== null">
+			<a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'><img data-ng-src="{{feed.image}}" width="100" height="100" /></a>
+        </figure>
+        <header>
+            <h1>
+                <a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>
+                    {{feed.title}}
+                </a>
+            </h1>
+        </header>
+    </article>
+
+    <div class="slider">
+        <div class="scroll" data-ng-carousel="">
+            <article data-ng-repeat="feed in feeds">
+                <figure data-ng-show="feed.image.length !== null">
+				    <a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'><img data-ng-src="{{feed.image}}" width="100" height="100" /></a>
+                </figure>
+                <header>
+                    <h1>
+                        <a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>
+                            {{feed.title}}
+                        </a>
+                    </h1>
+                </header>
+            </article>
+        </div>
+    </div>
+
+</section>

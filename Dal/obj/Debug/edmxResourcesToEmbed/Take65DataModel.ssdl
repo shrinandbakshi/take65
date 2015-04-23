@@ -1,0 +1,841 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Take65Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Take65ModelStoreContainer">
+    <EntitySet Name="__RefactorLog" EntityType="Take65Model.Store.__RefactorLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FeedContent" EntityType="Take65Model.Store.FeedContent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FeedContentImage" EntityType="Take65Model.Store.FeedContentImage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FeedContentTag" EntityType="Take65Model.Store.FeedContentTag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="File" EntityType="Take65Model.Store.File" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PageAdmin" EntityType="Take65Model.Store.PageAdmin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SafeWebsite" EntityType="Take65Model.Store.SafeWebsite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SuggestionBox" EntityType="Take65Model.Store.SuggestionBox" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SuggestionBoxTag" EntityType="Take65Model.Store.SuggestionBoxTag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="Take65Model.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemTag" EntityType="Take65Model.Store.SystemTag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemUser" EntityType="Take65Model.Store.SystemUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TagType" EntityType="Take65Model.Store.TagType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TrustedSource" EntityType="Take65Model.Store.TrustedSource" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TrustedSourceFeed" EntityType="Take65Model.Store.TrustedSourceFeed" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TrustedSourceFeedTag" EntityType="Take65Model.Store.TrustedSourceFeedTag" store:Type="Tables" store:Schema="dbo" store:Name="TrustedSourceFeedTag">
+      <DefiningQuery>SELECT 
+      [TrustedSourceFeedTag].[TrustedSourceFeedId] AS [TrustedSourceFeedId], 
+      [TrustedSourceFeedTag].[SystemTagId] AS [SystemTagId]
+      FROM [dbo].[TrustedSourceFeedTag] AS [TrustedSourceFeedTag]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TrustedSourceTag" EntityType="Take65Model.Store.TrustedSourceTag" store:Type="Tables" store:Schema="dbo" store:Name="TrustedSourceTag">
+      <DefiningQuery>SELECT 
+      [TrustedSourceTag].[TrustedSourceId] AS [TrustedSourceId], 
+      [TrustedSourceTag].[SystemTagId] AS [SystemTagId]
+      FROM [dbo].[TrustedSourceTag] AS [TrustedSourceTag]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TrustedSourceType" EntityType="Take65Model.Store.TrustedSourceType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="Take65Model.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserFacebookFriend" EntityType="Take65Model.Store.UserFacebookFriend" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserPreference" EntityType="Take65Model.Store.UserPreference" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserWidget" EntityType="Take65Model.Store.UserWidget" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserWidgetTag" EntityType="Take65Model.Store.UserWidgetTag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserWidgetTrustedSource" EntityType="Take65Model.Store.UserWidgetTrustedSource" store:Type="Tables" store:Schema="dbo" store:Name="UserWidgetTrustedSource">
+      <DefiningQuery>SELECT 
+      [UserWidgetTrustedSource].[UserWidgetId] AS [UserWidgetId], 
+      [UserWidgetTrustedSource].[SystemTagId] AS [SystemTagId], 
+      [UserWidgetTrustedSource].[TrustedSourceId] AS [TrustedSourceId], 
+      [UserWidgetTrustedSource].[UserWidgetTrustedSourceName] AS [UserWidgetTrustedSourceName], 
+      [UserWidgetTrustedSource].[UserWidgetTrustedSourceUrl] AS [UserWidgetTrustedSourceUrl], 
+      [UserWidgetTrustedSource].[register] AS [register]
+      FROM [dbo].[UserWidgetTrustedSource] AS [UserWidgetTrustedSource]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UserWidgetTrustedSourceFeed" EntityType="Take65Model.Store.UserWidgetTrustedSourceFeed" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_FeedContentTag_FeedContentTag" Association="Take65Model.Store.FK_FeedContentTag_FeedContentTag">
+      <End Role="FeedContentTag" EntitySet="FeedContentTag" />
+      <End Role="FeedContentTag1" EntitySet="FeedContentTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageAdmin_PageAdminId" Association="Take65Model.Store.FK_PageAdmin_PageAdminId">
+      <End Role="PageAdmin" EntitySet="PageAdmin" />
+      <End Role="PageAdmin1" EntitySet="PageAdmin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemTag_SystemTag" Association="Take65Model.Store.FK_SystemTag_SystemTag">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="SystemTag1" EntitySet="SystemTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemTag_TagType" Association="Take65Model.Store.FK_SystemTag_TagType">
+      <End Role="TagType" EntitySet="TagType" />
+      <End Role="SystemTag" EntitySet="SystemTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrustedSource_TrustedSourceType" Association="Take65Model.Store.FK_TrustedSource_TrustedSourceType">
+      <End Role="TrustedSourceType" EntitySet="TrustedSourceType" />
+      <End Role="TrustedSource" EntitySet="TrustedSource" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrustedSourceFeed_TrustedSource" Association="Take65Model.Store.FK_TrustedSourceFeed_TrustedSource">
+      <End Role="TrustedSource" EntitySet="TrustedSource" />
+      <End Role="TrustedSourceFeed" EntitySet="TrustedSourceFeed" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPreference_User" Association="Take65Model.Store.FK_UserPreference_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserPreference" EntitySet="UserPreference" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPreference_UserPreference" Association="Take65Model.Store.FK_UserPreference_UserPreference">
+      <End Role="SystemTag" EntitySet="SystemTag" />
+      <End Role="UserPreference" EntitySet="UserPreference" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="__RefactorLog">
+    <Key>
+      <PropertyRef Name="OperationKey" />
+    </Key>
+    <Property Name="OperationKey" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FeedContent">
+    <Key>
+      <PropertyRef Name="FeedContentId" />
+    </Key>
+    <Property Name="FeedContentId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrustedSourceFeedId" Type="numeric" Nullable="false" />
+    <Property Name="TrustedSourceFeedCategory" Type="nvarchar" MaxLength="255" />
+    <Property Name="TrustedSourceId" Type="numeric" />
+    <Property Name="TrustedSourceName" Type="nvarchar" MaxLength="250" />
+    <Property Name="TrustedSourceOpenIFrame" Type="bit" />
+    <Property Name="FeedTitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FeedLink" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="FeedDescription" Type="nvarchar(max)" />
+    <Property Name="FeedPubDate" Type="datetime" />
+    <Property Name="FeedLastModified" Type="datetime" />
+    <Property Name="FeedThumb" Type="nvarchar" MaxLength="250" />
+    <Property Name="FeedGuid" Type="nvarchar" MaxLength="250" />
+    <Property Name="FeedViewCount" Type="numeric" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="lastmodified" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+    <Property Name="tmpImageSync" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FeedContentImage">
+    <Key>
+      <PropertyRef Name="FeedContentImageId" />
+    </Key>
+    <Property Name="FeedContentImageId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FeedContentId" Type="numeric" />
+    <Property Name="FeedContentImageUrl" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="FeedContentImageTitle" Type="nvarchar" MaxLength="25" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FeedContentTag">
+    <Key>
+      <PropertyRef Name="FeedContentTagId" />
+    </Key>
+    <Property Name="FeedContentTagId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FeedContentTagParentId" Type="numeric" />
+    <Property Name="FeedContentId" Type="numeric" />
+    <Property Name="FeedContentTagNormalized" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FeedContentTagDisplay" Type="nvarchar" MaxLength="50" />
+    <Property Name="TagTypeId" Type="int" />
+    <Property Name="SystemTagId" Type="numeric" />
+    <Property Name="register" Type="datetime" Nullable="false" />
+    <Property Name="inactive" Type="datetime" />
+  </EntityType>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="512" />
+    <Property Name="FileDescription" Type="nvarchar(max)" />
+    <Property Name="FileType" Type="nvarchar" MaxLength="50" />
+    <Property Name="FileLink" Type="nvarchar(max)" />
+    <Property Name="Deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PageAdmin">
+    <Key>
+      <PropertyRef Name="PageAdminId" />
+    </Key>
+    <Property Name="PageAdminId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PageAdminName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="PageAdminLink" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PageAdminOrder" Type="int" Nullable="false" />
+    <Property Name="PageParentId" Type="int" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SafeWebsite">
+    <Key>
+      <PropertyRef Name="SafeWebsiteId" />
+    </Key>
+    <Property Name="SafeWebsiteId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SafeWebsiteUrl" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SafeWebsiteOpenIFrame" Type="bit" />
+    <Property Name="SafeWebsiteGUID" Type="uniqueidentifier" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SuggestionBox">
+    <Key>
+      <PropertyRef Name="SuggestionId" />
+    </Key>
+    <Property Name="SuggestionId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SuggestionName" Type="nvarchar" MaxLength="255" />
+    <Property Name="SuggestionUrl" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SuggestionDescription" Type="nvarchar(max)" />
+    <Property Name="SuggestionImage" Type="nvarchar" MaxLength="255" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SuggestionBoxTag">
+    <Key>
+      <PropertyRef Name="SuggestionBoxTagId" />
+    </Key>
+    <Property Name="SuggestionBoxTagId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SuggestionId" Type="numeric" Nullable="false" />
+    <Property Name="SystemTagId" Type="numeric" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="SystemTag">
+    <Key>
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="SystemTagId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SystemTagParentId" Type="numeric" />
+    <Property Name="SystemTagParentIdList" Type="nvarchar(max)" />
+    <Property Name="SystemTagNormalized" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SystemTagDisplay" Type="nvarchar" MaxLength="50" />
+    <Property Name="SystemTagIcon" Type="nvarchar" MaxLength="500" />
+    <Property Name="SystemTagOrder" Type="int" />
+    <Property Name="TagTypeId" Type="int" />
+    <Property Name="register" Type="datetime" Nullable="false" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SystemUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserFirstName" Type="nvarchar" MaxLength="150" />
+    <Property Name="UserLastName" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserEmail" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserPassword" Type="varchar" MaxLength="50" />
+    <Property Name="UserLastLogin" Type="smalldatetime" />
+    <Property Name="UserGUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ForgotPassword" Type="uniqueidentifier" />
+    <Property Name="register" Type="datetime" Nullable="false" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TagType">
+    <Key>
+      <PropertyRef Name="TagTypeId" />
+    </Key>
+    <Property Name="TagTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TagTypeParentId" Type="int" />
+    <Property Name="TagTypeName" Type="varchar" MaxLength="50" />
+    <Property Name="TagTypeDisplay" Type="nvarchar" MaxLength="120" />
+    <Property Name="register" Type="datetime" Nullable="false" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TrustedSource">
+    <Key>
+      <PropertyRef Name="TrustedSourceId" />
+    </Key>
+    <Property Name="TrustedSourceId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrustedSourceName" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="TrustedSourceIcon" Type="nvarchar" MaxLength="120" />
+    <Property Name="TrustedSourceTypeId" Type="numeric" Nullable="false" />
+    <Property Name="TrustedSourceUrl" Type="nvarchar" MaxLength="250" />
+    <Property Name="TrustedSourceOpenIFrame" Type="bit" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TrustedSourceFeed">
+    <Key>
+      <PropertyRef Name="TrustedSourceFeedId" />
+    </Key>
+    <Property Name="TrustedSourceFeedId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrustedSourceId" Type="numeric" Nullable="false" />
+    <Property Name="TrustedSourceFeedName" Type="nvarchar" MaxLength="250" />
+    <Property Name="TrustedSourceFeedUrl" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="lastsync" Type="datetime" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Take65-V3.dbo.TrustedSourceFeedTag' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="TrustedSourceFeedTag">
+    <Key>
+      <PropertyRef Name="TrustedSourceFeedId" />
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="TrustedSourceFeedId" Type="numeric" Nullable="false" />
+    <Property Name="SystemTagId" Type="numeric" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Take65-V3.dbo.TrustedSourceTag' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="TrustedSourceTag">
+    <Key>
+      <PropertyRef Name="TrustedSourceId" />
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="TrustedSourceId" Type="numeric" Nullable="false" />
+    <Property Name="SystemTagId" Type="numeric" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrustedSourceType">
+    <Key>
+      <PropertyRef Name="TrustedSourceTypeId" />
+    </Key>
+    <Property Name="TrustedSourceTypeId" Type="numeric" Nullable="false" />
+    <Property Name="TrustedSourceTypeName" Type="nvarchar" Nullable="false" MaxLength="120" />
+    <Property Name="register" Type="datetime" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserGUID" Type="uniqueidentifier" />
+    <Property Name="UserFacebookId" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserFacebookTokenLong" Type="nvarchar" MaxLength="500" />
+    <Property Name="UserFacebookTokenShort" Type="nvarchar" MaxLength="500" />
+    <Property Name="UserFacebookTokenLongExpires" Type="bigint" />
+    <Property Name="UserFacebookTokenLongExpiresDate" Type="datetime" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserEmail" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserLogin" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserBirthdate" Type="datetime" />
+    <Property Name="UserGender" Type="char" MaxLength="1" />
+    <Property Name="UserAddressState" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserAddressCity" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserAddressPostalCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="inactive" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserFacebookFriend">
+    <Key>
+      <PropertyRef Name="UserFacebookFriendId" />
+    </Key>
+    <Property Name="UserFacebookFriendId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="numeric" Nullable="false" />
+    <Property Name="FacebookFriendId" Type="numeric" Nullable="false" />
+    <Property Name="FacebookFriendName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FacebookPhotoCount" Type="int" />
+    <Property Name="register" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserPreference">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="SystemTagId" />
+    </Key>
+    <Property Name="UserId" Type="numeric" Nullable="false" />
+    <Property Name="SystemTagId" Type="numeric" Nullable="false" />
+    <Property Name="register" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserWidget">
+    <Key>
+      <PropertyRef Name="UserWidgetId" />
+    </Key>
+    <Property Name="UserWidgetId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="numeric" Nullable="false" />
+    <Property Name="SystemTagId" Type="numeric" Nullable="false" />
+    <Property Name="UserWidgetName" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserWidgetSize" Type="int" />
+    <Property Name="UserWidgetOrder" Type="int" />
+    <Property Name="UserWidgetDefault" Type="bit" />
+    <Property Name="register" Type="datetime" Nullable="false" />
+    <Property Name="lastupdate" Type="datetime" />
+    <Property Name="deleted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserWidgetTag">
+    <Key>
+      <PropertyRef Name="UserWidgetTagId" />
+    </Key>
+    <Property Name="UserWidgetTagId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="numeric" Nullable="false" />
+    <Property Name="UserWidgetId" Type="numeric" Nullable="false" />
+    <Property Name="SystemTagId" Type="numeric" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Take65-V3.dbo.UserWidgetTrustedSource' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="UserWidgetTrustedSource">
+    <Key>
+      <PropertyRef Name="UserWidgetId" />
+      <PropertyRef Name="register" />
+    </Key>
+    <Property Name="UserWidgetId" Type="numeric" Nullable="false" />
+    <Property Name="SystemTagId" Type="numeric" />
+    <Property Name="TrustedSourceId" Type="numeric" />
+    <Property Name="UserWidgetTrustedSourceName" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserWidgetTrustedSourceUrl" Type="nvarchar" MaxLength="250" />
+    <Property Name="register" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserWidgetTrustedSourceFeed">
+    <Key>
+      <PropertyRef Name="UserWidgetTrustedSourceFeedId" />
+    </Key>
+    <Property Name="UserWidgetTrustedSourceFeedId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserWidgetId" Type="decimal" />
+    <Property Name="TrustedSourceFeedId" Type="decimal" />
+  </EntityType>
+  <Association Name="FK_FeedContentTag_FeedContentTag">
+    <End Role="FeedContentTag" Type="Take65Model.Store.FeedContentTag" Multiplicity="0..1" />
+    <End Role="FeedContentTag1" Type="Take65Model.Store.FeedContentTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FeedContentTag">
+        <PropertyRef Name="FeedContentTagId" />
+      </Principal>
+      <Dependent Role="FeedContentTag1">
+        <PropertyRef Name="FeedContentTagParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageAdmin_PageAdminId">
+    <End Role="PageAdmin" Type="Take65Model.Store.PageAdmin" Multiplicity="0..1" />
+    <End Role="PageAdmin1" Type="Take65Model.Store.PageAdmin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PageAdmin">
+        <PropertyRef Name="PageAdminId" />
+      </Principal>
+      <Dependent Role="PageAdmin1">
+        <PropertyRef Name="PageParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SystemTag_SystemTag">
+    <End Role="SystemTag" Type="Take65Model.Store.SystemTag" Multiplicity="0..1" />
+    <End Role="SystemTag1" Type="Take65Model.Store.SystemTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemTag">
+        <PropertyRef Name="SystemTagId" />
+      </Principal>
+      <Dependent Role="SystemTag1">
+        <PropertyRef Name="SystemTagParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SystemTag_TagType">
+    <End Role="TagType" Type="Take65Model.Store.TagType" Multiplicity="0..1" />
+    <End Role="SystemTag" Type="Take65Model.Store.SystemTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TagType">
+        <PropertyRef Name="TagTypeId" />
+      </Principal>
+      <Dependent Role="SystemTag">
+        <PropertyRef Name="TagTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrustedSource_TrustedSourceType">
+    <End Role="TrustedSourceType" Type="Take65Model.Store.TrustedSourceType" Multiplicity="1" />
+    <End Role="TrustedSource" Type="Take65Model.Store.TrustedSource" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrustedSourceType">
+        <PropertyRef Name="TrustedSourceTypeId" />
+      </Principal>
+      <Dependent Role="TrustedSource">
+        <PropertyRef Name="TrustedSourceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrustedSourceFeed_TrustedSource">
+    <End Role="TrustedSource" Type="Take65Model.Store.TrustedSource" Multiplicity="1" />
+    <End Role="TrustedSourceFeed" Type="Take65Model.Store.TrustedSourceFeed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrustedSource">
+        <PropertyRef Name="TrustedSourceId" />
+      </Principal>
+      <Dependent Role="TrustedSourceFeed">
+        <PropertyRef Name="TrustedSourceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPreference_User">
+    <End Role="User" Type="Take65Model.Store.User" Multiplicity="1" />
+    <End Role="UserPreference" Type="Take65Model.Store.UserPreference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPreference">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPreference_UserPreference">
+    <End Role="SystemTag" Type="Take65Model.Store.SystemTag" Multiplicity="1" />
+    <End Role="UserPreference" Type="Take65Model.Store.UserPreference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemTag">
+        <PropertyRef Name="SystemTagId" />
+      </Principal>
+      <Dependent Role="UserPreference">
+        <PropertyRef Name="SystemTagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="AuthenticateSystemUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="CreateFeedContentTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteSuggestionBoxTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SuggestionId" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="DeleteUserPreference" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="DeleteUserWidget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserWidgetId" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="DeleteUserWidgetTrustedSource" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserWidgetId" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="FeedContentImageSave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FeedContentId" Type="numeric" Mode="In" />
+    <Parameter Name="FeedContentImageUrl" Type="nvarchar" Mode="In" />
+    <Parameter Name="FeedContentImageTitle" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="FeedContentSave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="numeric" Mode="In" />
+    <Parameter Name="TrustedSourceFeedId" Type="numeric" Mode="In" />
+    <Parameter Name="FeedTitle" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FeedLink" Type="nvarchar" Mode="In" />
+    <Parameter Name="FeedDescription" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FeedPubDate" Type="datetime" Mode="In" />
+    <Parameter Name="FeedLastModified" Type="datetime" Mode="In" />
+    <Parameter Name="FeedThumb" Type="nvarchar" Mode="In" />
+    <Parameter Name="FeedGuid" Type="nvarchar" Mode="In" />
+    <Parameter Name="FeedContentId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="UserWidgetId" Type="numeric" Mode="In" />
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetContentToSyncImg" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetFeedContentList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrustedSourceId" Type="numeric" Mode="In" />
+    <Parameter Name="CurrentPage" Type="int" Mode="In" />
+    <Parameter Name="ItemsPerPage" Type="int" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetFeedContentListWidget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserWidgetId" Type="numeric" Mode="In" />
+    <Parameter Name="PageStart" Type="int" Mode="In" />
+    <Parameter Name="ItemsPerPage" Type="int" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetFile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FileId" Type="int" Mode="In" />
+    <Parameter Name="FileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FileDescription" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FileType" Type="nvarchar" Mode="In" />
+    <Parameter Name="FileLink" Type="nvarchar" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetPageAdmin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PageAdminLink" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetSafeWebsite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SafeWebsiteId" Type="numeric" Mode="In" />
+    <Parameter Name="SafeWebsiteUrl" Type="nvarchar" Mode="In" />
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetSafeWebsiteUnmapped" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetSuggestionBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SuggestionId" Type="numeric" Mode="In" />
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetSuggestionBoxTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SuggestionId" Type="numeric" Mode="In" />
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetSystemTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SystemTagId" Type="numeric" Mode="In" />
+    <Parameter Name="SystemTagNormalized" Type="nvarchar" Mode="In" />
+    <Parameter Name="SystemTagParentId" Type="numeric" Mode="In" />
+    <Parameter Name="TagTypeId" Type="numeric" Mode="In" />
+    <Parameter Name="TagTypeParentId" Type="numeric" Mode="In" />
+    <Parameter Name="HasNullParent" Type="bit" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetSystemUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserFirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserLastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserEmail" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserPassword" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserLastLogin" Type="smalldatetime" Mode="In" />
+    <Parameter Name="GUID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="UserLoginCount" Type="int" Mode="In" />
+    <Parameter Name="ForgotPassword" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="lastupdate" Type="datetime" Mode="In" />
+    <Parameter Name="inactive" Type="datetime" Mode="In" />
+    <Parameter Name="deleted" Type="datetime" Mode="In" />
+    <Parameter Name="register" Type="datetime" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetTrustedSource" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrustedSourceId" Type="numeric" Mode="In" />
+    <Parameter Name="UserWidgetId" Type="numeric" Mode="In" />
+    <Parameter Name="SystemTagId" Type="int" Mode="In" />
+    <Parameter Name="TrustedSourceTypeId" Type="numeric" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetTrustedSourceFeed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrustedSourceId" Type="numeric" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="decimal" Mode="In" />
+    <Parameter Name="FacebookId" Type="nvarchar" Mode="In" />
+    <Parameter Name="Login" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUserAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUserFacebookFriends" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="numeric" Mode="In" />
+    <Parameter Name="ReturnXml" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUserWidget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="numeric" Mode="In" />
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="SystemTagId" Type="numeric" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUserWidgetBookmark" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserWidgetId" Type="numeric" Mode="In" />
+    <Parameter Name="IsTrusted" Type="bit" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUserWidgetCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUserWidgetContent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserWidgetId" Type="numeric" Mode="In" />
+    <Parameter Name="TrustedSourceId" Type="numeric" Mode="In" />
+    <Parameter Name="CurrentPage" Type="int" Mode="In" />
+    <Parameter Name="ItemsPerPage" Type="int" Mode="In" />
+    <Parameter Name="HasThumb" Type="int" Mode="In" />
+    <Parameter Name="Search" Type="nvarchar" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="GetUserWidgetTrustedSource" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserWidgetId" Type="numeric" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="NormalizeChar" ReturnType="nvarchar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="input" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="RemoveHtml" ReturnType="nvarchar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pInput" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SaveFacebookFriend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="FacebookFriendId" Type="numeric" Mode="In" />
+    <Parameter Name="FacebookFriendName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FacebookPhotoCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SaveFeedContentTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FeedContentId" Type="decimal" Mode="In" />
+    <Parameter Name="Normalized" Type="nvarchar" Mode="In" />
+    <Parameter Name="Display" Type="nvarchar" Mode="In" />
+    <Parameter Name="TagTypeId" Type="int" Mode="In" />
+    <Parameter Name="SystemTagId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SaveFile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FileId" Type="int" Mode="In" />
+    <Parameter Name="FileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FileDescription" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FileType" Type="nvarchar" Mode="In" />
+    <Parameter Name="FileLink" Type="nvarchar" Mode="In" />
+    <Parameter Name="Deleted" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveSafeWebsite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SafeWebsiteId" Type="numeric" Mode="In" />
+    <Parameter Name="SafeWebsiteUrl" Type="nvarchar" Mode="In" />
+    <Parameter Name="SafeWebsiteOpenIFrame" Type="bit" Mode="In" />
+    <Parameter Name="deleted" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveSuggestionBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SuggestionId" Type="numeric" Mode="In" />
+    <Parameter Name="SuggestionName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SuggestionUrl" Type="nvarchar" Mode="In" />
+    <Parameter Name="SuggestionDescription" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SuggestionImage" Type="nvarchar" Mode="In" />
+    <Parameter Name="deleted" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveSuggestionBoxTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="decimal" Mode="In" />
+    <Parameter Name="SuggestionId" Type="decimal" Mode="In" />
+    <Parameter Name="SystemTagId" Type="decimal" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveSystemTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="decimal" Mode="In" />
+    <Parameter Name="ParentId" Type="decimal" Mode="In" />
+    <Parameter Name="ParentIdList" Type="decimal" Mode="In" />
+    <Parameter Name="Normalized" Type="nvarchar" Mode="In" />
+    <Parameter Name="Display" Type="nvarchar" Mode="In" />
+    <Parameter Name="Icon" Type="nvarchar" Mode="In" />
+    <Parameter Name="Order" Type="decimal" Mode="In" />
+    <Parameter Name="TagTypeId" Type="decimal" Mode="In" />
+    <Parameter Name="register" Type="datetime" Mode="In" />
+    <Parameter Name="lastupdate" Type="datetime" Mode="In" />
+    <Parameter Name="inactive" Type="datetime" Mode="In" />
+    <Parameter Name="deleted" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveTrustedSourceBookmark" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrustedSourceId" Type="numeric" Mode="In" />
+    <Parameter Name="TrustedSourceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="TrustedSourceUrl" Type="nvarchar" Mode="In" />
+    <Parameter Name="SystemTagId" Type="numeric" Mode="In" />
+    <Parameter Name="TrustedSourceIcon" Type="nvarchar" Mode="In" />
+    <Parameter Name="TrustedSourceOpenIFrame" Type="bit" Mode="In" />
+    <Parameter Name="deleted" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="decimal" Mode="In" />
+    <Parameter Name="FacebookId" Type="nvarchar" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="Login" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="Birthdate" Type="datetime" Mode="In" />
+    <Parameter Name="Gender" Type="char" Mode="In" />
+    <Parameter Name="AddressState" Type="nvarchar" Mode="In" />
+    <Parameter Name="AddressCity" Type="nvarchar" Mode="In" />
+    <Parameter Name="AddressPostalCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Preferences" Type="varchar" Mode="In" />
+    <Parameter Name="deleted" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveUserFacebookToken" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="FacebookTokenShort" Type="nvarchar" Mode="In" />
+    <Parameter Name="FacebookTokenLong" Type="nvarchar" Mode="In" />
+    <Parameter Name="FacebookTokenLongExpires" Type="bigint" Mode="In" />
+    <Parameter Name="FacebookTokenLongExpiresDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SaveUserPreference" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="decimal" Mode="In" />
+    <Parameter Name="SystemTagId" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="SaveUserWidget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="decimal" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Size" Type="int" Mode="In" />
+    <Parameter Name="Order" Type="int" Mode="In" />
+    <Parameter Name="SystemTagId" Type="decimal" Mode="In" />
+    <Parameter Name="DefaultWidget" Type="bit" Mode="In" />
+    <Parameter Name="deleted" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnId" Type="numeric" Mode="InOut" />
+  </Function>
+  <Function Name="SaveUserWidgetTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="decimal" Mode="In" />
+    <Parameter Name="UserWidgetId" Type="decimal" Mode="In" />
+    <Parameter Name="SystemTagId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SaveUserWidgetTrustedSource" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserWidgetId" Type="decimal" Mode="In" />
+    <Parameter Name="TrustedSourceId" Type="decimal" Mode="In" />
+    <Parameter Name="SystemTagId" Type="decimal" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Url" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SearchFeedContent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SearchArray" Type="varchar" Mode="In" />
+    <Parameter Name="DELIMITER" Type="char" Mode="In" />
+    <Parameter Name="UserWidgetId" Type="numeric" Mode="In" />
+    <Parameter Name="RequiredCategory" Type="varchar" Mode="In" />
+    <Parameter Name="CategoryNotIn" Type="varchar" Mode="In" />
+    <Parameter Name="SystemTagFilter" Type="varchar" Mode="In" />
+    <Parameter Name="TagTypeFilter" Type="varchar" Mode="In" />
+    <Parameter Name="Top" Type="int" Mode="In" />
+    <Parameter Name="XmlReturn" Type="xml" Mode="InOut" />
+  </Function>
+  <Function Name="SetClearHTML" ReturnType="varchar(max)" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HTMLText" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Tegalize" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="numeric" Mode="In" />
+    <Parameter Name="TEXT" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UserFacebookFriendClean" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="FacebookFriendList" Type="nvarchar" Mode="In" />
+  </Function>
+</Schema>

@@ -1,0 +1,26 @@
+﻿<article class="box-lightbox add-suggestion-widget" data-ng-controller="AddSuggestionCtrl" data-resizecolorbox="" data-close-colorbox="">
+    <header>
+		<h1>Add Suggestion</h1>
+	</header>
+    <div class="content-with-space">
+        <form data-ng-submit="submit()">
+            <p>Please select from the list below the Frame that you want to add Take65 Suggestion.</p>
+
+            <div class="custom-select">
+                <div data-ng-click="suggestionBoxWidgetVisible=!suggestionBoxWidgetVisible">
+                    <span class="selected" data-ng-bind="suggestionBoxWidgetTitle"></span>
+                    <span class="icon-select-arrow"></span>
+                </div>
+                <ul class="custom-select-list t30" data-ng-show="suggestionBoxWidgetVisible">
+                    <li data-ng-repeat="widget in widgets" data-ng-bind="widget.title" data-ng-click="setSuggestionBoxWidgetId(widget.id, widget.title)"></li>
+                </ul>
+            </div>
+
+            <!--<div class="center-buttons">
+                <select data-ng-model="suggestionBoxWidgetId" data-ng-options="x.id as x.title for x in widgets"></select>
+            </div>-->
+            <div class="msg-feedback" data-ng-class="{ success: feedbackSuggestion.status, error: !feedbackSuggestion.status }" data-ng-show="feedbackSuggestion.msg.length > 0">{{feedbackSuggestion.msg}}</div>
+	        <input type="submit" value="ADD" class="next-step btn-red" />
+        </form>
+    </div>
+</article>

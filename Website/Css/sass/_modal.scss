@@ -1,0 +1,17 @@
+﻿.modal-backdrop {
+	@include bg-rgba(#000, .5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 100;
+}
+
+.modal {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	position: absolute;
+	top: 20%;
+	z-index: 101;
+}

@@ -1,0 +1,58 @@
+﻿<section class="box-view-more news" id="news" data-ng-controller="MoreFeedCtrl" data-loadbehavior="" data-ng-target="" data-resizecolorbox="false">
+    <div data-loading="" data-ng-class="{ hidden: widget.wasLoaded }"></div>
+	<div class="hold-top">
+		<header>
+			<h1>{{widget.title}}</h1>
+			<div class="f-right">
+                <form data-ng-submit="searchNews()">
+                    <button type="submit" class="btn-search btn-red">
+                        <span class="icon icon-search"></span>
+					    <span class="txt">Search <span class="bold">News</span></span>
+                    </button>
+				    <input type="text" tabindex="101" id="fldSearch" data-ng-model="qFilter">
+                </form>
+			</div>
+		</header>
+		<nav class="other-news">
+            <ul class="list-img-links list-img-links-max-width">
+                <li>
+                     <a data-id="0" class="all-itens" data-ng-click="setTrusted(0);" data-ng-class="{ active: category === 0}">All</a>
+                </li>
+                
+                <li data-ng-repeat="trusted in trustedSource">
+                    <a data-id="{{trusted.id}}" data-ng-click="setTrusted(trusted.id);" data-ng-class="{active: category === trusted.id || category === 0 }"><img data-ng-src="/Content/Sources/{{trusted.image}}" alt="{{trusted.name}}" title="{{trusted.name}}"></a>
+                </li>
+                
+            </ul>
+		</nav>
+	</div>
+	<div class="hold-news">
+        <article data-ng-repeat="feed in feeds" data-ng-class="{ odd: $index % 2 === 0 }">
+	        <header>
+		        <ul>
+                    <li>
+                        <time pubdate="{{feed.publishDate | pubdate}}"><a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe", "width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }' title="{{feed.publishDate | formatDate}}">{{feed.publishDateRelative}}</a></time>
+                    </li>
+                    <li>|</li>
+                    <li>{{feed.categoryName[0]}}</li>
+                    <li>|</li>
+			        <li>{{feed.trustedSourceName}}</li>
+		        </ul>
+		        <h1>
+                    <a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe", "width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>
+                        {{feed.title}}
+                    </a>
+		        </h1>
+	        </header>
+	        
+            <figure data-ng-show="feed.image.length !== null"><a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'><img data-ng-src="{{feed.image}}" alt="Image"></a></figure>
+	        
+            <p data-ng-hide="feed.description.length === 0">
+                <a data-ng-href="{{feed.link}}" data-ng-class="{ openIframe: !feed.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }' data-ng-bind-html-unsafe="feed.description">{{feed.description}}</a>
+	        </p>
+        </article>
+
+        <div class="msg-feedback" data-ng-show="msgfeedback.length > 0" data-ng-class="{ error: !statusLoad, success: statusLoad }">{{msgfeedback}}</div>
+        <a href="#more" data-ng-click="loadMore()" class="btn-more-result" data-ng-show="hasMore">{{txtBtnMoreNews}}</a>
+	</div>
+</section>

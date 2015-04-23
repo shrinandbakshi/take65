@@ -1,0 +1,151 @@
+// Theme defaults
+// -------------------------
+$theme_body_color: 					#737373;
+$theme_text_color: 					#737373;
+$top_menu_color:						#cacacc;
+
+$theme_bg: 									'bg/content_bg.png';
+$theme_bg_light: 						'bg/content_bg_light.png';
+
+$theme_bg_2: 								'bg/content_bg_2.png';
+$theme_bg_light_2: 					'bg/content_bg_light_2.png';
+
+$theme_bg_3: 								'bg/content_bg_3.png';
+$theme_bg_light_3: 					'bg/content_bg_light_3.png';
+
+$theme_bg_4: 								'bg/content_bg_4.png';
+$theme_bg_light_4: 					'bg/content_bg_light_4.png';
+
+// // - Theme Rose 
+$theme_color: 							#ff9c8d;
+$theme_name: 								'rose';
+
+// - Theme Orange 
+// $theme_color: 							#ff9e02;
+// $theme_name: 								'orange';
+
+// // - Theme Apple Green 
+// $theme_color: 							#7cc576;
+// $theme_name: 								'apple_green';
+
+// // - Theme Sky Blue 
+// $theme_color: 						#7fb2f0;
+// $theme_name: 						'sky_blue';
+
+// // - Theme Purple
+// $theme_color: 							#d492e8;
+// $theme_name: 								'purple';
+
+// General colors 
+// -------------------------
+$color_1:										#6b6b6d;
+$color_2:										#2c2c2c;
+$color_3: 									#555;
+$color_4: 									#CCC;
+$color_5: 									#999;
+
+// Background colors 
+// -------------------------
+$bg_color_1:								#fff;
+$bg_color_2:								#F2F2F2;
+$bg_color_3:								#F8F8F8;
+
+// Border Radius 
+// -------------------------
+$radius:										0px;
+
+// Link colors 
+// -------------------------
+$link_color:								#b0b0b0;
+
+// Transition duration 
+// -------------------------
+$duration:									500ms;
+
+// Margins
+// -------------------------
+$element_align_1:						18px;
+
+// Sprites
+// -------------------------
+$sprite_table: 							'general/sprite_table.png';
+$theme_sprite_table: 				'theme/#{$theme_name}/sprite_table.png';
+
+$sprite_sidebar: 						'general/sprite_sidebar_icon.png';
+$theme_sprite_sidebar: 			'theme/#{$theme_name}/sprite_sidebar_icon.png';
+
+$sprite_top_menu: 					'general/sprite_top_menu_icon.png';
+$theme_sprite_top_menu: 		'theme/#{$theme_name}/sprite_top_menu_icon.png';
+
+$sprite_login_menu: 				'general/login/sprite_login_icon.png';
+$theme_sprite_login_menu: 	'theme/#{$theme_name}/login/sprite_login_icon.png';
+
+$sprite_login_input: 				'general/login/sprite_login_input_icon.png';
+$theme_sprite_login_input: 	'theme/#{$theme_name}/login/sprite_login_input_icon.png';
+
+// Border colors
+// -------------------------
+$border_sep_top:						#535353;
+$border_sep_bottom:					#282828; 
+$border_color_1: 						#2f2f2f;
+$border_color_2:						#d5d5d5;
+$border_color_3:						#444;
+
+// Separators
+// -------------------------
+$nav_sep: 								'sep/nav_sep.png';
+$subnav_sep: 							'sep/subnav_sep.png';
+$widget_sep: 							'sep/widget_sep.png';
+$general_sep: 						'sep/general_sep.png';
+
+// General Icons
+// -------------------------
+$chat_icon: 							'general/chat_users.png';
+$widget_icon: 						'general/arrow.png';
+$switch_icon: 						'general/switch.png';
+
+$chat_icon_hover: 				'theme/#{$theme_name}/chat_users.png';
+$widget_icon_hover: 			'theme/#{$theme_name}/arrow.png';
+$switch_icon_hover: 			'theme/#{$theme_name}/switch.png';
+
+// Nav bg´s
+// -------------------------
+$nav_mail: 								'general/nav/mail.png';
+$nav_chat: 								'general/nav/chat.png';
+$nav_notification: 				'general/nav/notification.png';
+$nav_search: 							'general/nav/search.png';
+$nav_settings: 						'general/nav/settings.png';
+$nav_users: 							'general/nav/users.png';
+
+// Hover Icons
+$nav_mail_hover: 					'theme/#{$theme_name}/nav/mail.png'; 
+$nav_chat_hover: 					'theme/#{$theme_name}/nav/chat.png';
+$nav_notification_hover: 	'theme/#{$theme_name}/nav/notification.png';
+$nav_search_hover: 				'theme/#{$theme_name}/nav/search.png';
+$nav_settings_hover: 			'theme/#{$theme_name}/nav/settings.png';
+$nav_users_hover: 				'theme/#{$theme_name}/nav/users.png';
+
+
+// Subnav bg´s
+// -------------------------
+$sub_dashboard: 					'general/submn/dashboard.png';
+$sub_users: 							'general/submn/users.png';
+$sub_events: 							'general/submn/events.png';
+$sub_analytics: 					'general/submn/analytics.png';
+
+// Hover Icons
+$sub_dashboard_hover: 		'theme/#{$theme_name}/submn/dashboard.png';
+$sub_users_hover: 				'theme/#{$theme_name}/submn/users.png';
+$sub_events_hover: 				'theme/#{$theme_name}/submn/events.png';
+$sub_analytics_hover: 		'theme/#{$theme_name}/submn/analytics.png';
+
+// Icons
+// -------------------------
+$sweet_icon: 							'theme/#{$theme_name}/sweeticons.png';
+
+// Login screen text
+// -------------------------
+$login_l: 								'general/login/login.png';
+$login_s: 								'general/login/signup.png';
+$login_f: 								'general/login/forgotpw.png';
+

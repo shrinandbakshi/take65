@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Take65</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{289081c8-e8a9-48eb-aca4-5c392d7e82c0}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Take65</RootNamespace>
+    <AssemblyName>Take65</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>100</CompatibilityMode>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <CreateProjectFromDatabaseCompleted>True</CreateProjectFromDatabaseCompleted>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables\" />
+    <Folder Include="Functions\" />
+    <Folder Include="Stored Procedures\" />
+    <Folder Include="Assemblies\" />
+    <Folder Include="Profiles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\TrustedSourceType.sql" />
+    <Build Include="Tables\FeedContentTag.sql" />
+    <Build Include="Tables\UserWidgetTag.sql" />
+    <Build Include="Tables\UserFacebookFriend.sql" />
+    <Build Include="Tables\SystemUser.sql" />
+    <Build Include="Tables\FeedContentImage.sql" />
+    <Build Include="Tables\TrustedSourceFeed.sql" />
+    <Build Include="Tables\TrustedSourceFeedTag.sql" />
+    <Build Include="Tables\SystemTag.sql" />
+    <Build Include="Tables\TagType.sql" />
+    <Build Include="Tables\User.sql" />
+    <Build Include="Tables\UserPreference.sql" />
+    <Build Include="Tables\UserWidgetTrustedSourceFeed.sql" />
+    <Build Include="Tables\UserWidget.sql" />
+    <Build Include="Tables\TrustedSourceTag.sql" />
+    <Build Include="Tables\UserWidgetTrustedSource.sql" />
+    <Build Include="Tables\TrustedSource.sql" />
+    <Build Include="Tables\FeedContent.sql" />
+    <Build Include="Functions\SetClearHTML.sql" />
+    <Build Include="Functions\RemoveHtml.sql" />
+    <Build Include="Functions\NormalizeChar.sql" />
+    <Build Include="Functions\Netbiis_SplitString.sql" />
+    <Build Include="Stored Procedures\GetTrustedSource.sql" />
+    <Build Include="Stored Procedures\SaveUserWidgetTag.sql" />
+    <Build Include="Stored Procedures\GetTrustedSourceFeed.sql" />
+    <Build Include="Stored Procedures\GetUserFacebookFriends.sql" />
+    <Build Include="Stored Procedures\GetUserWidget.sql" />
+    <Build Include="Stored Procedures\GetSystemUser.sql" />
+    <Build Include="Stored Procedures\AuthenticateSystemUser.sql" />
+    <Build Include="Stored Procedures\GetFeedContentListWidget.sql" />
+    <Build Include="Stored Procedures\FeedContentSave.sql" />
+    <Build Include="Stored Procedures\FeedContentImageSave.sql" />
+    <Build Include="Stored Procedures\Tegalize.sql" />
+    <Build Include="Stored Procedures\CreateFeedContentTag.sql" />
+    <Build Include="Stored Procedures\SearchFeedContent.sql" />
+    <Build Include="Stored Procedures\SaveUser.sql" />
+    <Build Include="Stored Procedures\GetUser.sql" />
+    <Build Include="Stored Procedures\GetSystemTag.sql" />
+    <Build Include="Stored Procedures\SaveUserPreference.sql" />
+    <Build Include="Stored Procedures\DeleteUserPreference.sql" />
+    <Build Include="Stored Procedures\SaveUserWidget.sql" />
+    <Build Include="Stored Procedures\SaveUserWidgetTrustedSource.sql" />
+    <Build Include="Stored Procedures\GetFeedContentList.sql" />
+    <Build Include="Stored Procedures\DeleteUserWidgetTrustedSource.sql" />
+    <Build Include="Stored Procedures\GetCategory.sql" />
+    <Build Include="Stored Procedures\GetUserWidgetContent.sql" />
+    <Build Include="Stored Procedures\GetContentToSyncImg.sql" />
+    <Build Include="Stored Procedures\GetUserWidgetTrustedSource.sql" />
+    <Build Include="Stored Procedures\GetUserWidgetBookmark.sql" />
+    <Build Include="Stored Procedures\SaveFeedContentTag.sql" />
+    <Build Include="Stored Procedures\GetUserWidgetCategory.sql" />
+    <Build Include="Stored Procedures\DeleteUserWidget.sql" />
+    <Build Include="Tables\PageAdmin.sql" />
+    <Build Include="Tables\GetPageAdmin.sql" />
+    <Build Include="Tables\SuggestionBox.sql" />
+    <Build Include="Stored Procedures\GetSuggestionBox.sql" />
+    <Build Include="Tables\SuggestionBoxTag.sql" />
+    <Build Include="Stored Procedures\SaveSystemTag.sql" />
+    <Build Include="Stored Procedures\SaveSuggestionBoxTag.sql" />
+    <Build Include="Stored Procedures\GetSuggestionBoxTag.sql" />
+    <Build Include="Tables\File.sql" />
+    <Build Include="Stored Procedures\GetFile.sql" />
+    <Build Include="Stored Procedures\SaveFile.sql" />
+    <Build Include="Stored Procedures\DeleteSuggestionBoxTag.sql" />
+    <Build Include="Stored Procedures\SaveTrustedSourceBookmark.sql" />
+    <Build Include="Tables\SafeWebsite.sql" />
+    <Build Include="Stored Procedures\SaveSuggestionBox.sql" />
+    <Build Include="Stored Procedures\SaveSafeWebsite.sql" />
+    <Build Include="Stored Procedures\GetSafeWebsite.sql" />
+    <Build Include="Stored Procedures\GetUserAll.sql" />
+    <Build Include="Stored Procedures\SaveUserFacebookToken.sql" />
+    <Build Include="Stored Procedures\SaveFacebookFriend.sql" />
+    <Build Include="Stored Procedures\UserFacebookFriendClean.sql" />
+    <Build Include="Tables\UserEmailAccount.sql" />
+    <Build Include="Stored Procedures\SaveUserEmailAccount.sql" />
+    <Build Include="Stored Procedures\GetUserEmailAccount.sql" />
+    <Build Include="Stored Procedures\SaveUserWidgetExtraInfo.sql" />
+    <Build Include="Functions\GetDomainName.sql" />
+    <Build Include="Tables\UserSuggestionBox.sql" />
+    <Build Include="Stored Procedures\IgnoreSuggestion.sql" />
+    <Build Include="Stored Procedures\GetSafeWebsiteUnmapped.sql" />
+    <Build Include="Stored Procedures\SaveUserWidgetPosition.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\Functions.dll" />
+    <None Include="Profiles\Take65.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Functions">
+      <HintPath>Assemblies\Functions.dll</HintPath>
+      <SqlAssemblyName>Functions</SqlAssemblyName>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <SqlPermissionSet>SAFE</SqlPermissionSet>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Take65.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functions\NormalizeChar.cs" />
+  </ItemGroup>
+</Project>

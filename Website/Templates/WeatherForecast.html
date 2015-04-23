@@ -1,0 +1,44 @@
+﻿<div class="content weather-widget" data-ng-controller="WeatherCtrl" data-ng-target="">
+
+    <div class="weather-box">
+
+        <header class="header">
+            <h1>Weather</h1>
+        </header>
+
+        <div class="content">
+            <div class="local-weather">
+                <form data-ng-submit="loadWeather();">
+                    <label>Local Weather</label>
+                    <input type="text" placeholder="Zip Code" data-ng-model="weather.address" />
+                    <button class="change-step next-step btn-red">Load</button>
+                    <input type="submit" data-ng-hide="true" />
+                </form>
+            </div>
+
+            <ul class="list-weather">
+                <li>
+                    <span class="local">
+                        {{weather.location}}
+                        <span class="small">{{weather.lastUpdate}} (ET)</span>
+                    </span>
+
+                    <span class="current">{{weather.currentTemp}}º</span>
+                    <span class="icon icon-sunny-blue"></span>
+                </li>
+
+                <li data-ng-repeat="data in weather.forecast | limitTo:3">
+                    <label>{{data.dateLabel}}</label>
+                    <span class="low">{{data.tempMin}}º</span>
+                    <span class="high">{{data.tempMax}}º</span>
+                    <span class="icon-sprite {{data.icon}}" title="{{data.summary}}"></span>
+                </li>
+            </ul>
+            <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/WeatherTest.html" data-fn="openPop" data-param='{ "type": "inline", "width": 800, "height": "auto", "close": "TAKE ME <b>HOME</b>" }' title="Details">
+                Detailed weather forecast
+            </a>
+        </div>
+
+    </div>
+</div>
+

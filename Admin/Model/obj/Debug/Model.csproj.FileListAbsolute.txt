@@ -1,0 +1,5 @@
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Model\bin\Debug\Layers.Admin.Model.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Model\bin\Debug\Layers.Admin.Model.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Model\obj\Debug\Layers.Admin.Model.dll
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Model\obj\Debug\Layers.Admin.Model.pdb
+H:\SourceControl\NetBiis\Take65\Take65\V2\Take65\Admin\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

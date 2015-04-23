@@ -1,0 +1,130 @@
+﻿<section class="box-lightbox add-new-widget step2 box-my-websites" data-param='{ "error": ".msg-feedback" }' data-ng-controller="AddNewWidget.MyWebsiteCtrl" data-typewidget="1" data-resizecolorbox="false" data-colorbox-close-clean="edit" data-close-colorbox="" >
+        <!-- data-fn="addNewWidget"  -->
+        <!--data-fn="addNewWidget" -->
+        <header class="header">
+            <h1>Add Frame - My Websites</h1>
+            <div class="header-blue mb15">
+                <label>Name your frame: &nbsp;&nbsp;</label>
+                <input type="text" name="txtEdit" data-ng-model="widget.title" class="edit-name" placeholder="Type your frame name" />
+                <span class="msg-feedback white ml10">{{validation.msg}}</span>
+            </div>
+        </header>
+
+        <form class="add-websites" data-ng-submit="setConfirmTrusted(true);" name="addWidgetWebsite">
+            <h1>You can add additional websites to your Frame. To add a personal website, please type the Web Address and Nickname into the fields below.</h1>
+            <header class="header header-blue">
+                <div data-ng-hide="confirmTrusted">
+                    <div class="hold-labels websites-item-link">
+                        <label>Website Address</label>
+                        <input type="url" value="" name="websitesItemLink" placeholder="Type the Website Address (URL)" data-ng-model="newWebsite.link" data-check-url="" required />
+                    </div>
+                    <div class="hold-labels websites-item-name">
+                        <label>Website Nickname</label>
+                        <input type="text" value="" name="websitesItemName" maxlength="10" placeholder="Type a nickname" data-ng-model="newWebsite.title" required />
+                    </div>
+                    <button type="submit" class="btn-red btn-add">
+                        <span class="icon icon-add-white-22"></span>
+                        <span class="text">Add</span>
+                    </button>
+                </div>
+                <div class="confirm-add-website" data-ng-show="confirmTrusted">
+                    <span class="msg">
+                        {{newWebsite.title}} is not a trusted Take65.com website.<br />Do you want to continue to add this source?
+                    </span>
+                    <div class="btns-confirm f-right">
+                        <a class="btn-red-small" data-ng-click="addWebsite();">Yes</a>
+                        <a class="btn-red-small" data-ng-click="setConfirmTrusted(false);">No</a>
+                    </div>
+                </div>
+            </header>
+        </form>
+
+        <!--<h1 class="trusted-title" data-ng-show="!customWebsiteDisplay">You can also add one of Take 65's suggested websites. <a class="btn-open-custom" data-ng-click="toggleCustomWebsite();">Click here<span class="icon icon-arrow-right-red"></span></a> to show Take 65 suggested websites.</h1>-->
+        <!--<article class="trusteds-mywebsites" data-ng-show="listTrusted.length > 0 && customWebsiteDisplay">-->
+        <article class="trusteds-mywebsites" data-ng-show="listTrusted.length > 0">
+            <header>
+                <h1>Choose from categories below to load Take 65 suggested websites</h1>
+            </header>
+            <ul class="list-categories">
+                <li data-ng-repeat="item in listTrusted" data-ng-click="selectCategory(category,item.id);" data-ng-class="{ active: category.selected === item.id }">
+                    <a href="#category">{{item.title}} <span class="bold" data-ng-show="(item.trustedSource | countCheckeds) > 0">({{item.trustedSource | countCheckeds}})</span></a>
+                </li>
+            </ul>
+            <div class="list-sources">
+                <p>Now choose the desired websites from the list below</p>
+                <ul data-ng-repeat="trusted in listTrusted" data-category-id="trusted.id" data-ng-show="category.selected === trusted.id">
+                    <li data-ng-repeat="source in trusted.trustedSource" data-categoryid="{{source.categoryId}}" data-ng-click="changeSource(source);">
+                        <div class="sCheckbox check-red" data-ng-class="{ checked: source.chk }" data-ng-show="source.chk==false"><span class="check"></span></div>
+                        <div class="sCheckbox close-red" data-ng-class="{ checked: source.chk }" data-ng-show="source.chk"><span class="check"></span></div>
+                        <input type="checkbox" class="hidden check-red" value="{{source.id}}" name="category{{source.id}}" data-ng-model="source.chk" />
+                        <label>
+                            <img data-ng-src="/Content/Sources/{{source.image}}" alt="{{source.title}}" title="{{source.title}}" />
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dashboard-customize dashboard-my-websites">
+                <h1 class="title-header">Preview <span class="icon icon-search-black"></span></h1>
+
+                <ul class="list-dashboard">
+                    <li class="box-column one-column type-2 fixView">
+                        <header class="nv-1">
+                            <div class="title-and-edit">
+                                <h1 data-ng-bind="widget.title"></h1>
+                                <h1 data-ng-show="isEmpty(widget.title)">My Website</h1>
+                            </div>
+
+                            <div class="options" data-ng-hide="widget.editTitle">
+                                <ul>
+                                    <li>
+                                        <a title="EDIT" class="link-edit-name-widget">Edit</a>
+                                    </li>
+                                    <li class="change-zoom-box">
+                                        <a title="Increase text size" class="box-plus">A+</a>
+                                        <a title="Decrease text size" class="box-minus">A-</a>
+                                    </li>
+                                    <li>
+                                        <a title="DELETE" class="icon icon-delete-widget"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </header>
+
+                        <div class="content">
+                            <ul class="list-img-links-2">
+                                <li data-ng-repeat="source in trusted.trustedSourceSelected" data-categoryid="{{source.categoryId}}" data-ng-click="changeSource(source);">
+                                    <div class="sCheckbox close-red" data-ng-class="{ checked: source.chk }"><span class="check"></span></div>
+                                    <input type="checkbox" class="hidden check-red" value="{{source.id}}" name="category{{source.id}}" data-ng-model="source.chk" />
+                                    <label class="item-border" style="width:100%;">
+                                        <img data-ng-src="/Content/Sources/{{source.image}}" style="width:inherit;" alt="{{source.title}}" title="{{source.title}}" />
+                                    </label>
+                                </li>
+                                <li class="item-border" data-ng-repeat="website in websites" data-ng-click="deleteWebsite($index);">
+                                    <label class="item-border name" title="{{website.link}}">
+                                        {{website.title}}
+                                    </label>
+
+                                    <a title="Delete this item" class="icon icon-close-red-and-white-small btn-delete">
+                                        Delete
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+
+        <form data-ng-submit="submit();">
+            <input type="submit" value="Finish" class="next-step btn-red" data-ng-disabled="!clickSubmit" />
+            <a class="prev-step btn-red" data-ng-click="closeModal()">Cancel</a>
+
+            <div class="msg-feedback" data-ng-class="feedback.status" data-ng-show="feedback.msg.length > 0">{{feedback.msg}}</div>
+            <span class="msg-feedback error">{{validation.msg}}</span>
+        </form>
+        <div style="padding-top:10px;">
+            <br /><br />&nbsp;<br />&nbsp;<br />
+        </div>
+    </section>

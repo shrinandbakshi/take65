@@ -1,0 +1,35 @@
+﻿.facebook-newsfeed{
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	height: 303px;
+	overflow-y: scroll !important;
+
+	.fb-plugin {
+		padding: 5px;
+
+		li {
+			margin: 1px;
+			padding-bottom: 0;
+			background-color: #EDEFF4;
+			.container{
+				@include clearfix;
+				padding: 5px;
+			}
+
+		}
+		.fb-thumb, .fb-desc { float: left; }
+		.fb-thumb { width: 34px; margin-right: 10px; }
+		.fb-desc {
+			width: 215px;
+			p{
+			margin: 0;
+			}
+		}
+		.fb-thumb img { display: block; }
+		.fb-desc small { color: #8c8c8c; }
+
+		.fb-user a{
+			color: #3B5998;
+			font-weight: bold;
+		}
+	}
+}

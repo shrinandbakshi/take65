@@ -1,0 +1,2 @@
+D:\Anirudh\take65_10_012015\WebAdmin\obj\Debug\WebAdmin.csproj.App.config
+D:\Anirudh\take65_10_012015\WebAdmin\obj\Debug\WebAdmin.csprojResolveAssemblyReference.cache

@@ -1,0 +1,228 @@
+﻿.modal-slider {
+	background-color: #fff;
+	border-top: 5px solid $red;
+	bottom: 0;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 5;
+
+
+	.btn-take-me-home {
+		@include box-shadow(1px -5px 10px rgba(0,0,0,.48));
+		background-color: #b31f2b;
+		bottom: 0;
+		color: #fff;
+		font-weight: $font-bold;
+		font-size: 1.5em;
+		line-height: 60px;
+		height: 60px;
+		position: absolute;
+		text: {
+			align: center;
+			decoration: none;
+			transform: uppercase;
+		}
+		width: 100%;
+	}
+	.hold-modal {
+		height: 100%;
+		position: relative;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+	    @include respond-to(wide-screens) {
+        overflow: hidden;
+	    }
+		width: 100%;
+		.box-lightbox > header {
+			border-bottom: 2px solid $light-gray;
+			font-size: 1.5em;
+			font-weight: $font-bold;
+			margin: 0 0 20px;
+			text-align: center;
+			h1 {
+				color: $blue;
+				line-height: 60px;
+				font-weight: $font-bold;
+			}
+		}
+		.header-blue {
+			text-align: left;
+		}
+	}
+
+	article.register-step {
+		text-align: center;
+		width: 100%;
+		p,
+		label,
+		input,
+		.hold-line {
+			text-align: left;
+		}
+		li label {
+			text-align: center;
+		}
+
+		label.lbl-left {
+			width: 30%;
+			@include respond-to(handhelds) {
+				width: 50%;
+			}
+		}
+		input[type=text],
+		input[type=password],
+		.i-right {
+			display: inline-block;
+			height: auto;
+			min-height: 31px;
+			width: 65%;
+
+			@include respond-to(handhelds) {
+				width: 45%;
+			}
+
+		    @include input-placeholder {
+		        font-size: 1em;
+		        line-height: 31px;
+		    }
+		}
+		.sSelect {
+			width: 64%;
+			@include respond-to(handhelds) {
+				width: 44%;
+			}
+		}
+		.msg-feedback {
+			margin: 10px 0 10px 2%;
+			@include respond-to(handhelds) {
+				display: block;
+				float: none;
+				margin: 0 25px 10px 17px;
+				width: auto;
+			}
+		}
+		&.step-3,
+		&.step-4 {
+			padding: 5%;
+			width: 90%;
+			.next-step {
+				margin-right: 0;
+			}
+			header {
+				border: 0 none;
+				font-size: 1.6em;
+				text-align: left;
+				h1 {
+					color: $dark-gray;
+					font-size: 1em;
+					line-height: 1.25em;
+					font-weight: $font-normal;
+				}
+			}
+		}
+		//.categories-list li {
+		//	width: 49%;
+		//}
+	}
+
+	.add-new-widget {
+		width: auto;
+		.widgets {
+			ul {
+				margin: 0 auto;
+				text-align: center;
+			}
+			li {
+				display: inline-block;
+				float: left;
+				margin: 0 2% 2%;
+				min-width: 155px;
+				width: 45%;
+				text-align: center;
+				.btn-red span {
+					display: inline-block;
+					float: none;
+					margin: 0;
+					text-align: center;
+					&.icon-add-white-22 {
+						margin: 0 12px -3px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Modal Welcome
+.box-lightbox.welcome,
+.box-lightbox.addAsHome {
+	color: $dark-gray;
+
+	.header-logo {
+		border-bottom: 1px solid #eee;
+		margin-bottom: 20px;
+		.logo {
+			margin: 20px;
+		}
+	}
+    h1{
+		color: #195590;
+		font-size: 1.45em;
+		font-weight: 400;
+	}     
+    #mainHPageView {        
+	    clear: both;
+	    padding: 0 1em;
+    }	   
+    .accord_container {
+        background: #fff;
+        border: 1px solid #fff;
+        padding: 10px;
+     }
+     .accord_q {
+        background: #aaa;
+        color: #fff;
+        border-bottom: 1px solid white;
+      }
+      .accord_q-title {        
+        padding: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        background: #cccccc;
+        color: #b31f2b;
+        font-weight: 600;
+        margin-top: 10px;
+       }
+       .accord_q-subtitle {            
+            padding-left:10px;
+            padding-bottom:1px;
+            font-size: 18px;
+            background: #fff;
+            color: #000;
+            font-weight: 600;
+        }
+       .accord_q-maincontent {            
+            padding-left: 18px;
+            font-size: 16px;
+            background: #fff;
+            color: #000;
+            font-weight: 400;
+            padding-top: 10px;
+        }
+       .accord_q-content {            
+            padding-left: 18px;
+            font-size: 16px;
+            background: #fff;
+            color: #000;
+            font-weight: 400;
+        }                 
+      td {
+            width: 50%;
+            text-align: left;
+            vertical-align: top;            
+        }    
+}

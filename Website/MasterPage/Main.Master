@@ -1,0 +1,707 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Website.MasterPage.Main" %>
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:ng="http://angularjs.org" id="ng-app" data-ng-app="App" lang="en" xml:lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" xmlns:ng="http://angularjs.org" id="ng-app" data-ng-app="App" lang="en" xml:lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" id="ng-app" data-ng-app="App" lang="en" xml:lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" data-ng-app="App" id="ng-app" lang="en" xml:lang="en">
+<!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <title>Take 65 - The web for seniors</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="copyright" content="" />
+    <meta name="author" content="NetBiis - Business Interactive Ideas | netbiis.com" />
+    <meta name="google-site-verification" content="" />
+    <link type="application/rss+xml" rel="alternate" title="" href="" />
+    <link type="image/x-icon" rel="icon" href="/Img/Default/favicon.png" />
+    <link type="image/x-icon" rel="shortcut icon" href="/Img/Default/favicon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="/Css/Ie.css" />
+    <script src="http://bestiejs.github.io/json3/lib/json3.js"></script>
+    <![endif]-->
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  
+    <script src="//apis.google.com/js/client.js?onload=onGoogleApiLoad"></script>
+    <script type="text/javascript" src="http://js.live.net/v5.0/wl.js"></script>
+    <script type="text/javascript">
+        var lang = '<%= languageJson %>';
+        var _facebookAppId = '<%=Facebook.FacebookApplication.Current.AppId%>';
+        var _liveAppId = '<%=ConfigurationManager.AppSettings["LIVE.OAUTH.CLIENT_ID"]%>';
+        var _liveAppRedirectUrl = '<%=ConfigurationManager.AppSettings["LIVE.OAUTH.REDIRECT_URI"]%>';
+        var _chatCoreUrl = '<%=ConfigurationManager.AppSettings["ChatCoreUrl"]%>';
+        var _chatUrl = '<%=ConfigurationManager.AppSettings["ChatUrl"]%>';
+        var _chatRoom = '<%=ConfigurationManager.AppSettings["ChatRoom"]%>';
+        var _currentEnvironment = '<%=ConfigurationManager.AppSettings["Application.Environment"]%>';
+        var _googleConfig = {
+            'apiKey': '<%=ConfigurationManager.AppSettings["Google.API_KEY"]%>',
+            'clientId': '<%=ConfigurationManager.AppSettings["Google.CLIENT_ID"]%>',
+            'scopes': {
+                'feed': "https://mail.google.com/",
+                'email': "https://www.googleapis.com/auth/userinfo.email",
+                'contacts': 'https://www.google.com/m8/feeds/',
+                'plus': 'https://www.googleapis.com/auth/plus.login'
+            }
+        };
+        var _googleAuthConfig = {
+            'clientId': '<%=ConfigurationManager.AppSettings["Google.OAuth2.CLIENT_ID"]%>',
+            'appState': '<%=Website.App_Start.AntiForgeryToken.Instance.ReferenceToken%>',
+            'scopes': {
+                'email': "https://www.googleapis.com/auth/userinfo.email",
+                'me': 'https://www.googleapis.com/auth/plus.me',
+                'plus': 'https://www.googleapis.com/auth/plus.login',
+                'profile': 'https://www.googleapis.com/auth/userinfo.profile'
+            }
+        };
+        var _authConfig = {
+            'live': {
+                'client_id': '<%=ConfigurationManager.AppSettings["LIVE.OAUTH.CLIENT_ID"]%>',
+                'client_secret': '<%=ConfigurationManager.AppSettings["LIVE.OAUTH.CLIENT_SECRET"]%>',
+                'redirect_url': '<%=ConfigurationManager.AppSettings["LIVE.OAUTH.REDIRECT_URI"]%>'
+            },
+            'yahoo': {
+                'consumer_key': '<%=ConfigurationManager.AppSettings["YAHOO.OAUTH.CONSUMER_KEY"]%>',
+                'consumer_secret': '<%=ConfigurationManager.AppSettings["YAHOO.OAUTH.CONSUMER_SECRET"]%>',
+                'redirect_url': '<%=ConfigurationManager.AppSettings["YAHOO.OAUTH.REDIRECT_URI"]%>'
+            }
+
+        };
+        <% if (User != null)
+           { %>
+        var _userName = '<%=User.Name%>';
+        var _userEmail = '<%=User.Email%>';
+        <% } %>
+
+    </script>
+    <script src="/Js/Lib/Modernizr.js"></script>
+    <script src="/Js/Lib/underscore-min.js"></script>
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="Head" runat="server" />
+</head>
+<body data-fn="resize" data-ng-controller="AppCtrl">
+    <%--<form id="form" runat="server">--%>
+      <link href="/Css/Main.css?<%=System.DateTime.Now.Ticks %>" type="text/css" rel="stylesheet" />
+    <div id="fb-root"></div>
+    <script>
+        (function (d) {
+            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement('script'); js.id = id; js.async = true;
+            js.src = "//connect.facebook.net/en_US/all.js";
+            ref.parentNode.insertBefore(js, ref);
+        }(document));
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: _facebookAppId, // App ID
+                status: true, // check login status
+                cookie: true, // enable cookies to allow the server to access the session
+                xfbml: true  // parse XFBML
+            });
+        };
+    </script>
+    <a href="#main" class="invisible" tabindex="0" title="Go to content">Go to content</a>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div class="window">
+        <div class="hold-categories hide-handhelds" id="miniMenu">
+            <a class="btn-close" id="closeMenu"><span class="icon-close-menu"></span></a>
+            <nav class="categories">
+                <ul>
+                    <%--<a href="javascript:loadUserWidget(0);" class="categorySelect_0 categorySelect active">All</a>--%>
+                    <% if (this.User != null)
+                       { %>
+                    <li>
+                        <a href="#modalSliderAjax" class="btn-add-a-frame" data-ngopenpop="/Templates/AddNewWidget.html" data-fn="openPop" data-param='{ "type": "inline", "closeButton": false, "width": 505 }'>Add a Frame</a>
+                    </li>
+                    <%} %>
+                    <%if (ConfigurationManager.AppSettings["Application.Environment"] == "sandbox"){ %>
+                    <li>
+                        <a href="#">
+                            <%--<span class="icon icon-tutorial-white"></span>--%>
+                            Take Talk
+                        </a>
+                    </li>
+                    <%} %>
+                    <li>
+                        <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/InviteFriends.html" data-fn="openPop" data-param='{ "type": "inline", "width": 980, "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>
+                            <%--<span class="icon icon-tutorial-white"></span>--%>
+                            Invite Friends
+                        </a>
+                    </li>
+                    <%--<li>
+                        <a href="#">
+                            <span class="icon icon-tutorial-white"></span>
+                            Suggestions
+                        </a>
+                    </li>--%>
+                </ul>
+
+                <%for (int i = 0; i < this.CategoryList.Count; i++)
+                  { %>
+                <a href="javascript:loadUserWidget(<%=this.CategoryList[i].Id %>);" class="categorySelect_<%=this.CategoryList[i].Id %> categorySelect" style="display: none;"><%=this.CategoryList[i].Display %></a>
+                <%} %>
+            </nav>
+            <%--<nav class="main">
+                <ul>--%>
+            <%--<% if(this.User != null){ %>
+                    <li>
+                        <a href="#modalSliderAjax" data-ngopenpop="/Templates/AddNewWidget.html" data-fn="openPop" data-param='{ "type": "inline", "closeButton": false, "width": 828 }'>
+                            <span class="icon icon-add-white"></span>
+                            Add New Widget
+                        </a>
+                    </li>
+                    <%} %>--%>
+            <%-- <li>
+                        <a href="#">
+                            <span class="icon icon-tutorial-white"></span>
+                            Tutorial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-help-white"></span>
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </nav> --%>
+        </div>
+    </div>
+    <div class="wrap">
+    <header class="main" data-ng-controller="HeaderCtrl">
+        <%if (this.IsEditingPublicHomePage())
+          { %>
+        <div class="editing-master">
+            <span>WARNING: You are editing the public home page. When you finish editing click at LOGOUT.</span>
+        </div>
+        <%}
+          else
+          { %>
+        <div class="current-time">
+            <span data-current-time="" data-ng-bind="currentTime"></span>                     
+        </div>         
+        <%} %>
+        <div class="medium-screens handhelds nav-top-medium">
+            <div class="centralize">
+                <ul class="top-links">
+                    <% if (this.User != null)
+                       { %>
+                    <li class="hide-handhelds">
+                        <a href="#modalSliderAjax" data-ngopenpop="/Templates/Settings/MyProfile.html" data-fn="openPop" class="blue" data-fn="openPop" data-param='{ "type": "inline", "width": 550, "close": "TAKE ME <span class=bold>HOME</span>" }'><span class="icon icon-door-blue"></span>My Profile</a>
+                    </li>
+                    <li class="hide-handhelds">|</li>
+                    <%} %>
+                    <% if (this.User != null)
+                       { %>
+                    <li>
+                        <%--<asp:LinkButton ID="btnLogout2" runat="server" ClientIDMode="Static">Logout</asp:LinkButton>--%>
+                        <a data-ng-click="logout()" title="Logout">Logout</a>
+                    </li>
+                    <%--<li>|</li>
+                    <li>
+                        <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/InviteFriends/Email.html" data-fn="openPop" data-param='{ "type": "inline", "width": 980, "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>Invite your Friends</a>
+                    </li>--%>
+                    <% }
+                       else
+                       { %>
+                    <li>
+                        <a href="#modalSliderAjax" class="blue" id="joinSite" data-ngopenpop="/Templates/GetToKnowAboutSite.html" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "height": 420, "close": "X" }' class="hidden"></a>
+                        <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/login.html" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "height": 420, "closeButton": false }' title="Login">Login</a>
+                    </li>
+                    <%} %>
+                </ul>
+                <div class="info-user">
+                    <% if (this.User != null)
+                       { %>
+                    Welcome, <span class="bold"><%=(!String.IsNullOrEmpty(this.User.Name)) ? this.User.Name : this.User.Email %></span>
+                    <%} %>
+                </div>
+                <nav class="main hide-handhelds">
+                    <ul>
+                        <% if (this.User == null)
+                           { %>
+                        <li>
+                            <a href="#modalSliderAjax" data-ngopenpop="/Templates/Register.html" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "closeButton": false }' title="Join TAKE 65"><span class="icon icon-door"></span>Join TAKE 65</a>
+                        </li>
+                        <%} %>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="centralize">
+            <div class="logo">
+                <a href="/" title="Take 65 - TAKE ME HOME">
+                    <img src="/Img/Default/logo-main.png" alt="Take 65 - the web for seniors" />
+                </a>                
+                <%--<a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/Welcome.html" data-fn="openPop" data-param='{ "type": "inline", "width": 980, "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>Welcome</a>--%>                
+
+                <%--<a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/CustomizeHomepage.html" data-fn="openPop" data-param='{ "type": "inline", "width": 980, "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>Customize</a>--%>
+            </div>                    
+            <img class="your-way" src="/Img/Default/YourResourcesYourWay.png" alt="Your Resources Your Way">
+            <div class="content-right wide-screens">
+                <% if (this.User != null) { %>
+                <div class="clearfix">
+                    <ul class="top-links">
+                        <li>
+                            <%--<a href="#" class="btn-add-home" data-ng-click="addBookmark()">Add as Homepage</a>--%>
+                            <a href="#modalSliderAjax" class="btn-add-home" data-ngopenpop="/Templates/AddAsHome.html" data-fn="openPop" data-param='{ "type": "inline", "width": "75%", "height": 450, "close": "TAKE ME <span class=bold>HOME</span>" }'>Add as Homepage</a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <a href="#modalSliderAjax" data-ngopenpop="/Templates/Support.html" data-fn="openPop" class="blue" data-param='{ "type": "inline", "width": 800, "height":1000, "close": "TAKE ME <span class=bold>HOME</span>" }' title="Support">Support</a>
+                        </li> 
+                        <li>|</li>
+                        <li>
+                            <a href="#modalSliderAjax" data-ngopenpop="/Templates/Settings/MyProfile.html" data-fn="openPop" class="blue" data-fn="openPop" data-param='{ "type": "inline", "width": 550, "close": "TAKE ME <span class=bold>HOME</span>" }'><span class="icon icon-door-blue"></span>My Profile</a>
+                        </li>
+                        <li>|</li>
+                        <%--<li>
+                            <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/InviteFriends/Email.html" data-fn="openPop" data-param='{ "type": "inline", "width": 980, "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>Invite your Friends</a>
+                        </li>
+                        <li>|</li>--%>
+                        <li>
+                            <%--<asp:LinkButton ID="btnLogout" runat="server" ClientIDMode="Static">Logout</asp:LinkButton>--%>
+                            <a data-ng-click="logout()">Logout</a>
+                        </li>                    
+                    </ul>                   
+
+                    <div class="info-user">
+                        Welcome, <span class="bold"><%=(!String.IsNullOrEmpty(this.User.Name)) ? this.User.Name : this.User.Email %></span>                    
+                    </div>
+                </div>
+                
+                <%} %>
+
+                <% if (this.User == null) { %>
+                    <nav class="main">
+                        <ul>
+                            <%--<% if(this.User != null){ %>
+                            <li>
+                                <a href="#modalSliderAjax" data-ngopenpop="/Templates/AddNewWidget.html" data-fn="openPop" data-param='{ "type": "inline", "closeButton": false, "width": 828 }'>
+                                    <span class="icon icon-add"></span>
+                                    Add New Widget
+                                </a>
+                            </li>
+                            <% } %>--%>
+                            <%--<li>
+                                <a href="#">
+                                    <span class="icon icon-tutorial"></span>
+                                    Tutorial
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon icon-help"></span>
+                                    Help
+                                </a>
+                            </li>--%>
+                             <li>
+                                <a href="#modalSliderAjax" data-ngopenpop="/Templates/Support.html" data-fn="openPop" class="blue" data-param='{ "type": "inline", "width": 800, "height":1000, "close": "TAKE ME <span class=bold>HOME</span>" }' title="Support">Support</a>
+                            </li>
+                            <li>
+                                <a href="#modalSliderAjax" data-ngopenpop="/Templates/Register.html" data-fn="openPop" class="blue" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "closeButton": false }' title="Join TAKE 65"><span class="icon icon-door-blue"></span>Join TAKE 65</a>
+                            </li>
+                            <li>
+                                <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/Login.html" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "height": 420, "closeButton": false }' title="Login"><span class="icon icon-key"></span>Login</a>
+                            </li>                        
+                        </ul>
+                    </nav>
+                <%} %>
+            </div>
+
+            <div class="content-right medium-screens handhelds">
+                <nav class="main-links" data-fn="menu">
+                    <a id="searchOpen">Search</a>
+                    <a id="openMenu" class="hide-handhelds">Menu</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="filters">
+            <div class="centralize" data-ng-target="">
+                <section class="search <%= (this.User != null) ? "logged" : "" %>">
+                    <form data-ng-submit="googleSearch();">
+                        <input type="text" data-ng-model="keyword" value="" placeholder="What are you looking for?" />
+                        <a data-ng-href="https://www.google.com/#q={{keyword}}" id="btnGoogleSearch" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "80%", "height": "80%" }' title="Search on Google" class="btn-search btn-gray-degrade openIframe">
+                            <span class="icon icon-search-red"></span>
+                            <span class="text"><span class="icon-logo-google">Google</span></span>
+                        </a>
+                        <input type="submit" data-ng-hide="true" />
+                    </form>
+                    <% if (this.User != null)
+                       { %>
+                    <a href="#modalSliderAjax" class="btn-search btn-add-a-frame" data-ngopenpop="/Templates/AddNewWidget.html" data-fn="openPop" data-param='{ "type": "inline", "closeButton": false, "width": 505 }'>
+                        <span class="icon icon-add"></span>
+                        <span class="text">Add a Frame</span>
+                    </a>
+                    <% } %>
+                </section>
+                <% if (this.User != null)
+                   { %>
+                <nav class="wide-screens categories">
+                    <%if (ConfigurationManager.AppSettings["Application.Environment"] == "sandbox"){ %>
+                    <a href="http://<%=ConfigurationManager.AppSettings["ChatUrl"]%>/Chat.html?n=<%=(string.IsNullOrEmpty(this.User.Email) ? this.User.Name : this.User.Email.Replace("@", "(at)")) %>" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "80%", "height":"80%", "close": "TAKE ME <span class=bold>HOME</span>" }'>Take Talk</a>
+                    <%} %>
+                    <a href="#modalSliderAjax" id="lnkMenuInvite" data-ngopenpop="/Templates/InviteFriends.html" data-fn="openPop" data-param='{ "type": "inline", "width": 980, "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>Invite your Friends</a>
+                    <a class="link-suggestion-box" href="#/all" data-animate-tab="" data-el-animate="#suggestionBox" data-el-open="350" data-el-close="50">Suggestions</a>
+                </nav>
+                <% } %>
+                <%--<nav class="wide-screens categories" data-ng-show="dash.nWidgets > 0">
+                    <a href="#/all" data-ng-click="changeCategory(0);" data-ng-class="{ active: filterCategory === 0 }">All</a>
+                    <a data-ng-href="#/{{category.title}}" ng-repeat="category in trustedSource" data-ng-click="changeCategory(category.id);" data-id="{{category.id}}" ng-class="{ active: filterCategory === category.id }">{{category.title}}</a>
+                </nav>--%>
+            </div>
+        </div>
+
+        <% if (this.User != null)
+           { %>
+        <div class="without-widgets first-part ng-hide" data-ng-hide="dash.nWidgets > 0 || forceNoWidgetsHide" style="display: none;">
+            <div class="hold-msg">
+                <p class="centralize">Click in the button below start customizing your homepage</p>
+            </div>
+        </div>
+        <% } %>
+    </header>
+    <div id="mainNew" class="mainNew" role="mainNew">
+    
+        <!-- Tab Suggestion Box -->    
+
+        <% if (User != null) { %>
+            <aside id="suggestionBox" class="aside-box aside-box-left close" data-ng-controller="SuggestionCtrl" data-loadbehavior="">
+              
+            <header class="main-header">
+            <h1 class="title icon-sprite">Suggestion Box</h1>
+            <h2>
+                <span class="count" data-ng-bind="suggestions.length" data-ng-show="suggestions.length > 0"></span>
+                <span class="count" data-ng-hide="suggestions.length > 0">0</span>
+
+                <span class="msg" data-ng-show="suggestions.length > 0">you have <strong data-ng-bind="suggestions.length"></strong> suggestion(s)</span>
+                <span class="msg" data-ng-hide="suggestions.length > 0">you have <strong>0</strong> suggestion(s)</span>
+            </h2> 
+        </header>
+
+            <header class="aside-header" data-animate-tab="" data-el-animate="#suggestionBox">
+             <h2>
+                <span class="count" data-ng-bind="suggestions.length" data-ng-show="suggestions.length > 0"></span>
+                <span class="count" data-ng-hide="suggestions.length > 0">0</span>
+            </h2>
+            <%--<h2 class="count" data-ng-bind="suggestions.length" data-ng-hide="suggestions.length == 0"></h2>
+            <h2 class="count" data-ng-hide="suggestions.length > 0">0</h2>--%>
+            <h1 class="title icon-sprite">Suggestion Box                
+            </h1>
+        </header>
+
+            <div class="wrap-suggestions-links">
+            <ul class="suggestions-links" data-ng-target="">                
+                <li data-ng-repeat="suggestion in suggestions | startFrom:currentPage*limitSuggestions | limitTo:limitSuggestions">
+                    <a data-ng-href="{{suggestion.Url}}" class="openIframe" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "80%", "height":"80%", "close": "TAKE ME <span class=bold>HOME</span>"}'>
+                        <%--<img data-ng-src="{{suggestion.Image}}" alt="{{suggestion.Description}}">--%>
+                        <strong>{{suggestion.Description}}</strong>
+                        <span class="from">Visit the website</span>
+                    </a>
+
+                    <% if (this.User != null)
+                       { %>
+                    <div class="btn-add-suggestion">
+                        <a class="icon icon-add-green" href="#modalSliderAjax" data-ngopenpop="/Templates/AddSuggestion.html" data-fn="openPop" data-param='{ "type": "inline" ,"width": 400, "height": 400, "close": "TAKE ME <span class=bold>HOME</span>" }' data-ng-click="setSelected(suggestion.Id)">add</a>
+                    </div>
+                    <%} %>
+                    <div class="btn-remove-suggestion">
+                        <a class="icon icon-remove-red" href="javascript:void(0);" data-ng-click="ignore(suggestion);"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+            <ul class="pagination" data-ng-show="suggestions.length > limitSuggestions">
+            <li>
+                <a title="Previous" data-ng-click="currentPage = currentPage - 1" data-ng-hide="currentPage == 0">
+                    <span class="icon icon-arrow-left"></span>
+                    Previous <strong>{{ limitSuggestions }}</strong>
+                </a>
+            </li>
+            <li>                
+                <a title="Next" data-ng-click="currentPage = currentPage + 1" data-ng-hide="currentPage >= suggestions.length/limitSuggestions - 1">
+                    <span class="icon icon-arrow-right"></span>
+                    Next <strong>{{ suggestions.length - ((currentPage+1)*limitSuggestions) }}</strong>
+                </a>
+            </li>
+        </ul>
+
+            <a href="#" class="btn-close-aside-box" title="Close" data-animate-tab="" data-el-animate="#suggestionBox" data-el-open="0" data-el-close="-351">Close <strong>X</strong></a>
+        </aside>
+        <%} %>
+
+         <% if (User != null) { %>
+            <section class="content-main centralize">
+         <% } %>
+        <% else { %>
+            <section class="content-main centralize">
+        <% } %>
+            <!-- Page Content -->
+            <asp:ContentPlaceHolder ID="Content" runat="server" />
+            <!--/Page Content -->
+        </section>
+
+        <% if (this.User != null)
+           { %>
+        <div class="without-widgets second-part ng-hide" data-ng-hide="dash.nWidgets > 0 || forceNoWidgetsHide" style="display: none;">
+            <a href="#modalSliderAjax" class="btn-red" data-ngopenpop="/Templates/AddNewWidget.html" data-fn="openPop" data-param='{ "type": "inline", "closeButton": false, "width": 505 }'><span class="icon-btn-customize"></span>Add a Frame</a>
+
+            <img src="/Img/Default/no-widgets.png" alt="You don't have widgets. Go customize your homepage now." />
+        </div>
+        <% } %>
+    </div>
+    </div>
+    <footer class="main">
+        <div class="centralize">
+            <p class="copyright">
+                &copy; 2014 Take 65. All Rights Reserved.
+            </p>
+            <ul class="links">
+                <li>
+                    <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/AboutUs.html" data-fn="openPop" data-param='{ "type": "inline", "width": "90%", "height": 420, "close": "TAKE ME <span class=bold>HOME</span>" }'>About US</a>
+                </li>
+                 <li>| </li>
+                 <li>
+                    <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/ContactUs.html" data-fn="openPop" data-param='{ "type": "inline", "width": "90%", "height": 500, "close": "TAKE ME <span class=bold>HOME</span>" }'>Contact US</a>
+                </li>
+                <li>| </li>
+                <li>
+                    <a href="mailto:deb@take65.com">Advertise With Us</a>
+                </li>
+                 <li>| </li>
+                 <li>
+                    <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/FAQs.html" title="FAQs" data-fn="openPop" data-param='{ "type": "inline", "width": "90%", "height":1200, "close": "TAKE ME <span class=bold>HOME</span>" }'>FAQs</a>
+                </li>
+                <li>| </li>
+                 <li>
+                    <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/PrivacyPolicy.html" data-fn="openPop" data-param='{ "type": "inline", "width": "90%", "height": 500, "close": "TAKE ME <span class=bold>HOME</span>" }'>Privacy Policy</a>
+                </li>               
+            </ul>
+        </div>
+    </footer>
+    
+    <% if (ConfigurationManager.AppSettings["Application.Environment"] == "sandbox"){ %>
+        <aside id="ResourcesBox" class="aside-box aside-box2 aside-box-left close" data-loadbehavior="">
+            <header data-animate-tab="" data-el-animate="#ResourcesBox">
+                <h2 class="count">15</h2>
+                <h1 class="title icon-sprite">Resource Center</h1>
+            </header>
+            <a href="#" class="btn-close-aside-box" title="Close" data-animate-tab="" data-el-animate="#ResourcesBox">Open</a>
+        </aside>
+
+    <% 
+    }
+        if (User != null)
+       { 
+           if (ConfigurationManager.AppSettings["Application.Environment"] == "sandbox"){ %>
+            <aside id="takeTalkBox" class="aside-box aside-box aside-box-right close" data-loadbehavior="">
+                <header data-animate-tab="" data-el-animate="#takeTalkBox">
+                    <h2 class="count" data-ng-bind="users.length">0</h2>
+                    <h1 class="title icon-sprite">Chat</h1>
+                </header>
+
+                <div id="candy"></div>
+
+                <a href="#" class="btn-close-aside-box" title="Close" data-animate-tab="" data-el-animate="#takeTalkBox">Open</a>
+            </aside>
+        <% } 
+       }
+       %>
+
+    <aside>
+    </aside>
+
+    <div id="elsColorbox" class="hidden">
+    </div>
+
+    <div id="modalSlider" class="modal-slider">
+        <div id="modalSliderAjax" class="hold-modal"></div>
+        <a class="close-modal btn-take-me-home" id="closeModal">Take me home</a>
+    </div>
+
+    
+
+    <%-- External Pages --%>
+    <div class="modal-external-pages take-me-home hide" data-ng-click="returningUser()">
+        <a id="cboxClose" href="javascript:void(0);" data-ng-click="returningUser()">
+            <img class="logo" src="../Img/Default/logo-main.png" alt="Take 65 - the web for seniors" height="35" width="110" />
+            Take me <strong>Home</strong>
+        </a>
+
+        <!--<a href="javascript:void(0);" data-ng-click="returningUser()" class="btn-return">Click here to return to <strong>take65</strong></a>-->
+    </div>
+    <div class="backdrop-external-pages take-me-home-background hide"></div>
+    <%-- End External Pages --%>
+
+
+    <%--</form>--%>
+    <!-- Essentials Scripts -->
+    <!--[if lte IE 9]>
+    <script src="/Js/Lib/jquery-1.10.2.min.js"></script>
+    <!--<![endif]-->
+    <![if !IE]>
+    <script src="/Js/Lib/jquery-2.0.3.min.js"></script>
+    <![endif]>
+    <% if (HttpContext.Current.IsDebuggingEnabled)
+       { %>
+    <script src="/Js/Min.Debug.js"></script>
+    <% }
+       else
+       { %>
+    <script src="/Js/Min.Debug.js"></script>
+    <% } %>
+    <!--<script type="text/javascript" src="http://gridster.net/dist/jquery.gridster.js"></script>-->
+    <!-- /Essentials Scripts -->
+
+   
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        //(function (b, o, i, l, e, r) {
+        //    b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        //    function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+        //    e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+        //    e.src = '//www.google-analytics.com/analytics.js';
+        //    r.parentNode.insertBefore(e, r)
+        //}(window, document, 'script', 'ga'));
+        //ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+    </script>
+    <!--/Google Analytics -->
+
+    <script>
+        /*
+         * Carrega todos os widgets (sem conteudo) , e filtra o menu das categorias
+         * só de acordo com o conteudo que tem (wagner.leonardi@netbiis.com)
+         */
+        function loadUserWidget(categoryId) {
+            // Coloca o corpo dos widgets como carregando
+            $("#userWidget").html("loading...");
+
+            // Tira a seleção das categorias
+            $(".categorySelect").removeClass("active");
+            // Seleciona só a categoria correspondente 
+            $(".categorySelect_" + categoryId).addClass("active");
+
+            //Chama o ajax com os widgets do usuário
+            $.ajax({
+                url: "/Services/User-Widget.aspx",
+                data: {
+                    categoryId: categoryId
+                }
+            }).done(function (data) {
+                //Imprime os widgets na tela
+                $("#userWidget").html(data);
+
+                // Esconde todas as categorias do menu, para mostrar somente as categorias que tem conteúdo
+                if (categoryId == 0) {
+                    $(".categorySelect").hide();
+                    $(".categorySelect_0").show();  //Todas as categorias, nunca some
+                }
+
+                //Passa em cada widget e carrega o conteudo de cada um
+                $("#userWidget .content").each(function (i) {
+                    var widgetId = this.id.replace("content_", "");
+                    var widgetCategory = $(this).attr("data-category");
+                    var widgetType = $(this).attr("data-widget");
+
+                    //Carrega o conteúdo do widget
+                    loadUserWidgetContent(widgetId, widgetType);
+
+                    //mostra no menu a categoria do widget
+                    $(".categorySelect_" + widgetCategory).show();
+                });
+
+                NB.LoadBehavior($("#userWidget"));
+                //$('body').trigger('realignBoxes');
+            });
+        }// End register
+
+        var lastPaginationValue = 0;
+
+        function loadMore(userWidgetId) {
+            $(".btnLoadMore_" + userWidgetId).hide();
+
+            lastPaginationValue += 10;
+
+            $.ajax({
+                url: "/Services/Feed-Content.aspx",
+                data: { widgetId: userWidgetId, count: 10, skip: lastPaginationValue }
+            }).done(function (data) {
+                $("#feedContent_" + userWidgetId).html($("#feedContent_" + userWidgetId).html() + data);
+
+                NB.LoadBehavior($("#feedContent_" + userWidgetId));
+                //$('body').trigger('realignBoxes');
+            });
+        }
+
+        function loadUserWidgetContent(userWidgetId, widgetTypeId) {
+
+            if (widgetTypeId == 1) {
+                url = "/Services/User-Widget-Content.aspx";
+            } else {
+                url = "/Services/User-Widget-Content-Bookmark.aspx";
+            }
+
+            $.ajax({
+                url: url,
+                data: { widgetId: userWidgetId, count: 3, skip: 0 }
+            }).done(function (data) {
+                $("#content_" + userWidgetId).html(data).height('auto');
+                NB.LoadBehavior($("#content_" + userWidgetId));
+                //$('body').trigger('realignBoxes');
+            });
+        }
+
+    </script>
+
+    <div id="debug"></div>
+
+    
+    <%if (ConfigurationManager.AppSettings["Application.Environment"] == "sandbox"){ %>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-45563206-1', 'netbiis.com');
+        ga('send', 'pageview');
+    </script>
+    <%}else{ %>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-56029334-1', 'take65.com');
+        ga('send', 'pageview');
+
+    </script>
+    <%} %>
+</body>
+</html>

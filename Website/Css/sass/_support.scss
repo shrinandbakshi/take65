@@ -1,0 +1,163 @@
+﻿.support {
+	$lblWidth: 0;
+	color: $dark-gray;
+	display: inline;
+	font-weight: $font-normal;
+	overflow: hidden;
+	width: auto;
+	min-width: 100%;
+
+	.hold-form {
+		overflow: hidden;
+		margin: 20px auto;
+		width: 650px;
+
+		@include respond-to(handhelds) {
+			width: 310px;
+		}
+
+		@include respond-to(medium-screens) {
+			width: 420px;
+		}
+	}
+	.hold-line {
+		margin: 0 0 15px;
+		position: relative;
+
+		@include respond-to(handhelds) {
+			display: block;
+			width: 95%;
+			padding: 0 5px;
+		}
+
+		&.error {
+			width: auto;
+		}
+	}
+	.lbl-left {
+		$lblWidth: 180px;
+		font-size: 1.3em;
+		float: left;
+		line-height: 31px;
+		width: $lblWidth;
+
+		@include respond-to(handhelds) {
+			display: block;
+			width: 100%;
+		};
+
+		@include respond-to(medium-screens) {
+			width: 120px;
+		}
+	}
+    .lbl-left-info {
+        $lblWidth: 180px;		
+		font-size: 0.8em;
+		float: left;
+		line-height: 31px;
+		width: $lblWidth;
+        color: green;
+
+		@include respond-to(handhelds) {
+			display: block;
+			width: 100%;
+		}
+
+		@include respond-to(medium-screens) {
+			width: 120px;
+		}
+	}
+	.lbl-line {
+		@include clearfix;
+		font-size: 1.3em;
+		line-height: 31px;
+	}
+	.i-right {
+		line-height: 31px;
+		height: 31px;
+		width: 355px;
+
+		@include respond-to(handhelds) {
+			width: 100%;
+		}
+
+		@include respond-to(medium-screens) {
+			width: 300px;
+		}
+
+	    .f-left {
+	    	margin-right: 30px;
+	    }
+	}
+	.msg-feedback {
+		color: $blue;
+		margin: 10px 0;
+		overflow: hidden;
+		text-align: right;
+		width: 100%;
+		&.error {
+			color: $light-red;
+		}
+		&.success {
+			color: green;
+		}
+	}
+	.error input {
+		border-color: $light-red;
+	}
+	input.i-right {
+		@extend %i-txt-simple;
+		font-size: 1.3em;
+		padding: 0 5px;
+		&:active, &:focus {
+	        @include box-shadow(0 0 5px rgba(19,55,100,.5), inset 0 2px 3px rgba(0,0,0,.1));
+	        border-color: #133764;
+	    }
+	}
+    
+    .t-right {
+		line-height: 31px;
+		height: 125px;
+		width: 455px;
+
+		@include respond-to(handhelds) {
+			width: 100%;
+		}
+
+		@include respond-to(medium-screens) {
+			width: 300px;
+		}
+
+	    .f-left {
+	    	margin-right: 30px;
+	    }
+	}
+    textarea.t-right {
+		@extend %i-txt-simple;
+		font-size: 1.3em;
+		padding: 0 5px;
+		&:active, &:focus {
+	        @include box-shadow(0 0 5px rgba(19,55,100,.5), inset 0 2px 3px rgba(0,0,0,.1));
+	        border-color: #133764;
+	    }
+	}
+    .btn-red {
+		border: 0 none;
+		@include box-shadow(none);
+		color: #fff;
+		cursor: pointer;
+		font-size: 100%;
+		padding: 0 20px;
+		font-weight: $font-bold;
+		text-transform: uppercase;
+		&.btn-send {
+			float: right;
+		}
+	}
+    p.intro {				
+        margin: 12px 37px 30px;
+        color: $dark-gray;
+        padding: 0px;
+        font-weight: 500;
+	}	
+}

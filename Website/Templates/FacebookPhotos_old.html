@@ -1,0 +1,56 @@
+﻿<div class="content" data-ng-controller="FacebookPhotosCtrl" >                                
+    <div id="facebook-login" data-ng-hide="hasFacebookToken">
+        <center>
+            <br /><br />
+            Please, click in the button below to login with your Facebook account.<br /><br />
+            <a href="#FacebookLogin" data-ng-click="FacebookLogin();"><img src="Img/Default/btn_connect_facebook.png" /></a>
+            <br />&nbsp;
+        </center>
+    </div>
+    <div id="facebook-feed-photos" class="facebook-feed-photos" data-ng-show="hasFacebookToken">
+        <div id="facebook-feed-photos-friends" class="facebook-feed-photos-friends">
+            <br />
+            &nbsp;&nbsp;&nbsp;<a href="#modalSliderAjax" data-ng-show="friends.length > 0" data-ngopenpop="/Templates/FacebookPhotosManageFriends.html" data-fn="openPop" data-param='{ "type": "inline", "width": 800, "height": 700, "close": "TAKE ME <span class=bold>HOME</span>"}'>
+                <span>Manage Friends</span>
+            </a><br /><br />
+            <div class="no-friends" data-ng-hide="friends.length > 0">
+                You don't have any Facebook friend in your list yet. <a href="#modalSliderAjax" data-ngopenpop="/Templates/FacebookPhotosManageFriends.html" data-fn="openPop" data-param='{ "type": "inline", "width": 800, "height": 700, "close": "TAKE ME <span class=bold>HOME</span>"}'><span>Click here</span></a> to add friends to your personal album.
+
+
+            </div>
+            <ul id="fb-plugin-photos" class="list-friends">
+                <li class="ng-scope" data-ng-repeat="friend in friends" data-ng-click="LoadFriendPhotos({{friend.id}});">
+                    <figure>
+                        <img data-ng-src="{{friend.photoProfile}}" alt="{{friend.name}}" data-ng-show="friend.photoProfile !== null" class="ng-hide">
+                    </figure>
+                    <div class="info-friend">
+                        <p class="bold data-ng-binding">{{friend.name}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="facebook-feed-photos-list" class="facebook-feed-photos-list">
+            <ul id="fb-plugin-photos-list" class="list-photos">
+                <li class="ng-scope" data-ng-repeat="photo in photos">
+                    <figure>
+                         <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/FacebookPhotoDetail.html" data-fn="openPop" data-param='{ "type": "inline", "width": {{photo.width}}, "height": {{photo.height}}, "close": "TAKE ME <span class=bold>HOME</span>"}'><img data-ng-src="{{photo.thumb}}"></a>
+                    </figure>
+                </li>
+            </ul>
+            <div data-ng-hide="photos.length > 0">
+                <br /><br />
+                <center>
+                    Please select on the left list the person that you want to load the Facebook photos
+                </center>
+            </div>
+
+            <div data-ng-show="noPhoto">
+                <br /><br />
+                <center>
+                    This person does not have any public photo.
+                </center>
+            </div>
+        </div>
+        
+    </div>
+</div>

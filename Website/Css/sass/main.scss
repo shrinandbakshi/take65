@@ -1,0 +1,43 @@
+﻿*, *:before, *:after {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	outline: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@import 'compass/reset';
+@import 'compass/css3';
+@import "compass/utilities/text/ellipsis";
+@import 'variables';  // global variables first so they're accessible to rest of stylesheets
+@import 'mixins';     // global mixins next to use variables and be accessible to rest of stylesheets
+@import 'typography'; // base typographic system is established next
+@import 'grid';       // grid system functions and mixins will all be defined here
+@import 'sprites';    // sprites functions
+@import 'form'; // form style
+@import 'chat'; // candy chat
+@import 'colorbox';
+@import 'global';     // global style rules are defined last so they can use all the previous sheets
+@import 'new-widget';    // widgets style
+@import 'widgets';    // widgets style
+@import 'news';    // news style
+@import 'bookmark';    // bookmark style
+@import 'register'; // register style
+@import 'login'; // login style
+@import 'my-websites'; // box MyWebsites Style
+//@import 'modal'; // modal css
+@import 'modal-slider'; // modal slider for tablet and mobile resolutions style
+@import 'invite-friends'; // modal of invite your friends
+@import 'settings-widgets'; // style for modal of widget settings
+@import 'suggestion-box'; // style for modal of suggestions box
+@import 'google-search'; // style for google search results
+@import 'about-us'; // style for about us
+@import 'facebook-newsfeed'; // style for facebook news feed
+@import 'social-media-photo'; // style for social media photo
+@import 'weather'; // style for weather
+@import 'email-feed'; // style for weather
+@import 'gridster'; // dashbord
+@import 'contact-us'; // style for contact us
+@import 'faqs'; // style for faqs
+@import 'support'; // style for support
