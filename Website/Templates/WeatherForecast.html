@@ -1,6 +1,7 @@
-﻿<div class="content weather-widget" data-ng-controller="WeatherCtrl" data-ng-target="">
+﻿<!--<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">-->
+<div class="content weather-widget" data-ng-controller="WeatherCtrl" data-ng-target="">
 
-    <div class="weather-box">
+    <div class="weather-box" style="height:300px;overflow:auto;">
 
         <header class="header">
             <h1>Weather</h1>
@@ -37,6 +38,20 @@
             <a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/WeatherTest.html" data-fn="openPop" data-param='{ "type": "inline", "width": 800, "height": "auto", "close": "TAKE ME <b>HOME</b>" }' title="Details">
                 Detailed weather forecast
             </a>
+            <br />
+              <!--<a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/WeatherForecastDetail.html" data-fn="openPop" data-param='{ "type": "inline", "width": 800, "height": "auto", "close": "TAKE ME <b>HOME</b>" }' title="Details">
+                Demo1 Detail
+            </a>-->           
+            <a href="#modalSliderAjax" data-ngopenpop="/templates/WeatherForecastDetail.html"  data-fn="openPop"  data-param='{ "type": "inline", "width": 800, "height": "auto", "close": "TAKE ME <b>HOME</b>" }' title="Details">
+                Demo new Detail
+            </a>
+            <br />
+            <a class="openIframe" href="{{lnk}}"   data-param='{ "type": "iframe", "width": 800, "height": "auto", "close": "TAKE ME <b>HOME</b>" }' title="Details">
+                Demo Detail 
+            </a>
+          
+         
+             <!--<a href="#modalSliderAjax" class="blue" data-ngopenpop="/Templates/WeatherDetails.html" data-fn="openPop" data-param='{ "type": "inline", "width": 453, "height": 420, "closeButton": false }' title="Details">Details</a>-->
         </div>
 
     </div>

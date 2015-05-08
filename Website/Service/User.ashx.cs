@@ -88,11 +88,13 @@ namespace Website.Service
             {
                 Model.REST.User restUser = this.ReadJsonRequest<Model.REST.User>();
                 Model.User user = this.RestModelToModel(restUser);
-
+                              
                 if (!string.IsNullOrEmpty(user.Email) & !String.IsNullOrEmpty(user.Password))
                 {
                     //Usual login by user and password
                     user = bllUser.Get(user.Email, Bll.Util.EncodeMD5(user.Password));
+
+                   
                 }
             }
             catch (Exception e)
@@ -105,6 +107,7 @@ namespace Website.Service
             }
         }
 
+       
         public void Login()
         {
             Bll.User bllUser = new Bll.User();

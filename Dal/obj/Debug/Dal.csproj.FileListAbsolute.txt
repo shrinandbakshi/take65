@@ -84,6 +84,36 @@ D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (
 D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\obj\Debug\Dal.dll
 D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Dal\obj\Debug\Dal.pdb
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Dal.dll.config
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Dal.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Dal.pdb
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\EntityFramework.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Model.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\Model.pdb
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\EntityFramework.xml
+D:\Documents\Take65\vishal\vishal\take65\Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\Take65\vishal\vishal\take65\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\Documents\Take65\vishal\vishal\take65\Dal\obj\Debug\Dal.dll
+D:\Documents\Take65\vishal\vishal\take65\Dal\obj\Debug\Dal.pdb
+D:\Application\finalTake65\take65\Dal\bin\Debug\Dal.dll.config
+D:\Application\finalTake65\take65\Dal\bin\Debug\Dal.dll
+D:\Application\finalTake65\take65\Dal\bin\Debug\Dal.pdb
+D:\Application\finalTake65\take65\Dal\bin\Debug\EntityFramework.dll
+D:\Application\finalTake65\take65\Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Application\finalTake65\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Application\finalTake65\take65\Dal\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Application\finalTake65\take65\Dal\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Application\finalTake65\take65\Dal\bin\Debug\Model.dll
+D:\Application\finalTake65\take65\Dal\bin\Debug\Model.pdb
+D:\Application\finalTake65\take65\Dal\bin\Debug\EntityFramework.xml
+D:\Application\finalTake65\take65\Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Application\finalTake65\take65\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\Application\finalTake65\take65\Dal\obj\Debug\Dal.dll
+D:\Application\finalTake65\take65\Dal\obj\Debug\Dal.pdb
 D:\Application\take65\Dal\bin\Debug\Dal.dll.config
 D:\Application\take65\Dal\bin\Debug\Dal.dll
 D:\Application\take65\Dal\bin\Debug\Dal.pdb

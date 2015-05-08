@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -224,6 +225,7 @@ namespace Website
                     Model.UserWidgetTrustedSource model = modelList[i];
                     Model.REST.WidgetBookmark restModel = new Model.REST.WidgetBookmark();
                     restModel.title = model.Name;
+                    restModel.Category = model.Category;
                     restModel.link = Bll.Util.ReturnFullUrl(model.Url);
 
                     restModel.trustedSourceId = model.TrustedSourceId;
@@ -377,6 +379,15 @@ namespace Website
                 HttpRuntime.Cache.Insert("System.FacebookPublicToken", client.AccessToken, null, DateTime.Now.AddHours(3), System.Web.Caching.Cache.NoSlidingExpiration);
             }
             return HttpRuntime.Cache["System.FacebookPublicToken"].ToString();
+        }
+
+        [WebMethod]
+        //public static string EmailSubscribe(Model.EmailSubscriber ObjEmail)
+        public static string EmailSubscribe(string ObjEmail)
+        {
+            Bll.User BLLEmail = new Bll.User();
+            BLLEmail.RegisterNewUserEmail(ObjEmail);
+            return "";
         }
 
     }

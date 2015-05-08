@@ -17,7 +17,7 @@
         param.close = param.close || NB.Lang.Close;
         param.closeButton = (typeof param.closeButton !== undefined) ? param.closeButton : true;
         param.allowClose = (typeof param.allowClose !== undefined) ? param.allowClose : true;
-
+        
         param.width = param.width || 'auto';
         param.height = param.height || 'auto';
         param.className = param.className || 'box-white';
@@ -65,7 +65,7 @@
                 href: param.href || that.attr('href'),
                 closeButton: param.closeButton,
                 escKey: param.allowClose,
-                overlayClose: param.allowClose,                
+                overlayClose: param.allowClose,
                 height: param.height,
                 width: param.width,
                 close: param.close,

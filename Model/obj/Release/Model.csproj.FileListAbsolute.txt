@@ -8,3 +8,13 @@ D:\Anirudh\take65_10_012015\Model\bin\Release\Model.pdb
 D:\Anirudh\take65_10_012015\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
 D:\Anirudh\take65_10_012015\Model\obj\Release\Model.dll
 D:\Anirudh\take65_10_012015\Model\obj\Release\Model.pdb
+D:\Application\finalTake65\take65\Model\bin\Release\Model.dll
+D:\Application\finalTake65\take65\Model\bin\Release\Model.pdb
+D:\Application\finalTake65\take65\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\Application\finalTake65\take65\Model\obj\Release\Model.dll
+D:\Application\finalTake65\take65\Model\obj\Release\Model.pdb
+D:\Application\take65\Model\bin\Release\Model.dll
+D:\Application\take65\Model\bin\Release\Model.pdb
+D:\Application\take65\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\Application\take65\Model\obj\Release\Model.dll
+D:\Application\take65\Model\obj\Release\Model.pdb

@@ -11,10 +11,12 @@ namespace Model
         public int TrustedSourceId { get; set; }
         public int SystemTagId { get; set; } //Feed Category
         public int CategoryId { get; set; } //Feed Category
+        public string Category { get; set; } //Feed Category for bookmark
         public String Name { get; set; }
         public String Url { get; set; }
         public String Icon { get; set; }
         public bool OpenIFrame { get; set; }
+
     }
 
 }

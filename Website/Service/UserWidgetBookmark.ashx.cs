@@ -328,7 +328,7 @@ namespace Website.Service
             Model.REST.WidgetBookmark restModel = new Model.REST.WidgetBookmark();
             restModel.title = model.Name;
             restModel.link = Bll.Util.ReturnFullUrl(model.Url);
-
+            restModel.Category = model.Category;
             restModel.trustedSourceId = model.TrustedSourceId;
 
             if(!String.IsNullOrEmpty(model.Icon))

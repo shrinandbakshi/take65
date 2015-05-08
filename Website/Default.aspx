@@ -1,20 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Website.Default1" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
-    <script src="Scripts/jquery-2.0.3.min.js"></script>
-<%--<script>
-    $(document).ready(function test() {
-        //$('.popup').click(function p() {
-        //    alert("dsdsd");
-        //});
-        var btn = document.getElementById("cboxClose");
-        alert(btn);
-        btn.onclick = function() { // Note this is a function
-            alert("blabla");
-        };
-        alert("sa");
-    });
-</script>--%>
     <script type="text/javascript">
         var homepage = '<%= defaultHome%>';
     </script>
@@ -69,8 +54,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <form ng-submit="submitTitle($index);" class="edit-title" data-ng-show="widget.editTitle">
-                            <!-- ng-show="widget.editTitle && (widget.typeId !== 1 && widget.typeId !== 2)" -->
+                        <form ng-submit="submitTitle($index);" class="edit-title" data-ng-show="widget.editTitle"> <!-- ng-show="widget.editTitle && (widget.typeId !== 1 && widget.typeId !== 2)" -->
                             <input type="text" ng-model="widget.newTitle" />
                             <div class="options">
                                 <ul>
@@ -120,7 +104,7 @@
                         <a href="/Services/Feed.aspx?widgetId=<%=this.WidgetList[i].Id %>&widgetName=<%=HttpUtility.UrlEncode(this.WidgetList[i].Name) %>" class="f-left" data-fn="openPop" data-param='{ "type": "ajax" ,"width": "80%", "height":"800px", "close": "TAKE ME <span class=bold>HOME</span>" }'>View <span class="bold">More</span></a>
                         <a href="/Services/Add-New-Widget.aspx" data-fn="openPop" data-param='{ "type": "ajax" ,"width": "80%", "resizeBoxLightbox": true, "closeButton": false }' class="f-right">
                         <%} %>
-                        </a>--%>
+                        </a>--%>                      
                     </footer>
                 </article>
             </li>

@@ -19,5 +19,6 @@ namespace Model.REST
         public String link { get; set; }
         public String image { get; set; }
         public bool openIFrame { get; set; }
+        public string Category { get; set; }
     }
 }

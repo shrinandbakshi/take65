@@ -73,7 +73,6 @@ var REDIRECT_URI = {
 function AppCtrl($scope) {
     angular.element(document).ready(function () {
         //document.getElementById('msg').innerHTML = 'anirudh';
-        alert("hello");
     });
 }
 
@@ -114,7 +113,6 @@ angular.module('App.controllers', [])
     })
     // Main Controller
     .controller('AppCtrl', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
-        $scope.overlayClose = false;
         $scope.dash = $rootScope.dash = {};
         $rootScope.facebookToken = '';
         $rootScope.firstAccess = false;
@@ -125,9 +123,7 @@ angular.module('App.controllers', [])
                 $("#lnkMenuInvite").trigger("click");
             }, 1000);
         }
-        $scope.cboxClose.click = function () {
-            alert("sasa");
-        };
+
         $scope.returningUser = function () {
             $rootScope.returningUser();
         };
@@ -667,10 +663,12 @@ angular.module('App.controllers', [])
 
     // Controller for WeatherCtrl in /Templates/Weather.html
     .controller('WeatherCtrl', ['$scope', '$http', '$sce', '$rootScope', function ($scope, $http, $sce, $rootScope) {
-        $scope.weather = { address: ($scope.$parent.widget.zipCode != null) ? $scope.$parent.widget.zipCode : '10001', lastUpdate: new Date(), location: '', currentTemp: 0, forecast: [], firstLoad: true };
+        //$scope.weather = { address: ($scope.$parent.widget.zipCode != null) ? $scope.$parent.widget.zipCode : '10001', lastUpdate: new Date(), location: '', currentTemp: 0, forecast: [], firstLoad: true };
+        alert($scope.$parent.widget.zipCode);
+        $scope.weather = { address: ($scope.$parent.widget.zipCode != null) ? $scope.$parent.widget.zipCode : '202441', lastUpdate: new Date(), location: '', currentTemp: 0, forecast: [], firstLoad: true };
 
         $scope.loadWeather = function () {
-
+          //  alert("weather");
             $http.get('/REST/UserWidgetWeather/CurrentWeather/' + $scope.weather.address + '?WidgetId=' + $scope.$parent.widget.id + '&m=' + (new Date()).getMilliseconds())
                 .success(function (data, status, headers, config) {
                     if (data.status) {
@@ -1132,7 +1130,6 @@ angular.module('App.controllers', [])
 
     // Controller for RegisterCtrl in /Templates/Register.html
     .controller('RegisterCtrl', ['$scope', '$http', '$rootScope', 'gcfg', function ($scope, $http, $rootScope, gcfg) {
-        $scope.overlayClose = false;
         $scope.step = 1;
         $scope.facebook = { register: false };
         console.log(gcfg);
@@ -1507,13 +1504,38 @@ angular.module('App.controllers', [])
         };
     }])
     .controller('GetToKnowAboutSiteCtrl', ['$scope', '$http', '$rootScope', 'gcfg', function ($scope, $http, $rootScope, gcfg) {
-        $scope.overlayClose = false;
         $scope.title = 'Join Take 65 for Free';
         $scope.newUseremail = '';
         $scope.login = $scope.newUseremail;
         $scope.regsterEmail = function () {
+
+            //var varId = $("#fldLoginName");
+            //alert(varId);
+            //if (varId.val() !== undefined) {
+            //    if ($("#fldLoginName").val().trim() != "") {
+            //        var EmailSubscriber = {};
+            //        EmailSubscriber.Email = $("#fldLoginName").val();
+
+            //        $.ajax({
+            //            type: "POST",
+            //            // contentType: "application/text; charset=utf-8",
+            //            contentType: "application/json; charset=utf-8",
+            //            url: "../../Default.aspx/EmailSubscribe",
+            //            dataType: "json",
+            //            data: '{ObjEmail: ' + JSON.stringify(EmailSubscriber) + '}',
+            //            success: function (d) {
+            //                //alert(d);
+            //            },
+            //            error: function (result) {
+            //                alert("error");
+            //            }
+            //                , async: false
+            //        });
+            //    }
+            //}
+
             $http.post('/REST/User/RegisterNewUserEmail', { email: $scope.newUseremail })
-               .success(function (data, status, headers, config) {
+               .success(function (data, status, headers, config) {                  
                    $rootScope.$broadcast('dataloaded');
                    //$rootScope.$broadcast('nglogged');
                })
@@ -1521,6 +1543,9 @@ angular.module('App.controllers', [])
                    $scope.msgError(data.response);
                    $rootScope.$broadcast('dataloaded');
                });
+
+           
+
         }
     }])
      // Controller for LoginCtrl in /Templates/Login.html
@@ -1820,6 +1845,7 @@ angular.module('App.controllers', [])
         });
 
         $scope.VerifyForSocialMediaFrame = function () {
+            debugger;
             $scope.isSocialMediaExists = true;
             $timeout(function () {
                 $.colorbox.resize({ width: $(".hold-modal").width() + 50 });

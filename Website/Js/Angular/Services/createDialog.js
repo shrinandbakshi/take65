@@ -79,7 +79,7 @@ angular.module('fundoo.services', []).factory('createDialog', ["$document", "$co
       };
 
       var closeFn = function () {
-          body.unbind('keydown', handleEscPressed);
+        body.unbind('keydown', handleEscPressed);
         modalEl.remove();
         if (options.backdrop) {
           backdropEl.remove();

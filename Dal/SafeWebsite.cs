@@ -86,10 +86,10 @@ namespace Dal
 
             DbFactory.AddInParameter(cmd, "SafeWebsiteOpenIFrame", DbType.Boolean, pWebsite.OpenIFrame);
 
-            if (pWebsite.CurrentTag == null && pWebsite.deleted != DateTime.MinValue)
-                DbFactory.AddInParameter(cmd, "SystemTagId", DbType.Int64, 0);
-            else
-                DbFactory.AddInParameter(cmd, "SystemTagId", DbType.Int64, pWebsite.CurrentTag.Id);
+            //if (pWebsite.CurrentTag == null && pWebsite.deleted != DateTime.MinValue)
+            //    DbFactory.AddInParameter(cmd, "SystemTagId", DbType.Int64, 0);
+            //else
+            //    DbFactory.AddInParameter(cmd, "SystemTagId", DbType.Int64, pWebsite.CurrentTag.Id);
 
             if (pWebsite.deleted != null && DateTime.MinValue != pWebsite.deleted)
                 DbFactory.AddInParameter(cmd, "deleted", DbType.DateTime, pWebsite.deleted);

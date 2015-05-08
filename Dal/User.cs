@@ -49,6 +49,13 @@ namespace Dal
             if (!String.IsNullOrEmpty(pUser.Email))
                 DbFactory.AddInParameter(cmd, "email", DbType.String, pUser.Email);
             DbFactory.ExecuteNonQuery(cmd);
+
+            // cmd = DbFactory.GetStoredProcCommand("procSaveEmailNotRegister");
+            // if (!String.IsNullOrEmpty(pUser.Email))
+            //{
+            //    DbFactory.AddInParameter(cmd, "email", DbType.String, pUser.Email);
+            //    DbFactory.ExecuteNonQuery(cmd);
+            //}
         }
 
         public Model.User[] GetAll()

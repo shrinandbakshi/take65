@@ -1,8 +1,10 @@
-﻿<div class="content weather-widget" style="height:320px">
-    <head>
-        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-        <style type="text/css">
-            /*a.tbg-s {
+﻿
+<div class="content weather-widget" style="height: 320px">
+    <!--<script src="../Scripts/jquery-2.0.3.min.js"></script>-->
+
+
+    <style type="text/css">
+        /*a.tbg-s {
                 pointer-events: none !important;
                 cursor: default !important;
             }
@@ -33,36 +35,97 @@
                 cursor: default !important;
             }*/
 
-            .aw-get-this-widget{
-                display: none !important;
-            }
-            a.aw-arrow a.aw-arrow-right {
-                display: none !important;
-            }
-            a.aw-logo {
-                display: none !important;
-            }
+        .aw-get-this-widget {
+            display: none !important;
+        }
 
-            #link_arrow_right {
-                display: none !important;
-            }
+        a.aw-arrow a.aw-arrow-right {
+            display: none !important;
+        }
 
-            #link_logo {
-                display: none !important;
-            }
-        </style>
-        <title></title>
-    </head>
-    <a href="http://www.accuweather.com/en/us/new-york-ny/10007/current-weather/349727" class="aw-widget-legal">
+        a.aw-logo {
+            display: none !important;
+        }
+
+        #link_arrow_right {
+            display: none !important;
+        }
+
+        #link_logo {
+            display: none !important;
+        }
+    </style>
+    <!--<a href="http://www.accuweather.com/en/us/new-york-ny/10007/current-weather/349727" class="aw-widget-legal">-->
+    <a href="http://www.accuweather.com/en/us/new-york-ny/395003/current-weather/202441" class="aw-widget-legal">
         <!--
         By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at
             http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
         -->
     </a>
-    <div class="disabled">
-        <div id="awtd1419876313409" class="aw-widget-36hour disabled" data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awtd1419876313409"
-             data-editlocation="true">
-
+    <div class="disabled" id="div">
+        <div id="awtd1419876313409" class="aw-widget-36hour disabled" data-locationkey="" data-unit="f" data-language="en-us" data-useip="false" data-uid="awtd1419876313409"
+            data-editlocation="true">
         </div>
     </div>
 </div>
+
+<!--<script src="../Scripts/jquery-1.8.2.js"></script>-->
+<script src="../Js/accuweather.js"></script>
+<!--<script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>-->
+
+
+<!--<script type="text/javascript">
+ 
+    $(document).ready(function () {
+       
+       // 
+ $.noConflict();
+        //var nl = document.getElementsByTagName("aw-36-hours.a");
+        //for (var t = 0; t < nl.length;t++)
+        //{
+        //    //alert("sa");
+        //    //nl[t].href = "";
+        //    alert(nl[t].href);
+        //}
+        //var a = $(".aw-widget-36hour-inner");
+      //  debugger;
+       // alert("hello");
+      //  var a = $(".aw-info");
+      
+        
+        //a.removeAttr('href');
+        //a.addClass("sasa");
+        //alert(a);
+        //$("#link_panel0").click(function () {
+        //    alert("sasa");
+        //});
+      //  alert(a.html);
+
+        //function removejscssfile(filename, filetype) {
+        //    var targetelement = (filetype == "js") ? "script" : (filetype == "css") ? "link" : "none" //determine element type to create nodelist from
+        //    var targetattr = (filetype == "js") ? "src" : (filetype == "css") ? "href" : "none" //determine corresponding attribute to test for
+        //    var allsuspects = document.getElementsByTagName(targetelement)
+        //    for (var i = allsuspects.length; i >= 0; i--) { //search backwards within nodelist for matching elements to remove
+        //        if (allsuspects[i] && allsuspects[i].getAttribute(targetattr) != null && allsuspects[i].getAttribute(targetattr).indexOf(filename) != -1)
+        //            allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
+        //    }
+        //}
+        //removejscssfile("../js/Min.Debug.js", "js");
+
+        //var scriptTag = document.createElement("script");
+        //scriptTag.setAttribute("type", "text/javascript");
+        //scriptTag.setAttribute("src", "../Scripts/jquery-1.8.2.js");
+
+        //var head = document.getElementsByTagName("head")[0];
+        //head.appendChild(scriptTag);
+
+    //});
+   // $.noConflict();
+    //$(window).unload(function () {
+    //    alert("sasa");
+    });
+</script>-->
+
+<!--<script src="../Scripts/jquery-1.7.1.js"></script>-->
+<!--<script src="../Js/accuweather.js"></script>-->
+<!--<script src="../Scripts/jquery-2.0.3.js"></script>-->

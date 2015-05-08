@@ -50,6 +50,7 @@ namespace Website.Service
                     if (HttpRuntime.Cache["GeoCode." + address.Replace(" ", "")] != null)
                     {
                         Model.REST.GeoLocation geo = (Model.REST.GeoLocation)HttpRuntime.Cache["GeoCode." + address.Replace(" ", "")];
+                        
                         Model.User user = this.GetSessionUser();
                         if (user != null)
                         {
@@ -96,7 +97,7 @@ namespace Website.Service
                                          restWeather.tempMin = Math.Round(Convert.ToDouble(weather["temperatureMin"]));
                                          restWeather.time = Convert.ToInt64(weather["time"]);
                                          restWeather.summary = weather["summary"];
-
+                                         
                                          restWeather.sunriseTime = weather.ContainsKey("sunriseTime") ? Convert.ToInt64(weather["sunriseTime"]) : null;
                                          restWeather.sunsetTime = weather.ContainsKey("sunsetTime") ? Convert.ToInt64(weather["sunsetTime"]) : null;
                                          restWeather.moonPhase = weather.ContainsKey("moonPhase") ? Math.Round(Convert.ToDouble(weather["moonPhase"])) : null;

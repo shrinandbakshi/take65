@@ -6,7 +6,7 @@
 	</div>
 	<div class="hold-bookmarks" id="bookmarkContent">
         <ul class="list-img-links list-img-links-max-width">
-            <li data-ng-repeat="trusted in trustedSource">
+            <li data-ng-click="EventTrack(trusted)" data-ng-repeat="trusted in trustedSource">
                 <a data-ng-href="{{trusted.link}}" data-ng-class="{ openIframe: !trusted.openIFrame }" data-fn="openPop" data-param='{ "type": "iframe" ,"width": "95%", "height":"90%", "close": "TAKE ME <span class=bold>HOME</span>" }'>
                     <img data-ng-src="{{trusted.image}}" alt="{{trusted.title}}" />
                 </a>

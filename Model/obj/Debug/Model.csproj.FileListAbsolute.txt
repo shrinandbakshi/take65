@@ -28,7 +28,18 @@ D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (
 D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Model\obj\Debug\Model.dll
 D:\RND\New Take65\take65_10_012015 (anirudh@pantheratech.com)\take65_10_012015 (anirudh@pantheratech.com)\Model\obj\Debug\Model.pdb
+D:\Documents\Take65\vishal\vishal\take65\Model\bin\Debug\Model.dll
+D:\Documents\Take65\vishal\vishal\take65\Model\bin\Debug\Model.pdb
+D:\Documents\Take65\vishal\vishal\take65\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Documents\Take65\vishal\vishal\take65\Model\obj\Debug\Model.dll
+D:\Documents\Take65\vishal\vishal\take65\Model\obj\Debug\Model.pdb
+D:\Application\finalTake65\take65\Model\bin\Debug\Model.dll
+D:\Application\finalTake65\take65\Model\bin\Debug\Model.pdb
+D:\Application\finalTake65\take65\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Application\finalTake65\take65\Model\obj\Debug\Model.dll
+D:\Application\finalTake65\take65\Model\obj\Debug\Model.pdb
 D:\Application\take65\Model\bin\Debug\Model.dll
 D:\Application\take65\Model\bin\Debug\Model.pdb
+D:\Application\take65\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\Application\take65\Model\obj\Debug\Model.dll
 D:\Application\take65\Model\obj\Debug\Model.pdb

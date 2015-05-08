@@ -154,7 +154,7 @@ namespace Dal
 
         public Model.UserWidgetTrustedSource[] GetBookmark(long userWidgetId, bool isTrusted)
         {
-            DbCommand cmd = DbFactory.GetStoredProcCommand("GetUserWidgetBookmark");
+            DbCommand cmd = DbFactory.GetStoredProcCommand("GetUserWidgetBookmark_NEW");
             DbFactory.AddInParameter(cmd, "UserWidgetId", DbType.Int64, userWidgetId);
 
             if (isTrusted)
